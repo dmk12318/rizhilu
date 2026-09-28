@@ -8,6 +8,8 @@
  *   node scripts/fetch_news.mjs            抓取并写入数据
  *   node scripts/fetch_news.mjs --check    只做连通性体检，不写文件
  *   NEWS_WINDOW_HOURS=36 node scripts/...  自定义回溯窗口（默认 24 小时）
+ *   node scripts/fetch_news.mjs --until=2026-09-28T08:00:00+08:00
+ *                                          把"现在"设为指定的过去时刻，用来补某一期
  */
 
 import fs from 'node:fs/promises';
@@ -339,7 +341,15 @@ async function main() {
   const config = JSON.parse(await fs.readFile(path.join(ROOT, 'feeds.json'), 'utf8'));
   const catById = new Map(config.categories.map((c) => [c.id, c]));
   const defaultMax = config.defaultMax || 20;
-  const now = new Date();
+  // --until：把"现在"钉在某个过去时刻，用于补做历史上的某一期
+  const untilArg = process.argv.find((a) => a.startsWith('--until='))?.slice(8) || process.env.NEWS_UNTIL || '';
+  let now = new Date();
+  if (untilArg) {
+    const parsed = new Date(untilArg);
+    if (!Number.isFinite(parsed.getTime())) throw new Error(`--until 时间无法解析：${untilArg}`);
+    now = parsed;
+    console.log(`  补做模式：把"现在"设为 ${now.toLocaleString('zh-CN', { timeZone: TZ })}（${untilArg}）`);
+  }
   const since = now.getTime() - WINDOW_HOURS * 3600 * 1000;
 
   // ---- 境外源开关：直连不通时就跳过它们，不做无谓的超时重试
@@ -381,7 +391,13 @@ async function main() {
           // 无日期字段的源：合成时间用于排序，但推到两小时前之后，避免抢占"最新"
           published: it.published || new Date(now.getTime() - 2 * 3600e3 - index * 20 * 60 * 1000).toISOString(),
         }));
-      const fresh = limited.filter((it) => Date.parse(it.published) >= feedSince);
+      // 窗口是闭区间 [feedSince, now]：只取"更新前 24 小时"内的稿件。
+      // 上界不能省——有些源会把时间标到未来（如按日期+固定钟点发布），
+      // 少了上界，补做历史某一期时会把当下的新闻全灌进去。
+      const fresh = limited.filter((it) => {
+        const t = Date.parse(it.published);
+        return t >= feedSince && t <= now.getTime();
+      });
       const cost = Date.now() - stamp;
       if (CHECK_ONLY) {
         const mark = fresh.length ? '✓' : '·';

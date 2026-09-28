@@ -41,10 +41,13 @@ jobs:
           node-version: "24"
 
       - name: 抓取新闻
+        # 推送只负责"把改动发布出去"，不生成新的一期。
+        # 否则随便推一次代码就会多产出一期，和早上 8:00 的定时任务打架。
+        if: ${{ github.event_name != 'push' }}
         run: npm run fetch
 
       - name: 生成主编专栏
-        if: ${{ github.event.inputs.skip_editorial != 'true' }}
+        if: ${{ github.event_name != 'push' && github.event.inputs.skip_editorial != 'true' }}
         # 专栏失败不能拖垮整期：接口欠费、限流、模型抽风时，新闻照常发布
         continue-on-error: true
         env:
@@ -55,7 +58,7 @@ jobs:
         run: node scripts/editorial.mjs
 
       - name: 生成境外要闻综述
-        if: ${{ github.event.inputs.skip_editorial != 'true' }}
+        if: ${{ github.event_name != 'push' && github.event.inputs.skip_editorial != 'true' }}
         continue-on-error: true
         env:
           EDITORIAL_API_KEY: ${{ secrets.EDITORIAL_API_KEY || secrets.DAILYNEWS }}

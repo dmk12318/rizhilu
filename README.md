@@ -146,6 +146,7 @@ scripts/netcheck.mjs        单独跑一次网络检查
 scripts/editorial.mjs       主编专栏生成器（本地与云端通用）
 scripts/launcher.mjs        双击启动器背后的逻辑
 scripts/digest.mjs          主编工作台：稿件通读与检索
+scripts/rebuild-edition.mjs 重建历史上的某一期（翻 git 快照补全）
 scripts/probe.mjs           候选源体检：想知道某个源能不能用就跑它
 scripts/serve.mjs           本地静态服务器
 scripts/candidates*.json    候选源清单（体检用）
@@ -221,6 +222,20 @@ node scripts/probe.mjs scripts/candidates.json           # 批量体检
 
 ### 历史能往前翻多久
 
+**补做历史上的某一期**（例如"9月28日早8点之前24小时"）：
+
+```bash
+# 1) 先按指定截止时间去抓一次（RSS 只保留最近条目，只能捞回一部分）
+node scripts/fetch_news.mjs --until="2026-09-28T08:00:00+08:00"
+
+# 2) 再把 git 历史里的所有快照翻出来合并，尽量补全
+node scripts/rebuild-edition.mjs --date=2026-09-28 --until="2026-09-28T08:00:00+08:00"
+```
+
+`--until` 把"现在"钉在过去的某一刻，抓取器就按那一刻往回算 24 小时（窗口是闭区间，**上界也会卡住**，避免把当下的新闻灌进去）。
+
+> ⚠️ **补做出来的那一期一定是残缺的。** RSS 源不保留历史，隔了一天再抓，各源的列表里只剩最近二三十条。实测：重建"9/27 08:00 → 9/28 08:00"只能凑出 **224 条**，而正常一期在 **800 条**左右。窗口越久远，能捞回的越少。这是信息源的限制，不是脚本的问题。
+
 **每天的数据不会互相覆盖，是逐日累积的**，往前翻多少天取决于保留期：
 
 | 内容 | 保留策略 |
@@ -254,6 +269,14 @@ node scripts/probe.mjs scripts/candidates.json           # 批量体检
 ### 方案：GitHub Actions + GitHub Pages（免费，推荐）
 
 工作流已经写好在 [.github/workflows/daily.yml](.github/workflows/daily.yml)，你要做的是把它推上去并打开两个开关。
+
+三种触发方式的分工（这条很重要）：
+
+| 触发 | 会做什么 |
+| --- | --- |
+| `schedule` 每天 08:00 | **抓新闻 → 生成两篇专栏 → 发布**，这是唯一会产出新一期的路径 |
+| `workflow_dispatch` 手动点 | 同上，用于补跑或验证 |
+| `push` 推代码 | **只发布，不抓取、不生成**——否则随手推一次代码就会多产出一期，和早上 8:00 的定时任务打架 |
 
 **第一步：准备仓库**
 

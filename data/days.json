@@ -1,33 +1,19 @@
 {
- "updatedAt": "2026-09-28T16:14:08.702Z",
+ "updatedAt": "2026-09-28T16:26:35.030Z",
  "days": [
   {
-   "date": "2026-09-29",
-   "total": 800,
-   "counts": {
-    "tech": 140,
-    "world": 295,
-    "culture": 60,
-    "business": 124,
-    "top": 128,
-    "military": 19,
-    "society": 34
-   },
-   "generatedAt": "2026-09-28T16:14:08.702Z"
-  },
-  {
    "date": "2026-09-28",
-   "total": 880,
+   "total": 224,
    "counts": {
-    "tech": 142,
-    "business": 131,
-    "world": 291,
-    "top": 104,
-    "military": 71,
-    "culture": 106,
-    "society": 35
+    "tech": 38,
+    "world": 97,
+    "business": 37,
+    "culture": 24,
+    "military": 8,
+    "top": 14,
+    "society": 6
    },
-   "generatedAt": "2026-09-28T13:34:08.430Z"
+   "generatedAt": "2026-09-28T00:00:00.000Z"
   }
  ]
 }
