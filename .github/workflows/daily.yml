@@ -29,11 +29,11 @@ jobs:
       # GitHub 的服务器在境外，不需要任何代理，直接放开全部 107 个源
       NEWS_OVERSEAS: "on"
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
-          node-version: "20"
+          node-version: "24"
 
       - name: 抓取新闻
         run: npm run fetch
@@ -51,7 +51,7 @@ jobs:
           mkdir -p _site
           cp -r index.html assets data editorial _site/
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
@@ -74,4 +74,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
