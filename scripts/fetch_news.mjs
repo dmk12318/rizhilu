@@ -427,7 +427,7 @@ async function main() {
         source: report.feed.name,
         category: report.feed.category,
         lang: report.feed.lang || 'zh',
-        region: report.feed.region || 'global',
+        origin: report.feed.origin || 'overseas',
         ...(item.undated ? { undated: true } : {}),
         published: published.toISOString(),
         norm: normalizeTitle(item.title),

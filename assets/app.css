@@ -195,7 +195,22 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 html[data-theme="dark"] .stale { background: #2c2617; border-color: #5a4a22; color: #e5cf94; }
 
-/* ---------------------------------------------------- 主编专栏 */
+/* ---------------------------------------------------- 专栏（两大栏 × 两小栏） */
+.colgroup { margin-bottom: 38px; }
+.colgroup__head {
+  display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  padding-bottom: 9px; margin-bottom: 18px;
+  border-bottom: 2px solid var(--ink);
+}
+.colgroup__title {
+  font-family: var(--serif);
+  font-size: 21px;
+  letter-spacing: .1em;
+  margin: 0;
+}
+.colgroup__desc { font-size: 12.5px; color: var(--ink-3); }
+.colgroup .editorial:last-child { margin-bottom: 0; }
+
 .editorial {
   position: relative;
   background: var(--paper-2);
@@ -471,6 +486,9 @@ html[data-theme="dark"] .stale { background: #2c2617; border-color: #5a4a22; col
   .tabs { padding: 0 10px; }
   .page { padding: 16px 15px 50px; }
   .editorial { padding: 20px 18px 22px; border-radius: 13px; }
+  .colgroup { margin-bottom: 28px; }
+  .colgroup__title { font-size: 18px; }
+  .colgroup__head { margin-bottom: 14px; }
   .editorial__title { font-size: 21px; }
   .editorial__toggle { font-size: 12px; }
   .prose { font-size: 16px; line-height: 1.92; }

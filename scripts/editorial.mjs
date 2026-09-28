@@ -46,6 +46,9 @@ const PER_CATEGORY = Number(readArg('items', 12));
 const VARIANT = String(readArg('variant', process.env.EDITORIAL_VARIANT || 'cloud')).toLowerCase();
 const IS_CLOUD = VARIANT === 'cloud';
 const EDITOR_NAME = IS_CLOUD ? '云端主编' : (process.env.EDITORIAL_EDITOR_NAME || 'Codex');
+// 范围：all = 全部新闻（主编专栏），world = 只取境外源的报道（境外要闻综述）
+const SCOPE = String(readArg('scope', process.env.EDITORIAL_SCOPE || 'all')).toLowerCase();
+const IS_WORLD = SCOPE === 'world';
 const API_KEY = process.env.EDITORIAL_API_KEY || process.env.OPENAI_API_KEY || '';
 const BASE_URL = (process.env.EDITORIAL_BASE_URL || process.env.OPENAI_BASE_URL || 'https://api.deepseek.com').replace(/\/+$/, '');
 const MODEL = process.env.EDITORIAL_MODEL || 'deepseek-flash';
@@ -55,9 +58,11 @@ const MAX_TOKENS = Number(process.env.EDITORIAL_MAX_TOKENS || 8000);
 const DATA_DIR = path.join(ROOT, 'data');
 const NEWS_DIR = path.join(DATA_DIR, 'news');
 const EDITORIAL_DIR = path.join(ROOT, 'editorial');
-const STATUS_FILE = path.join(DATA_DIR, 'editorial-status.json');
+const STATUS_FILE = path.join(DATA_DIR, IS_WORLD ? 'editorial-status-world.json' : 'editorial-status.json');
 
 let currentDate = null;
+/** 本次写作的稿件池：主编专栏用全部，境外要闻只用 region=global 的源 */
+let itemPool = [];
 
 /**
  * 把这一次生成的结果写进 data/editorial-status.json。
@@ -82,8 +87,8 @@ const fmt = (iso) => new Date(iso).toLocaleString('zh-CN', { timeZone: TZ, hour1
 
 /* ---------------------------------------------------------- 选稿 */
 
-function pickItems(data) {
-  const scored = data.items.map((it) => {
+function pickItems() {
+  const scored = itemPool.map((it) => {
     const ageHours = (Date.now() - Date.parse(it.published)) / 3600000;
     const recency = Math.sqrt(Math.max(0, 30 - ageHours) / 30);
     const crossSource = (it.alsoIn?.length || 0) * 1.1;   // 多家跟进 = 当日真正的公共议题
@@ -99,7 +104,7 @@ function pickItems(data) {
 }
 
 function buildDigest(data) {
-  const byCategory = pickItems(data);
+  const byCategory = pickItems();
   const out = [];
   for (const cat of data.categories) {
     const items = byCategory[cat.id] || [];
@@ -152,6 +157,70 @@ const SYSTEM_PROMPT = [
   '4. 不写空话套话，不写“综上所述”式的收尾。每段都要给出一个可以被反驳的具体判断。',
   '5. 全文使用简体中文与全角标点（引号用“”），正文 1500–2500 字。',
 ].join('\n');
+
+/* 境外要闻综述用的提示词：任务不是评论，而是归纳与对照 */
+const SYSTEM_PROMPT_WORLD = [
+  '你是一位国际新闻编辑，负责把当天境外媒体的报道归纳成一份给中文读者的《境外要闻》简报。',
+  '你拿到的材料**全部来自境外媒体**（BBC、纽约时报、卫报、半岛电视台、法新社系、南华早报、日经、海峡时报等）。',
+  '',
+  '你的任务不是评论，而是**归纳与对照**，替读者回答三个问题：',
+  '一、境外媒体今天集中在讲什么议题；二、同一件事，不同国家的媒体讲法有什么差别；三、哪些报道被主流忽略但值得留意。',
+  '',
+  '写作纪律（必须遵守）：',
+  '1. 只能使用我提供的稿件标题与摘要。不得补充你记忆里的背景数字、人名、机构与因果；确实需要背景时，用「据此前公开报道」这类限定语，不得给出具体数字。',
+  '2. 每一条都要点明是哪家媒体说的，用“据 BBC World”“据纽约时报中文网”这样的方式标注。',
+  '3. 归纳时必须指出媒体来源的国别或立场背景（例如“美媒”“中东媒体”“欧洲媒体”），让读者知道这是谁在说话。',
+  '4. 同一事件有多家媒体报道时，要写清楚它们措辞与侧重的差异，不要合并成一句笼统的话。',
+  '5. 只有单一来源、或来自匿名信源的内容，单独放在最后一节并明确标注是单线信源。',
+  '6. 全文使用简体中文与全角标点（引号用“”），正文 1200–2000 字。',
+].join('\n');
+
+function buildUserPromptWorld(data, date, theses) {
+  const lines = [];
+  lines.push(`今天是 ${date}。本期《境外要闻》的材料来自 ${Object.keys(data.stats.bySource || {}).length} 家媒体的报道，其中境外媒体部分共 ${itemPool.length} 条，覆盖最近 ${data.windowHours} 小时。`);
+  lines.push('');
+  lines.push('以下是当日境外媒体稿件：');
+  lines.push(buildDigest(data));
+  lines.push('');
+  if (theses) {
+    lines.push('以下是前两期《主编专栏》写过的判断，避免重复：');
+    lines.push(theses);
+    lines.push('');
+  }
+  lines.push('请按下面的体例撰写，直接输出 Markdown，不要用代码块包裹：');
+  lines.push('');
+  lines.push('---');
+  lines.push(`editor: ${EDITOR_NAME}`);
+  lines.push(`updated: ${date} 08:00`);
+  lines.push('---');
+  lines.push('');
+  lines.push('# <一句话概括今天境外媒体最集中的议题，不要用“境外要闻”这种标题>');
+  lines.push('');
+  lines.push('> 简报概要：<80–120 字，说清今天境外媒体的整体关注点>');
+  lines.push('');
+  lines.push('## 一、境外媒体今天在讲什么');
+  lines.push('');
+  lines.push('<按主题归纳，3–5 个主题。每个主题说清楚：哪些媒体在报同一件事、各自的落点是什么。>');
+  lines.push('');
+  lines.push('## 二、同一件事的不同讲法');
+  lines.push('');
+  lines.push('### 【对比】<事件一>');
+  lines.push('### 【对比】<事件二>');
+  lines.push('');
+  lines.push('<至少写两组对比。指出不同媒体在措辞、归因、责任指向上的差别——这是这份简报最核心的价值。>');
+  lines.push('');
+  lines.push('## 三、值得单独留意的报道');
+  lines.push('');
+  lines.push('### 【线索】<小标题>');
+  lines.push('### 【存疑】<小标题>');
+  lines.push('');
+  lines.push('<3–4 条。前几条是被主流忽略但有价值的报道；最后至少一条是单线信源或需要打问号的内容，明确写出它是单一来源。>');
+  lines.push('');
+  lines.push('---');
+  lines.push('');
+  lines.push(`*本简报由${EDITOR_NAME}归纳当日境外媒体报道，仅呈现外部视角，不代表本刊立场，仅供参考。*`);
+  return lines.join('\n');
+}
 
 function buildUserPrompt(data, date, theses) {
   const lines = [];
@@ -214,26 +283,39 @@ async function main() {
   const date = await latestDate();
   currentDate = date;
   const data = JSON.parse(await fs.readFile(path.join(NEWS_DIR, `${date}.json`), 'utf8'));
-  const outFile = path.join(EDITORIAL_DIR, IS_CLOUD ? `${date}.md` : `${date}.${VARIANT}.md`);
+  // 文件名：<日期>.md / <日期>.codex.md / <日期>.world.md / <日期>.world.codex.md
+  const suffix = [IS_WORLD ? 'world' : '', IS_CLOUD ? '' : VARIANT].filter(Boolean).join('.');
+  const outName = suffix ? `${date}.${suffix}.md` : `${date}.md`;
+  const outFile = path.join(EDITORIAL_DIR, outName);
+
+  // 境外要闻只取境外源的稿件
+  itemPool = IS_WORLD ? data.items.filter((it) => it.origin === 'overseas') : data.items;
+  if (IS_WORLD && !itemPool.length) {
+    console.log('  这一期没有境外来源的稿件，跳过境外要闻。');
+    await writeStatus({ ok: false, status: 'no-foreign-items', note: '本期没有境外源稿件' });
+    return;
+  }
 
   if (!FORCE && !DRY_RUN) {
     const exists = await fs.access(outFile).then(() => true).catch(() => false);
     if (exists) {
-      console.log(`  专栏已存在：editorial/${date}.md（要覆盖请加 --force）`);
+      console.log(`  专栏已存在：editorial/${outName}（要覆盖请加 --force）`);
       await writeStatus({ ok: true, status: 'kept-existing', note: '专栏已存在，保留原稿未覆盖' });
       return;
     }
   }
 
   const theses = await recentTheses(date);
-  const userPrompt = buildUserPrompt(data, date, theses);
+  const userPrompt = IS_WORLD ? buildUserPromptWorld(data, date, theses) : buildUserPrompt(data, date, theses);
   await fs.mkdir(EDITORIAL_DIR, { recursive: true });
 
   if (DRY_RUN) {
-    const promptFile = path.join(EDITORIAL_DIR, `${date}.prompt.md`);
-    await fs.writeFile(promptFile, `<!-- 系统提示词 -->\n${SYSTEM_PROMPT}\n\n<!-- 用户提示词 -->\n${userPrompt}\n`, 'utf8');
-    const picked = Object.values(pickItems(data)).flat().length;
-    console.log(`\n  已导出提示词：editorial/${date}.prompt.md（未调用模型，未写入专栏）`);
+    const promptName = suffix ? `${date}.${suffix}.prompt.md` : `${date}.prompt.md`;
+    const promptFile = path.join(EDITORIAL_DIR, promptName);
+    const systemPrompt = IS_WORLD ? SYSTEM_PROMPT_WORLD : SYSTEM_PROMPT;
+    await fs.writeFile(promptFile, `<!-- 系统提示词 -->\n${systemPrompt}\n\n<!-- 用户提示词 -->\n${userPrompt}\n`, 'utf8');
+    const picked = Object.values(pickItems()).flat().length;
+    console.log(`\n  已导出提示词：editorial/${promptName}（未调用模型，未写入专栏）`);
     console.log(`  本期选入提示词的稿件 ${picked} 条，提示词约 ${Math.round(userPrompt.length / 1.5)} 字\n`);
     return;
   }
@@ -256,7 +338,7 @@ async function main() {
       // 显式关掉思考模式：默认开启时，思考会先吃掉额度，可能导致正文为空
       thinking: { type: THINKING === 'enabled' ? 'enabled' : 'disabled' },
       messages: [
-        { role: 'system', content: SYSTEM_PROMPT },
+        { role: 'system', content: IS_WORLD ? SYSTEM_PROMPT_WORLD : SYSTEM_PROMPT },
         { role: 'user', content: userPrompt },
       ],
     }),
@@ -298,14 +380,18 @@ async function main() {
 
   await fs.writeFile(outFile, `${text}\n`, 'utf8');
 
-  const missing = ['## 一、今日综述', '## 二、多角度观察', '## 三、明日观察清单', '主编按']
-    .filter((s) => !text.includes(s));
-  console.log(`  已写入 editorial/${date}.md（${text.length} 字）`);
+  // 两种专栏的体例不同，检查项也不同
+  const REQUIRED = IS_WORLD
+    ? ['## 一、境外媒体今天在讲什么', '## 二、同一件事的不同讲法', '## 三、值得单独留意的报道', '简报概要']
+    : ['## 一、今日综述', '## 二、多角度观察', '## 三、明日观察清单', '主编按'];
+  const missing = REQUIRED.filter((s) => !text.includes(s));
+  console.log(`  已写入 editorial/${outName}（${text.length} 字）`);
   await writeStatus({
     ok: true,
+    scope: SCOPE,
     chars: text.length,
     usage: json.usage || null,
-    file: `editorial/${date}.md`,
+    file: `editorial/${outName}`,
     note: '已完成',
   });
   if (missing.length) console.log(`  注意：输出缺少以下结构 ${missing.join('、')}，建议人工过一眼。`);

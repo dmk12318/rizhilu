@@ -6,6 +6,7 @@
  *   node scripts/digest.mjs 2026-09-28 20   指定日期与条数
  *   node scripts/digest.mjs --sources       附各源条目数
  *   node scripts/digest.mjs --grep=伊朗     按关键词跨板块检索（撰写专栏前核对线索）
+ *   node scripts/digest.mjs --foreign       只看境外媒体的报道（写《境外要闻》用）
  */
 
 import fs from 'node:fs/promises';
@@ -16,6 +17,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2).filter((a) => !a.startsWith('--'));
 const SHOW_SOURCES = process.argv.includes('--sources');
 const GREP = process.argv.find((a) => a.startsWith('--grep='))?.slice(7);
+const FOREIGN_ONLY = process.argv.includes('--foreign');
 
 const days = JSON.parse(await fs.readFile(path.join(ROOT, 'data', 'days.json'), 'utf8')).days;
 const date = args[0] || days[0]?.date;
@@ -26,11 +28,13 @@ if (!date) {
 }
 
 const data = JSON.parse(await fs.readFile(path.join(ROOT, 'data', 'news', `${date}.json`), 'utf8'));
+/** 加了 --foreign 就只看境外媒体的稿件 */
+const itemsOf = () => (FOREIGN_ONLY ? data.items.filter((i) => i.origin === 'overseas') : data.items);
 const fmt = (iso) => new Date(iso).toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai', hour12: false });
 
 if (GREP) {
   const hay = (it) => `${it.title} ${it.summary} ${it.source}`;
-  const hits = data.items.filter((it) => hay(it).includes(GREP));
+  const hits = itemsOf().filter((it) => hay(it).includes(GREP));
   console.log(`\n══════ ${date} 关键词「${GREP}」命中 ${hits.length} 条 ══════\n`);
   for (const it of hits) {
     console.log(`${fmt(it.published).slice(5, 16)}  [${it.category}] ${it.source}`);
@@ -42,10 +46,15 @@ if (GREP) {
 }
 
 console.log(`\n══════════ 日知录 ${date} 稿件通读 ══════════`);
-console.log(`生成 ${fmt(data.generatedAt)} · 覆盖 ${data.windowHours} 小时 · 共 ${data.stats.total} 条 · 原始 ${data.stats.rawTotal} 条\n`);
+console.log(
+  `生成 ${fmt(data.generatedAt)} · 覆盖 ${data.windowHours} 小时 · ` +
+    (FOREIGN_ONLY
+      ? `仅境外媒体 ${itemsOf().length} 条（全刊 ${data.stats.total} 条）\n`
+      : `共 ${data.stats.total} 条 · 原始 ${data.stats.rawTotal} 条\n`),
+);
 
 for (const cat of data.categories) {
-  const items = data.items.filter((i) => i.category === cat.id).slice(0, perCat);
+  const items = itemsOf().filter((i) => i.category === cat.id).slice(0, perCat);
   if (!items.length) continue;
   console.log(`\n─── ${cat.name}（${data.stats.counts[cat.id] || 0} 条）${'─'.repeat(Math.max(0, 40 - cat.name.length))}`);
   for (const it of items) {

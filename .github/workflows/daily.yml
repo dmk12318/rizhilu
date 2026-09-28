@@ -54,6 +54,15 @@ jobs:
           EDITORIAL_MODEL: ${{ vars.EDITORIAL_MODEL || vars.DAILYNEWS }}
         run: node scripts/editorial.mjs
 
+      - name: 生成境外要闻综述
+        if: ${{ github.event.inputs.skip_editorial != 'true' }}
+        continue-on-error: true
+        env:
+          EDITORIAL_API_KEY: ${{ secrets.EDITORIAL_API_KEY || secrets.DAILYNEWS }}
+          EDITORIAL_BASE_URL: ${{ vars.EDITORIAL_BASE_URL }}
+          EDITORIAL_MODEL: ${{ vars.EDITORIAL_MODEL || vars.DAILYNEWS }}
+        run: node scripts/editorial.mjs --scope=world
+
       - name: 组装站点
         run: |
           mkdir -p _site
