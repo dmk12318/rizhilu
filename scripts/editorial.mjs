@@ -10,6 +10,7 @@
  *   node scripts/editorial.mjs --dry-run        只导出提示词，不调用模型
  *   node scripts/editorial.mjs --date=2026-09-28 --items=15
  *   node scripts/editorial.mjs --force          已存在也重新写
+ *   node scripts/editorial.mjs --variant=codex  写成 <日期>.codex.md，与云端版并存
  *
  * 环境变量：
  *   EDITORIAL_API_KEY   接口密钥（也接受 OPENAI_API_KEY）
@@ -41,6 +42,10 @@ const readArg = (name, fallback) => {
 const DRY_RUN = Boolean(readArg('dry-run', false));
 const FORCE = Boolean(readArg('force', false));
 const PER_CATEGORY = Number(readArg('items', 12));
+// 专栏允许两个版本并存：cloud 写 <日期>.md，其余变体写 <日期>.<变体>.md
+const VARIANT = String(readArg('variant', process.env.EDITORIAL_VARIANT || 'cloud')).toLowerCase();
+const IS_CLOUD = VARIANT === 'cloud';
+const EDITOR_NAME = IS_CLOUD ? '云端主编' : (process.env.EDITORIAL_EDITOR_NAME || 'Codex');
 const API_KEY = process.env.EDITORIAL_API_KEY || process.env.OPENAI_API_KEY || '';
 const BASE_URL = (process.env.EDITORIAL_BASE_URL || process.env.OPENAI_BASE_URL || 'https://api.deepseek.com').replace(/\/+$/, '');
 const MODEL = process.env.EDITORIAL_MODEL || 'deepseek-flash';
@@ -60,6 +65,7 @@ let currentDate = null;
  * 不必再去 Actions 页翻折叠日志。
  */
 async function writeStatus(payload) {
+  if (!IS_CLOUD) return;   // 状态文件只记录云端那一版，本地版不掺和
   try {
     await fs.mkdir(DATA_DIR, { recursive: true });
     await fs.writeFile(
@@ -162,7 +168,7 @@ function buildUserPrompt(data, date, theses) {
   lines.push('请按下面的体例撰写今天的专栏，直接输出 Markdown，不要用代码块包裹：');
   lines.push('');
   lines.push('---');
-  lines.push('editor: 云端主编');
+  lines.push(`editor: ${EDITOR_NAME}`);
   lines.push(`updated: ${date} 08:00`);
   lines.push('---');
   lines.push('');
@@ -190,7 +196,7 @@ function buildUserPrompt(data, date, theses) {
   lines.push('');
   lines.push('---');
   lines.push('');
-  lines.push(`*本专栏由云端主编基于当日抓取的 ${data.stats.total} 条公开报道自动撰写，仅供参考，不构成投资建议。*`);
+  lines.push(`*本专栏由${EDITOR_NAME}基于当日抓取的 ${data.stats.total} 条公开报道自动撰写，仅供参考，不构成投资建议。*`);
   return lines.join('\n');
 }
 
@@ -208,7 +214,7 @@ async function main() {
   const date = await latestDate();
   currentDate = date;
   const data = JSON.parse(await fs.readFile(path.join(NEWS_DIR, `${date}.json`), 'utf8'));
-  const outFile = path.join(EDITORIAL_DIR, `${date}.md`);
+  const outFile = path.join(EDITORIAL_DIR, IS_CLOUD ? `${date}.md` : `${date}.${VARIANT}.md`);
 
   if (!FORCE && !DRY_RUN) {
     const exists = await fs.access(outFile).then(() => true).catch(() => false);

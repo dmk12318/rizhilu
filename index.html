@@ -22,10 +22,9 @@
     <div class="masthead__tools">
       <div class="datenav" role="group" aria-label="切换日期">
         <button class="iconbtn" id="prevDay" title="前一天（←）" aria-label="前一天">‹</button>
-        <button class="datenav__current" id="dateLabel" title="回到最新一期">
-          <span id="dateMain">——</span><span class="datenav__sub" id="dateSub"></span>
-        </button>
+        <select class="datenav__select" id="datePick" aria-label="选择某一期" title="跳到某一期"></select>
         <button class="iconbtn" id="nextDay" title="后一天（→）" aria-label="后一天">›</button>
+        <button class="iconbtn datenav__latest" id="backLatest" title="回到最新一期" aria-label="回到最新一期" hidden>⤒</button>
       </div>
 
       <label class="search">
@@ -47,13 +46,7 @@
 
 <main class="page">
 
-  <section class="editorial" id="editorialSection" hidden>
-    <div class="editorial__head">
-      <span class="editorial__badge">主编专栏</span>
-      <span class="editorial__meta" id="editorialMeta"></span>
-    </div>
-    <article class="editorial__body prose" id="editorialBody"></article>
-  </section>
+  <div id="editorialWrap"></div>
 
   <section class="briefing" id="briefingSection" hidden>
     <div class="briefing__head">

@@ -14,6 +14,7 @@ const state = {
   days: [],
   date: null,
   data: null,
+  editorials: [],
   cat: 'all',
   q: '',
   filters: { unread: false, fav: false, zh: false },
@@ -228,15 +229,47 @@ async function loadDate(date) {
 }
 
 async function loadEditorial(date) {
-  try {
-    const res = await fetch(`editorial/${date}.md`);
-    if (!res.ok) throw new Error('not found');
-    const md = await res.text();
-    const { meta, body } = parseFrontMatter(md);
-    state.editorial = { meta, html: renderMarkdown(body) };
-  } catch {
-    state.editorial = null;
+  // 一天可以有两版专栏并存：云端模型写的 <日期>.md，本地主编精修的 <日期>.codex.md
+  const SOURCES = [
+    { key: 'codex', path: `editorial/${date}.codex.md` },
+    { key: 'cloud', path: `editorial/${date}.md` },
+  ];
+  const found = [];
+  for (const src of SOURCES) {
+    try {
+      const res = await fetch(src.path);
+      if (!res.ok) continue;
+      const md = await res.text();
+      const { meta, body } = parseFrontMatter(md);
+      const html = renderMarkdown(body);
+      const titleMatch = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
+      const editor = meta.editor || (src.key === 'cloud' ? '云端主编' : 'Codex');
+      found.push({
+        key: src.key,
+        editor,
+        label: /codex/i.test(editor) ? '主编精修' : '云端版',
+        updated: meta.updated || '',
+        title: titleMatch ? titleMatch[1].trim() : '',
+        html: titleMatch ? html.replace(titleMatch[0], '') : html,
+      });
+    } catch {
+      /* 这一版不存在，跳过 */
+    }
   }
+  state.editorials = found;
+}
+
+/* 折叠状态存在本地：哪个版本收起来，下次打开还是收起来 */
+function loadCollapseState() {
+  try {
+    return JSON.parse(localStorage.getItem('rzl:collapse') || '{}');
+  } catch {
+    return {};
+  }
+}
+
+function saveCollapseState(next) {
+  localStorage.setItem('rzl:collapse', JSON.stringify(next));
 }
 
 /* -------------------------------------------------- 今日速览（自动要目） */
@@ -348,16 +381,21 @@ function render() {
 }
 
 function renderMasthead() {
-  const d = state.days.find((x) => x.date === state.date);
-  const [y, m, dd] = state.date.split('-');
-  const weekday = new Date(`${state.date}T12:00:00+08:00`)
-    .toLocaleDateString('zh-CN', { timeZone: TZ, weekday: 'long' });
-  el('dateMain').textContent = `${Number(m)} 月 ${Number(dd)} 日 · ${weekday}`;
-  el('dateSub').textContent = d ? `${d.total} 条 · ${y} 年` : y;
-
   const idx = state.days.findIndex((x) => x.date === state.date);
+
+  // 期数下拉框：历史每一期都能直接跳过去
+  const pick = el('datePick');
+  pick.innerHTML = state.days.map((d) => {
+    const [, m, dd] = d.date.split('-');
+    const weekday = new Date(`${d.date}T12:00:00+08:00`)
+      .toLocaleDateString('zh-CN', { timeZone: TZ, weekday: 'short' });
+    return `<option value="${d.date}">${Number(m)} 月 ${Number(dd)} 日 ${weekday} · ${d.total} 条</option>`;
+  }).join('');
+  pick.value = state.date;
+
   el('prevDay').disabled = idx >= state.days.length - 1;
   el('nextDay').disabled = idx <= 0;
+  el('backLatest').hidden = idx <= 0;
 }
 
 function renderTabs() {
@@ -381,22 +419,38 @@ function renderTabs() {
 }
 
 function renderEditorial() {
-  const section = el('editorialSection');
-  if (!state.editorial) {
-    section.hidden = false;
-    el('editorialMeta').textContent = '待撰写';
-    el('editorialBody').innerHTML = `<h1>主编专栏</h1>
-      <blockquote><p>本期的专栏还没有写。抓取只是把当天的原料摆上桌，真正把原料变成判断的那一步，由主编完成。</p></blockquote>
-      <p>在项目里新建 <code>editorial/${state.date}.md</code>，写下当天的综述、多角度观察与观察清单，刷新页面即可看到。</p>`;
+  const wrap = el('editorialWrap');
+  const list = state.editorials || [];
+  const saved = loadCollapseState();
+
+  if (!list.length) {
+    wrap.innerHTML = `<section class="editorial" data-collapsed="false">
+      <div class="editorial__head" role="note">
+        <span class="editorial__badge">待撰写</span>
+        <span class="editorial__meta">这一期还没有专栏</span>
+      </div>
+      <article class="editorial__body prose">
+        <h1>主编专栏</h1>
+        <blockquote><p>本期的专栏还没有写。抓取只是把当天的原料摆上桌，真正把原料变成判断的那一步，由主编完成。</p></blockquote>
+        <p>云端会写入 <code>editorial/${state.date}.md</code>，电脑开着时主编精修会另存为 <code>editorial/${state.date}.codex.md</code>，两版都会保留。</p>
+      </article>
+    </section>`;
     return;
   }
-  section.hidden = false;
-  const { meta, html } = state.editorial;
-  const bits = [];
-  if (meta.editor) bits.push(`主编：${meta.editor}`);
-  if (meta.updated) bits.push(meta.updated);
-  el('editorialMeta').textContent = bits.join(' · ');
-  el('editorialBody').innerHTML = html;
+
+  wrap.innerHTML = list.map((item, index) => {
+    // 默认只展开第一版（通常是精修版），其余收起来，方便往下翻新闻
+    const collapsed = item.key in saved ? saved[item.key] : index > 0;
+    return `<section class="editorial" data-variant="${item.key}" data-collapsed="${collapsed}" style="--cat:${item.key === 'codex' ? 'var(--accent)' : '#1f5fbf'}">
+      <button class="editorial__head" type="button" aria-expanded="${!collapsed}">
+        <span class="editorial__badge">${escapeHtml(item.label)}</span>
+        <span class="editorial__meta">主编：${escapeHtml(item.editor)}${item.updated ? ` · ${escapeHtml(item.updated)}` : ''}</span>
+        <span class="editorial__toggle">${collapsed ? '展开 ▾' : '收起 ▴'}</span>
+      </button>
+      ${item.title ? `<h2 class="editorial__title">${item.title}</h2>` : ''}
+      <article class="editorial__body prose">${item.html}</article>
+    </section>`;
+  }).join('');
 }
 
 function renderBriefing() {
@@ -512,8 +566,27 @@ function goto(offset) {
 function bind() {
   el('prevDay').addEventListener('click', () => goto(1));   // days 按时间倒序
   el('nextDay').addEventListener('click', () => goto(-1));
-  el('dateLabel').addEventListener('click', () => loadDate(state.days[0].date));
+  el('datePick').addEventListener('change', (e) => {
+    if (e.target.value && e.target.value !== state.date) loadDate(e.target.value);
+  });
+  el('backLatest').addEventListener('click', () => loadDate(state.days[0].date));
   el('brandHome').addEventListener('click', (e) => { e.preventDefault(); loadDate(state.days[0].date); });
+
+  // 专栏折叠：点标题栏或大标题都能收放，状态记在本地
+  el('editorialWrap').addEventListener('click', (e) => {
+    const hit = e.target.closest('.editorial__head') || e.target.closest('.editorial__title');
+    if (!hit) return;
+    const section = hit.closest('.editorial');
+    if (!section) return;
+    const next = section.dataset.collapsed !== 'true';
+    section.dataset.collapsed = String(next);
+    section.querySelector('.editorial__head')?.setAttribute('aria-expanded', String(!next));
+    const toggle = section.querySelector('.editorial__toggle');
+    if (toggle) toggle.textContent = next ? '展开 ▾' : '收起 ▴';
+    const saved = loadCollapseState();
+    saved[section.dataset.variant] = next;
+    saveCollapseState(saved);
+  });
 
   el('tabs').addEventListener('click', (e) => {
     const btn = e.target.closest('.tab');

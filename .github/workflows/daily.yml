@@ -30,7 +30,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NEWS_RETENTION_DAYS: "30"   # 云端只留 30 天，控制仓库体积
+      NEWS_RETENTION_DAYS: "60"   # 云端保留 60 天，方便往前翻；改大这个数会让仓库变大
       # GitHub 的服务器在境外，不需要任何代理，直接放开全部 107 个源
       NEWS_OVERSEAS: "on"
     steps:
