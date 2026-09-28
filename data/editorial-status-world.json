@@ -1,20 +1,8 @@
 {
   "date": "2026-09-29",
   "model": "deepseek-flash",
-  "at": "2026-09-28T16:09:36.941Z",
+  "at": "2026-09-28T16:14:24.814Z",
   "ok": true,
-  "scope": "world",
-  "chars": 3040,
-  "usage": {
-    "prompt_tokens": 6684,
-    "completion_tokens": 1846,
-    "total_tokens": 8530,
-    "prompt_tokens_details": {
-      "cached_tokens": 0
-    },
-    "prompt_cache_hit_tokens": 0,
-    "prompt_cache_miss_tokens": 6684
-  },
-  "file": "editorial/2026-09-29.world.md",
-  "note": "已完成"
+  "status": "kept-existing",
+  "note": "专栏已存在，保留原稿未覆盖"
 }

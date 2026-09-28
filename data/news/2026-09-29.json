@@ -1,6 +1,6 @@
 {
  "date": "2026-09-29",
- "generatedAt": "2026-09-28T16:08:59.203Z",
+ "generatedAt": "2026-09-28T16:14:08.702Z",
  "windowHours": 24,
  "timezone": "Asia/Shanghai",
  "categories": [
@@ -48,38 +48,42 @@
   }
  ],
  "stats": {
-  "total": 791,
-  "rawTotal": 840,
+  "total": 800,
+  "rawTotal": 849,
   "sourcesConfigured": 107,
   "sourcesActive": 107,
   "sourcesSkipped": 0,
   "overseas": "on",
-  "sourcesOk": 102,
-  "sourcesFailed": 5,
+  "sourcesOk": 104,
+  "sourcesFailed": 3,
   "counts": {
-   "tech": 135,
+   "tech": 140,
    "world": 295,
+   "culture": 60,
    "business": 124,
-   "culture": 59,
    "top": 128,
-   "military": 16,
+   "military": 19,
    "society": 34
   },
   "bySource": {
    "InfoQ中文": 7,
+   "BBC World": 10,
+   "The Paris Review": 1,
+   "Le Monde": 10,
+   "TASS": 15,
+   "The Straits Times": 8,
    "Meduza": 7,
    "NYT World": 12,
    "CNBC": 18,
-   "TASS": 15,
+   "Al Jazeera": 12,
    "MarketWatch": 10,
    "Nautilus": 3,
    "IT之家": 25,
-   "The Straits Times": 8,
    "中国新闻网": 29,
    "The Guardian": 5,
+   "Hacker News": 15,
    "CBS News": 12,
    "南华早报": 11,
-   "The Hill": 15,
    "Anadolu Agency": 15,
    "CNA": 8,
    "澎湃新闻": 17,
@@ -89,20 +93,18 @@
    "The Verge": 10,
    "France 24": 19,
    "Yonhap": 9,
-   "Al Jazeera": 12,
+   "The Hill": 15,
    "Smithsonian": 3,
-   "Hacker News": 15,
    "TechCrunch": 15,
    "The Moscow Times": 7,
    "RFI English": 7,
-   "Le Monde": 10,
    "法国国际广播电台": 12,
    "经济观察网": 6,
    "Kyiv Post": 10,
    "Euronews": 8,
    "Defense News": 3,
    "华尔街见闻": 20,
-   "BBC World": 10,
+   "Breaking Defense": 3,
    "东方财富": 18,
    "Al-Monitor": 6,
    "Army Times": 3,
@@ -155,6 +157,7 @@
    "Foreign Affairs": 2,
    "The Diplomat": 2,
    "纽约时报中文网": 6,
+   "Nature": 5,
    "Air & Space Forces": 1
   }
  },
@@ -232,6 +235,66 @@
    "published": "2026-09-28T18:23:47.000Z"
   },
   {
+   "id": "e32b9cb18156",
+   "title": "Four bodies found after avalanche hits Himalayan climbing group",
+   "summary": "Rescuers are still looking for 12 Nepalese cook staff who were preparing for climbers to ascend the Himlung Himal peak.",
+   "link": "https://www.bbc.co.uk/news/articles/cwjdvml9e897o?at_medium=RSS&at_campaign=rss",
+   "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b2f6/live/f8a40890-ba6c-11f1-a109-c7409015a263.jpg",
+   "source": "BBC World",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T16:13:44.000Z"
+  },
+  {
+   "id": "7877373ba4dc",
+   "title": "And Then Somebody Handed Me a Story: Gary Indiana, Unlocked",
+   "summary": "This week, we’ve unlocked Gary Indiana’s Art of Fiction from the archive.",
+   "link": "https://www.theparisreview.org/blog/2026/09/28/and-then-somebody-handed-me-a-story-gary-indiana-unlocked/",
+   "image": "https://www.theparisreview.org/blog/wp-content/uploads/2026/09/unnamed-file-300x200.png",
+   "source": "The Paris Review",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T16:10:29.000Z"
+  },
+  {
+   "id": "46066c431dbd",
+   "title": "FIFA forgot about car it had made available to French football boss Le Graët",
+   "summary": "Last spring, FIFA sought to recover a vehicle it had made available to the former head of the French Football Federation, Noël Le Graët, for his visits to Paris.",
+   "link": "https://www.lemonde.fr/en/sports/article/2026/09/28/fifa-forgot-about-car-it-had-made-available-to-french-football-boss-le-graet_6758046_9.html",
+   "image": "https://img.lemde.fr/2026/09/27/344/0/3500/1750/644/322/60/0/bf361e6_upload-1-urstdduookzl-000-332u933.jpg",
+   "source": "Le Monde",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T16:09:26.000Z"
+  },
+  {
+   "id": "79cffd990b21",
+   "title": "Jordan demands that Israel respect sanctity of Al-Aqsa Mosque in Jerusalem",
+   "summary": "Foreign Ministry Spokesman Fuad Majali said Jordan insists that all measures restricting access for Muslim worshippers be cancelled",
+   "link": "https://tass.com/world/2194075",
+   "image": "",
+   "source": "TASS",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T16:09:20.000Z"
+  },
+  {
+   "id": "13908a401162",
+   "title": "Italy's Meloni passes by-election test against new far-right rival",
+   "summary": "ROME, Sept 28 - Italy's ruling coalition won a closely watched by-election in the southern region of Calabria on Monday, the first major test for Prime Minister Giorgia Meloni against a new far-right foe ahead of a general election due next year.",
+   "link": "https://www.straitstimes.com/world/europe/italys-meloni-passes-by-election-test-against-new-far-right-rival",
+   "image": "",
+   "source": "The Straits Times",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T16:07:34.000Z"
+  },
+  {
    "id": "5b5347efcc14",
    "title": "Bloomberg: Hungary’s OTP Bank considers a full Russia exit as regulators review its purchase of Baltic lender Luminor",
    "summary": "Hungary’s OTP Bank is considering a complete exit from Russia, Bloomberg reported. The bank has continued operating there since Russia’s full-scale invasion of Ukraine, but its Russian business could hinder approval of its planned purchase of Baltic lender Luminor Bank.",
@@ -290,6 +353,18 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-28T16:01:03.000Z"
+  },
+  {
+   "id": "cfd53d0b61dd",
+   "title": "LIVE: Belgium vs France – Nations League",
+   "summary": "Follow updates from the Group A1 Nations League clash, including the build-up, analysis and live text commentary.",
+   "link": "https://www.aljazeera.com/sports/liveblog/2026/9/28/live-belgium-vs-france-nations-league?traffic_source=rss",
+   "image": "",
+   "source": "Al Jazeera",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T16:00:25.000Z"
   },
   {
    "id": "eea885da86bb",
@@ -382,6 +457,18 @@
    "published": "2026-09-28T15:54:25.000Z"
   },
   {
+   "id": "8e9179f635f5",
+   "title": "Pirating the Pirates",
+   "summary": "Article URL: https://mubi.com/en/notebook/posts/pirating-the-pirates Comments URL: https://news.ycombinator.com/item?id=49880036 Points: 6 # Comments: 1",
+   "link": "https://mubi.com/en/notebook/posts/pirating-the-pirates",
+   "image": "",
+   "source": "Hacker News",
+   "category": "tech",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T15:54:15.000Z"
+  },
+  {
    "id": "3a8d4f56f9ac",
    "title": "王毅会见日本国际贸易促进协会会长岩屋毅",
    "summary": "2026年9月28日，中共中央政治局委员、中央外办主任王毅在北京会见日本国际贸易促进协会会长岩屋毅。",
@@ -423,6 +510,18 @@
    "published": "2026-09-28T15:53:00.000Z"
   },
   {
+   "id": "415b1281e030",
+   "title": "US deportations 'triggering cascade' of rights abuses, say UN experts",
+   "summary": "Since US President Donald Trump took office in January 2025, Washington has been signing deals with developing countries to take migrants who cannot legally be sent home.",
+   "link": "https://www.lemonde.fr/en/international/article/2026/09/28/us-deportations-triggering-cascade-of-rights-abuses-say-un-experts_6758045_4.html",
+   "image": "https://img.lemde.fr/2026/09/22/541/0/6500/3250/644/322/60/0/1fd6d0f_ftp-1-ktw8sim4thr3-5149292-01-06.jpg",
+   "source": "Le Monde",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T15:52:59.000Z"
+  },
+  {
    "id": "9b1217fbe79b",
    "title": "South Korea demands an apology from Ukraine for disclosing the secret transfer of two North Korean prisoners",
    "summary": "South Korea’s presidential office demanded that Ukraine apologize for disclosing the transfer of two North Korean prisoners to Seoul. In a statement quoted by Reuters, the office also accused Ukraine of falsely claiming that “there had not been a non-disclosure agreement.”",
@@ -433,18 +532,6 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-28T15:51:54.000Z"
-  },
-  {
-   "id": "aaea1ce8850c",
-   "title": "What will winter be like near you? Here's what the outlooks suggest",
-   "summary": "Will you need a parka and a shovel or an umbrella and a sweater this winter?",
-   "link": "https://thehill.com/homenews/state-watch/6115182-what-will-winter-be-like-near-you-heres-what-the-outlooks-suggest/",
-   "image": "https://thehill.com/wp-content/uploads/sites/2/2026/05/AP110201133946.jpg?w=884",
-   "source": "The Hill",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T15:50:14.000Z"
   },
   {
    "id": "9b525f879bc1",
@@ -517,6 +604,18 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-28T15:46:47.000Z"
+  },
+  {
+   "id": "cab0a2fc5a58",
+   "title": "Nvidia wants to put a watchdog chip next to every AI agent",
+   "summary": "Article URL: https://madrobot.blog/2026/09/28/nvidia-open-agent-safety-platform-openshell-sentry-rogue-ai-agents/ Comments URL: https://news.ycombinator.com/item?id=49879883 Points: 12 # Comments: 15",
+   "link": "https://madrobot.blog/2026/09/28/nvidia-open-agent-safety-platform-openshell-sentry-rogue-ai-agents/",
+   "image": "",
+   "source": "Hacker News",
+   "category": "tech",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T15:46:36.000Z"
   },
   {
    "id": "e1d07ebeddbe",
@@ -644,7 +743,7 @@
   {
    "id": "27d822cac4e0",
    "title": "GOP chair of Georgia Peanut Commission backs Ossoff for Senate",
-   "summary": "The Republican chair of the Georgia Peanut Commission is backing Democratic Sen. Jon Ossoff (Ga.) in his bid for a second full term. “We don’t necessarily elect a party,” commission Chair Donald Chase told The Atlanta Journal-Constitution. “I like to support people that I can get behind and believe in.” Chase, whom board members elected...",
+   "summary": "The Republican chair of the Georgia Peanut Commission is backing Democratic Sen. Jon Ossoff (Ga.) in his bid for a second full term. “We don’t necessarily elect a party,” commission Chair Donald Chase told The Atlanta Journal-Constitution (AJC). “I like to support people that I can get behind and believe in.” Chase, whom board members...",
    "link": "https://thehill.com/homenews/campaign/6115282-republican-peanut-commission-chair-backs-ossoff/",
    "image": "https://thehill.com/wp-content/uploads/sites/2/2026/07/ossoffjon_072126gn02_w.jpg?w=900",
    "source": "The Hill",
@@ -692,7 +791,7 @@
   {
    "id": "8fc93a7c45d3",
    "title": "Kids turned low-traffic NPR Spotify comments into a secret group chat",
-   "summary": "Article URL: https://www.thisamericanlife.org/897/transcript Comments URL: https://news.ycombinator.com/item?id=49879697 Points: 16 # Comments: 1",
+   "summary": "Article URL: https://www.thisamericanlife.org/897/transcript Comments URL: https://news.ycombinator.com/item?id=49879697 Points: 39 # Comments: 14",
    "link": "https://www.thisamericanlife.org/897/transcript",
    "image": "",
    "source": "Hacker News",
@@ -1752,6 +1851,18 @@
    "published": "2026-09-28T14:56:53.000Z"
   },
   {
+   "id": "73931b5119e9",
+   "title": "If Washington is going to be a shareholder, it should act like one",
+   "summary": "As governments increasingly seek to broaden industrial advantages, if the US is going to follow suit, its justifications should be clear, exceptional and subject to consistent rules, two advisors argue.",
+   "link": "https://breakingdefense.com/2026/09/if-washington-is-going-to-be-a-shareholder-it-should-act-like-one/",
+   "image": "https://breakingdefense.com/wp-content/uploads/sites/13/2026/07/GettyImages-2270759445-e1784823974895.jpg",
+   "source": "Breaking Defense",
+   "category": "military",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T14:56:12.000Z"
+  },
+  {
    "id": "85e165a1568b",
    "title": "全国政协办公厅、中共中央统战部、国务院侨办、国务院港澳办、国务院台办、中国侨联联合举行国庆招待会 王沪宁致辞",
    "summary": "",
@@ -1857,7 +1968,7 @@
   {
    "id": "96bce171c40e",
    "title": "MongoDB CEO resigns \"effective immediately\" to join Meta, stock drops 20%",
-   "summary": "Article URL: https://www.reuters.com/technology/mongodb-ceo-desai-steps-down-lead-metas-enterprise-platform-2026-09-28/ Comments URL: https://news.ycombinator.com/item?id=49879000 Points: 60 # Comments: 56",
+   "summary": "Article URL: https://www.reuters.com/technology/mongodb-ceo-desai-steps-down-lead-metas-enterprise-platform-2026-09-28/ Comments URL: https://news.ycombinator.com/item?id=49879000 Points: 73 # Comments: 75",
    "link": "https://www.reuters.com/technology/mongodb-ceo-desai-steps-down-lead-metas-enterprise-platform-2026-09-28/",
    "image": "",
    "source": "Hacker News",
@@ -1999,21 +2110,9 @@
    "published": "2026-09-28T14:49:21.000Z"
   },
   {
-   "id": "4bc7c3936145",
-   "title": "Putin extends Dmitriev’s term as head of Russia’s sovereign wealth fund for five years",
-   "summary": "The decree takes effect on January 17, 2027",
-   "link": "https://tass.com/politics/2194031",
-   "image": "",
-   "source": "TASS",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T14:48:51.000Z"
-  },
-  {
    "id": "5a3948b59208",
    "title": "What Heraldry and Mon Can Teach Us About Building Visual-Identity Generators",
-   "summary": "Article URL: https://benovermyer.com/blog/2026/09/japanese-vs-western-heraldry/ Comments URL: https://news.ycombinator.com/item?id=49878900 Points: 14 # Comments: 3",
+   "summary": "Article URL: https://benovermyer.com/blog/2026/09/japanese-vs-western-heraldry/ Comments URL: https://news.ycombinator.com/item?id=49878900 Points: 16 # Comments: 5",
    "link": "https://benovermyer.com/blog/2026/09/japanese-vs-western-heraldry/",
    "image": "",
    "source": "Hacker News",
@@ -2252,6 +2351,18 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-28T14:40:57.000Z"
+  },
+  {
+   "id": "f39bd57ae620",
+   "title": "I Switched to Brave Browser",
+   "summary": "Article URL: https://kevquirk.com/i-switched-to-brave-browser Comments URL: https://news.ycombinator.com/item?id=49878759 Points: 27 # Comments: 24",
+   "link": "https://kevquirk.com/i-switched-to-brave-browser",
+   "image": "",
+   "source": "Hacker News",
+   "category": "tech",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T14:40:43.000Z"
   },
   {
    "id": "198c7ff64486",
@@ -2903,6 +3014,32 @@
    "published": "2026-09-28T14:14:18.000Z"
   },
   {
+   "id": "272b6062f45b",
+   "title": "Japan aims to develop 'next-gen' iPS cells for strokes and kidney failure",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/science/japan-aims-to-develop-next-gen-ips-cells-for-strokes-and-kidney-failure",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T14:14:08.702Z"
+  },
+  {
+   "id": "bcc6054aa4c2",
+   "title": "Egomaniacs, psychos, and informants. Why is it we look past all sorts of ugliness and insist on mythologizing revolutionaries?",
+   "summary": "",
+   "link": "https://theamericanscholar.org/the-allure-of-eden-on-earth/",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T14:14:08.702Z"
+  },
+  {
    "id": "33c14140d053",
    "title": "Army leaders wary of ‘data fatigue’ as fitness management system rolls out",
    "summary": "The H2F Management System is designed to provide soldiers, leaders and human performance staff with “data-driven insights.\"",
@@ -2997,32 +3134,6 @@
    "lang": "zh",
    "origin": "cn",
    "published": "2026-09-28T14:09:25.000Z"
-  },
-  {
-   "id": "ef9186009fc9",
-   "title": "North Korean POWs arrive in South Korea from Ukraine: local media",
-   "summary": "",
-   "link": "https://asia.nikkei.com/politics/international-relations/north-korean-pows-arrive-in-south-korea-from-ukraine-local-media",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T14:08:59.203Z"
-  },
-  {
-   "id": "bcc6054aa4c2",
-   "title": "Egomaniacs, psychos, and informants. Why is it we look past all sorts of ugliness and insist on mythologizing revolutionaries?",
-   "summary": "",
-   "link": "https://theamericanscholar.org/the-allure-of-eden-on-earth/",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T14:08:59.203Z"
   },
   {
    "id": "772f5717e611",
@@ -3403,18 +3514,6 @@
    "published": "2026-09-28T13:58:10.000Z"
   },
   {
-   "id": "8ee9c2c25a81",
-   "title": "Kyiv Science Academy hit as Russian jet-drones strike across Ukraine",
-   "summary": "KYIV, Sept 28 - At least one person was killed when a drone hit the National Academy of Sciences in central Kyiv on Monday, as Russia pounded the centre of the Ukrainian capital.",
-   "link": "https://www.straitstimes.com/world/europe/kyiv-science-academy-hit-as-russian-jet-drones-strike-across-ukraine",
-   "image": "",
-   "source": "The Straits Times",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T13:57:54.000Z"
-  },
-  {
    "id": "88c74e7cb228",
    "title": "Pope wraps up France trip with most overtly political message of trip",
    "summary": "Pope Leo XIV urged Europe on Monday to draw from its Christian roots and traditions of dialogue to blunt the “desire for domination” driving today's wars, as he wrapped up a visit to France by recalling the forces that contributed to the continent's peaceful integration and made his post overtly political message of his trip.",
@@ -3547,6 +3646,32 @@
    "published": "2026-09-28T13:54:27.000Z"
   },
   {
+   "id": "ef9186009fc9",
+   "title": "North Korean POWs arrive in South Korea from Ukraine: local media",
+   "summary": "",
+   "link": "https://asia.nikkei.com/politics/international-relations/north-korean-pows-arrive-in-south-korea-from-ukraine-local-media",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T13:54:08.702Z"
+  },
+  {
+   "id": "87d36b57b245",
+   "title": "As an AI-generated sameness permeates “creative” work and the knowledge economy, we’re entering an era of bleh",
+   "summary": "",
+   "link": "https://www.noemamag.com/now-entering-the-era-of-bleh",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T13:54:08.702Z"
+  },
+  {
    "id": "60fcd6ee6c74",
    "title": "小米 18 标准版手机配置曝光：6.4 英寸 1.5K 直屏、骁龙 8E6 芯片",
    "summary": "IT之家 9 月 28 日消息，据微博博主 @熊猫很禿然 今日透露，小米 18 标准版预计将搭载 6.4 英寸 1.5K M11 直屏， 预计 12 月左右发布 。 据介绍， 这款手机将搭载骁龙 8 Elite Gen 6 芯片 ，配备 7200mAh 电池，支持 100W 有线充电，以及无线充电。拥有 2 亿像素 1/1.28 英寸主摄、5000 万像素超广角，以及 2 亿像素 3 倍长焦。 据IT之家此前报道 ，一款型号为 M261DB 的小米新机于 9 月 23 日通过工信部无线电核准，预计为小米 18 标准版。此前有网友在微博询问小米集团合伙人、总裁 @卢伟冰 有关小米 18 标准版的消息，卢伟冰回复称：有的，后面会单独发。",
@@ -3585,7 +3710,7 @@
   {
    "id": "d941af280489",
    "title": "Coding Is Not Solved",
-   "summary": "Article URL: https://blog.alexewerlof.com/p/coding-is-not-solved Comments URL: https://news.ycombinator.com/item?id=49877988 Points: 195 # Comments: 188",
+   "summary": "Article URL: https://blog.alexewerlof.com/p/coding-is-not-solved Comments URL: https://news.ycombinator.com/item?id=49877988 Points: 230 # Comments: 221",
    "link": "https://blog.alexewerlof.com/p/coding-is-not-solved",
    "image": "",
    "source": "Hacker News",
@@ -3677,32 +3802,6 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-28T13:49:16.000Z"
-  },
-  {
-   "id": "27d8ff187b15",
-   "title": "Sony Group to skip 2027 CES trade show after 6 decades",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/companies/sony-group-to-skip-2027-ces-trade-show-after-6-decades",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T13:48:59.203Z"
-  },
-  {
-   "id": "87d36b57b245",
-   "title": "As an AI-generated sameness permeates “creative” work and the knowledge economy, we’re entering an era of bleh",
-   "summary": "",
-   "link": "https://www.noemamag.com/now-entering-the-era-of-bleh",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T13:48:59.203Z"
   },
   {
    "id": "89557ddb8731",
@@ -4041,6 +4140,32 @@
    "published": "2026-09-28T13:34:54.000Z"
   },
   {
+   "id": "27d8ff187b15",
+   "title": "Sony Group to skip 2027 CES trade show after 6 decades",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/companies/sony-group-to-skip-2027-ces-trade-show-after-6-decades",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T13:34:08.702Z"
+  },
+  {
+   "id": "1dcacb3cd2f3",
+   "title": "There are to be “no jesters, no dogs, no weapons, or any such silliness.” Or so the Renaissance painter Paolo Veronese was told by an Inquisitor",
+   "summary": "",
+   "link": "https://publicdomainreview.org/essay/veroneses-dogs/",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T13:34:08.702Z"
+  },
+  {
    "id": "39f8c48d2abc",
    "title": "伊朗局势恶化，美股指低开，10年期美债收益率创2007年来最高水平，油价涨幅收窄，贵金属全线承压",
    "summary": "特朗普周末拒绝伊朗重开霍尔木兹海峡的最新提案，伊朗外长阿拉格齐表示“已为战事重开做好准备”，这令上周五市场因外交谈判预期升温而积累的涨幅几乎全数回吐。油价上涨，通胀压力升温预期再度压制债市，亚太股市普遍走低，美股同步下跌。 周一，美股三大股指集体低开，道指跌0.64%，标普500指数跌0.43%，纳指跌0.47%。英伟达涨超2%，公司宣布将股票回购授权规模增加1500亿美元。SpaceX小幅高开，星舰首次实施入轨点火并成功进入地球轨道。MongoDB下跌26%，因CEO辞职加入Meta。 国际油价涨幅缩小，WTI原油涨幅收窄至近2%，报94.2美元/桶，此前一度涨超4%；布伦特原油涨超1.2%，报98.96美元/桶。现货黄金失守4150美元/盎司，日内跌超3%，现货白银日内跌幅达5%逼近60美元/盎司关口。 地缘方面，据 新华社 援引伊朗媒体27日报道，伊朗外长阿拉格齐表示，伊朗已做好与美",
@@ -4125,6 +4250,18 @@
    "published": "2026-09-28T13:30:27.000Z"
   },
   {
+   "id": "6221c02fd05a",
+   "title": "The legacy of Clarence Thomas will be declining trust in the Supreme Court",
+   "summary": "Supreme Court Justice Clarence Thomas faces a complicated historical legacy marked by record declines in public trust in the judiciary.",
+   "link": "https://thehill.com/opinion/judiciary/supreme-court/6114201-thomas-supreme-court-legacy/",
+   "image": "https://thehill.com/wp-content/uploads/sites/2/2026/09/AP26142583602841.jpg?w=900",
+   "source": "The Hill",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T13:30:00.000Z"
+  },
+  {
    "id": "b8609076f2a0",
    "title": "Strong AI demand prompts Hong Kong trade body to raise export growth forecast",
    "summary": "Stronger-than-expected global demand for artificial intelligence-related products has prompted the Trade Development Council to sharply raise its full-year forecast for Hong Kong export growth in 2026 to as much as 47 per cent. The latest revision follows the council in June raising its midyear forecast to 20 per cent growth, from an earlier estimate of 8 to 9 per cent. Its latest survey of the ci",
@@ -4135,32 +4272,6 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-28T13:29:29.000Z"
-  },
-  {
-   "id": "94c57192b52e",
-   "title": "NTT, SoftBank eye AI cybersecurity systems that keep data in Japan",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/technology/artificial-intelligence/ntt-softbank-eye-ai-cybersecurity-systems-that-keep-data-in-japan",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T13:28:59.203Z"
-  },
-  {
-   "id": "1dcacb3cd2f3",
-   "title": "There are to be “no jesters, no dogs, no weapons, or any such silliness.” Or so the Renaissance painter Paolo Veronese was told by an Inquisitor",
-   "summary": "",
-   "link": "https://publicdomainreview.org/essay/veroneses-dogs/",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T13:28:59.203Z"
   },
   {
    "id": "56049c6c7c12",
@@ -4281,6 +4392,18 @@
    "lang": "zh",
    "origin": "cn",
    "published": "2026-09-28T13:23:15.000Z"
+  },
+  {
+   "id": "41a9130bf117",
+   "title": "港股通ETF将迎内地长钱，监管“放开”险资投资新通道",
+   "summary": "港股市场的ETF品种迎来重磅“利好”。 来自业界的消息，监管机关日前向多家险企下发《关于明确保险资金投资港股通ETF监管口径的函》（以下简称《监管口径函》），正式确认：具备投资港股通股票资格的保险机构，未来可以按港股通政策口径和通道，投资“内地与香港股票市场交易互联互通机制”中的交易型开放式基金（即港股通ETF）。 这无疑为保险资金规范的投资境外品种开启新的通道，也将为持续调整的港股市场带来“新鲜资金血液”。 政策明确险资投资口径 《监管口径函》明确指出，根据《保险资金运用管理办法》及相关规定，按照监管规定可投资港股通股票的保险机构，可以投资内地与香港股票市场交易互联互通机制中的交易型开放式基金（港股通ETF），参照保险资金投资港股通股票的相关监管规定执行。 业内机构认为，此举旨在优化保险资产配置结构，规范保险资金投资港股通ETF的行为。据悉相关文件已下发至地方金融监管局、保险集团（控股）",
+   "link": "https://wallstreetcn.com/articles/3782657",
+   "image": "",
+   "source": "华尔街见闻",
+   "category": "business",
+   "lang": "zh",
+   "origin": "cn",
+   "published": "2026-09-28T13:22:35.000Z"
   },
   {
    "id": "f088c73e5e49",
@@ -4415,18 +4538,6 @@
    "published": "2026-09-28T13:15:23.000Z"
   },
   {
-   "id": "5430d575e60f",
-   "title": "Sri Lanka’s Rumesh Pathirage wins Asian Games javelin gold",
-   "summary": "Sri Lankan star ends an incredible season with gold, while India's Yashvir Singh and Rohit Yadav take silver and bronze.",
-   "link": "https://www.aljazeera.com/sports/2026/9/28/sri-lankas-rumesh-pathirage-wins-asian-games-javelin-gold?traffic_source=rss",
-   "image": "",
-   "source": "Al Jazeera",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T13:15:14.000Z"
-  },
-  {
    "id": "985834c9f902",
    "title": "Best External Hard Drives (2026): SanDisk, Samsung, and More",
    "summary": "Need an ultrafast drive for video editing or a rugged option to back up your photos in the field? We’ve got a solution for every situation.",
@@ -4437,6 +4548,32 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-28T13:15:00.000Z"
+  },
+  {
+   "id": "94c57192b52e",
+   "title": "NTT, SoftBank eye AI cybersecurity systems that keep data in Japan",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/technology/artificial-intelligence/ntt-softbank-eye-ai-cybersecurity-systems-that-keep-data-in-japan",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T13:14:08.702Z"
+  },
+  {
+   "id": "337f38666ded",
+   "title": "Harold Cruse was as pure an autodidact as any 20th-century university scholar. Tuskegee wouldn't hire him. Michigan gave him tenure",
+   "summary": "",
+   "link": "https://www.chronicle.com/article/black-studies-between-the-seminar-and-the-sermon",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T13:14:08.702Z"
   },
   {
    "id": "72ce7c3353eb",
@@ -4488,32 +4625,6 @@
    "lang": "zh",
    "origin": "cn",
    "published": "2026-09-28T13:09:05.000Z"
-  },
-  {
-   "id": "47398d7d45d3",
-   "title": "Shein posts Q2 profit but slow revenue growth likely to fuel doubts",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/retail/shein-posts-q2-profit-but-slow-revenue-growth-likely-to-fuel-doubts",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T13:08:59.203Z"
-  },
-  {
-   "id": "337f38666ded",
-   "title": "Harold Cruse was as pure an autodidact as any 20th-century university scholar. Tuskegee wouldn't hire him. Michigan gave him tenure",
-   "summary": "",
-   "link": "https://www.chronicle.com/article/black-studies-between-the-seminar-and-the-sermon",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T13:08:59.203Z"
   },
   {
    "id": "31a6133e414c",
@@ -4759,6 +4870,32 @@
    "published": "2026-09-28T12:56:35.000Z"
   },
   {
+   "id": "47398d7d45d3",
+   "title": "Shein posts Q2 profit but slow revenue growth likely to fuel doubts",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/retail/shein-posts-q2-profit-but-slow-revenue-growth-likely-to-fuel-doubts",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T12:54:08.702Z"
+  },
+  {
+   "id": "e2888b0ee465",
+   "title": "The phrase \"fiercely private\" is often applied to artists who secretly love the attention. Anita Brookner wasn’t one of them",
+   "summary": "",
+   "link": "https://literaryreview.co.uk/spiky-sharp-cool",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T12:54:08.702Z"
+  },
+  {
    "id": "cf449f67076d",
    "title": "中训练、后训练持续升温，模型快速迭代，成为 AI for AI 最佳试炼场",
    "summary": "当模型开始参与研发下一代模型，大模型的研发方式正在发生什么样的变化？ 作者丨 高允毅 编辑丨 岑 峰 大多数科研构想，从未被充分验证。 这并不是研究者缺少灵感。恰恰相反，新的架构猜想、训练策略无时无刻不在涌现。但大多数想法，却在写不完的训练脚本、调不完的参数、排队等调度的 GPU 集群中，被无声消磨。 如果换种玩法，重构大模型研发呢？ 你只说了半句话：“我猜想这个架构或许能降低长上下文成本……” 它就能读懂前沿文献，生成候选方案，自动编写代码、调度算力、并行跑消融实验。 这正是近期讨论度很高的 AI for AI。 它不是研发工具的升级，是下一代大模型的核心命题。所有人都试图在这个赛道里，触碰人类终极智能。 01 为什么 AI for AI 是下一个十年的核心命题 过去两三年，行业最关注的是编程和数学：端到端完成复杂代码任务，推导悬而未决的数学难题。AI 由此具备了扎实的逻辑推演与代码工程",
@@ -4879,32 +5016,6 @@
    "published": "2026-09-28T12:49:35.000Z"
   },
   {
-   "id": "e94f79f18c2e",
-   "title": "GoTo slides as Indonesia exchange removes 50 rupiah price floor",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/markets/goto-slides-as-indonesia-exchange-removes-50-rupiah-price-floor",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T12:48:59.203Z"
-  },
-  {
-   "id": "e2888b0ee465",
-   "title": "The phrase \"fiercely private\" is often applied to artists who secretly love the attention. Anita Brookner wasn’t one of them",
-   "summary": "",
-   "link": "https://literaryreview.co.uk/spiky-sharp-cool",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T12:48:59.203Z"
-  },
-  {
    "id": "0ae312474d23",
    "title": "34名台胞赴青海祭祖寻根",
    "summary": "中新社西宁9月28日电 (记者 潘雨洁)来自台湾台中的34名台胞28日赴青海省西宁市湟中区李家山镇吉家村，开启祭祖寻根之旅。",
@@ -5011,6 +5122,18 @@
    "lang": "zh",
    "origin": "cn",
    "published": "2026-09-28T12:45:45.000Z"
+  },
+  {
+   "id": "fef7555a7903",
+   "title": "As private investment in defense increases, some bottlenecks in funding: AIA-Bain",
+   "summary": "“Defense does not face a shortage of capital. It faces barriers that make expanded investment, particularly in critical bottleneck areas, more difficult,” a new study by the Aerospace Industries Association and Bain & Company stated.",
+   "link": "https://breakingdefense.com/2026/09/as-private-investment-in-defense-increases-some-bottlenecks-in-funding-aia-bain/",
+   "image": "https://breakingdefense.com/wp-content/uploads/sites/13/2026/01/646604copy-1024x576.jpg",
+   "source": "Breaking Defense",
+   "category": "military",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T12:45:00.000Z"
   },
   {
    "id": "ffd195d61646",
@@ -5220,6 +5343,32 @@
    "published": "2026-09-28T12:34:12.000Z"
   },
   {
+   "id": "e94f79f18c2e",
+   "title": "GoTo slides as Indonesia exchange removes 50 rupiah price floor",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/markets/goto-slides-as-indonesia-exchange-removes-50-rupiah-price-floor",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T12:34:08.702Z"
+  },
+  {
+   "id": "3f22c9b19cb7",
+   "title": "For four years, a fellow saxophonist taped John Coltrane's gigs: 26-plus hours of music. His subterfuge is our gift",
+   "summary": "",
+   "link": "https://www.tabletmag.com/sections/arts-letters/articles/coltranes-shadow-tiberi-tapes",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T12:34:08.702Z"
+  },
+  {
    "id": "e925ecaece7f",
    "title": "Gisèle Pelicot's daughter launches awareness campaign on chemical submission",
    "summary": "An association founded by the daughter of Gisèle Pelicot, who was drugged by her ex-husband and raped by him and dozens of other men, has launched an awareness campaign on chemical submission.",
@@ -5266,32 +5415,6 @@
    "lang": "zh",
    "origin": "cn",
    "published": "2026-09-28T12:31:26.000Z"
-  },
-  {
-   "id": "6278cdc46995",
-   "title": "Vietnam begins mass trial of psychiatric staff for alleged fraud",
-   "summary": "",
-   "link": "https://asia.nikkei.com/spotlight/society/crime/vietnam-begins-mass-trial-of-psychiatric-staff-for-alleged-fraud",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T12:28:59.203Z"
-  },
-  {
-   "id": "3f22c9b19cb7",
-   "title": "For four years, a fellow saxophonist taped John Coltrane's gigs: 26-plus hours of music. His subterfuge is our gift",
-   "summary": "",
-   "link": "https://www.tabletmag.com/sections/arts-letters/articles/coltranes-shadow-tiberi-tapes",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T12:28:59.203Z"
   },
   {
    "id": "7caea308f8af",
@@ -5378,6 +5501,19 @@
    "published": "2026-09-28T12:15:05.000Z"
   },
   {
+   "id": "6278cdc46995",
+   "title": "Vietnam begins mass trial of psychiatric staff for alleged fraud",
+   "summary": "",
+   "link": "https://asia.nikkei.com/spotlight/society/crime/vietnam-begins-mass-trial-of-psychiatric-staff-for-alleged-fraud",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T12:14:08.702Z"
+  },
+  {
    "id": "86c4cc52a1e3",
    "title": "评论：科技向善，从“家”开始",
    "summary": "中新网杭州9月28日电(张煜欢)家庭，是社会最小单元，也是最复杂的应用场景。客厅、厨房、儿童房、老人居室，不同空间叠加老幼照护、家务劳作、情感陪伴多重任务，现实里不少女性被琐碎家务挤占着大部分精力。如今，走进大众视野的“AI+家庭服务”产品，正在尝试破解这道现实难题。",
@@ -5404,7 +5540,7 @@
   {
    "id": "da74d1d696e0",
    "title": "Show HN: Hntui – A TUI for Hacker News",
-   "summary": "hi there! i'd like you to try out a tui i made for browsing hackernews. it's built using opentui and also effect (learning experiment). i really like it and i think you will too! Comments URL: https://news.ycombinator.com/item?id=49876760 Points: 86 # Comments: 40",
+   "summary": "hi there! i'd like you to try out a tui i made for browsing hackernews. it's built using opentui and also effect (learning experiment). i really like it and i think you will too! Comments URL: https://news.ycombinator.com/item?id=49876760 Points: 87 # Comments: 41",
    "link": "https://github.com/ahmd-sh/hntui",
    "image": "",
    "source": "Hacker News",
@@ -5448,19 +5584,6 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-28T12:09:17.000Z"
-  },
-  {
-   "id": "9cc0a2f8d5ca",
-   "title": "Japan motor maker Nidec to recognize over $3.8bn impairment loss",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/companies/japan-motor-maker-nidec-to-recognize-over-3.8bn-impairment-loss",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T12:08:59.203Z"
   },
   {
    "id": "f81dd6e0b063",
@@ -5691,6 +5814,19 @@
    "published": "2026-09-28T11:56:47.000Z"
   },
   {
+   "id": "9cc0a2f8d5ca",
+   "title": "Japan motor maker Nidec to recognize over $3.8bn impairment loss",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/companies/japan-motor-maker-nidec-to-recognize-over-3.8bn-impairment-loss",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T11:54:08.702Z"
+  },
+  {
    "id": "a6e7a2a0f3ae",
    "title": "第九届“国家统一与民族复兴”智库对话举行",
    "summary": "中新网恩施9月28日电 (汪滨)第九届“国家统一与民族复兴”智库对话28日在湖北恩施开幕，从事台湾问题和两岸关系研究的100多位专家学者与涉台实务工作者参会研讨。",
@@ -5773,19 +5909,6 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-28T11:50:04.000Z"
-  },
-  {
-   "id": "06dbd5167739",
-   "title": "Nissan targets 80% local production in US, stepping up response to tariffs",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/automobiles/nissan-targets-80-local-production-in-us-stepping-up-response-to-tariffs",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T11:48:59.203Z"
   },
   {
    "id": "a312328c46bc",
@@ -5959,6 +6082,19 @@
    "published": "2026-09-28T11:35:00.000Z"
   },
   {
+   "id": "06dbd5167739",
+   "title": "Nissan targets 80% local production in US, stepping up response to tariffs",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/automobiles/nissan-targets-80-local-production-in-us-stepping-up-response-to-tariffs",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T11:34:08.702Z"
+  },
+  {
    "id": "81de4ad3446c",
    "title": "江豚群现身鄱阳湖水系信江水域",
    "summary": "中新网南昌9月28日电 (王剑)“今年入秋以来，我们首次在信江水域管护巡查中发现江豚群，目测有十余头。”江西省余干县鄱阳湖湿地生态保护中心江豚巡护队队长袁文斌28日对中新网说。",
@@ -6029,19 +6165,6 @@
    "lang": "zh",
    "origin": "cn",
    "published": "2026-09-28T11:29:33.000Z"
-  },
-  {
-   "id": "500c829435ae",
-   "title": "Cambodia's scam probes are only a first step",
-   "summary": "",
-   "link": "https://asia.nikkei.com/opinion/cambodia-s-scam-probes-are-only-a-first-step",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T11:28:59.203Z"
   },
   {
    "id": "c109fa77d791",
@@ -6164,6 +6287,19 @@
    "published": "2026-09-28T11:18:27.000Z"
   },
   {
+   "id": "500c829435ae",
+   "title": "Cambodia's scam probes are only a first step",
+   "summary": "",
+   "link": "https://asia.nikkei.com/opinion/cambodia-s-scam-probes-are-only-a-first-step",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T11:14:08.702Z"
+  },
+  {
    "id": "5036ef698a77",
    "title": "“华彩丹青”在京启幕 一展尽览千年画脉",
    "summary": "中新网北京9月28日电 (记者 应妮)“华彩丹青·中国艺术绘画撷萃”展日前在北京华彬生态园开幕，现场呈现了《千里江山图》《富春山居图》《簪花仕女图》等代表性书画的精品复制作。",
@@ -6198,19 +6334,6 @@
    "lang": "zh",
    "origin": "cn",
    "published": "2026-09-28T11:12:53.000Z"
-  },
-  {
-   "id": "18891308eebb",
-   "title": "IHG to open premium hotels under new brand in Tokyo, marking first in Asia",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/markets/property/ihg-to-open-premium-hotels-under-new-brand-in-tokyo-marking-first-in-asia",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T11:08:59.203Z"
   },
   {
    "id": "b3f273339dad",
@@ -6275,7 +6398,7 @@
   {
    "id": "fd906f76e006",
    "title": "What Would a Serious AI Product Look Like?",
-   "summary": "Article URL: https://blog.glyph.im/2026/09/serious-ai-product.html Comments URL: https://news.ycombinator.com/item?id=49876148 Points: 8 # Comments: 0",
+   "summary": "Article URL: https://blog.glyph.im/2026/09/serious-ai-product.html Comments URL: https://news.ycombinator.com/item?id=49876148 Points: 14 # Comments: 2",
    "link": "https://blog.glyph.im/2026/09/serious-ai-product.html",
    "image": "",
    "source": "Hacker News",
@@ -6349,7 +6472,7 @@
    "title": "Pope Leo XIV urges European unity to fight 'lies and deceit'",
    "summary": "On the final day of Pope Leo XIV's four-day visit to France, which has drawn crowds of French Catholics, the pontiff decried the 'increasingly uncivilized' state of international relations and urged Europe to help 'break this cycle.'",
    "link": "https://www.lemonde.fr/en/france/article/2026/09/28/pope-leo-xiv-urges-european-unity-to-fight-lies-and-deceit_6758029_8.html",
-   "image": "https://img.lemde.fr/2026/09/28/92/0/5500/2750/644/322/60/0/74b9faf_ftp-1-5g61yrgwqgb2-35313af9ed0343d0babb17ffbd442cda-0-a5bcc75818fd486fae11e019fc25362d.jpg",
+   "image": "https://img.lemde.fr/2026/09/28/240/0/1600/800/644/322/60/0/a3d5c9b_upload-1-uddf570l9jj8-whatsapp-image-2026-09-28-at-16-33-30-4.jpeg",
    "source": "Le Monde",
    "category": "world",
    "lang": "en",
@@ -6539,7 +6662,7 @@
   {
    "id": "e19e7056d36e",
    "title": "Parley: Federated, decentralised chat that speaks plain IRC",
-   "summary": "Article URL: https://git.mills.io/prologic/parley Comments URL: https://news.ycombinator.com/item?id=49875913 Points: 206 # Comments: 98",
+   "summary": "Article URL: https://git.mills.io/prologic/parley Comments URL: https://news.ycombinator.com/item?id=49875913 Points: 213 # Comments: 104",
    "link": "https://git.mills.io/prologic/parley",
    "image": "",
    "source": "Hacker News",
@@ -7443,7 +7566,7 @@
   {
    "id": "1f14f78a129d",
    "title": "Show HN: Free alternative to graphics design giants",
-   "summary": "A webassembly web based app that help editing raster and vector on browser without any subscription or signups Comments URL: https://news.ycombinator.com/item?id=49875308 Points: 33 # Comments: 9",
+   "summary": "A webassembly web based app that help editing raster and vector on browser without any subscription or signups Comments URL: https://news.ycombinator.com/item?id=49875308 Points: 35 # Comments: 9",
    "link": "https://scissor.studio/",
    "image": "",
    "source": "Hacker News",
@@ -7527,7 +7650,7 @@
   {
    "id": "baff26c26f80",
    "title": "37,500 border drawings: a map of the world as people remember it",
-   "summary": "Article URL: https://www.habibicode.org/thedrawnworld Comments URL: https://news.ycombinator.com/item?id=49875142 Points: 114 # Comments: 28",
+   "summary": "Article URL: https://www.habibicode.org/thedrawnworld Comments URL: https://news.ycombinator.com/item?id=49875142 Points: 117 # Comments: 28",
    "link": "https://www.habibicode.org/thedrawnworld",
    "image": "",
    "source": "Hacker News",
@@ -7777,6 +7900,18 @@
    "published": "2026-09-28T08:14:00.000Z"
   },
   {
+   "id": "a37d09cdd73c",
+   "title": "Israel’s Uvision, Estonia’s Lendurai to integrate systems for NATO military",
+   "summary": "The companies did not disclose which military the teaming effort is for.",
+   "link": "https://breakingdefense.com/2026/09/israels-uvision-estonias-lendurai-to-integrate-systems-for-nato-military/",
+   "image": "https://breakingdefense.com/wp-content/uploads/sites/13/2026/06/20260610_111147-1024x577.jpg",
+   "source": "Breaking Defense",
+   "category": "military",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T08:13:00.000Z"
+  },
+  {
    "id": "9de5ba45e391",
    "title": "Trump offered to sell arms to China’s Xi, U.S. ambassador says",
    "summary": "The revelation will add to allied concerns as U.S. partners struggle for a firm grasp on the White House's policy toward China.",
@@ -7823,18 +7958,6 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-28T08:04:52.000Z"
-  },
-  {
-   "id": "8aee0dee7b6a",
-   "title": "Swiss voters reject 'total' neutrality, choosing pragmatic Atlanticism",
-   "summary": "A far-right initiative was overwhelmingly rejected in a referendum on Sunday. Swiss voters chose to maintain a façade of neutrality aligned with the Western bloc and to continue sanctions against Russia.",
-   "link": "https://www.lemonde.fr/en/international/article/2026/09/28/swiss-voters-reject-total-neutrality-choosing-pragmatic-atlanticism_6758028_4.html",
-   "image": "https://img.lemde.fr/2026/09/25/473/0/5000/2500/644/322/60/0/ff5c05a_ftp-1-yw5veirdyg7i-5178465-01-06.jpg",
-   "source": "Le Monde",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T08:04:46.000Z"
   },
   {
    "id": "8c5967ab82c9",
@@ -8053,18 +8176,6 @@
    "published": "2026-09-28T07:34:00.000Z"
   },
   {
-   "id": "d683a1f3be00",
-   "title": "电网等不起，高盛：数据中心自备电厂或将成主流，燃气轮机订单已排到2031年",
-   "summary": "AI基础设施的电力危机正在催生一场能源供给革命。高盛认为，受制于电网扩张严重滞后，数据中心\"自备电厂\"模式正从边缘选项走向行业主流，预计到2030年将承担全球25%的数据中心电力需求——而这一比例在2025年几乎为零。 9月27日，高盛旗下Carbonomics团队在一份长达50页的报告中，将全球数据中心表后发电（Behind-The-Meter，BTM）容量预测从40GW大幅上调至67GW，并 预计燃气轮机、往复式发动机和燃料电池合计将供应美国28%、全球25%的数据中心电力需求 。 与此同时，报告指出， 燃气轮机市场已全面告急——GE Vernova的积压订单加预留产能已达116GW，2030年产能全部售罄，2031年产能也已售出逾50% ，这一供应瓶颈正在将数据中心运营商推向燃料电池、往复式发动机乃至工业锅炉等替代方案。 更长远来看，高盛认为小型模块化核反应堆（SMR）是2030年后",
-   "link": "https://wallstreetcn.com/articles/3782643",
-   "image": "https://wpimg-wscn.awtmt.com/ee8002ff-9c31-42ab-be1e-391a134e52aa.png",
-   "source": "华尔街见闻",
-   "category": "business",
-   "lang": "zh",
-   "origin": "cn",
-   "published": "2026-09-28T07:32:24.000Z"
-  },
-  {
    "id": "27539cd6341b",
    "title": "西康高铁开通！肉夹馍离重庆火锅不远啦！",
    "summary": "千里秦岭不再是天堑，南北烟火从此双向奔赴！",
@@ -8259,7 +8370,7 @@
   {
    "id": "a381dbf64013",
    "title": "Made by Mechanical Means",
-   "summary": "Article URL: https://felixrieseberg.com/made-by-mechanical-means/ Comments URL: https://news.ycombinator.com/item?id=49874551 Points: 60 # Comments: 22",
+   "summary": "Article URL: https://felixrieseberg.com/made-by-mechanical-means/ Comments URL: https://news.ycombinator.com/item?id=49874551 Points: 61 # Comments: 23",
    "link": "https://felixrieseberg.com/made-by-mechanical-means/",
    "image": "",
    "source": "Hacker News",
@@ -8799,7 +8910,7 @@
   {
    "id": "5fdb5b0760ed",
    "title": "Thinking fast and slow in AI: The role of metacognition (2021)",
-   "summary": "Article URL: https://arxiv.org/abs/2110.01834 Comments URL: https://news.ycombinator.com/item?id=49873241 Points: 150 # Comments: 60",
+   "summary": "Article URL: https://arxiv.org/abs/2110.01834 Comments URL: https://news.ycombinator.com/item?id=49873241 Points: 151 # Comments: 60",
    "link": "https://arxiv.org/abs/2110.01834",
    "image": "",
    "source": "Hacker News",
@@ -8941,18 +9052,6 @@
    "published": "2026-09-28T02:32:03.000Z"
   },
   {
-   "id": "61b6f4d37dd2",
-   "title": "Nissan's third generation e-POWER powertrain",
-   "summary": "Article URL: https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ARCHIVE/E_POWER_GEN3/ Comments URL: https://news.ycombinator.com/item?id=49872883 Points: 126 # Comments: 279",
-   "link": "https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ARCHIVE/E_POWER_GEN3/",
-   "image": "",
-   "source": "Hacker News",
-   "category": "tech",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T02:31:23.000Z"
-  },
-  {
    "id": "0c78780efd5b",
    "title": "gtk-zlang v0.8.0.0发布，基于zlang编程语言的GTK封装的跨平台图形窗口应用开发库",
    "summary": "0.8.0.0 2026-09-24 calvin 依赖v0.12.8.0<=zlang<=0.12.*.0 * 随着zlang v0.12.8.0重新构建，所有控件的设置类函数的返回值从控件对象改为bool，配合zlang的连续调用函数操作符\"..\"表达代码，创建临时对象减半，提升性能 一、gtk-zlang介绍 gtk-zlang是基于zlang编程语言的GTK封装包装库，打造跨平台的开源GUI技术栈，让...",
@@ -8999,18 +9098,6 @@
    "lang": "zh",
    "origin": "cn",
    "published": "2026-09-28T02:06:24.000Z"
-  },
-  {
-   "id": "bd0fe14f1b71",
-   "title": "Owed a billion dollars in Nvidia stock",
-   "summary": "Article URL: https://colo.to/nvidia-stock-narrative.html Comments URL: https://news.ycombinator.com/item?id=49872723 Points: 943 # Comments: 399",
-   "link": "https://colo.to/nvidia-stock-narrative.html",
-   "image": "",
-   "source": "Hacker News",
-   "category": "tech",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T02:05:13.000Z"
   },
   {
    "id": "c6f462bb31d9",
@@ -9265,6 +9352,66 @@
    "published": "2026-09-28T00:01:01.000Z"
   },
   {
+   "id": "a1aeb9c98b8e",
+   "title": "China now leads the world in trials for next-gen CAR-T therapies",
+   "summary": "Nature, Published online: 28 September 2026; doi:10.1038/d41586-026-03004-3 China tests these therapies faster than the rest of the world but regulatory changes could slow them down.",
+   "link": "https://www.nature.com/articles/d41586-026-03004-3",
+   "image": "",
+   "source": "Nature",
+   "category": "tech",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T00:00:00.000Z"
+  },
+  {
+   "id": "ad99b2e53192",
+   "title": "Stephen Hawking biography explores an ‘exceptionally clear, uncluttered mind’",
+   "summary": "Nature, Published online: 28 September 2026; doi:10.1038/d41586-026-02959-7 An elegant account of the physicist’s unusual life story highlights the relationships that inspired him.",
+   "link": "https://www.nature.com/articles/d41586-026-02959-7",
+   "image": "",
+   "source": "Nature",
+   "category": "tech",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T00:00:00.000Z"
+  },
+  {
+   "id": "5a8fd7f224c1",
+   "title": "Bigger than CRISPR? A guide to the latest genome editors",
+   "summary": "Nature, Published online: 28 September 2026; doi:10.1038/d41586-026-02964-w Gene-editing techniques could soon allow researchers to replace entire genes and engineer complex cellular circuits — if the systems can be delivered safely into cells.",
+   "link": "https://www.nature.com/articles/d41586-026-02964-w",
+   "image": "",
+   "source": "Nature",
+   "category": "tech",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T00:00:00.000Z"
+  },
+  {
+   "id": "fd835bda17f1",
+   "title": "Vaping in childhood has bigger health risks than we’d thought",
+   "summary": "Nature, Published online: 28 September 2026; doi:10.1038/d41586-026-02962-y Use of e-cigarettes makes it more likely that young people will experience mental-health disorders and take up smoking. Governments must act.",
+   "link": "https://www.nature.com/articles/d41586-026-02962-y",
+   "image": "",
+   "source": "Nature",
+   "category": "tech",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T00:00:00.000Z"
+  },
+  {
+   "id": "592802c61e64",
+   "title": "Old hearts age backwards: transplanted organs adjust to host's biological age",
+   "summary": "Nature, Published online: 28 September 2026; doi:10.1038/d41586-026-03043-w Tracking the biological age of grafted organs suggests that donor pools could be expanded to boost organ availability.",
+   "link": "https://www.nature.com/articles/d41586-026-03043-w",
+   "image": "",
+   "source": "Nature",
+   "category": "tech",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T00:00:00.000Z"
+  },
+  {
    "id": "21134983bbc9",
    "title": "One dead as nor'easter storm pummels New York and New Jersey",
    "summary": "Tens of millions of people from Maine to Virginia found themselves in the path of the powerful weather system.",
@@ -9350,18 +9497,6 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-27T22:11:12.000Z"
-  },
-  {
-   "id": "4b505c313d57",
-   "title": "India's Cockroach Party denounces crumbling schools: 'Children are treated worse than animals'",
-   "summary": "Founded just a few months ago, the Cockroach Janta Party, a Gen Z-led movement, has visited several schools and conducted an audit to expose the extent of their dilapidation and unsanitary conditions. Authorities have tried everything in their power to prevent the group from carrying out these inspections.",
-   "link": "https://www.lemonde.fr/en/international/article/2026/09/28/india-s-cockroach-party-denounces-crumbling-schools-children-are-treated-worse-than-animals_6758016_4.html",
-   "image": "https://img.lemde.fr/2026/09/23/624/0/7853/3926/644/322/60/0/0edcda4_upload-1-sx5usxaxrbm6-036a9685.jpg",
-   "source": "Le Monde",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-27T22:08:20.000Z"
   },
   {
    "id": "79c2c27f1b20",
@@ -9482,18 +9617,6 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-27T21:14:00.000Z"
-  },
-  {
-   "id": "7779c9336029",
-   "title": "Lunar Terminator Paradox",
-   "summary": "Article URL: https://notes.secretsauce.net/notes/2026/09/27_lunar-terminator-paradox.html Comments URL: https://news.ycombinator.com/item?id=49870837 Points: 94 # Comments: 64",
-   "link": "https://notes.secretsauce.net/notes/2026/09/27_lunar-terminator-paradox.html",
-   "image": "",
-   "source": "Hacker News",
-   "category": "tech",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-27T21:06:17.000Z"
   },
   {
    "id": "89051b8bbe68",
@@ -9686,18 +9809,6 @@
    "lang": "zh",
    "origin": "cn",
    "published": "2026-09-27T17:30:30.000Z"
-  },
-  {
-   "id": "7f8704b15464",
-   "title": "Two bodies found after avalanche hits Himalayan climbing group",
-   "summary": "Rescuers are looking for at least 10 Nepalese people who were preparing to take climbers up the Himlung Himal peak.",
-   "link": "https://www.bbc.co.uk/news/articles/cwjdvml9e897o?at_medium=RSS&at_campaign=rss",
-   "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b2f6/live/f8a40890-ba6c-11f1-a109-c7409015a263.jpg",
-   "source": "BBC World",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-27T17:05:26.000Z"
   },
   {
    "id": "ca0a3b62995c",
