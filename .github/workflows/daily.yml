@@ -40,10 +40,13 @@ jobs:
 
       - name: 生成主编专栏
         if: ${{ github.event.inputs.skip_editorial != 'true' }}
+        # 专栏失败不能拖垮整期：接口欠费、限流、模型抽风时，新闻照常发布
+        continue-on-error: true
         env:
-          EDITORIAL_API_KEY: ${{ secrets.EDITORIAL_API_KEY }}
+          # 支持两种命名：标准名优先，读不到则退回最初创建的 DAILYNEWS
+          EDITORIAL_API_KEY: ${{ secrets.EDITORIAL_API_KEY || secrets.DAILYNEWS }}
           EDITORIAL_BASE_URL: ${{ vars.EDITORIAL_BASE_URL }}
-          EDITORIAL_MODEL: ${{ vars.EDITORIAL_MODEL }}
+          EDITORIAL_MODEL: ${{ vars.EDITORIAL_MODEL || vars.DAILYNEWS }}
         run: node scripts/editorial.mjs
 
       - name: 组装站点
