@@ -1,6 +1,6 @@
 {
  "date": "2026-09-28",
- "generatedAt": "2026-09-28T13:09:42.024Z",
+ "generatedAt": "2026-09-28T13:12:36.092Z",
  "windowHours": 24,
  "timezone": "Asia/Shanghai",
  "categories": [
@@ -49,7 +49,7 @@
  ],
  "stats": {
   "total": 879,
-  "rawTotal": 929,
+  "rawTotal": 930,
   "sourcesConfigured": 107,
   "sourcesActive": 107,
   "sourcesSkipped": 0,
@@ -57,37 +57,39 @@
   "sourcesOk": 103,
   "sourcesFailed": 4,
   "counts": {
-   "tech": 139,
+   "tech": 140,
+   "world": 299,
    "business": 127,
-   "world": 300,
    "military": 71,
    "top": 102,
-   "culture": 104,
-   "society": 36
+   "society": 36,
+   "culture": 104
   },
   "bySource": {
    "InfoQ中文": 5,
-   "IT之家": 25,
-   "CNBC": 18,
-   "36氪": 18,
    "TASS": 15,
+   "南华早报": 12,
    "The Korea Herald": 12,
+   "CNBC": 18,
+   "IT之家": 25,
+   "36氪": 18,
    "The Aviationist": 10,
    "澎湃新闻": 19,
+   "中新网·体育": 12,
    "联合早报": 20,
+   "CNA": 8,
    "中国新闻网": 27,
    "The Straits Times": 8,
    "NYT World": 11,
    "The Hindu": 8,
    "法国国际广播电台": 14,
-   "南华早报": 12,
    "IEEE Spectrum": 1,
    "TechCrunch": 7,
+   "The Verge": 6,
    "Wired": 9,
    "Longreads": 6,
    "Kyiv Post": 10,
    "钛媒体": 15,
-   "CNA": 8,
    "CBS News": 12,
    "Anadolu Agency": 15,
    "RFI English": 7,
@@ -103,15 +105,13 @@
    "Le Monde": 10,
    "The Marginalian": 8,
    "France 24": 20,
-   "Yonhap": 8,
+   "Yonhap": 7,
    "经济观察网": 6,
    "德国之声中文": 7,
    "NPR": 5,
    "集思录": 3,
    "Hacker News": 15,
    "MIT Tech Review": 2,
-   "The Verge": 5,
-   "中新网·体育": 12,
    "中新网·国内": 17,
    "中新网·财经": 15,
    "The Moscow Times": 4,
@@ -217,6 +217,57 @@
    "published": "2026-09-28T18:23:47.000Z"
   },
   {
+   "id": "f85679096a0d",
+   "title": "Yak-130M can replace old version in service with other countries — pilot",
+   "summary": "As for this aircraft, foreign customers are interested in its air-to-ground capabilities, and its ability to defend itself as a fighter jet",
+   "link": "https://tass.com/economy/2193961",
+   "image": "",
+   "source": "TASS",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T13:11:57.000Z"
+  },
+  {
+   "id": "1c890075dfb6",
+   "title": "At least 21 Hong Kong-Bangkok flights delayed amid flooding in Thai capital",
+   "summary": "At least 21 flights connecting Hong Kong and Bangkok were disrupted on Sunday and Monday, with passengers on one service leaving the Thai capital facing a nearly 24-hour delay after the Southeast Asian city was hit by its worst flood in 15 years. Heavy rainfall lashed Bangkok – a top travel destination for Hongkongers – between Thursday and Monday, prompting Thai officials to declare the city a di",
+   "link": "https://www.scmp.com/news/hong-kong/society/article/3369095/least-21-hong-kong-bangkok-flights-delayed-amid-flooding-thai-capital?utm_source=rss_feed",
+   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/09/28/0e2d5982-c28f-4942-8701-eddc6575e312_3696ad38.jpg?itok=xskUUwYo&v=1790599803",
+   "source": "南华早报",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T13:11:49.000Z"
+  },
+  {
+   "id": "85d494e42191",
+   "title": "S. Korea beats Chinese Taipei to qualify for men's volleyball quarterfinals",
+   "summary": "South Korea defeated Chinese Taipei to secure a spot in the quarterfinals in men's volleyball at the Aichi-Nagoya Asian Games on Monday. Outside hitter Heo Su-bong led the offense with 18 points and opposite Im Dong-hyeok added 16 points, as South Korea prevailed 3-1 (24-26, 25-10, 25-15, 25-23) for its second straight win at Park Arena Komaki in Komaki, just north of the main host city, Nagoya. S",
+   "link": "https://www.koreaherald.com/article/10886749",
+   "image": "https://wimg.heraldcorp.com/news/cms/2026/09/28/news-p.v1.20260928.dff6ed527d4f4fcab27a2f426b9507b7_T1.jpg",
+   "source": "The Korea Herald",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T13:11:13.000Z",
+   "alsoIn": [
+    "Yonhap"
+   ]
+  },
+  {
+   "id": "526498b1e24c",
+   "title": "Meta hires MongoDB CEO CJ Desai, sending shares of data services company down",
+   "summary": "Desai will lead the new Meta Enterprise Platform unit and report to CEO Mark Zuckerberg.",
+   "link": "https://www.cnbc.com/2026/09/28/mongodb-meta-cj-desai.html",
+   "image": "",
+   "source": "CNBC",
+   "category": "business",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T13:11:09.000Z"
+  },
+  {
    "id": "6748bcbb13f2",
    "title": "华为鸿蒙 HarmonyOS 7 系统公测转正，首批覆盖 Mate 80 等系列机型",
    "summary": "IT之家 9 月 28 日消息，华为官网最新信息显示， 鸿蒙 HarmonyOS 7 系统已开启正式版升级 ，首批覆盖 Mate 80 / 70、Mate X7 / X6、Mate XTs 非凡大师、Pura 90 / 80、Pura X / X Max、 nova 16 / 15、畅享 90 等系列机型。 ▲ IT之家开箱： 华为畅享 90 Pro Max 实拍图赏 IT之家附华为鸿蒙 HarmonyOS 7 最新适配机型清单如下： 正式版 HUAWEI Mate 80 系列 HUAWEI Mate 70 系列 HUAWEI Mate X7 系列 HUAWEI Mate X6 系列 HUAWEI Mate XTs 非凡大师 HUAWEI Pura 90 系列 HUAWEI Pura 80 系列 HUAWEI Pura X Max 系列 HUAWEI Pura X 系列 HUAWEI no",
@@ -253,9 +304,9 @@
    "published": "2026-09-28T13:09:06.000Z"
   },
   {
-   "id": "720d8ab3285a",
-   "title": "希音发布上市以来首份财报",
-   "summary": "2026年上半年净收入201.34亿美元，同比增长1%；净利润22.99亿美元，同比增长111.7%。",
+   "id": "bbce3b3b832d",
+   "title": "希音：上半年净利润22.99亿美元，同比增长111.7%",
+   "summary": "36氪获悉， 希音发布上市以来的首份中期业绩，2026年上半年净收入201.34亿美元，同比增长1%；净利润22.99亿美元，同比增长111.7%；总订单量同比增长6.4%至5.49亿单。2026年第二季度净收入110.8亿美元，同比增长0.9%；经调整净利润2.28亿美元，占净收入的2.1%。",
    "link": "https://36kr.com/newsflashes/4003085446991748?f=rss",
    "image": "",
    "source": "36氪",
@@ -325,18 +376,6 @@
    "published": "2026-09-28T13:08:20.000Z"
   },
   {
-   "id": "526498b1e24c",
-   "title": "Meta hires MongoDB CEO CJ Desai, sending shares of data services company down",
-   "summary": "Desai will lead the new Meta Enterprise Platform unit and report to CEO Mark Zuckerberg.",
-   "link": "https://www.cnbc.com/2026/09/28/mongodb-meta-cj-desai.html",
-   "image": "",
-   "source": "CNBC",
-   "category": "business",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T13:08:16.000Z"
-  },
-  {
    "id": "484f91775056",
    "title": "11年后重回北京，德约科维奇依然保有“冠军的心”",
    "summary": "十几年来，诺瓦克·德约科维奇和位于林萃桥2号的国家网球中心一直有着解不开的缘分。 2008年，他在北京奥运会上收获网球男单铜牌。2009、2010、2012、2013、2014、2015，他曾经6次来到这里参加中国网球公开赛，每一次都把自己的名字留在了男单冠军奖杯之上。2013年9月27日，他在钻石球场和中国网球名宿李娜展开一场“性别之战”。那是为庆祝中网十周年而举办的特别活动，所有相关收益都捐赠给中国宋庆龄基金会青少年网球发展基金。 2026年9月，当中网迎来20岁生日的时候，39岁的德约科维奇又回来了。 39岁的网坛传奇 9月26日，刚刚落地北京，他就在首都机场见到了等候在那里的球迷和迎接他的赛事工作人员。 接过印有自己照片的海报，他笑着说“让我试试用汉字来签名吧”，然后就写下一个方方正正的“德”。2026年，他还是用画画的方式来书写自己的名字，但是时间已经过去了11年。 11年里，他",
@@ -347,6 +386,18 @@
    "lang": "zh",
    "region": "cn",
    "published": "2026-09-28T13:07:18.000Z"
+  },
+  {
+   "id": "59cd9543fbdd",
+   "title": "亚运会 | 中国队卫冕田径女子4X100米接力",
+   "summary": "新华社日本名古屋9月28日电 在刚刚结束的爱知·名古屋亚运会田径女子4X100米接力决赛中，由梁小静、刘国怡、刘峡君和陈妤颉组成的中国队获得金牌，卫冕成功。此前已在本届赛事中收获一金一银的陈妤颉再添一金。",
+   "link": "https://www.chinanews.com.cn/ty/2026/09-28/10705123.shtml",
+   "image": "",
+   "source": "中新网·体育",
+   "category": "society",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T13:07:16.000Z"
   },
   {
    "id": "d536fe410ed1",
@@ -377,6 +428,18 @@
    ]
   },
   {
+   "id": "da9e9b932bdc",
+   "title": "Cerebras to supply AI systems to cloud computing startup Gimlet Labs",
+   "summary": "",
+   "link": "https://www.channelnewsasia.com/business/cerebras-supply-ai-systems-cloud-computing-startup-gimlet-labs-6415951",
+   "image": "https://dam.mediacorp.sg/image/upload/s--t5buHqRf--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-28T130630Z_2_LYNXMPEM8R11F_RTROPTP_3_CEREBRAS-RESULTS.JPG?itok=BfFZbvnS",
+   "source": "CNA",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T13:06:30.000Z"
+  },
+  {
    "id": "1d503e6fe154",
    "title": "河北大名县委书记高速路口为游客发盲盒，文旅部门：是城市宣传一部分",
    "summary": "近日，河北大名县“大名发布”“大名文旅”等视频账号发布了一则消息：“中秋月圆，归途温柔！大名高速口暖意融融！县委书记为远道而来的游客、奔赴家乡的游子亲手送上专属伴手礼。一份份心意满满的盲盒好礼，为旅途注入美好，盛满古城温情。没有华丽的宣传，只有最朴实的烟火温柔。一城灯火迎归人，一席好礼暖归途，这就是大名最动人的待客之道、最暖心的家乡情怀。” 视频介绍，大名县委书记王世臣带队在当地高速路口为游客和回乡游子分发盲盒。视频透露，盲盒拆开后里面装着的是当地特产烧饼。现场接过盲盒的乘客有的还挥舞国旗回应。 2026年9月28日晚，大名县文旅局相关负责人接受澎湃新闻记者电话采访时表示，大名近年来一直有在做相关的文旅宣传，此次烧饼盲盒也是城市宣传的一部分，希望大家有空可以来大名旅游。 据大名县政府官网介绍，芝麻焦烧饼为大名县风味食品之一，已有百年之久。芝麻焦烧饼为圆饼形，两面沾有芝麻，有咸、甜之分，现今",
@@ -387,6 +450,18 @@
    "lang": "zh",
    "region": "cn",
    "published": "2026-09-28T13:05:14.000Z"
+  },
+  {
+   "id": "b13adeffc568",
+   "title": "Seligman Ventures doubles capital to $1 billion as AI boom revives hardware bets",
+   "summary": "",
+   "link": "https://www.channelnewsasia.com/business/seligman-ventures-doubles-capital-1-billion-ai-boom-revives-hardware-bets-6415956",
+   "image": "https://dam.mediacorp.sg/image/upload/s--JvPLNott--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-28T130455Z_1_LYNXMPEM8R115_RTROPTP_3_AI-FUNDING-SELIGMAN.JPG?itok=3Bv_Qrw5",
+   "source": "CNA",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T13:04:55.000Z"
   },
   {
    "id": "238f05d26f00",
@@ -530,6 +605,18 @@
    "link": "https://techcrunch.com/2026/09/28/ocean-surveillance-startup-quartermaster-raises-another-140m/",
    "image": "",
    "source": "TechCrunch",
+   "category": "tech",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T13:00:00.000Z"
+  },
+  {
+   "id": "ab6ddeae5759",
+   "title": "Philips’ motion-tracking smart toothbrush uses AI to make you a better brusher",
+   "summary": "First announced in July with an expected limited launch later this year, the Philips Sonicare Next-Generation DiamondClean 9900 Prestige smart toothbrush is now available in Europe and the US, with a broader global rollout expected in 2027. While the previous iteration is still available and discounted from $429.99, the new \"Next-Gen DiamondClean\" version is debuting […]",
+   "link": "https://www.theverge.com/tech/1000924/philips-sonicare-next-generation-diamondclean-9900-prestige-smart-toothbrush",
+   "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/sonicare1.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "source": "The Verge",
    "category": "tech",
    "lang": "en",
    "region": "global",
@@ -762,7 +849,7 @@
   {
    "id": "5d70b90e018e",
    "title": "星舰第14次试飞首次尝试入轨",
-   "summary": "当地时间9月28日早上，美国太空探索技术公司（SpaceX）进行重型运载火箭“星舰”的第14次试飞。“星舰”从位于得克萨斯州南部的发射基地升空。这将是“星舰”首次尝试进入地球轨道，并计划在近10小时内绕地球飞行约6圈。本次试飞，“星舰”助推器和飞船���不会被捕获回收，飞船将溅落在智利附近的太平洋海域。飞行期间，“星舰”还将释放26颗“星链”卫星。（CCTV国际时讯）",
+   "summary": "当地时间9月28日早上，美国太空探索技术公司（SpaceX）进行重型运载火箭“星舰”的第14次试飞。“星舰”从位于得克萨斯州南部的发射基地升空。这将是“星舰”首次尝试进入地球轨道，并计划在近10小时内绕地球飞行约6圈。本次试飞，“星舰”助推器和飞船均不会被捕获回收，飞船将溅落在智利附近的太平洋海域。飞行期间，“星舰”还将释放26颗“星链”卫星。（CCTV国际时讯）",
    "link": "https://36kr.com/newsflashes/4003067513114755?f=rss",
    "image": "",
    "source": "36氪",
@@ -1283,6 +1370,18 @@
    "alsoIn": [
     "中新网·国内"
    ]
+  },
+  {
+   "id": "fe390c3d92d9",
+   "title": "Satellite firm Astro Digital to go public in $587 million SPAC deal",
+   "summary": "",
+   "link": "https://www.channelnewsasia.com/business/satellite-firm-astro-digital-go-public-in-587-million-spac-deal-6415861",
+   "image": "https://dam.mediacorp.sg/image/upload/s--6ILy12Qj--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-28T130309Z_1_LYNXMPEM8R119_RTROPTP_3_MARKETS-FOREX.JPG?itok=Fh4nCv-O",
+   "source": "CNA",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:38:46.000Z"
   },
   {
    "id": "0f060ed1d032",
@@ -1900,18 +1999,6 @@
    "published": "2026-09-28T12:17:04.000Z"
   },
   {
-   "id": "87556acdbe5e",
-   "title": "(Asiad) S. Korea beats Chinese Taipei to qualify for men's volleyball quarterfinals",
-   "summary": "NAGOYA, Japan, Sept. 28 (Yonhap) -- South Korea defeated Chinese Taipei to secur...",
-   "link": "https://en.yna.co.kr/view/AEN20260928012000315",
-   "image": "https://img.yna.co.kr/photo/yna/YH/2026/09/27/PYH2026092708430001300_P2.jpg",
-   "source": "Yonhap",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T12:16:08.000Z"
-  },
-  {
    "id": "73291c7e82d7",
    "title": "培育青春经济 海南深化青年国际交流",
    "summary": "中新网海口9月28日电(记者 符宇群)海南省旅游和文化广电体育厅二级巡视员陈思28日在海南省新闻办公室举办的新闻发布会上介绍，在高标准建设海南自由贸易港进程中，海南省旅文厅将紧扣全域建设青年发展型城市目标，系统推进旅文体资源精准供给，让广大青年在海南既能安居乐业，也能享受高品质的旅文体生活。",
@@ -2353,18 +2440,6 @@
    "published": "2026-09-28T12:04:00.000Z"
   },
   {
-   "id": "37335c04f50f",
-   "title": "De Gaulle’s grandson wants to be Russian citizen, says decision rests with Putin",
-   "summary": "Pierre de Gaulle said he dreams of settling in Russia with his family and children and is working to strengthen ties between Paris and Moscow",
-   "link": "https://tass.com/society/2193917",
-   "image": "",
-   "source": "TASS",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T12:03:13.000Z"
-  },
-  {
    "id": "3593012a073b",
    "title": "Football forward guarding against complacency ahead of semifinal duel vs. China",
    "summary": "With South Korea about to take on China in the semifinals of the Asiad men's football tournament this week, winger Eom Ji-sung said Monday the biggest threat to his team's gold medal chase may be complacency. \"The moment we start taking wins for granted, we will fall apart,\" Eom said in a video released by the Korea Football Association during the Aichi-Nagoya Asian Games. South Korea's under-23 t",
@@ -2767,18 +2842,6 @@
    "published": "2026-09-28T11:50:04.000Z"
   },
   {
-   "id": "1d09abe99d07",
-   "title": "In kayaks or waist-deep in floodwater, shoppers return to Bangkok markets",
-   "summary": "Roadside stalls and indoor markets are reopening even though parts of the Thai capital remain submerged.",
-   "link": "https://www.channelnewsasia.com/asia/bangkok-market-floods-shoppers-return-6415736",
-   "image": "https://dam.mediacorp.sg/image/upload/s--gFRfgqkK--/c_crop,h_576,w_1024,x_0,y_53/fl_relative,g_south_east,l_mediacorp:cna:watermark:2023-11:afp_watermark_14112023,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/09/28/000_c9hp7dt.jpg?itok=y4wz0pkH",
-   "source": "CNA",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T11:50:00.000Z"
-  },
-  {
    "id": "89b12400b111",
    "title": "重庆面向社会公开征集创新应用场景“三张清单”",
    "summary": "中新网重庆9月28日电 (记者 刘相琳)记者28日从重庆市发展改革委获悉，重庆面向各行业主管部门、区县、国有企业、民营企业、高校院所、新型研发机构、创新平台等，常态化公开征集场景机会清单、能力清单、案例清单，进一步系统归集优质场景资源，推动供需精准匹配，提供全周期撮合对接优质服务。",
@@ -2801,18 +2864,6 @@
    "lang": "zh",
    "region": "cn",
    "published": "2026-09-28T11:48:45.000Z"
-  },
-  {
-   "id": "9c2af5ad1b01",
-   "title": "ERP 2 data used to detect suspected offences involving 31 Malaysian cross-border taxis",
-   "summary": "The drivers have been notified of their offences and reminded of the relevant penalties, with formal enforcement action to follow.",
-   "link": "https://www.channelnewsasia.com/singapore/erp-2-lta-malaysian-taxis-obu-data-enforcement-6415566",
-   "image": "https://dam.mediacorp.sg/image/upload/s--eL1lXlV1--/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/09/28/825268115_909848788731517_9040574643946448767_n.jpeg?itok=JitEPuiF",
-   "source": "CNA",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T11:48:00.000Z"
   },
   {
    "id": "a312328c46bc",
@@ -3175,18 +3226,6 @@
    "published": "2026-09-28T11:33:30.000Z"
   },
   {
-   "id": "996a50b30138",
-   "title": "I preferred my old life, says Cape Verde World Cup hero Vozinha",
-   "summary": "",
-   "link": "https://www.channelnewsasia.com/sport/i-preferred-my-old-life-says-cape-verde-world-cup-hero-vozinha-6415701",
-   "image": "",
-   "source": "CNA",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T11:33:21.000Z"
-  },
-  {
    "id": "e760b3d13c7c",
    "title": "Macron invokes Europe’s Judeo-Christian foundation as Leo visits",
    "summary": "PARIS, Sept 28 - French President Emmanuel Macron said on Monday that Europe was built on a \\\"Greco-Roman and Judeo-Christian foundation\\\", invoking the continent's religious heritage in a speech alongside Pope Leo.",
@@ -3269,18 +3308,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T11:30:00.000Z"
-  },
-  {
-   "id": "62877d3489a8",
-   "title": "Stocks making the biggest moves premarket: Meta Platforms, United Airlines, Nvidia & more",
-   "summary": "These are the stocks posting the largest moves premarket.",
-   "link": "https://www.cnbc.com/2026/09/28/stocks-making-the-biggest-moves-premarket-meta-ual-nvda.html",
-   "image": "",
-   "source": "CNBC",
-   "category": "business",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T11:29:38.000Z"
   },
   {
    "id": "94355d9d9037",
@@ -3643,6 +3670,32 @@
    "published": "2026-09-28T11:12:53.000Z"
   },
   {
+   "id": "e94f79f18c2e",
+   "title": "GoTo slides as Indonesia exchange removes 50 rupiah price floor",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/markets/goto-slides-as-indonesia-exchange-removes-50-rupiah-price-floor",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T11:12:36.092Z"
+  },
+  {
+   "id": "bcc6054aa4c2",
+   "title": "Egomaniacs, psychos, and informants. Why is it we look past all sorts of ugliness and insist on mythologizing revolutionaries?",
+   "summary": "",
+   "link": "https://theamericanscholar.org/the-allure-of-eden-on-earth/",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T11:12:36.092Z"
+  },
+  {
    "id": "4c2b5b38908e",
    "title": "Germany vows support for ICC as Trump escalates pressure on court",
    "summary": "BERLIN, Sept 28 - Germany on Monday vowed continued support for the International Criminal Court, ahead of a trip by its foreign minister to the Hague-based court that is currently in the US administration's crosshairs.",
@@ -3689,32 +3742,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T11:10:03.000Z"
-  },
-  {
-   "id": "e94f79f18c2e",
-   "title": "GoTo slides as Indonesia exchange removes 50 rupiah price floor",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/markets/goto-slides-as-indonesia-exchange-removes-50-rupiah-price-floor",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T11:09:42.024Z"
-  },
-  {
-   "id": "bcc6054aa4c2",
-   "title": "Egomaniacs, psychos, and informants. Why is it we look past all sorts of ugliness and insist on mythologizing revolutionaries?",
-   "summary": "",
-   "link": "https://theamericanscholar.org/the-allure-of-eden-on-earth/",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T11:09:42.024Z"
   },
   {
    "id": "b3f273339dad",
@@ -4023,18 +4050,6 @@
    "published": "2026-09-28T10:53:14.000Z"
   },
   {
-   "id": "d9f7facee21a",
-   "title": "5 men arrested over suspected attack at a U.S.-run air force base are British nationals",
-   "summary": "Authorities have arrested five British nationals over a suspected attack at a U.S.-operated air force base in England. The men, all in their 20s from London, were detained Sunday.",
-   "link": "https://www.npr.org/2026/09/28/g-s1-145245/britain-us-base-suspected-foiled-attack",
-   "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/7328x4885+0+0/resize/7328x4885!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb2%2F7b%2F553da6064f5d93e8d213fccad9c2%2Fap26271348244108.jpg",
-   "source": "NPR",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T10:51:25.000Z"
-  },
-  {
    "id": "6278cdc46995",
    "title": "Vietnam begins mass trial of psychiatric staff for alleged fraud",
    "summary": "",
@@ -4045,7 +4060,7 @@
    "lang": "en",
    "region": "global",
    "undated": true,
-   "published": "2026-09-28T10:49:42.024Z"
+   "published": "2026-09-28T10:52:36.092Z"
   },
   {
    "id": "87d36b57b245",
@@ -4058,7 +4073,19 @@
    "lang": "en",
    "region": "global",
    "undated": true,
-   "published": "2026-09-28T10:49:42.024Z"
+   "published": "2026-09-28T10:52:36.092Z"
+  },
+  {
+   "id": "d9f7facee21a",
+   "title": "5 men arrested over suspected attack at a U.S.-run air force base are British nationals",
+   "summary": "Authorities have arrested five British nationals over a suspected attack at a U.S.-operated air force base in England. The men, all in their 20s from London, were detained Sunday.",
+   "link": "https://www.npr.org/2026/09/28/g-s1-145245/britain-us-base-suspected-foiled-attack",
+   "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/7328x4885+0+0/resize/7328x4885!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb2%2F7b%2F553da6064f5d93e8d213fccad9c2%2Fap26271348244108.jpg",
+   "source": "NPR",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T10:51:25.000Z"
   },
   {
    "id": "97158b5ab4a5",
@@ -4364,6 +4391,32 @@
    "published": "2026-09-28T10:34:36.000Z"
   },
   {
+   "id": "9cc0a2f8d5ca",
+   "title": "Japan motor maker Nidec to recognize over $3.8bn impairment loss",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/companies/japan-motor-maker-nidec-to-recognize-over-3.8bn-impairment-loss",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T10:32:36.092Z"
+  },
+  {
+   "id": "1dcacb3cd2f3",
+   "title": "There are to be “no jesters, no dogs, no weapons, or any such silliness.” Or so the Renaissance painter Paolo Veronese was told by an Inquisitor",
+   "summary": "",
+   "link": "https://publicdomainreview.org/essay/veroneses-dogs/",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T10:32:36.092Z"
+  },
+  {
    "id": "2d3c3467ed03",
    "title": "第五届王蒙青年作家支持计划主题论坛举办",
    "summary": "中新网北京9月28日电 (记者 高凯)第五届王蒙青年作家支持计划“青年写作的墙与路”主题论坛日前在京举办。",
@@ -4422,32 +4475,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T10:30:00.000Z"
-  },
-  {
-   "id": "9cc0a2f8d5ca",
-   "title": "Japan motor maker Nidec to recognize over $3.8bn impairment loss",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/companies/japan-motor-maker-nidec-to-recognize-over-3.8bn-impairment-loss",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T10:29:42.024Z"
-  },
-  {
-   "id": "1dcacb3cd2f3",
-   "title": "There are to be “no jesters, no dogs, no weapons, or any such silliness.” Or so the Renaissance painter Paolo Veronese was told by an Inquisitor",
-   "summary": "",
-   "link": "https://publicdomainreview.org/essay/veroneses-dogs/",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T10:29:42.024Z"
   },
   {
    "id": "67f27e64d663",
@@ -4646,6 +4673,32 @@
    "published": "2026-09-28T10:13:11.000Z"
   },
   {
+   "id": "06dbd5167739",
+   "title": "Nissan targets 80% local production in US, stepping up response to tariffs",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/automobiles/nissan-targets-80-local-production-in-us-stepping-up-response-to-tariffs",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T10:12:36.092Z"
+  },
+  {
+   "id": "337f38666ded",
+   "title": "Harold Cruse was as pure an autodidact as any 20th-century university scholar. Tuskegee wouldn't hire him. Michigan gave him tenure",
+   "summary": "",
+   "link": "https://www.chronicle.com/article/black-studies-between-the-seminar-and-the-sermon",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T10:12:36.092Z"
+  },
+  {
    "id": "2ddd3d0da0f5",
    "title": "冯彬卫冕女子铁饼冠军",
    "summary": "新华社日本名古屋9月28日电 在刚刚结束的爱知·名古屋亚运会田径女子铁饼决赛中，卫冕冠军、中国选手冯彬获得金牌。",
@@ -4680,32 +4733,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T10:11:28.000Z"
-  },
-  {
-   "id": "06dbd5167739",
-   "title": "Nissan targets 80% local production in US, stepping up response to tariffs",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/automobiles/nissan-targets-80-local-production-in-us-stepping-up-response-to-tariffs",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T10:09:42.024Z"
-  },
-  {
-   "id": "337f38666ded",
-   "title": "Harold Cruse was as pure an autodidact as any 20th-century university scholar. Tuskegee wouldn't hire him. Michigan gave him tenure",
-   "summary": "",
-   "link": "https://www.chronicle.com/article/black-studies-between-the-seminar-and-the-sermon",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T10:09:42.024Z"
   },
   {
    "id": "366a89cabedc",
@@ -4802,18 +4829,6 @@
    "lang": "zh",
    "region": "cn",
    "published": "2026-09-28T10:00:51.000Z"
-  },
-  {
-   "id": "66ec60c78af7",
-   "title": "China professor sparks debate by claiming one-third of youth are ‘unsuitable for marriage’",
-   "summary": "A viral interview with Chinese professor-influencer Liang Yongan has reignited the debate over China’s evolving marriage norms after he argued that at least one-third of people in the country are ill-suited for marriage. Liang, 72, a professor of Chinese language and literature at Fudan University in Shanghai, has emerged as a significant voice on mainland social media, attracting nearly one milli",
-   "link": "https://www.scmp.com/news/people-culture/trending-china/article/3368944/china-professor-sparks-debate-claiming-one-third-youth-are-unsuitable-marriage?utm_source=rss_feed",
-   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/09/27/a2a1bb2c-2384-40e8-a4c0-130c790ffcf4_7950db9d.jpg?itok=7KA9sG4c&v=1790501701",
-   "source": "南华早报",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T10:00:26.000Z"
   },
   {
    "id": "aa56287a9cfe",
@@ -5056,18 +5071,6 @@
    "published": "2026-09-28T09:54:12.000Z"
   },
   {
-   "id": "729ff3435cb1",
-   "title": "英伟达 GeForce RTX 5090 成为热门走私商品",
-   "summary": "澳门海关公布，近日积极打击水客活动，加强口岸关检执法，并运用科技手段严厉打击偷运物品进出本澳的不法行为。海关仅于一周内便破获 12 宗走私案，货物总市值达 151 万，当中包括 359 件 Apple AirPods 耳机及 2 张 GeForce RTX 5090 显卡等。12 名涉案人士年龄介乎 18 至 53 岁，当中包括 7 名内地旅客、3 名澳门居民及 2 名香港居民。澳门海关已根据《对外贸易法》对涉案人士作出起诉，相关违法行为一经证实，可被科处最高 10 万澳元罚款，所缉获的货物亦会宣告归澳门特别行政区所有。",
-   "link": "https://www.solidot.org/story?sid=85493",
-   "image": "",
-   "source": "Solidot",
-   "category": "tech",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T09:52:16.000Z"
-  },
-  {
    "id": "500c829435ae",
    "title": "Cambodia's scam probes are only a first step",
    "summary": "",
@@ -5078,7 +5081,7 @@
    "lang": "en",
    "region": "global",
    "undated": true,
-   "published": "2026-09-28T09:49:42.024Z"
+   "published": "2026-09-28T09:52:36.092Z"
   },
   {
    "id": "e2888b0ee465",
@@ -5091,7 +5094,19 @@
    "lang": "en",
    "region": "global",
    "undated": true,
-   "published": "2026-09-28T09:49:42.024Z"
+   "published": "2026-09-28T09:52:36.092Z"
+  },
+  {
+   "id": "729ff3435cb1",
+   "title": "英伟达 GeForce RTX 5090 成为热门走私商品",
+   "summary": "澳门海关公布，近日积极打击水客活动，加强口岸关检执法，并运用科技手段严厉打击偷运物品进出本澳的不法行为。海关仅于一周内便破获 12 宗走私案，货物总市值达 151 万，当中包括 359 件 Apple AirPods 耳机及 2 张 GeForce RTX 5090 显卡等。12 名涉案人士年龄介乎 18 至 53 岁，当中包括 7 名内地旅客、3 名澳门居民及 2 名香港居民。澳门海关已根据《对外贸易法》对涉案人士作出起诉，相关违法行为一经证实，可被科处最高 10 万澳元罚款，所缉获的货物亦会宣告归澳门特别行政区所有。",
+   "link": "https://www.solidot.org/story?sid=85493",
+   "image": "",
+   "source": "Solidot",
+   "category": "tech",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T09:52:16.000Z"
   },
   {
    "id": "0bea9c3a41ef",
@@ -5274,6 +5289,32 @@
    "published": "2026-09-28T09:33:03.000Z"
   },
   {
+   "id": "18891308eebb",
+   "title": "IHG to open premium hotels under new brand in Tokyo, marking first in Asia",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/markets/property/ihg-to-open-premium-hotels-under-new-brand-in-tokyo-marking-first-in-asia",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T09:32:36.092Z"
+  },
+  {
+   "id": "3f22c9b19cb7",
+   "title": "For four years, a fellow saxophonist taped John Coltrane's gigs: 26-plus hours of music. His subterfuge is our gift",
+   "summary": "",
+   "link": "https://www.tabletmag.com/sections/arts-letters/articles/coltranes-shadow-tiberi-tapes",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T09:32:36.092Z"
+  },
+  {
    "id": "2a8918a8f434",
    "title": "Tensions run high in Northern Ireland after march blocked from historic flashpoint",
    "summary": "Tensions ran high in Northern Ireland on Sunday after a contentious parade was blocked from making its way through the town of Portadown by thousands of protesters. It is the first time in nearly 30 years that the Orange Order parade has been allowed to go down the Garvaghy Road, which had been a notorious flashpoint between the communities in the years before the Good Friday Agreement of 1998 lar",
@@ -5320,32 +5361,6 @@
    "lang": "zh",
    "region": "cn",
    "published": "2026-09-28T09:29:57.000Z"
-  },
-  {
-   "id": "18891308eebb",
-   "title": "IHG to open premium hotels under new brand in Tokyo, marking first in Asia",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/markets/property/ihg-to-open-premium-hotels-under-new-brand-in-tokyo-marking-first-in-asia",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T09:29:42.024Z"
-  },
-  {
-   "id": "3f22c9b19cb7",
-   "title": "For four years, a fellow saxophonist taped John Coltrane's gigs: 26-plus hours of music. His subterfuge is our gift",
-   "summary": "",
-   "link": "https://www.tabletmag.com/sections/arts-letters/articles/coltranes-shadow-tiberi-tapes",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T09:29:42.024Z"
   },
   {
    "id": "b07788a03e0f",
@@ -5504,6 +5519,19 @@
    "published": "2026-09-28T09:12:41.000Z"
   },
   {
+   "id": "863c8e7f2d8c",
+   "title": "TSMC affiliate already eyes expansion as first Singapore plant 'sells out'",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/tech/semiconductors/tsmc-affiliate-already-eyes-expansion-as-first-singapore-plant-sells-out",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T09:12:36.092Z"
+  },
+  {
    "id": "72d0af6f1454",
    "title": "Yemeni government forces bomb Houthi positions in Taiz as conflict escalates",
    "summary": "Taiz military command says strikes targeted sites in Al-Rubaie area west of Taiz",
@@ -5550,19 +5578,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T09:10:04.000Z"
-  },
-  {
-   "id": "863c8e7f2d8c",
-   "title": "TSMC affiliate already eyes expansion as first Singapore plant 'sells out'",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/tech/semiconductors/tsmc-affiliate-already-eyes-expansion-as-first-singapore-plant-sells-out",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T09:09:42.024Z"
   },
   {
    "id": "fea36f8c4e8c",
@@ -5863,7 +5878,7 @@
    "lang": "en",
    "region": "global",
    "undated": true,
-   "published": "2026-09-28T08:49:42.024Z"
+   "published": "2026-09-28T08:52:36.092Z"
   },
   {
    "id": "aeebea03ec61",
@@ -6010,6 +6025,19 @@
    "published": "2026-09-28T08:33:29.000Z"
   },
   {
+   "id": "930ee2483e59",
+   "title": "Kazakh oil producers weigh new trans-Caspian route to avoid Russia",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/energy/kazakh-oil-producers-weigh-new-trans-caspian-route-to-avoid-russia",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T08:32:36.092Z"
+  },
+  {
    "id": "89091ba71b12",
    "title": "寻访一二九师司令部旧址：一把栲栳圈椅见证烽火岁月",
    "summary": "央广网河北9月28日消息(见习记者隋坤)83岁的赤岸村村民张满元坐在家门口的石阶上，向游客讲述着身后一二九师旧址的故事。",
@@ -6044,19 +6072,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T08:31:33.000Z"
-  },
-  {
-   "id": "930ee2483e59",
-   "title": "Kazakh oil producers weigh new trans-Caspian route to avoid Russia",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/energy/kazakh-oil-producers-weigh-new-trans-caspian-route-to-avoid-russia",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T08:29:42.024Z"
   },
   {
    "id": "1a217a0c3cf2",
@@ -6275,6 +6290,19 @@
    "published": "2026-09-28T08:13:00.000Z"
   },
   {
+   "id": "80ebb3b092b2",
+   "title": "Geely to acquire 30% of competitor Nio's battery swapping unit",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/automobiles/electric-vehicles/geely-to-acquire-30-of-competitor-nio-s-battery-swapping-unit",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T08:12:36.092Z"
+  },
+  {
    "id": "8fd61b883f2b",
    "title": "日本官房长官反驳俄罗斯称日本“正在走军国主义道路”",
    "summary": "日本内阁官房长官木原稔28日上午在记者会上表示，针对俄罗斯外长拉夫罗夫在联合国大会演讲中声称日本正在走军国主义道路，并表示反对日本成为联合国安理会常任理事国一事指出，日本认为这一说法与事实不符，因此行使答辩权，阐明了日本的立场。 千岛群岛的紧张局势：普京的访问（2026 年） © Kyodo via Reuters / Sputnik G.Grigorov via Reuters 俄罗斯外长拉夫罗夫当地时间26日在第81届联合国大会一般性辩论上发言，明确反对日本、德国成为安理会常任理事国的要求，并批评日本“正在走军国主义道路”。表明了反对立场。对于同样寻求入常的巴西和印度，拉夫罗夫则表示支持。 木原官房长官表示：“（拉夫罗夫外长的发言）与事实不符。日本行使答辩权，明确传达了日本的立场，即日本战后始终坚持维护自由、民主主义和法治，为亚洲乃至世界的繁荣作出了贡献。” 关于日本在安理会改革问题上",
@@ -6297,19 +6325,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T08:10:00.000Z"
-  },
-  {
-   "id": "80ebb3b092b2",
-   "title": "Geely to acquire 30% of competitor Nio's battery swapping unit",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/automobiles/electric-vehicles/geely-to-acquire-30-of-competitor-nio-s-battery-swapping-unit",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T08:09:42.024Z"
   },
   {
    "id": "3dbb03caa6d7",
@@ -6540,18 +6555,6 @@
    "published": "2026-09-28T07:48:32.000Z"
   },
   {
-   "id": "b725346e05f9",
-   "title": "Seoul awaits US go-ahead for $22.3 billion Texas power project",
-   "summary": "The first project under South Korea’s $200 billion US investment program is awaiting Washington’s final approval, despite Seoul completing its domestic procedures, the industry ministry said Monday. Seoul briefed parliament on Sept. 22 on three projects discussed with US officials, paving the way for an expected US announcement. Washington has yet to make one. “Our procedures are all complete, and",
-   "link": "https://www.koreaherald.com/article/10886574",
-   "image": "https://wimg.heraldcorp.com/news/cms/2026/09/28/news-p.v1.20260928.a660e618d4094b4688c7f62378154b9b_T1.png",
-   "source": "The Korea Herald",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T07:47:26.000Z"
-  },
-  {
    "id": "49131c0bbc5f",
    "title": "Iran link examined as UK police quiz five men held at airbase used by US",
    "summary": "By Toby Shepheard FAIRFORD, England, Sept 28 (Reuters) - British police were questioning five men on Monday on suspicion of explosives and terrorism offences after their detention near an airbase used by the US to strike Iran. Officers seized the men in the early hours of Sunday after a tip-off that three large white vans were heading to the military airfield of RAF Fairford in western England whi",
@@ -6592,7 +6595,7 @@
    "title": "RSI概念过热，一线学者：有炒作成分",
    "summary": "人人都在担心AI失控，我们找了个不慌的人聊了聊。",
    "link": "https://www.tmtpost.com/8153593.html",
-   "image": "https://images.tmtpost.com/uploads/images/wx/2026/09/20260927225935641571.jpg",
+   "image": "https://images.tmtpost.com/uploads/images/2023/tkrss/2t43q5hwry3.png",
    "source": "钛媒体",
    "category": "business",
    "lang": "zh",
@@ -6792,6 +6795,18 @@
    "published": "2026-09-28T07:24:38.000Z"
   },
   {
+   "id": "d54ba18d9a74",
+   "title": "Trump-Xi summit analysis: 'Tangible outcomes' needed for U.S.-China truce to hold",
+   "summary": "U.S. President Donald Trump and Chinese President Xi Jinping met in Washington, D.C., last week and signaled plans to meet two more times this year.",
+   "link": "https://www.cnbc.com/2026/09/28/trump-xi-summit-tangible-outcomes-us-china-truce.html",
+   "image": "",
+   "source": "CNBC",
+   "category": "business",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T07:22:06.000Z"
+  },
+  {
    "id": "eb3ef63ca00e",
    "title": "“中巴文化年”中外经典歌剧选段音乐会在圣保罗举行",
    "summary": "中新社圣保罗9月28日电 (记者 林春茵)当地时间27日，可纳千余人的巴西圣保罗保罗·奥特朗剧院座无虚席。“中巴文化年”中外经典歌剧选段音乐会在此间举行，来自中国中央歌剧院的音乐家们与巴西歌唱家联袂演出，以乐会友。",
@@ -6874,18 +6889,6 @@
    "lang": "zh",
    "region": "global",
    "published": "2026-09-28T07:13:38.000Z"
-  },
-  {
-   "id": "a9e7356102d7",
-   "title": "中国队夺得亚运会电子竞技王者荣耀金牌！",
-   "summary": "9月28日，名古屋亚运会电子竞技王者荣耀决赛，中国队夺得金牌！",
-   "link": "https://www.chinanews.com.cn/ty/2026/09-28/10704858.shtml",
-   "image": "",
-   "source": "中新网·体育",
-   "category": "society",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T07:09:52.000Z"
   },
   {
    "id": "d5d034663e68",
