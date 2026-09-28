@@ -44,6 +44,27 @@ const MODEL = process.env.EDITORIAL_MODEL || 'deepseek-flash';
 const DATA_DIR = path.join(ROOT, 'data');
 const NEWS_DIR = path.join(DATA_DIR, 'news');
 const EDITORIAL_DIR = path.join(ROOT, 'editorial');
+const STATUS_FILE = path.join(DATA_DIR, 'editorial-status.json');
+
+let currentDate = null;
+
+/**
+ * 把这一次生成的结果写进 data/editorial-status.json。
+ * 云端失败时，错误原因会随数据一起提交回仓库，
+ * 不必再去 Actions 页翻折叠日志。
+ */
+async function writeStatus(payload) {
+  try {
+    await fs.mkdir(DATA_DIR, { recursive: true });
+    await fs.writeFile(
+      STATUS_FILE,
+      `${JSON.stringify({ date: currentDate, model: MODEL, at: new Date().toISOString(), ...payload }, null, 2)}\n`,
+      'utf8',
+    );
+  } catch {
+    /* 状态文件写不进去也不影响主流程 */
+  }
+}
 
 const fmt = (iso) => new Date(iso).toLocaleString('zh-CN', { timeZone: TZ, hour12: false });
 
@@ -179,6 +200,7 @@ async function latestDate() {
 
 async function main() {
   const date = await latestDate();
+  currentDate = date;
   const data = JSON.parse(await fs.readFile(path.join(NEWS_DIR, `${date}.json`), 'utf8'));
   const outFile = path.join(EDITORIAL_DIR, `${date}.md`);
 
@@ -186,6 +208,7 @@ async function main() {
     const exists = await fs.access(outFile).then(() => true).catch(() => false);
     if (exists) {
       console.log(`  专栏已存在：editorial/${date}.md（要覆盖请加 --force）`);
+      await writeStatus({ ok: false, reason: 'already-exists', note: '专栏已存在，未覆盖' });
       return;
     }
   }
@@ -206,6 +229,7 @@ async function main() {
   if (!API_KEY) {
     console.log('  没有配置 EDITORIAL_API_KEY，跳过专栏生成（站点照常发布，专栏位置会显示"待撰写"）。');
     console.log('  配置方法见 README 的「部署到云端」一节。');
+    await writeStatus({ ok: false, reason: 'no-api-key', note: '没有读到 API Key' });
     return;
   }
 
@@ -226,7 +250,16 @@ async function main() {
 
   if (!res.ok) {
     const body = await res.text().catch(() => '');
-    throw new Error(`模型接口返回 ${res.status}：${body.slice(0, 300)}`);
+    const detail = body.slice(0, 500);
+    console.log(`  模型接口返回 ${res.status}：${detail}`);
+    await writeStatus({
+      ok: false,
+      reason: 'api-error',
+      httpStatus: res.status,
+      endpoint: `${BASE_URL}/chat/completions`,
+      detail,
+    });
+    throw new Error(`模型接口返回 ${res.status}`);
   }
 
   const json = await res.json();
@@ -239,6 +272,13 @@ async function main() {
   const missing = ['## 一、今日综述', '## 二、多角度观察', '## 三、明日观察清单', '主编按']
     .filter((s) => !text.includes(s));
   console.log(`  已写入 editorial/${date}.md（${text.length} 字）`);
+  await writeStatus({
+    ok: true,
+    chars: text.length,
+    usage: json.usage || null,
+    file: `editorial/${date}.md`,
+    note: '已完成',
+  });
   if (missing.length) console.log(`  注意：输出缺少以下结构 ${missing.join('、')}，建议人工过一眼。`);
   if (json.usage) {
     console.log(`  用量：输入 ${json.usage.prompt_tokens} tokens，输出 ${json.usage.completion_tokens} tokens`);
@@ -247,5 +287,6 @@ async function main() {
 
 main().catch((err) => {
   console.error(`\n  专栏生成失败：${err.message}\n`);
+  writeStatus({ ok: false, reason: 'exception', error: err.message }).catch(() => {});
   process.exitCode = 1;
 });
