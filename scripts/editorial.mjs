@@ -17,6 +17,10 @@
  *   EDITORIAL_MODEL     模型名，默认 deepseek-flash
  *                       （DeepSeek 现行模型为 deepseek-flash 与 deepseek-v4-pro；
  *                         旧的 deepseek-chat / deepseek-reasoner 已下线）
+ *   EDITORIAL_THINKING    设成 enabled 才开启思考模式。默认关闭：
+ *                         DeepSeek 的思考模式默认开启，若 max_tokens 不够，
+ *                         额度会被思考过程吃光，正文返回空字符串。
+ *   EDITORIAL_MAX_TOKENS  单次输出上限，默认 8000
  */
 
 import fs from 'node:fs/promises';
@@ -40,6 +44,8 @@ const PER_CATEGORY = Number(readArg('items', 12));
 const API_KEY = process.env.EDITORIAL_API_KEY || process.env.OPENAI_API_KEY || '';
 const BASE_URL = (process.env.EDITORIAL_BASE_URL || process.env.OPENAI_BASE_URL || 'https://api.deepseek.com').replace(/\/+$/, '');
 const MODEL = process.env.EDITORIAL_MODEL || 'deepseek-flash';
+const THINKING = (process.env.EDITORIAL_THINKING || 'disabled').toLowerCase();
+const MAX_TOKENS = Number(process.env.EDITORIAL_MAX_TOKENS || 8000);
 
 const DATA_DIR = path.join(ROOT, 'data');
 const NEWS_DIR = path.join(DATA_DIR, 'news');
@@ -240,7 +246,9 @@ async function main() {
     body: JSON.stringify({
       model: MODEL,
       temperature: 0.6,
-      max_tokens: 4000,
+      max_tokens: MAX_TOKENS,
+      // 显式关掉思考模式：默认开启时，思考会先吃掉额度，可能导致正文为空
+      thinking: { type: THINKING === 'enabled' ? 'enabled' : 'disabled' },
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },
         { role: 'user', content: userPrompt },
@@ -265,7 +273,22 @@ async function main() {
   const json = await res.json();
   let text = json.choices?.[0]?.message?.content?.trim() || '';
   text = text.replace(/^```(?:markdown|md)?\n/, '').replace(/\n```$/, '').trim();
-  if (text.length < 400) throw new Error(`模型输出过短（${text.length} 字），已放弃写入`);
+  if (text.length < 400) {
+    // 把响应骨架记进状态文件，以后出问题不用猜
+    const message = json.choices?.[0]?.message || {};
+    await writeStatus({
+      ok: false,
+      reason: 'empty-content',
+      thinking: THINKING,
+      maxTokens: MAX_TOKENS,
+      finishReason: json.choices?.[0]?.finish_reason || null,
+      contentChars: (message.content || '').length,
+      reasoningChars: (message.reasoning_content || '').length,
+      messageKeys: Object.keys(message),
+      usage: json.usage || null,
+    });
+    throw new Error(`模型输出过短（${text.length} 字），已放弃写入`);
+  }
 
   await fs.writeFile(outFile, `${text}\n`, 'utf8');
 
