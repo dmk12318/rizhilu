@@ -52,7 +52,7 @@ jobs:
           EDITORIAL_API_KEY: ${{ secrets.EDITORIAL_API_KEY || secrets.DAILYNEWS }}
           EDITORIAL_BASE_URL: ${{ vars.EDITORIAL_BASE_URL }}
           EDITORIAL_MODEL: ${{ vars.EDITORIAL_MODEL || vars.DAILYNEWS }}
-        run: node scripts/editorial.mjs
+        run: node scripts/editorial.mjs --force
 
       - name: 组装站点
         run: |
