@@ -556,6 +556,17 @@ function renderFooter() {
   const failed = state.sources?.failed?.length || 0;
   const skipped = s.sourcesSkipped ?? 0;
   const active = s.sourcesActive ?? s.sourcesConfigured ?? 0;
+
+  // 重建版（用 git 快照补出来的那期）没有"抓取连通率"这回事，别显示假数据
+  if (d.rebuilt) {
+    el('sourceNote').textContent =
+      `本期收录 ${s.total ?? 0} 条报道，来自 ${Object.keys(s.bySource || {}).length} 家媒体；` +
+      `由历史快照重建（${d.note || '过去某一时点的窗口'}），RSS 不保留历史，条目数会明显少于正常一期。`;
+    el('generatedAt').textContent = `视作生成于 ${fullTime(d.generatedAt)}`;
+    el('windowNote').textContent = `覆盖最近 ${d.windowHours || 24} 小时`;
+    return;
+  }
+
   const notes = [];
   if (failed) notes.push(`${failed} 个源本次不可用`);
   if (skipped) notes.push(`${skipped} 个境外源未参与（抓取时未开启代理）`);
