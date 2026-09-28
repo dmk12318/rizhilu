@@ -66,6 +66,17 @@ jobs:
           EDITORIAL_MODEL: ${{ vars.EDITORIAL_MODEL || vars.DAILYNEWS }}
         run: node scripts/editorial.mjs --scope=world
 
+      # ===== 临时步骤：仅为补齐 2026-09-28 的境外要闻，用完即删 =====
+      - name: 临时-补齐9月28日境外要闻
+        if: ${{ github.event_name == 'push' }}
+        continue-on-error: true
+        env:
+          EDITORIAL_API_KEY: ${{ secrets.EDITORIAL_API_KEY || secrets.DAILYNEWS }}
+          EDITORIAL_BASE_URL: ${{ vars.EDITORIAL_BASE_URL }}
+          EDITORIAL_MODEL: ${{ vars.EDITORIAL_MODEL || vars.DAILYNEWS }}
+        run: node scripts/editorial.mjs --scope=world --date=2026-09-28 --force
+      # ===== 临时步骤结束 =====
+
       - name: 组装站点
         run: |
           mkdir -p _site
