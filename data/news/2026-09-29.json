@@ -1,6 +1,6 @@
 {
  "date": "2026-09-29",
- "generatedAt": "2026-09-28T16:06:26.130Z",
+ "generatedAt": "2026-09-28T16:08:59.203Z",
  "windowHours": 24,
  "timezone": "Asia/Shanghai",
  "categories": [
@@ -48,26 +48,27 @@
   }
  ],
  "stats": {
-  "total": 804,
-  "rawTotal": 853,
+  "total": 791,
+  "rawTotal": 840,
   "sourcesConfigured": 107,
   "sourcesActive": 107,
   "sourcesSkipped": 0,
   "overseas": "on",
-  "sourcesOk": 106,
-  "sourcesFailed": 1,
+  "sourcesOk": 102,
+  "sourcesFailed": 5,
   "counts": {
-   "tech": 140,
-   "world": 298,
+   "tech": 135,
+   "world": 295,
    "business": 124,
    "culture": 59,
    "top": 128,
-   "military": 21,
+   "military": 16,
    "society": 34
   },
   "bySource": {
    "InfoQ中文": 7,
    "Meduza": 7,
+   "NYT World": 12,
    "CNBC": 18,
    "TASS": 15,
    "MarketWatch": 10,
@@ -75,8 +76,10 @@
    "IT之家": 25,
    "The Straits Times": 8,
    "中国新闻网": 29,
+   "The Guardian": 5,
    "CBS News": 12,
    "南华早报": 11,
+   "The Hill": 15,
    "Anadolu Agency": 15,
    "CNA": 8,
    "澎湃新闻": 17,
@@ -87,7 +90,6 @@
    "France 24": 19,
    "Yonhap": 9,
    "Al Jazeera": 12,
-   "The Hill": 15,
    "Smithsonian": 3,
    "Hacker News": 15,
    "TechCrunch": 15,
@@ -95,22 +97,18 @@
    "RFI English": 7,
    "Le Monde": 10,
    "法国国际广播电台": 12,
-   "Naval News": 2,
    "经济观察网": 6,
    "Kyiv Post": 10,
    "Euronews": 8,
-   "Indian Express": 5,
    "Defense News": 3,
    "华尔街见闻": 20,
    "BBC World": 10,
-   "Breaking Defense": 3,
    "东方财富": 18,
    "Al-Monitor": 6,
    "Army Times": 3,
    "Wired": 11,
    "Quanta Magazine": 1,
    "德国之声中文": 6,
-   "NYT World": 11,
    "集思录": 3,
    "Nikkei Asia": 10,
    "Arts & Letters Daily": 6,
@@ -140,7 +138,6 @@
    "The Japan Times": 10,
    "中新网·教育": 2,
    "Ars Technica": 1,
-   "The Guardian": 4,
    "BBC中文": 6,
    "Literary Hub": 7,
    "爱范儿": 5,
@@ -158,7 +155,6 @@
    "Foreign Affairs": 2,
    "The Diplomat": 2,
    "纽约时报中文网": 6,
-   "Nature": 5,
    "Air & Space Forces": 1
   }
  },
@@ -246,6 +242,18 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-28T16:05:01.000Z"
+  },
+  {
+   "id": "5c5998aa1bcc",
+   "title": "Fire, Smoke and Desperation After a Strike in the Heart of Kyiv",
+   "summary": "A Russian jet-powered drone hit Ukraine’s National Academy of Sciences, the source of almost all of the country’s major scientific discoveries.",
+   "link": "https://www.nytimes.com/2026/09/28/world/europe/urkaine-drone-attack-kyiv-academy-sciences.html",
+   "image": "https://static01.nyt.com/images/2026/09/28/multimedia/28ukraine-strike-01-fmzj/28ukraine-strike-01-fmzj-mediumSquareAt3X.jpg",
+   "source": "NYT World",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T16:02:59.000Z"
   },
   {
    "id": "de423bea6459",
@@ -362,6 +370,18 @@
    ]
   },
   {
+   "id": "b7e056111344",
+   "title": "DRC politician beaten to death after radio appearance about Ebola outbreak",
+   "summary": "Marie-Celestin Karondwa was attacked on Sunday after promoting measures to prevent spread of disease, his party says A senior member of the Democratic Republic of the Congo’s ruling party was beaten to death on Sunday after appearing on a radio programme to raise awareness about the Ebola outbreak, a party representative has said. Marie-Celestin Karondwa, the acting president of the Union for Demo",
+   "link": "https://www.theguardian.com/world/2026/sep/28/drc-politician-beaten-death-radio-appearance-ebola",
+   "image": "https://i.guim.co.uk/img/media/61403a8dd74d017285bb8150e824df568d851630/836_0_6055_4846/master/6055.jpg?width=140&quality=85&auto=format&fit=max&s=41d903cf360614a19b7345908d84be0a",
+   "source": "The Guardian",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T15:54:25.000Z"
+  },
+  {
    "id": "3a8d4f56f9ac",
    "title": "王毅会见日本国际贸易促进协会会长岩屋毅",
    "summary": "2026年9月28日，中共中央政治局委员、中央外办主任王毅在北京会见日本国际贸易促进协会会长岩屋毅。",
@@ -413,6 +433,18 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-28T15:51:54.000Z"
+  },
+  {
+   "id": "aaea1ce8850c",
+   "title": "What will winter be like near you? Here's what the outlooks suggest",
+   "summary": "Will you need a parka and a shovel or an umbrella and a sweater this winter?",
+   "link": "https://thehill.com/homenews/state-watch/6115182-what-will-winter-be-like-near-you-heres-what-the-outlooks-suggest/",
+   "image": "https://thehill.com/wp-content/uploads/sites/2/2026/05/AP110201133946.jpg?w=884",
+   "source": "The Hill",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-28T15:50:14.000Z"
   },
   {
    "id": "9b525f879bc1",
@@ -612,7 +644,7 @@
   {
    "id": "27d822cac4e0",
    "title": "GOP chair of Georgia Peanut Commission backs Ossoff for Senate",
-   "summary": "The Republican chair of the Georgia Peanut Commission is backing Democratic Sen. Jon Ossoff (Ga.) in his bid for a second full term. “We don’t necessarily elect a party,” commission Chair Donald Chase told The Atlanta Journal-Constitution (AJC). “I like to support people that I can get behind and believe in.” Chase, whom board members...",
+   "summary": "The Republican chair of the Georgia Peanut Commission is backing Democratic Sen. Jon Ossoff (Ga.) in his bid for a second full term. “We don’t necessarily elect a party,” commission Chair Donald Chase told The Atlanta Journal-Constitution. “I like to support people that I can get behind and believe in.” Chase, whom board members elected...",
    "link": "https://thehill.com/homenews/campaign/6115282-republican-peanut-commission-chair-backs-ossoff/",
    "image": "https://thehill.com/wp-content/uploads/sites/2/2026/07/ossoffjon_072126gn02_w.jpg?w=900",
    "source": "The Hill",
@@ -1081,18 +1113,6 @@
    "published": "2026-09-28T15:17:54.000Z"
   },
   {
-   "id": "786f40f8741e",
-   "title": "Fincantieri and PT PAL Indonesia sign agreement for the modernization of ex-Giuseppe Garibaldi",
-   "summary": "Fincantieri, one of the world’s leading shipbuilding groups, and PT PAL Indonesia, the country’s leading state-owned shipbuilder, signed a Memorandum of Understanding (MoU) establishing a framework for cooperation on the future modernization program of the Indonesian Navy’s KRI SRIWIJAYA (former Giuseppe Garibaldi). Fincantieri press release The agreement was signed in Jakarta by Mauro Manzini, Vi",
-   "link": "https://www.navalnews.com/naval-news/2026/09/fincantieri-and-pt-pal-indonesia-sign-agreement-for-the-modernization-of-ex-giuseppe-garibaldi/",
-   "image": "",
-   "source": "Naval News",
-   "category": "military",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T15:16:46.000Z"
-  },
-  {
    "id": "83fee5e659ef",
    "title": "US says no China arms sale plans after envoy cites Trump offer",
    "summary": "The State Department said in a statement to the New York Times that US law prohibits arms sales to China.",
@@ -1465,18 +1485,6 @@
    "published": "2026-09-28T15:03:04.000Z"
   },
   {
-   "id": "7556e53814c5",
-   "title": "Mountain collapses into river in Nepal, terrifying video captures chaos",
-   "summary": "",
-   "link": "https://indianexpress.com/article/world/mountain-collapses-into-river-in-nepal-terrifying-video-captures-chaos-10897746/",
-   "image": "https://images.indianexpress.com/2026/09/nepal-landslide.jpg",
-   "source": "Indian Express",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T15:02:49.000Z"
-  },
-  {
    "id": "98167a1b3da6",
    "title": "Networks to resume TV pool coverage of Trump despite White House block of CNN",
    "summary": "Major television networks plan to continue to provide pool coverage of President Trump's daily activities this week despite the White House's ongoing efforts to block CNN from covering the president. Each of the TV networks in the pool, including NBC, ABC, CBS and Fox, plan to fulfill their pool duties on the days they are...",
@@ -1742,18 +1750,6 @@
    "lang": "zh",
    "origin": "cn",
    "published": "2026-09-28T14:56:53.000Z"
-  },
-  {
-   "id": "73931b5119e9",
-   "title": "If Washington is going to be a shareholder, it should act like one",
-   "summary": "As governments increasingly seek to broaden industrial advantages, if the US is going to follow suit, its justifications should be clear, exceptional and subject to consistent rules, two advisors argue.",
-   "link": "https://breakingdefense.com/2026/09/if-washington-is-going-to-be-a-shareholder-it-should-act-like-one/",
-   "image": "https://breakingdefense.com/wp-content/uploads/sites/13/2026/07/GettyImages-2270759445-e1784823974895.jpg",
-   "source": "Breaking Defense",
-   "category": "military",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T14:56:12.000Z"
   },
   {
    "id": "85e165a1568b",
@@ -3003,6 +2999,32 @@
    "published": "2026-09-28T14:09:25.000Z"
   },
   {
+   "id": "ef9186009fc9",
+   "title": "North Korean POWs arrive in South Korea from Ukraine: local media",
+   "summary": "",
+   "link": "https://asia.nikkei.com/politics/international-relations/north-korean-pows-arrive-in-south-korea-from-ukraine-local-media",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T14:08:59.203Z"
+  },
+  {
+   "id": "bcc6054aa4c2",
+   "title": "Egomaniacs, psychos, and informants. Why is it we look past all sorts of ugliness and insist on mythologizing revolutionaries?",
+   "summary": "",
+   "link": "https://theamericanscholar.org/the-allure-of-eden-on-earth/",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T14:08:59.203Z"
+  },
+  {
    "id": "772f5717e611",
    "title": "（爱知·名古屋亚运会）中国队包揽跳水男、女1米板冠军",
    "summary": "中新社东京9月28日电 (记者 朱晨曦)中国跳水队在爱知·名古屋亚运会上的“金牌收割”仍在继续。在28日进行的男、女1米板决赛中，中国队包揽冠军。",
@@ -3052,32 +3074,6 @@
    "lang": "zh",
    "origin": "overseas",
    "published": "2026-09-28T14:07:00.000Z"
-  },
-  {
-   "id": "ef9186009fc9",
-   "title": "North Korean POWs arrive in South Korea from Ukraine: local media",
-   "summary": "",
-   "link": "https://asia.nikkei.com/politics/international-relations/north-korean-pows-arrive-in-south-korea-from-ukraine-local-media",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T14:06:26.130Z"
-  },
-  {
-   "id": "bcc6054aa4c2",
-   "title": "Egomaniacs, psychos, and informants. Why is it we look past all sorts of ugliness and insist on mythologizing revolutionaries?",
-   "summary": "",
-   "link": "https://theamericanscholar.org/the-allure-of-eden-on-earth/",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T14:06:26.130Z"
   },
   {
    "id": "261b723593b0",
@@ -3257,8 +3253,8 @@
    "published": "2026-09-28T14:00:00.000Z"
   },
   {
-   "id": "8d1dc9d54322",
-   "title": "Your final chance to grab your exhibit table at TechCrunch Disrupt 2026 is Oct. 2",
+   "id": "410bdd73a5bd",
+   "title": "Your final chance to grab your exhibit table at TechCrunch Disrupt 2026 is October 2",
    "summary": "The last day to book your Disrupt 2026 exhibit table is this Friday, October 2 at 11:59 p.m. PT. Secure your exhibit table and get your startup in front of 10,000+ founders, investors and tech leaders at San Francisco's Moscone West on Oct 13-15.",
    "link": "https://techcrunch.com/2026/09/28/disrupt-2026-exhibitor-program-extended-until-oct-2/",
    "image": "",
@@ -3683,6 +3679,32 @@
    "published": "2026-09-28T13:49:16.000Z"
   },
   {
+   "id": "27d8ff187b15",
+   "title": "Sony Group to skip 2027 CES trade show after 6 decades",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/companies/sony-group-to-skip-2027-ces-trade-show-after-6-decades",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T13:48:59.203Z"
+  },
+  {
+   "id": "87d36b57b245",
+   "title": "As an AI-generated sameness permeates “creative” work and the knowledge economy, we’re entering an era of bleh",
+   "summary": "",
+   "link": "https://www.noemamag.com/now-entering-the-era-of-bleh",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T13:48:59.203Z"
+  },
+  {
    "id": "89557ddb8731",
    "title": "2025年中国政府采购规模33212.96亿元",
    "summary": "中新社北京9月28日电 (记者 赵建华)中国财政部28日公布的数据显示，2025年全国政府采购规模为33212.96亿元(人民币，下同)。其中，货物、工程、服务政府采购规模分别占全国政府采购规模比例为23.95%、39.28%和36.77%。从组织形式看，政府集中采购、部门集中采购、分散采购规模分别占全国政府采购规模的18.8%、3.07%和78.12%。",
@@ -3801,32 +3823,6 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-28T13:46:34.000Z"
-  },
-  {
-   "id": "27d8ff187b15",
-   "title": "Sony Group to skip 2027 CES trade show after 6 decades",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/companies/sony-group-to-skip-2027-ces-trade-show-after-6-decades",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T13:46:26.130Z"
-  },
-  {
-   "id": "87d36b57b245",
-   "title": "As an AI-generated sameness permeates “creative” work and the knowledge economy, we’re entering an era of bleh",
-   "summary": "",
-   "link": "https://www.noemamag.com/now-entering-the-era-of-bleh",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T13:46:26.130Z"
   },
   {
    "id": "a725ead8787a",
@@ -4129,18 +4125,6 @@
    "published": "2026-09-28T13:30:27.000Z"
   },
   {
-   "id": "6221c02fd05a",
-   "title": "The legacy of Clarence Thomas will be declining trust in the Supreme Court",
-   "summary": "Supreme Court Justice Clarence Thomas faces a complicated historical legacy marked by record declines in public trust in the judiciary.",
-   "link": "https://thehill.com/opinion/judiciary/supreme-court/6114201-thomas-supreme-court-legacy/",
-   "image": "https://thehill.com/wp-content/uploads/sites/2/2026/09/AP26142583602841.jpg?w=900",
-   "source": "The Hill",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T13:30:00.000Z"
-  },
-  {
    "id": "b8609076f2a0",
    "title": "Strong AI demand prompts Hong Kong trade body to raise export growth forecast",
    "summary": "Stronger-than-expected global demand for artificial intelligence-related products has prompted the Trade Development Council to sharply raise its full-year forecast for Hong Kong export growth in 2026 to as much as 47 per cent. The latest revision follows the council in June raising its midyear forecast to 20 per cent growth, from an earlier estimate of 8 to 9 per cent. Its latest survey of the ci",
@@ -4151,6 +4135,32 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-28T13:29:29.000Z"
+  },
+  {
+   "id": "94c57192b52e",
+   "title": "NTT, SoftBank eye AI cybersecurity systems that keep data in Japan",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/technology/artificial-intelligence/ntt-softbank-eye-ai-cybersecurity-systems-that-keep-data-in-japan",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T13:28:59.203Z"
+  },
+  {
+   "id": "1dcacb3cd2f3",
+   "title": "There are to be “no jesters, no dogs, no weapons, or any such silliness.” Or so the Renaissance painter Paolo Veronese was told by an Inquisitor",
+   "summary": "",
+   "link": "https://publicdomainreview.org/essay/veroneses-dogs/",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T13:28:59.203Z"
   },
   {
    "id": "56049c6c7c12",
@@ -4187,32 +4197,6 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-28T13:27:00.000Z"
-  },
-  {
-   "id": "94c57192b52e",
-   "title": "NTT, SoftBank eye AI cybersecurity systems that keep data in Japan",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/technology/artificial-intelligence/ntt-softbank-eye-ai-cybersecurity-systems-that-keep-data-in-japan",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T13:26:26.130Z"
-  },
-  {
-   "id": "1dcacb3cd2f3",
-   "title": "There are to be “no jesters, no dogs, no weapons, or any such silliness.” Or so the Renaissance painter Paolo Veronese was told by an Inquisitor",
-   "summary": "",
-   "link": "https://publicdomainreview.org/essay/veroneses-dogs/",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T13:26:26.130Z"
   },
   {
    "id": "f2bd923cc7d1",
@@ -4506,6 +4490,32 @@
    "published": "2026-09-28T13:09:05.000Z"
   },
   {
+   "id": "47398d7d45d3",
+   "title": "Shein posts Q2 profit but slow revenue growth likely to fuel doubts",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/retail/shein-posts-q2-profit-but-slow-revenue-growth-likely-to-fuel-doubts",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T13:08:59.203Z"
+  },
+  {
+   "id": "337f38666ded",
+   "title": "Harold Cruse was as pure an autodidact as any 20th-century university scholar. Tuskegee wouldn't hire him. Michigan gave him tenure",
+   "summary": "",
+   "link": "https://www.chronicle.com/article/black-studies-between-the-seminar-and-the-sermon",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T13:08:59.203Z"
+  },
+  {
    "id": "31a6133e414c",
    "title": "Seoul says DMZ blast was highly likely caused by North Korean mine",
    "summary": "South Korea’s military said Monday that a North Korean land mine highly likely caused last week's explosion inside the Demilitarized Zone that injured three officers, and vowed \"corresponding measures\" if North Korean troops are found to have planted it. The Joint Chiefs of Staff said fragments and other materials found after the Sept. 21 blast in the western section of the DMZ separating the two",
@@ -4576,32 +4586,6 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-28T13:06:35.000Z"
-  },
-  {
-   "id": "47398d7d45d3",
-   "title": "Shein posts Q2 profit but slow revenue growth likely to fuel doubts",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/retail/shein-posts-q2-profit-but-slow-revenue-growth-likely-to-fuel-doubts",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T13:06:26.130Z"
-  },
-  {
-   "id": "337f38666ded",
-   "title": "Harold Cruse was as pure an autodidact as any 20th-century university scholar. Tuskegee wouldn't hire him. Michigan gave him tenure",
-   "summary": "",
-   "link": "https://www.chronicle.com/article/black-studies-between-the-seminar-and-the-sermon",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T13:06:26.130Z"
   },
   {
    "id": "24b9133543ef",
@@ -4895,6 +4879,32 @@
    "published": "2026-09-28T12:49:35.000Z"
   },
   {
+   "id": "e94f79f18c2e",
+   "title": "GoTo slides as Indonesia exchange removes 50 rupiah price floor",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/markets/goto-slides-as-indonesia-exchange-removes-50-rupiah-price-floor",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T12:48:59.203Z"
+  },
+  {
+   "id": "e2888b0ee465",
+   "title": "The phrase \"fiercely private\" is often applied to artists who secretly love the attention. Anita Brookner wasn’t one of them",
+   "summary": "",
+   "link": "https://literaryreview.co.uk/spiky-sharp-cool",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T12:48:59.203Z"
+  },
+  {
    "id": "0ae312474d23",
    "title": "34名台胞赴青海祭祖寻根",
    "summary": "中新社西宁9月28日电 (记者 潘雨洁)来自台湾台中的34名台胞28日赴青海省西宁市湟中区李家山镇吉家村，开启祭祖寻根之旅。",
@@ -4955,32 +4965,6 @@
    "published": "2026-09-28T12:47:01.000Z"
   },
   {
-   "id": "e94f79f18c2e",
-   "title": "GoTo slides as Indonesia exchange removes 50 rupiah price floor",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/markets/goto-slides-as-indonesia-exchange-removes-50-rupiah-price-floor",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T12:46:26.130Z"
-  },
-  {
-   "id": "e2888b0ee465",
-   "title": "The phrase \"fiercely private\" is often applied to artists who secretly love the attention. Anita Brookner wasn’t one of them",
-   "summary": "",
-   "link": "https://literaryreview.co.uk/spiky-sharp-cool",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T12:46:26.130Z"
-  },
-  {
    "id": "d91a9218be4b",
    "title": "中国选手石雨豪获亚运会男子跳远金牌",
    "summary": "中新网9月28日电(记者 金旭)爱知·名古屋亚运会当地时间28日举行田径项目男子跳远决赛，中国选手石雨豪以8.17米的成绩收获金牌。",
@@ -5027,18 +5011,6 @@
    "lang": "zh",
    "origin": "cn",
    "published": "2026-09-28T12:45:45.000Z"
-  },
-  {
-   "id": "fef7555a7903",
-   "title": "As private investment in defense increases, some bottlenecks in funding: AIA-Bain",
-   "summary": "“Defense does not face a shortage of capital. It faces barriers that make expanded investment, particularly in critical bottleneck areas, more difficult,” a new study by the Aerospace Industries Association and Bain & Company stated.",
-   "link": "https://breakingdefense.com/2026/09/as-private-investment-in-defense-increases-some-bottlenecks-in-funding-aia-bain/",
-   "image": "https://breakingdefense.com/wp-content/uploads/sites/13/2026/01/646604copy-1024x576.jpg",
-   "source": "Breaking Defense",
-   "category": "military",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T12:45:00.000Z"
   },
   {
    "id": "ffd195d61646",
@@ -5296,6 +5268,32 @@
    "published": "2026-09-28T12:31:26.000Z"
   },
   {
+   "id": "6278cdc46995",
+   "title": "Vietnam begins mass trial of psychiatric staff for alleged fraud",
+   "summary": "",
+   "link": "https://asia.nikkei.com/spotlight/society/crime/vietnam-begins-mass-trial-of-psychiatric-staff-for-alleged-fraud",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T12:28:59.203Z"
+  },
+  {
+   "id": "3f22c9b19cb7",
+   "title": "For four years, a fellow saxophonist taped John Coltrane's gigs: 26-plus hours of music. His subterfuge is our gift",
+   "summary": "",
+   "link": "https://www.tabletmag.com/sections/arts-letters/articles/coltranes-shadow-tiberi-tapes",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T12:28:59.203Z"
+  },
+  {
    "id": "7caea308f8af",
    "title": "Poll shows French far-right leader Marine Le Pen widening lead ahead of 2027 presidential vote",
    "summary": "Marine Le Pen, France's far-right National Rally party candidate, widened her lead in the second round of the 2027 presidential elections against both centre-right Édouard Philippe and hard-left Jean-Luc Mélenchon, according to a new poll released Monday.",
@@ -5318,32 +5316,6 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-28T12:27:14.000Z"
-  },
-  {
-   "id": "6278cdc46995",
-   "title": "Vietnam begins mass trial of psychiatric staff for alleged fraud",
-   "summary": "",
-   "link": "https://asia.nikkei.com/spotlight/society/crime/vietnam-begins-mass-trial-of-psychiatric-staff-for-alleged-fraud",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T12:26:26.130Z"
-  },
-  {
-   "id": "3f22c9b19cb7",
-   "title": "For four years, a fellow saxophonist taped John Coltrane's gigs: 26-plus hours of music. His subterfuge is our gift",
-   "summary": "",
-   "link": "https://www.tabletmag.com/sections/arts-letters/articles/coltranes-shadow-tiberi-tapes",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T12:26:26.130Z"
   },
   {
    "id": "04976322070a",
@@ -5442,18 +5414,6 @@
    "published": "2026-09-28T12:11:20.000Z"
   },
   {
-   "id": "7d777fdb62d2",
-   "title": "‘H-1B visa shouldn’t replace American workers’: JD Vance backs Trump’s visa reforms",
-   "summary": "",
-   "link": "https://indianexpress.com/article/world/us-news/jd-vance-supports-100000-h1b-visa-fee-trump-policy-tech-layoffs-10897482/",
-   "image": "https://images.indianexpress.com/2026/04/trump-and-vance-reuters-file-photo.jpg",
-   "source": "Indian Express",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T12:10:26.000Z"
-  },
-  {
    "id": "3f7d9a40ee0c",
    "title": "The Download: rogue agent liability and the AI Hype Index",
    "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Who’s liable when AI agents go rogue? Over the past few months, a cascade of cyberattacks by AI agents has stunned the world. In July, OpenAI disclosed that a swarm of its agents…",
@@ -5490,6 +5450,19 @@
    "published": "2026-09-28T12:09:17.000Z"
   },
   {
+   "id": "9cc0a2f8d5ca",
+   "title": "Japan motor maker Nidec to recognize over $3.8bn impairment loss",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/companies/japan-motor-maker-nidec-to-recognize-over-3.8bn-impairment-loss",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T12:08:59.203Z"
+  },
+  {
    "id": "f81dd6e0b063",
    "title": "艺术装置、美食售卖、游戏互动 华晨宇南京演唱会打造新体验",
    "summary": "中新网北京9月28日电 演唱会仅仅只是几个小时的演出吗？如果将演唱会定义为一个场景，关于这个场景的想象边界能拓展到多远？",
@@ -5524,19 +5497,6 @@
    "lang": "zh",
    "origin": "cn",
    "published": "2026-09-28T12:07:12.000Z"
-  },
-  {
-   "id": "9cc0a2f8d5ca",
-   "title": "Japan motor maker Nidec to recognize over $3.8bn impairment loss",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/companies/japan-motor-maker-nidec-to-recognize-over-3.8bn-impairment-loss",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T12:06:26.130Z"
   },
   {
    "id": "18889fd5fb30",
@@ -5815,6 +5775,19 @@
    "published": "2026-09-28T11:50:04.000Z"
   },
   {
+   "id": "06dbd5167739",
+   "title": "Nissan targets 80% local production in US, stepping up response to tariffs",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/automobiles/nissan-targets-80-local-production-in-us-stepping-up-response-to-tariffs",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-28T11:48:59.203Z"
+  },
+  {
    "id": "a312328c46bc",
    "title": "深化交流互鉴 海南打造自贸港青年会客厅",
    "summary": "中新网海口9月28日电 (记者 符宇群)凝聚琼港澳台青年共识、汇聚青年华侨心声、集聚国际青年才智，海南正努力将自由贸易港打造成为面向港澳台青年同胞、海外青年侨胞、华裔新生代及各国青年交往的“青年会客厅”。共青团海南省委员会书记刘芳颖28日在海南省新闻办公室举办的促进青年全面发展专场新闻发布会上如是表示。",
@@ -5837,19 +5810,6 @@
    "lang": "zh",
    "origin": "cn",
    "published": "2026-09-28T11:46:49.000Z"
-  },
-  {
-   "id": "06dbd5167739",
-   "title": "Nissan targets 80% local production in US, stepping up response to tariffs",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/automobiles/nissan-targets-80-local-production-in-us-stepping-up-response-to-tariffs",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-28T11:46:26.130Z"
   },
   {
    "id": "b8a65004e079",
@@ -6071,18 +6031,6 @@
    "published": "2026-09-28T11:29:33.000Z"
   },
   {
-   "id": "c109fa77d791",
-   "title": "人犬羁绊荒野治愈 布拉德·皮特新片《野兽之心》将映",
-   "summary": "中新网北京9月28日电 (记者 高凯)28日，由美国派拉蒙影片公司出品、布拉德·皮特主演的电影《野兽之心》发布“见证羁绊”预告，影片将于9月30日登陆中国内地大银幕。",
-   "link": "https://www.chinanews.com.cn/cul/2026/09-28/10705029.shtml",
-   "image": "",
-   "source": "中新网·文化",
-   "category": "culture",
-   "lang": "zh",
-   "origin": "cn",
-   "published": "2026-09-28T11:27:22.000Z"
-  },
-  {
    "id": "500c829435ae",
    "title": "Cambodia's scam probes are only a first step",
    "summary": "",
@@ -6093,7 +6041,19 @@
    "lang": "en",
    "origin": "overseas",
    "undated": true,
-   "published": "2026-09-28T11:26:26.130Z"
+   "published": "2026-09-28T11:28:59.203Z"
+  },
+  {
+   "id": "c109fa77d791",
+   "title": "人犬羁绊荒野治愈 布拉德·皮特新片《野兽之心》将映",
+   "summary": "中新网北京9月28日电 (记者 高凯)28日，由美国派拉蒙影片公司出品、布拉德·皮特主演的电影《野兽之心》发布“见证羁绊”预告，影片将于9月30日登陆中国内地大银幕。",
+   "link": "https://www.chinanews.com.cn/cul/2026/09-28/10705029.shtml",
+   "image": "",
+   "source": "中新网·文化",
+   "category": "culture",
+   "lang": "zh",
+   "origin": "cn",
+   "published": "2026-09-28T11:27:22.000Z"
   },
   {
    "id": "c2307a9a8566",
@@ -6240,18 +6200,6 @@
    "published": "2026-09-28T11:12:53.000Z"
   },
   {
-   "id": "b3f273339dad",
-   "title": "国常会：要加大宏观政策逆周期调节力度 推出一批务实管用的增量政策",
-   "summary": "国务院总理李强9月28日主持召开国务院常务会议，研究宏观政策发力提效、促进有效投资有关工作，听取新污染物治理进展情况汇报，审议通过《事业单位登记管理条例（草案）》。 会议指出，针对当前经济运行中出现的问题，要加大宏观政策逆周期调节力度，推动经济持续向新向优向好发展，努力完成全年经济社会发展目标任务。要加紧加力推动各项政策落地落实，存量政策要进一步增强实施效能，加快各类债券发行使用进度，推动“十五五”规划、“六张网”实施方案等明确的重大工程项目尽早开工建设，推进老旧水库、老旧粮库改造提升，加力实施扩投资、促消费贴息政策。推出一批务实管用的增量政策，优化财政支出安排，用好地方政府债务结存限额， 综合 运用并适时调整货币政策工具，增加科技创新和技术改造、支农支小等再贷款额度，研究出台稳定 房地产 市场、促进就业增收等政策措施。要上下协同合力稳投资，高质量做好项目准备，激发民间投资活力，加强投资项",
-   "link": "http://finance.eastmoney.com/news/1345,202609283885332024.html",
-   "image": "https://np-newspic.dfcfw.com/download/D25488590138155037791_w690h389.jpg",
-   "source": "东方财富",
-   "category": "business",
-   "lang": "zh",
-   "origin": "cn",
-   "published": "2026-09-28T11:08:23.000Z"
-  },
-  {
    "id": "18891308eebb",
    "title": "IHG to open premium hotels under new brand in Tokyo, marking first in Asia",
    "summary": "",
@@ -6262,7 +6210,19 @@
    "lang": "en",
    "origin": "overseas",
    "undated": true,
-   "published": "2026-09-28T11:06:26.130Z"
+   "published": "2026-09-28T11:08:59.203Z"
+  },
+  {
+   "id": "b3f273339dad",
+   "title": "国常会：要加大宏观政策逆周期调节力度 推出一批务实管用的增量政策",
+   "summary": "国务院总理李强9月28日主持召开国务院常务会议，研究宏观政策发力提效、促进有效投资有关工作，听取新污染物治理进展情况汇报，审议通过《事业单位登记管理条例（草案）》。 会议指出，针对当前经济运行中出现的问题，要加大宏观政策逆周期调节力度，推动经济持续向新向优向好发展，努力完成全年经济社会发展目标任务。要加紧加力推动各项政策落地落实，存量政策要进一步增强实施效能，加快各类债券发行使用进度，推动“十五五”规划、“六张网”实施方案等明确的重大工程项目尽早开工建设，推进老旧水库、老旧粮库改造提升，加力实施扩投资、促消费贴息政策。推出一批务实管用的增量政策，优化财政支出安排，用好地方政府债务结存限额， 综合 运用并适时调整货币政策工具，增加科技创新和技术改造、支农支小等再贷款额度，研究出台稳定 房地产 市场、促进就业增收等政策措施。要上下协同合力稳投资，高质量做好项目准备，激发民间投资活力，加强投资项",
+   "link": "http://finance.eastmoney.com/news/1345,202609283885332024.html",
+   "image": "https://np-newspic.dfcfw.com/download/D25488590138155037791_w690h389.jpg",
+   "source": "东方财富",
+   "category": "business",
+   "lang": "zh",
+   "origin": "cn",
+   "published": "2026-09-28T11:08:23.000Z"
   },
   {
    "id": "ecde43923d5e",
@@ -7089,7 +7049,7 @@
    "title": "月饼卖不动？茂名凭什么把一块饼做成50亿产业",
    "summary": "",
    "link": "https://www.tmtpost.com/8153801.html",
-   "image": "https://images.tmtpost.com/uploads/images/2023/tkrss/t435htrn3.png",
+   "image": "https://images.tmtpost.com/uploads/images/2026/09/28/f1143c0e47879169b9894e7bab71be89_1790560693.jpeg",
    "source": "钛媒体",
    "category": "business",
    "lang": "zh",
@@ -7625,18 +7585,6 @@
    "published": "2026-09-28T08:32:00.000Z"
   },
   {
-   "id": "b51a6a7e87b8",
-   "title": "Pakistan Navy’s First Hangor-class Submarine Performs First Live Firing in North Arabian Sea",
-   "summary": "On September 26, 2026, the Pakistan Navy announced the successful completion of the maiden live firing of the first Hangor-class submarine, PNS Hangor, in the North Arabian Sea. Pakistan Navy press release In a significant demonstration of operational readiness and combat capability, Pakistan Navy’s newly inducted submarine PNS/M HANGOR successfully conducted its maiden Live Weapon ... The post Pa",
-   "link": "https://www.navalnews.com/naval-news/2026/09/pakistan-navys-first-hangor-class-submarine-performs-first-live-firing-in-north-arabian-sea/",
-   "image": "",
-   "source": "Naval News",
-   "category": "military",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T08:30:00.000Z"
-  },
-  {
    "id": "1a217a0c3cf2",
    "title": "中国纬度最高高铁开通 哈尔滨至伊春约两小时可达",
    "summary": "连接“冰城”哈尔滨与“林都”伊春的高速铁路星期一（9月28日）正式通车。这条中国纬度最高的高铁开通后，两地通行时间从过去约七小时缩短至约两小时。 综合央广网和新华社报道，哈尔滨至伊春高速铁路（简称哈伊高铁）首趟动车组D7288次列车，星期一上午10时26分从伊春西站驶向哈尔滨站，标志着哈伊高铁正式开通运营。 这条中国纬度最高的高铁，全长318公里，设计时速250公里，全线共设哈尔滨、哈尔滨北、呼兰北、兴隆镇西、绥化南、庆安南、铁力、日月峡、伊春西等九座车站。 新华社报道称，作为中国“八纵八横”高速铁路网“京哈—京港澳通道”的重要延伸，哈伊高铁填补了黑龙江省北部高铁交通空白，使中国北部高铁网络更加完整。 哈伊高铁也是中国在建纬度最高、全年温差最大，首条穿越岛状多年冻土区的高速铁路。",
@@ -7827,18 +7775,6 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-28T08:14:00.000Z"
-  },
-  {
-   "id": "a37d09cdd73c",
-   "title": "Israel’s Uvision, Estonia’s Lendurai to integrate systems for NATO military",
-   "summary": "The companies did not disclose which military the teaming effort is for.",
-   "link": "https://breakingdefense.com/2026/09/israels-uvision-estonias-lendurai-to-integrate-systems-for-nato-military/",
-   "image": "https://breakingdefense.com/wp-content/uploads/sites/13/2026/06/20260610_111147-1024x577.jpg",
-   "source": "Breaking Defense",
-   "category": "military",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T08:13:00.000Z"
   },
   {
    "id": "9de5ba45e391",
@@ -8553,7 +8489,7 @@
    "title": "蔚来与吉利官宣联手，各自图什么？",
    "summary": "",
    "link": "https://www.tmtpost.com/8153951.html",
-   "image": "https://images.tmtpost.com/uploads/images/2023/tkrss/t435htrn3.png",
+   "image": "https://images.tmtpost.com/uploads/images/2026/09/8418dbb0a0bcb14d08580994a9769fac_1790586792.jpg",
    "source": "钛媒体",
    "category": "business",
    "lang": "zh",
@@ -8885,18 +8821,6 @@
    "published": "2026-09-28T03:23:29.000Z"
   },
   {
-   "id": "e223aef266bc",
-   "title": "Mojtaba Khamenei ‘pulled from the rubble’ after Tehran hospital was bombed, cleric claims",
-   "summary": "",
-   "link": "https://indianexpress.com/article/world/mojtaba-khamenei-pulled-from-rubble-tehran-hospital-us-strike-10896753/",
-   "image": "https://images.indianexpress.com/2026/04/Iran_War_99129-c9b9d.jpg",
-   "source": "Indian Express",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T03:03:10.000Z"
-  },
-  {
    "id": "9bca9faab6d5",
    "title": "Another Lao Activist Vanishes in Thailand",
    "summary": "Khieo Lapchanh is the latest Lao exile to fall victim to the growing authoritarian collaboration between the Mekong region's governments.",
@@ -9125,18 +9049,6 @@
    "published": "2026-09-28T01:47:31.000Z"
   },
   {
-   "id": "94c3e096755f",
-   "title": "Late-night drive, masked men and 999 call: How a woman farmer may have foiled UK terror plot",
-   "summary": "",
-   "link": "https://indianexpress.com/article/world/villager-999-call-masked-men-raf-fairford-counter-terror-plot-iran-attack-10896700/",
-   "image": "https://images.indianexpress.com/2026/09/US-1-20.jpg",
-   "source": "Indian Express",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T01:47:31.000Z"
-  },
-  {
    "id": "9c8bee5a116b",
    "title": "8人持AK-47闯酒馆，一夜27人倒在枪下，生命正以每天59人的速度流失",
    "summary": "8人持AK-47闯酒馆，一夜27人倒在枪下，生命正以每天59人的速度流失|国际早察",
@@ -9175,7 +9087,7 @@
   {
    "id": "9c5de7a7fadc",
    "title": "九合、险峰投了家消费级外骨骼，《流浪地球》用过，营收破亿｜产品观察",
-   "summary": "作者｜黄楠 编辑｜袁斯来 冰雪覆盖的末日地表，救援队队员身披布满管线的机械外骨骼，在冰天雪地之中徒步运送火石，借结构助力扛起重型武器、拖拽坠落同伴，最后合力推动行星发动机的撞针完成救援任务。 这是电影《流浪地球》中，留给大众关于外骨骼最深刻的想象。 而对于傲鲨智能创始人徐振华来说，这是一次很重要的出圈机会。 徐振华是汽车电子系统出身，曾参与联合创立璟和技创、傅利叶智能，从事医疗康复机器人的研发，又带着团队在工业外骨骼里摸爬滚打了整整八年，其营收在2025年破亿。公司也先后融资数亿元，投资方包括九合创投、明势资本、险峰长青等知名基金。今年，傲鲨正式推出消费级外骨骼机器人VIATRIX X。 当行业已经诞生估值几十亿的公司时，看上去傲鲨来���有些“晚”，甚至为此主动选择放慢了早期一些融资节点。 但徐振华没有太着急。在他看来，消费级外骨骼就像一个六边形战士，必须在续航、重量、发热量、穿戴舒适性",
+   "summary": "作者｜黄楠 编辑｜袁斯来 冰雪覆盖的末日地表，救援队队员身披布满管线的机械外骨骼，在冰天雪地之中徒步运送火石，借结构助力扛起重型武器、拖拽坠落同伴，最后合力推动行星发动机的撞针完成救援任务。 这是电影《流浪地球》中，留给大众关于外骨骼最深刻的想象。 而对于傲鲨智能创始人徐振华来说，这是一次很重要的出圈机会。 徐振华是汽车电子系统出身，曾参与联合创立璟和技创、傅利叶智能，从事医疗康复机器人的研发，又带着团队在工业外骨骼里摸爬滚打了整整八年，其营收在2025年破亿。公司也先后融资数亿元，投资方包括九合创投、明势资本、险峰长青等知名基金。今年，傲鲨正式推出消费级外骨骼机器人VIATRIX X。 当行业已经诞生估值几十亿的公司时，看上去傲鲨来得有些“晚”，甚至为此主动选择放慢了早期一些融资节点。 但徐振华没有太着急。在他看来，消费级外骨骼就像一个六边形战士，必须在续航、重量、发热量、穿戴舒适性与动",
    "link": "https://36kr.com/p/4001317788995717?f=rss",
    "image": "https://img.36krcdn.com/hsossms/20260927/v2_19691204448f4202bcbcdcc91cbbc194@6022551_oswg4482453oswg2274oswg1490_img_png?x-oss-process=image/quality,q_80/format,jpg/interlace,1",
    "source": "36氪",
@@ -9353,66 +9265,6 @@
    "published": "2026-09-28T00:01:01.000Z"
   },
   {
-   "id": "a1aeb9c98b8e",
-   "title": "China now leads the world in trials for next-gen CAR-T therapies",
-   "summary": "Nature, Published online: 28 September 2026; doi:10.1038/d41586-026-03004-3 China tests these therapies faster than the rest of the world but regulatory changes could slow them down.",
-   "link": "https://www.nature.com/articles/d41586-026-03004-3",
-   "image": "",
-   "source": "Nature",
-   "category": "tech",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T00:00:00.000Z"
-  },
-  {
-   "id": "ad99b2e53192",
-   "title": "Stephen Hawking biography explores an ‘exceptionally clear, uncluttered mind’",
-   "summary": "Nature, Published online: 28 September 2026; doi:10.1038/d41586-026-02959-7 An elegant account of the physicist’s unusual life story highlights the relationships that inspired him.",
-   "link": "https://www.nature.com/articles/d41586-026-02959-7",
-   "image": "",
-   "source": "Nature",
-   "category": "tech",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T00:00:00.000Z"
-  },
-  {
-   "id": "5a8fd7f224c1",
-   "title": "Bigger than CRISPR? A guide to the latest genome editors",
-   "summary": "Nature, Published online: 28 September 2026; doi:10.1038/d41586-026-02964-w Gene-editing techniques could soon allow researchers to replace entire genes and engineer complex cellular circuits — if the systems can be delivered safely into cells.",
-   "link": "https://www.nature.com/articles/d41586-026-02964-w",
-   "image": "",
-   "source": "Nature",
-   "category": "tech",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T00:00:00.000Z"
-  },
-  {
-   "id": "fd835bda17f1",
-   "title": "Vaping in childhood has bigger health risks than we’d thought",
-   "summary": "Nature, Published online: 28 September 2026; doi:10.1038/d41586-026-02962-y Use of e-cigarettes makes it more likely that young people will experience mental-health disorders and take up smoking. Governments must act.",
-   "link": "https://www.nature.com/articles/d41586-026-02962-y",
-   "image": "",
-   "source": "Nature",
-   "category": "tech",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T00:00:00.000Z"
-  },
-  {
-   "id": "592802c61e64",
-   "title": "Old hearts age backwards: transplanted organs adjust to host's biological age",
-   "summary": "Nature, Published online: 28 September 2026; doi:10.1038/d41586-026-03043-w Tracking the biological age of grafted organs suggests that donor pools could be expanded to boost organ availability.",
-   "link": "https://www.nature.com/articles/d41586-026-03043-w",
-   "image": "",
-   "source": "Nature",
-   "category": "tech",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-28T00:00:00.000Z"
-  },
-  {
    "id": "21134983bbc9",
    "title": "One dead as nor'easter storm pummels New York and New Jersey",
    "summary": "Tens of millions of people from Maine to Virginia found themselves in the path of the powerful weather system.",
@@ -9462,18 +9314,6 @@
    "lang": "zh",
    "origin": "cn",
    "published": "2026-09-27T23:14:17.000Z"
-  },
-  {
-   "id": "ab619dea9359",
-   "title": "US Iran War News LIVE Updates: Trump says US will ‘win’ Iran war soon, warns fresh strikes possible",
-   "summary": "",
-   "link": "https://indianexpress.com/article/world/us-iran-war-live-news-updates-trump-tehran-strike-drone-seized-in-hormuz-shipping-india-oil-prices-10896679/",
-   "image": "https://images.indianexpress.com/2026/09/trump-iran-war-1.jpg",
-   "source": "Indian Express",
-   "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "published": "2026-09-27T23:05:24.000Z"
   },
   {
    "id": "73a0af317871",
