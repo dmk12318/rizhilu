@@ -1,19 +1,19 @@
 {
- "updatedAt": "2026-09-28T12:19:11.033Z",
+ "updatedAt": "2026-09-28T12:22:10.190Z",
  "days": [
   {
    "date": "2026-09-28",
-   "total": 900,
+   "total": 882,
    "counts": {
-    "tech": 136,
-    "business": 130,
-    "top": 130,
+    "tech": 135,
+    "top": 110,
+    "business": 131,
     "world": 296,
     "military": 69,
-    "culture": 102,
+    "culture": 104,
     "society": 37
    },
-   "generatedAt": "2026-09-28T12:19:11.033Z"
+   "generatedAt": "2026-09-28T12:22:10.190Z"
   }
  ]
 }

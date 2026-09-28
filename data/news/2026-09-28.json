@@ -1,6 +1,6 @@
 {
  "date": "2026-09-28",
- "generatedAt": "2026-09-28T12:19:11.033Z",
+ "generatedAt": "2026-09-28T12:22:10.190Z",
  "windowHours": 24,
  "timezone": "Asia/Shanghai",
  "categories": [
@@ -48,50 +48,50 @@
   }
  ],
  "stats": {
-  "total": 900,
-  "rawTotal": 955,
+  "total": 882,
+  "rawTotal": 932,
   "sourcesConfigured": 107,
   "sourcesActive": 107,
   "sourcesSkipped": 0,
   "overseas": "on",
-  "sourcesOk": 104,
-  "sourcesFailed": 3,
+  "sourcesOk": 103,
+  "sourcesFailed": 4,
   "counts": {
-   "tech": 136,
-   "business": 130,
-   "top": 130,
+   "tech": 135,
+   "top": 110,
+   "business": 131,
    "world": 296,
    "military": 69,
-   "culture": 102,
+   "culture": 104,
    "society": 37
   },
   "bySource": {
    "InfoQ中文": 5,
+   "澎湃新闻": 17,
    "CNBC": 18,
+   "TASS": 15,
    "IT之家": 25,
    "联合早报": 20,
-   "36氪": 17,
+   "The Hill": 15,
+   "36氪": 18,
    "The Hindu": 8,
+   "CBS News": 12,
    "中国新闻网": 30,
    "NPR": 6,
    "集思录": 6,
-   "CBS News": 12,
-   "TASS": 15,
-   "澎湃新闻": 15,
    "CNA": 8,
    "Yonhap": 7,
    "The Verge": 6,
    "南华早报": 12,
    "华尔街见闻": 20,
-   "The Hill": 15,
    "NYT World": 10,
+   "中新网·国内": 22,
    "德国之声中文": 9,
    "The Korea Herald": 12,
    "The Straits Times": 7,
    "The Moscow Times": 4,
    "Task & Purpose": 7,
    "Nautilus": 8,
-   "界面新闻": 21,
    "法国国际广播电台": 15,
    "经济观察网": 12,
    "Kyiv Post": 10,
@@ -106,12 +106,10 @@
    "France 24": 20,
    "中新网·体育": 14,
    "中新网·社会": 23,
-   "中新网·国内": 23,
    "东方财富": 17,
    "Wired": 8,
    "中新网·文化": 16,
    "中新网·教育": 4,
-   "量子位": 4,
    "Defense News": 8,
    "BBC World": 11,
    "RFI English": 7,
@@ -153,6 +151,7 @@
    "FT中文网": 4,
    "The Marginalian": 8,
    "The War Zone": 6,
+   "量子位": 3,
    "IEEE Spectrum": 1,
    "The Aviationist": 9,
    "豆瓣书评": 2,
@@ -165,7 +164,7 @@
    "Science": 8,
    "Longreads": 6,
    "Noema": 2,
-   "Public Domain Review": 1
+   "Public Domain Review": 3
   }
  },
  "items": [
@@ -218,6 +217,69 @@
    "published": "2026-09-28T18:23:47.000Z"
   },
   {
+   "id": "370d851ea59a",
+   "title": "2021—2025年度平安中国建设示范市、县名单公布",
+   "summary": "中央政法委9月28日发布关于授牌命名2021—2025年度平安中国建设示范市、县的决定（以下简称决定），授予河北省衡水市等60个市（地、州）“2021—2025年度平安中国建设示范市”称号，授予北京市西城区等160个县（市、区）“2021—2025年度平安中国建设示范县”称号。 中央政法委会同中央政法单位、中央网信办、应急管理部等部门，组织开展了2021—2025年度“平安中国建设示范市”“平安中国建设示范县”创建工作。经自主申请、审核申报、评估验收等程序，确定了拟授牌命名60个平安中国建设示范市、160个平安中国建设示范县名单。 自9月18日起至9月23日，中央政法委对拟授牌命名平安中国建设示范市、县名单进行公示，广泛听取社会各界意见，接受广大群众监督，在此基础上形成了决定。 授牌命名平安中国建设示范市名单 （60个） 河北省 衡水市、张家口市、雄安新区 山西省 太原市、晋城市 内蒙古自",
+   "link": "https://m.thepaper.cn/detail/34166114",
+   "image": "https://imgpai.thepaper.cn/newpai/image/1790596262972_2tF7kc_1790596263194.png",
+   "source": "澎湃新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:21:16.000Z",
+   "alsoIn": [
+    "中新网·国内"
+   ]
+  },
+  {
+   "id": "be8857430614",
+   "title": "Nvidia releases software platform to stop AI agents from misbehaving",
+   "summary": "Nvidia says its new software could have prevented OpenAI's Hugging Face incident.",
+   "link": "https://www.cnbc.com/2026/09/28/nvidia-releases.html",
+   "image": "",
+   "source": "CNBC",
+   "category": "business",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:20:15.000Z"
+  },
+  {
+   "id": "a90bc4924be7",
+   "title": "Over 140 Russian companies present displays at Microelectronics 2026 forum",
+   "summary": "The forum is being held for the twelfth time",
+   "link": "https://tass.com/economy/2193933",
+   "image": "",
+   "source": "TASS",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:19:55.000Z"
+  },
+  {
+   "id": "6d5444e0cff9",
+   "title": "云南“秋丰送爽”系列推介重庆收官，抢抓渝昆高铁契机蓄势滇渝文旅共赢",
+   "summary": "秋丰送爽，云渝赴约。继广州、南昌、长沙三地之后，“秋丰送爽”2026云南文旅市场营销系列推介收官专场于9月28日登陆山城重庆。区别于前三站主推滇西、滇西北、滇西南州市资源，本次重庆站坚持市场精准施策，聚焦市场化营销与产品推介，重新遴选推介阵容，集结昆明、曲靖、玉溪、昭通、普洱、楚雄、红河、西双版纳八州市，面向重庆这一云南重要核心客源地，携云岭山野菌香、斑斓秋色、绚丽非遗与特色旅居产品，向山城百姓递出一份诚意满满的秋日旅行邀请函。 滇渝两地地缘毗邻、人文相亲。在建渝昆高铁预计2027年全线贯通，这条交通大动脉纵贯昭通、曲靖两大滇东北文旅要地，建成后将极大缩短两地时空距离，为滇渝文旅深度交融筑牢交通底座。刚刚过去的盛夏，众多重庆游客已然率先奔赴高铁沿线的曲靖、昭通，沉醉于乌蒙高原、珠江源头的习习凉风，尽享高原避暑旅居体验，为两地文旅交往积淀了扎实的市场基础。恰逢国庆黄金周来临之际，云南文旅代表",
+   "link": "https://m.thepaper.cn/detail/34165468",
+   "image": "https://imgpai.thepaper.cn/newpai/image/1790589087062_pYsWky_1790589087402.png",
+   "source": "澎湃新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:19:52.000Z"
+  },
+  {
+   "id": "866ff049fc98",
+   "title": "EU extends its military training mission for Ukraine until 2028 — Kallas",
+   "summary": "The EU foreign policy chief said Brussels planned to modernize two training centers in Ukraine to speed up training of new soldiers",
+   "link": "https://tass.com/world/2193929",
+   "image": "",
+   "source": "TASS",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:19:03.000Z"
+  },
+  {
    "id": "aae9552ef0ad",
    "title": "Stock futures drop to start the week as oil prices and Treasury yields rise: Live updates",
    "summary": "Stock futures fell early Monday, weighed down by a jump in oil prices and Treasury yields to start the week.",
@@ -254,6 +316,18 @@
    "published": "2026-09-28T12:17:24.000Z"
   },
   {
+   "id": "c2cd69d3a20f",
+   "title": "GLP-1 drugs may help sleep apnea, but CPAP remains best treatment: Study",
+   "summary": "Weight-loss drugs may help reduce sleep apnea symptoms, but experts say they still can't match the effectiveness of a CPAP machine.",
+   "link": "https://thehill.com/policy/healthcare/6113374-glp-1-weight-loss-drugs-cpap-sleep-apnea-study/",
+   "image": "https://thehill.com/wp-content/uploads/sites/2/2026/09/AP24167080075420-e1790597522127.jpg?w=900",
+   "source": "The Hill",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:17:04.000Z"
+  },
+  {
    "id": "e1a950cd6f44",
    "title": "ST应急：撤销其他风险警示，证券简称变更为中船应急",
    "summary": "36氪获悉，ST应急公告，公司撤销其他风险警示的申请已获深交所审核同意。公司股票于2026年9月29日停牌1天，9月30日开市起复牌并撤销其他风险警示，证券简称由“ST应急”变更为“中船应急”，证券代码不变，日涨跌幅限制仍为20%。",
@@ -263,10 +337,7 @@
    "category": "business",
    "lang": "zh",
    "region": "cn",
-   "published": "2026-09-28T12:17:02.000Z",
-   "alsoIn": [
-    "界面新闻"
-   ]
+   "published": "2026-09-28T12:17:02.000Z"
   },
   {
    "id": "5844e3ff7b01",
@@ -279,6 +350,30 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T12:16:26.000Z"
+  },
+  {
+   "id": "bf0d7a58d2a8",
+   "title": "Benjamin Satterley, pro wrestler known as \"Pac,\" dies at 40",
+   "summary": "Benjamin Satterley, an English-born wrestler known for high-flying moves that delighted fans worldwide, was known as \"Pac.\"",
+   "link": "https://www.cbsnews.com/news/pac-benjamin-satterley-dies-age-40-pro-wrestler/",
+   "image": "",
+   "source": "CBS News",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:15:39.000Z"
+  },
+  {
+   "id": "2b71b7592b6e",
+   "title": "海南省委书记国庆前走进装修现场、餐饮店暗访安全生产工作",
+   "summary": "据“海南新闻联播”消息，海南省委书记冯飞2026年9月28日在海口市以全程“四不两直”方式前往室内装修现场、商业办公楼和液化气充装站等，暗访检查重点场所、重点领域安全生产工作。",
+   "link": "https://m.thepaper.cn/detail/34166252",
+   "image": "https://imgpai.thepaper.cn/newpai/image/1790596356083_7TH5As_1790596356406.png",
+   "source": "澎湃新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:15:26.000Z"
   },
   {
    "id": "5e255fb3b8af",
@@ -455,10 +550,7 @@
    "category": "business",
    "lang": "zh",
    "region": "cn",
-   "published": "2026-09-28T12:09:55.000Z",
-   "alsoIn": [
-    "界面新闻"
-   ]
+   "published": "2026-09-28T12:09:55.000Z"
   },
   {
    "id": "de54c006d4eb",
@@ -644,6 +736,21 @@
    "published": "2026-09-28T12:05:38.000Z"
   },
   {
+   "id": "a60a22523fcd",
+   "title": "烈士纪念日向人民英雄敬献花篮仪式9月30日上午举行 习近平等党和国家领导人将出席",
+   "summary": "新华社北京9月28日电#8195;今年是中国共产党成立105周年、红军长征胜利90周年。9月30日是国家设立的烈士纪念日，当天上午，习近平等党和国家领导人将同各界代表一起，在天安门广场向人民英雄敬献花篮。",
+   "link": "https://www.chinanews.com.cn/gn/2026/09-28/10705085.shtml",
+   "image": "",
+   "source": "中新网·国内",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:05:18.000Z",
+   "alsoIn": [
+    "澎湃新闻"
+   ]
+  },
+  {
    "id": "e9bad4fa434b",
    "title": "“新疆智造”两款大型农业装备实现规模量产下线",
    "summary": "中新网乌鲁木齐9月28日电 (记者 孙亭文)9月28日，由中国铁建重工集团股份有限公司(铁建重工)自主研制的“新疆智造”首台全动力换挡大马力拖拉机与大型谷物联合收获机在乌鲁木齐正式实现规模量产下线。",
@@ -758,16 +865,16 @@
    "published": "2026-09-28T12:02:13.000Z"
   },
   {
-   "id": "ccea6b7281fa",
-   "title": "烈士纪念日向人民英雄敬献花篮仪式9月30日上午举行，习近平等党和国家领导人将出席",
-   "summary": "今年是中国共产党成立105周年、红军长征胜利90周年。9月30日是国家设立的烈士纪念日，当天上午，习近平等党和国家领导人将同各界代表一起，在天安门广场向人民英雄敬献花篮。 届时，中央广播电视总台将进行现场直播。",
-   "link": "https://m.thepaper.cn/detail/34166264",
-   "image": "https://imgpai.thepaper.cn/client/focusNewsWwwBig.png",
-   "source": "澎湃新闻",
+   "id": "84d3189e13e4",
+   "title": "王沪宁会见全国少数民族参观团",
+   "summary": "新华社北京9月28日电 中共中央政治局常委、全国政协主席王沪宁28日在京会见全国少数民族参观团。他表示，今年是中国共产党成立105周年，也是“十五五”开局之年。要深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话精神，学习贯彻习近平总书记关于加强和改进民族工作的重要思想，深刻领悟“两个确立”的决定性意义、坚决做到“两个维护”，坚定走中国特色解决民族问题的正确道路，凝聚起推进中国式现代化的磅礴力量。",
+   "link": "https://www.chinanews.com.cn/gn/2026/09-28/10705069.shtml",
+   "image": "",
+   "source": "中新网·国内",
    "category": "top",
    "lang": "zh",
    "region": "cn",
-   "published": "2026-09-28T12:01:34.000Z"
+   "published": "2026-09-28T12:01:56.000Z"
   },
   {
    "id": "32a2f469ecc4",
@@ -899,21 +1006,6 @@
    ]
   },
   {
-   "id": "f714ececdacf",
-   "title": "三峡新材：筹划购买电池电解液公司珠海赛纬不低于53.14%股份，股票停牌",
-   "summary": "",
-   "link": "https://www.jiemian.com/article/15146988.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220712/165760844893303600_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:59:08.000Z",
-   "alsoIn": [
-    "36氪"
-   ]
-  },
-  {
    "id": "5d2c02b84900",
    "title": "Trump expects more talks after rejecting latest Iranian proposal",
    "summary": "President Trump said Sunday he expects U.S. officials to negotiate further with their Iranian counterparts this week, after he rejected a seven-day ceasefire proposal from Tehran. \"I expect more talks with Iran [this week]. They want to make a deal, but it is not the deal that I want to make,\" Trump told Axios in...",
@@ -937,8 +1029,7 @@
    "region": "cn",
    "published": "2026-09-28T11:57:49.000Z",
    "alsoIn": [
-    "中新网·国际",
-    "界面新闻"
+    "中新网·国际"
    ]
   },
   {
@@ -1021,18 +1112,6 @@
    "alsoIn": [
     "中新网·体育"
    ]
-  },
-  {
-   "id": "7ecf2ffdcd81",
-   "title": "英伟达：Anthropic签约云服务商合同总值超1800亿美元",
-   "summary": "9月28日消息，英伟达表示，截至目前，Anthropic已签约2.6吉瓦AI基础设施，相关基础设施将持续交付至2028年。Anthropic通过多家云服务商和新型云服务商签订的合同总价值目前已超过1800亿美元。英伟达还表示，其在澳大利亚的新型云服务商合作伙伴预计到2027年可交付最高2吉瓦算力。目前，英伟达投资组合包括13家上市公司和229家非上市公司。",
-   "link": "https://www.jiemian.com/article/15146971.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:55:18.000Z"
   },
   {
    "id": "4948dc16c19b",
@@ -1152,6 +1231,18 @@
    "published": "2026-09-28T11:52:21.000Z"
   },
   {
+   "id": "82874393f4f3",
+   "title": "三峡新材：筹划购买电池电解液公司珠海赛纬司不低于53.14%股份，股票停牌",
+   "summary": "36氪获悉，三峡新材公告，公司拟通过发行股份及支付现金方式收购珠海市赛纬电子材料股份有限公司不低于53.14%股份，预计构成重大资产重组。公司股票自2026年9月29日起停牌，预计停牌时间不超过10个交易日。标的公司主营业务：主要从事锂离子电池电解液、新型膜材料等电子专用材料的研发与生产，持有危险化学品生产资质。",
+   "link": "https://36kr.com/newsflashes/4003009835306883?f=rss",
+   "image": "",
+   "source": "36氪",
+   "category": "business",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T11:52:10.000Z"
+  },
+  {
    "id": "a92555503506",
    "title": "上海心期三科技有限公司发生工商变更",
    "summary": "本报讯 （记者袁传玺）天眼查App显示，近日，上海心期三科技有限公司发生工商变更，新增上海米哈游阿尔戈科技有限公司为股东，同时，注册资本由约153.8万元增至约192.3万元。 （编辑 李家琪）",
@@ -1251,18 +1342,6 @@
    "published": "2026-09-28T11:50:33.000Z"
   },
   {
-   "id": "f8be8d0850c3",
-   "title": "劳斯莱斯将在英国投资3亿英镑",
-   "summary": "",
-   "link": "https://www.jiemian.com/article/15146969.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:50:12.000Z"
-  },
-  {
    "id": "e161af5d3b9c",
    "title": "DHS announces nationwide surge in 'sanctuary' cities",
    "summary": "DHS said ICE has initiated a “surge in sanctuary cities,” as part of the Trump administration’s continuous crackdown on immigration.",
@@ -1285,18 +1364,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T11:50:04.000Z"
-  },
-  {
-   "id": "30d5c546021c",
-   "title": "芯联集成：预计前三季度盈利约6.81亿元，同比扭亏为盈",
-   "summary": "",
-   "link": "https://www.jiemian.com/article/15146968.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220712/165760844893303600_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:49:46.000Z"
   },
   {
    "id": "b5485dfc4aaf",
@@ -1494,18 +1561,6 @@
    "published": "2026-09-28T11:45:29.000Z"
   },
   {
-   "id": "848066443609",
-   "title": "民政部等14部门联合发文加强殡葬行业跨部门综合监管",
-   "summary": "民政部等14部门联合印发《关于加强殡葬行业跨部门综合监管的意见》（以下简称《意见》）。《意见》明确跨部门综合监管事项。重点围绕死亡证明出具及遗体暂存、殡葬设施建设运营、殡葬服务机构收费行为、殡葬市场经营主体及其从事殡葬相关活动的组织和个人、丧事活动、殡葬服务机构从业人员等6项重点监管事项，明确了民政、发展改革等14个部门的职责分工，实现监管全链条覆盖。《意见》着眼构建常态化协同监管机制，要求加强风险隐患联合监测预警，开展跨部门联合执法抽查检查，推进问题线索跨部门联合处置，建立重大问题线索会商督办机制，加强行政执法与纪检监察、刑事司法衔接，强化信用监管及执法监督结果运用等，推动建立健全协同高效的跨部门综合监管机制。",
-   "link": "https://www.jiemian.com/article/15146945.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664253426029700_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:45:22.000Z"
-  },
-  {
    "id": "48243ee681a5",
    "title": "山西孝义发布三年行动蓝图 锚定中国旅游百强县市",
    "summary": "9月28日，孝义市2026年文旅产业高质量发展大会在山西孝义举行。高雨晴 摄 中新网吕梁9月28日电 (高雨晴)在28日举行的孝义市2026年文旅产业高质量发展大会上，山西孝义发布《孝义市奋进中国旅游百强县市三年行动计划(2026—2028)》(以下简称《行动计划》)，明确未来三年文旅产业提质升级、跻身全国百强的清晰路径。",
@@ -1683,18 +1738,6 @@
    "published": "2026-09-28T11:42:09.000Z"
   },
   {
-   "id": "be8857430614",
-   "title": "Nvidia releases software platform to stop AI agents from misbehaving",
-   "summary": "Nvidia says its new software could have prevented OpenAI's Hugging Face incident.",
-   "link": "https://www.cnbc.com/2026/09/28/nvidia-releases.html",
-   "image": "",
-   "source": "CNBC",
-   "category": "business",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T11:42:00.000Z"
-  },
-  {
    "id": "f1a2d8b3a613",
    "title": "Russia, Belarus roll out prototype lithography machine",
    "summary": "Russian First Deputy Prime Minister Denis Manturov added that a proprietary excimer laser was developed for it, which allowed Russia to join the narrow group of countries possessing this technology",
@@ -1705,18 +1748,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T11:41:49.000Z"
-  },
-  {
-   "id": "3264a2cde5a3",
-   "title": "上海市进一步深化国资国企改革工作会议举行",
-   "summary": "上海市进一步深化国资国企改革工作会议今天（9月28日）上午举行。市委书记陈吉宁在会上指出，今年是“十五五”开局之年，中央对进一步深化国资国企改革作出新的战略部署。要增强责任感、使命感、紧迫感，坚持有效市场和有为政府相结合，坚持履行战略使命与遵循市场规律相统一，全力抓好《方案》落地落实，不断开创上海国资国企高质量发展新局面。要以主责主业管理为牵引，进一步推进国资布局优化和结构调整。持续强化主业刚性约束，压实责任传导机制，加强对主业集中度和竞争力的动态监测和考核评价，形成主业管理体系。下大力气清理非主业非优势业务、低效无效资产。深化重点领域重组整合，打造具有行业引领力的龙头企业。分类分层次调整产业结构，强化投资并购的战略性，加大战略性新兴产业、未来产业布局力度，加快传统产业改造提升。",
-   "link": "https://www.jiemian.com/article/15146941.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:41:44.000Z"
   },
   {
    "id": "a75f2cec40d4",
@@ -1803,18 +1834,6 @@
    "published": "2026-09-28T11:36:42.000Z"
   },
   {
-   "id": "8d7db91abdc0",
-   "title": "沙特东西向输油管道在完成修复后据悉已恢复石油出口",
-   "summary": "9月28日，据报道，沙特阿美已在遭无人机袭击导致管道受损并完成修复后，通过关键的东西向输油管道恢复石油出口。沙特阿美上周已对管道进行测试并逐步增压，目前海外石油运输已经恢复。",
-   "link": "https://www.jiemian.com/article/15146928.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:35:46.000Z"
-  },
-  {
    "id": "a21c64d31002",
    "title": "2026年名古屋亚残运会中国体育代表团装备在北京交接",
    "summary": "中新网北京9月28日电 (记者 李京泽)9月28日，2026名古屋亚残运会中国体育代表团装备发布暨交接仪式在中国残疾人体育运动管理中心举行。",
@@ -1839,30 +1858,6 @@
    "published": "2026-09-28T11:35:00.000Z"
   },
   {
-   "id": "4a224e93c1c8",
-   "title": "三峡阳江青洲五、七期海上风电项目首批机组成功并网",
-   "summary": "据三峡集团，随着位于广东阳江海域的5台风电机组叶片缓缓转动，三峡阳江青洲五、七期海上风电项目首批机组成功并网，世界电压等级最高、输送容量最大的海上风电柔性直流送出工程同步投入运行，标志着我国深远海风电规模化开发迈出关键一步。项目全面投运后，每年可为粤港澳大湾区输送约60亿千瓦时的清洁电能，相当于减少二氧化碳排放近500万吨，将为粤港澳大湾区绿色低碳发展持续注入清洁动能。",
-   "link": "https://www.jiemian.com/article/15146921.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:34:17.000Z"
-  },
-  {
-   "id": "f874f0d8adc5",
-   "title": "吉鑫科技：拟投资不超过7亿元建设滨海风电高端装备智能制造项目",
-   "summary": "9月28日，吉鑫科技发布公告，公司全资子公司吉鑫（滨海）风能科技有限公司拟对外投资建设吉鑫科技滨海风电高端装备智能制造项目（一期），项目总投资不超过7亿元。本次项目采用成熟的呋喃树脂砂铸造工艺，专业化生产陆上、海上风电机组的轮毂、底座等大兆瓦风机铸件，一期设计产能为50000t/a。项目建设地点为江苏省滨海港经济开发区，项目建设期18个月，预计开工时间2026年11月3日。项目资金来源为公司自有资金及银行贷款。",
-   "link": "https://www.jiemian.com/article/15146915.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220712/165760844893303600_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:34:05.000Z"
-  },
-  {
    "id": "81de4ad3446c",
    "title": "江豚群现身鄱阳湖水系信江水域",
    "summary": "中新网南昌9月28日电 (王剑)“今年入秋以来，我们首次在信江水域管护巡查中发现江豚群，目测有十余头。”江西省余干县鄱阳湖湿地生态保护中心江豚巡护队队长袁文斌28日对中新网说。",
@@ -1875,21 +1870,6 @@
    "published": "2026-09-28T11:34:04.000Z"
   },
   {
-   "id": "c5d0d73bbf63",
-   "title": "2021—2025年度平安中国建设示范市、县名单公布",
-   "summary": "中央政法委9月28日发布关于授牌命名2021—2025年度平安中国建设示范市、县的决定(以下简称决定)，授予河北省衡水市等60个市(地、州)“2021—2025年度平安中国建设示范市”称号，授予北京市西城区等160个县(市、区)“2021—2025年度平安中国建设示范县”称号。",
-   "link": "https://www.chinanews.com.cn/gn/2026/09-28/10705061.shtml",
-   "image": "",
-   "source": "中新网·国内",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:33:30.000Z",
-   "alsoIn": [
-    "界面新闻"
-   ]
-  },
-  {
    "id": "996a50b30138",
    "title": "I preferred my old life, says Cape Verde World Cup hero Vozinha",
    "summary": "",
@@ -1900,18 +1880,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T11:33:21.000Z"
-  },
-  {
-   "id": "3e0fd3b622db",
-   "title": "吉鑫科技：公司及公司控股股东、实际控制人包士金不存在对公司股票价格造成重大影响的事项",
-   "summary": "吉鑫科技9月28日发布公告，公司股票于2026年9月24日、9月28日连续2个交易日收盘价格涨幅偏离值累计达到20%，根据《上海证券交易所交易规则》的有关规定，属于股票交易异常波动情况。根据wind数据，2026年9月28日，公司股票换手率达27.33%，连续2个交易日累计换手率达42.57%。公司敬请广大投资者注意二级市场交易风险，理性决策，审慎投资。经公司自查及发函问询公司控股股东、实际控制人包士金，截至本公告披露日，公司及公司控股股东、实际控制人包士金不存在对公司股票价格造成重大影响的事项，也未涉及公司应披露而未披露的重大信息，包括但不限于重大资产重组、股份发行、重大交易类事项、业务重组、股份回购、股权激励、破产重整、重大业务合作、引进战略投资者等重大事项。",
-   "link": "https://www.jiemian.com/article/15146912.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220712/165760844893303600_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:33:05.000Z"
   },
   {
    "id": "e760b3d13c7c",
@@ -1960,18 +1928,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T11:32:19.000Z"
-  },
-  {
-   "id": "e1de99ddb884",
-   "title": "伊朗最高领袖就纳斯鲁拉去世两周年发表声明",
-   "summary": "当地时间9月28日，伊朗最高领袖穆杰塔巴·哈梅内伊在伊朗国防周及黎巴嫩真主党前领导人纳斯鲁拉去世两周年之际发表声明。声明指出，过去7个月里，伊朗民众以负责任的姿态支持国家，相关举动鼓舞了军队士气。穆杰塔巴还在声明中表示，将坚定保卫霍尔木兹海峡。声明说，纳斯鲁拉的抵抗事迹正在鼓舞黎巴嫩，黎巴嫩真主党将继续抵抗。此外，声明强调，伊朗及地区抵抗阵线将获得最终胜利。",
-   "link": "https://www.jiemian.com/article/15146902.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664253426029700_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:30:53.000Z"
   },
   {
    "id": "1bfdf319dbe2",
@@ -2032,18 +1988,6 @@
    "lang": "zh",
    "region": "cn",
    "published": "2026-09-28T11:29:33.000Z"
-  },
-  {
-   "id": "dfad679a7725",
-   "title": "从“中国乔布斯”到被实名举报：郑刚与罗永浩的十五年恩怨",
-   "summary": "",
-   "link": "https://www.jiemian.com/article/15146641.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/jiemian/original/coze/20260928/9f656d2fd942490eaf2f9399f1973a5f_a580x330.jpg",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:29:06.000Z"
   },
   {
    "id": "c109fa77d791",
@@ -2190,18 +2134,6 @@
    "published": "2026-09-28T11:23:37.000Z"
   },
   {
-   "id": "bfd9bbf042d1",
-   "title": "国常会：继续研究储备提振内需的政策举措",
-   "summary": "",
-   "link": "https://www.jiemian.com/article/15146895.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:23:22.000Z"
-  },
-  {
    "id": "73047580901c",
    "title": "“贴秋膘”带火“暖经济” 甘肃民勤羊肉从沙漠绿洲香到全国餐桌",
    "summary": "中新网兰州9月28日电 (马爱彬)“柴火烤全羊、全羊汤沙米面条、锁阳羊肉等特色美食，既是节庆待客的必备佳肴，也是秋季食客喜食的菜品。”金秋时节，甘肃省武威市民勤县羊肉菜馆食客盈门。民勤县商务局副局长汤玉明介绍说，入秋以来，全县羊肉制品销售量呈上升趋势，各大餐馆羊肉菜品点单率持续走高，“贴秋膘”正催热当地“暖经济”。",
@@ -2310,18 +2242,6 @@
    "published": "2026-09-28T11:20:43.000Z"
   },
   {
-   "id": "5d0f5804db38",
-   "title": "华为Mate 90系列开启预订",
-   "summary": "9月28日，据经销商处消息，华为年度旗舰Mate 90、Mate90 Pro现已开启预订，支付200元即可锁单，全机型配置、配色均可预定。此前市场曾有消息称，华为Mate 90系列有望搭载基于“韬（τ）定律”的新一代麒麟芯片。（蓝鲸财经）",
-   "link": "https://www.jiemian.com/article/15146892.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:20:36.000Z"
-  },
-  {
    "id": "b398b02792a0",
    "title": "Thai man’s jet ski stunt fuels anger in ‘unequal’ Bangkok as poor hit hardest by floods",
    "summary": "A Thai man who zipped a jet ski across flooded Bangkok streets received a suspended jail sentence on Monday for causing a public nuisance after he used the capital – where tens of thousands of households remain submerged – as a backdrop for social media content. The stunt, widely shared on social media on Sunday evening, became a conduit for public anger over both the handling of the flood respons",
@@ -2370,30 +2290,6 @@
    "published": "2026-09-28T11:19:25.000Z"
   },
   {
-   "id": "3d726e6c980a",
-   "title": "襄阳轴承：部分精密轴承产品可应用于谐波减速器、RV减速器等，已送样",
-   "summary": "襄阳轴承9月28日晚间公告，公司股票价格短期波动较大，股价短期内上涨幅度较大，敬请广大投资者务必充分了解二级市场交易风险，理性决策，审慎投资。经核查，截至本公告披露日，公司不存在应披露而未披露的重大事项和风险事项。公司主要从事汽车轴承及其零部件的生产、科研、销售及相关业务，主要产品为汽车轴承、等速万向节、轮毂轴承单元等。公司部分精密轴承产品可应用于谐波减速器、RV减速器等，目前已经完成产品试制并送样，截止目前累计营业收入13.14万元，不涉及海外客户，占公司整体营业收入比重较低，尚未实现盈利，该业务尚处于市场拓展阶段，存在不确定性，相关业务短期内不会对公司业绩产生重大影响。",
-   "link": "https://www.jiemian.com/article/15146885.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220712/165760844893303600_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:19:05.000Z"
-  },
-  {
-   "id": "e34caa834eea",
-   "title": "HC归来，华为正重新定义AIDC基础设施",
-   "summary": "",
-   "link": "https://www.qbitai.com/2026/09/498787.html",
-   "image": "",
-   "source": "量子位",
-   "category": "tech",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:18:27.000Z"
-  },
-  {
    "id": "b45acf450008",
    "title": "UK investigates if arrests near US-run base prevented Iran-linked attack",
    "summary": "British police were holding five men on Monday and examining suspected explosives found near a US-operated air force base in England, as counterterror detectives investigated whether the arrests foiled an attempted attack linked to Iran. The men were detained early on Sunday after three vans were spotted near RAF Fairford, a UK-owned base that has been used by American bombers during decades of co",
@@ -2428,30 +2324,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T11:17:24.000Z"
-  },
-  {
-   "id": "00d5014feb62",
-   "title": "刘立义获批担任兴业消费金融副总裁",
-   "summary": "9月28日，福建金融监管局网站发布批复，核准刘立义兴业消费金融股份公司副总裁的任职资格。公司应要求上述核准任职资格人员严格遵守金融监管总局有关监管规定，自本行政许可决定作出之日起3个月内到任，并按要求及时报告到任情况。未在上述规定期限内到任的，本批复文件失效，由决定机关办理行政许可注销手续。",
-   "link": "https://www.jiemian.com/article/15146883.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:16:53.000Z"
-  },
-  {
-   "id": "cfd3db96dc29",
-   "title": "国常会：动态发布重点管控新污染物清单，加大对企业转型的政策支持",
-   "summary": "",
-   "link": "https://www.jiemian.com/article/15146881.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:15:35.000Z"
   },
   {
    "id": "5fccdaa5fc03",
@@ -2500,18 +2372,6 @@
    "lang": "zh",
    "region": "cn",
    "published": "2026-09-28T11:13:37.000Z"
-  },
-  {
-   "id": "1d418e23673b",
-   "title": "康迪科技重卡换电业务再获宁德时代批量采购",
-   "summary": "9月28日，康迪科技宣布，其全资子公司中换电（浙江）科技有限公司再次收到宁德时代新能源科技股份有限公司重卡换电站批量采购订单。 同日，康迪科技（NASDAQ：KNDI）发布2026年上半年财务业绩。公司实现营业收入5710万美元，同比增长57.4%；净利润940万美元，同比增长452.2%；营业利润550万美元，同比实现扭亏为盈。",
-   "link": "https://www.jiemian.com/article/15146854.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:13:31.000Z"
   },
   {
    "id": "13d12ddf298c",
@@ -2574,18 +2434,6 @@
    "published": "2026-09-28T11:13:06.000Z"
   },
   {
-   "id": "6310ff53e234",
-   "title": "国常会：研究出台稳定房地产市场、促进就业增收等政策措施",
-   "summary": "",
-   "link": "https://www.jiemian.com/article/15146867.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:13:03.000Z"
-  },
-  {
    "id": "5d93fbe980e5",
    "title": "重庆高速集团原党委委员、副总经理穆军被“双开”",
    "summary": "中新网9月28日电 据重庆市纪委监委消息：经重庆市委批准，重庆市纪委监委对重庆高速集团原党委委员、副总经理穆军严重违纪违法问题进行了立案审查调查。",
@@ -2596,18 +2444,6 @@
    "lang": "zh",
    "region": "cn",
    "published": "2026-09-28T11:12:53.000Z"
-  },
-  {
-   "id": "b320634a2b9d",
-   "title": "迈威生物：拟向全资子公司联威创元增资8.25亿元并转让TCE项目资产",
-   "summary": "9月28日，迈威生物发布公告，公司拟与全资子公司联威创元签署《增资协议》和《项目转让合同》，公司拟以货币资金8.25亿元，认购联威创元新增注册资本8250万元，并确认联威创元初始注册资本10万元对应出资额为100万元；上述增资完成后，联威创元注册资本将由10万元增加至8260万元，公司仍持有联威创元100%股权；同时，公司将TCE项目资产，包括TCE项目相关专利、技术资料以及注册商标，以评估价格8.26亿元转让给联威创元。",
-   "link": "https://www.jiemian.com/article/15146862.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220712/165760844893303600_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:12:38.000Z"
   },
   {
    "id": "4c2b5b38908e",
@@ -2682,18 +2518,6 @@
    "published": "2026-09-28T11:09:31.000Z"
   },
   {
-   "id": "aabc30cb31db",
-   "title": "国常会：加大宏观政策逆周期调节力度，加快各类债券发行使用进度",
-   "summary": "",
-   "link": "https://www.jiemian.com/article/15146850.html",
-   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
-   "source": "界面新闻",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:09:15.000Z"
-  },
-  {
    "id": "9f728fb6c925",
    "title": "Putin has made Russia’s position on Ukraine talks clear — Kremlin",
    "summary": "Dmitry Peskov stressed that Ukraine would have to \"pay a price\" for its actions in recent months",
@@ -2708,7 +2532,7 @@
   {
    "id": "b3f273339dad",
    "title": "国常会：要加大宏观政策逆周期调节力度 推出一批务实管用的增量政策",
-   "summary": "李强主持召开国务院常务会议。会议指出，针对当前经济运行中出现的问题，要加大宏观政策逆周期调节力度，推动经济持续向新向优向好发展，努力完成全年经济社会发展目标任务。要加紧加力推动各项政策落地落实，存量政策要进一步增强实施效能，加快各类债券发行使用进度，推动“十五五”规划、“六张网”实施方案等明确的重大工程项目尽早开工建设，推进老旧水库、老旧粮库改造提升，加力实施扩投资、促消费贴息政策。 会议指出，推出一批务实管用的增量政策，优化财政支出安排，用好地方政府债务结存限额， 综合 运用并适时调整货币政策工具，增加科技创新和技术改造、支农支小等再贷款额度，研究出台稳定 房地产 市场、促进就业增收等政策措施。要上下协同合力稳投资，高质量做好项目准备，激发民间投资活力，加强投资项目要素保障，提高投资审批效率。要继续研究储备提振内需的政策举措，谋划更多带动性强的工作抓手，完善相关配套措施，鼓励有条件的地方",
+   "summary": "国务院总理李强9月28日主持召开国务院常务会议，研究宏观政策发力提效、促进有效投资有关工作，听取新污染物治理进展情况汇报，审议通过《事业单位登记管理条例（草案）》。 会议指出，针对当前经济运行中出现的问题，要加大宏观政策逆周期调节力度，推动经济持续向新向优向好发展，努力完成全年经济社会发展目标任务。要加紧加力推动各项政策落地落实，存量政策要进一步增强实施效能，加快各类债券发行使用进度，推动“十五五”规划、“六张网”实施方案等明确的重大工程项目尽早开工建设，推进老旧水库、老旧粮库改造提升，加力实施扩投资、促消费贴息政策。推出一批务实管用的增量政策，优化财政支出安排，用好地方政府债务结存限额， 综合 运用并适时调整货币政策工具，增加科技创新和技术改造、支农支小等再贷款额度，研究出台稳定 房地产 市场、促进就业增收等政策措施。要上下协同合力稳投资，高质量做好项目准备，激发民间投资活力，加强投资项",
    "link": "http://finance.eastmoney.com/news/1345,202609283885332024.html",
    "image": "https://np-newspic.dfcfw.com/download/D25488590138155037791_w690h389.jpg",
    "source": "东方财富",
@@ -2812,18 +2636,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T11:05:48.000Z"
-  },
-  {
-   "id": "cd63fd4e01e1",
-   "title": "Arms control talks with US should have been revived 'yesterday' — Kremlin",
-   "summary": "According to Dmitry Peskov, there is currently no legal framework for this issue",
-   "link": "https://tass.com/politics/2193895",
-   "image": "",
-   "source": "TASS",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T11:04:36.000Z"
   },
   {
    "id": "150b9b749578",
@@ -3202,18 +3014,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T10:51:25.000Z"
-  },
-  {
-   "id": "cd66eb9ca497",
-   "title": "China has not changed stance on participating in arms control with Russia, US — Kremlin",
-   "summary": "Earlier, during Chinese President Xi Jinping’s visit to Washington, US President Donald Trump proposed holding trilateral talks on strategic stability",
-   "link": "https://tass.com/politics/2193887",
-   "image": "",
-   "source": "TASS",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T10:51:13.000Z"
   },
   {
    "id": "97158b5ab4a5",
@@ -3739,6 +3539,32 @@
    "published": "2026-09-28T10:22:28.000Z"
   },
   {
+   "id": "e94f79f18c2e",
+   "title": "GoTo slides as Indonesia exchange removes 50 rupiah price floor",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/markets/goto-slides-as-indonesia-exchange-removes-50-rupiah-price-floor",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T10:22:10.190Z"
+  },
+  {
+   "id": "bcc6054aa4c2",
+   "title": "Egomaniacs, psychos, and informants. Why is it we look past all sorts of ugliness and insist on mythologizing revolutionaries?",
+   "summary": "",
+   "link": "https://theamericanscholar.org/the-allure-of-eden-on-earth/",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T10:22:10.190Z"
+  },
+  {
    "id": "aa4946179cef",
    "title": "Accused drug lord \"The Spider\" extradited to U.S. from Colombia",
    "summary": "Geovany Andres Rojas, who faces drug trafficking and terrorism charges in the U.S., had been protected from extradition by former Colombian President Gustavo Petro,",
@@ -3761,32 +3587,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T10:19:24.000Z"
-  },
-  {
-   "id": "e94f79f18c2e",
-   "title": "GoTo slides as Indonesia exchange removes 50 rupiah price floor",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/markets/goto-slides-as-indonesia-exchange-removes-50-rupiah-price-floor",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T10:19:11.033Z"
-  },
-  {
-   "id": "bcc6054aa4c2",
-   "title": "Egomaniacs, psychos, and informants. Why is it we look past all sorts of ugliness and insist on mythologizing revolutionaries?",
-   "summary": "",
-   "link": "https://theamericanscholar.org/the-allure-of-eden-on-earth/",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T10:19:11.033Z"
   },
   {
    "id": "26bd1cb1caab",
@@ -4005,6 +3805,32 @@
    "published": "2026-09-28T10:02:38.000Z"
   },
   {
+   "id": "6278cdc46995",
+   "title": "Vietnam begins mass trial of psychiatric staff for alleged fraud",
+   "summary": "",
+   "link": "https://asia.nikkei.com/spotlight/society/crime/vietnam-begins-mass-trial-of-psychiatric-staff-for-alleged-fraud",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T10:02:10.190Z"
+  },
+  {
+   "id": "87d36b57b245",
+   "title": "As an AI-generated sameness permeates “creative” work and the knowledge economy, we’re entering an era of bleh",
+   "summary": "",
+   "link": "https://www.noemamag.com/now-entering-the-era-of-bleh",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T10:02:10.190Z"
+  },
+  {
    "id": "7379220d6190",
    "title": "较强冷空气将影响中国 部分地区降温10摄氏度",
    "summary": "一股较强冷空气将在9月末影响中国江南及其以北地区，局地降温10摄氏度。 据中国气象局官网消息，9月末尾，一股较强冷空气将自北向南影响江南及其以北地区，其中内蒙古将率先出现大风降温天气，部分地区气温降幅可达10摄氏度左右；华西至江淮一带会是雨水连绵的状态。 另一方面，在冷空气到达前，江南、华南等地未来三天仍多高温天气，局地最高气温超过37摄氏度。 气象专家提醒，近期华西至江淮一带出现持续降雨，公众需多加警惕局地强降雨或持续降雨可能引发的山洪、泥石流、滑坡等次生灾害，远离山区、河道等灾害易发区。 过去三个月，中国已发生多起由极端天气等因素引发的严重山洪、泥石流和山体滑坡灾害。",
@@ -4149,23 +3975,11 @@
    "published": "2026-09-28T10:00:00.000Z"
   },
   {
-   "id": "d8e409bbc351",
-   "title": "Hispanic voters turn toward Democrats in redistricted Texas, Florida",
-   "summary": "Hispanic voters swung to the right in the last election, but Republicans appear to be losing ground with the key voting bloc, potentially complicating the party’s path to victory in the redistricted red strongholds of Texas, Florida and beyond. Recent polling has signaled that Hispanic voters who helped propel President Trump to a second term...",
-   "link": "https://thehill.com/homenews/campaign/6112470-hispanic-voters-shift-democrats/",
-   "image": "https://thehill.com/wp-content/uploads/sites/2/2026/09/Hispanic-voters_092826_Mueller_AP_David-J-Phillip.jpg?w=900",
-   "source": "The Hill",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T10:00:00.000Z"
-  },
-  {
-   "id": "7bd016dbaf31",
-   "title": "GOP Reps urge Trump to reimpose sanctions on Russian-owned Serbian refinery",
-   "summary": "A pair of House Republicans are urging the Trump administration to resume sanctions on a Russian-owned refinery in Serbia, according to a letter obtained exclusively by The Hill. The GOP criticism marks another instance of growing Republican pushback against the president’s foreign policy actions. Reps. Joe Wilson (R-S.C.) and Keith Self (R-Texas), staunch allies of...",
-   "link": "https://thehill.com/homenews/house/6113819-gop-urges-serbia-refinery-sanctions/",
-   "image": "https://thehill.com/wp-content/uploads/sites/2/2025/12/wilsonjoe_010325gn02_w.jpg?w=900",
+   "id": "10a39da48c13",
+   "title": "Can schools help boost youth voter turnout for midterms?",
+   "summary": "Advocates are hopeful the upcoming midterms will see an uptick in youth voters as high schools and colleges work to help register and encourage students to go to the polls. Voter turnout is typically lower during midterms, especially among the young, but advocates argue motivation is high due to the discontentment with the Trump administration...",
+   "link": "https://thehill.com/homenews/education/6111687-youth-voter-turnout-2026-midterms/",
+   "image": "https://thehill.com/wp-content/uploads/sites/2/2026/09/YouthVoters_Cochran_Getty_SaraDiggins.jpg?w=900",
    "source": "The Hill",
    "category": "world",
    "lang": "en",
@@ -4185,11 +3999,23 @@
    "published": "2026-09-28T10:00:00.000Z"
   },
   {
-   "id": "10a39da48c13",
-   "title": "Can schools help boost youth voter turnout for midterms?",
-   "summary": "Advocates are hopeful the upcoming midterms will see an uptick in youth voters as high schools and colleges work to help register and encourage students to go to the polls. Voter turnout is typically lower during midterms, especially among the young, but advocates argue motivation is high due to the discontentment with the Trump administration...",
-   "link": "https://thehill.com/homenews/education/6111687-youth-voter-turnout-2026-midterms/",
-   "image": "https://thehill.com/wp-content/uploads/sites/2/2026/09/YouthVoters_Cochran_Getty_SaraDiggins.jpg?w=900",
+   "id": "d8e409bbc351",
+   "title": "Hispanic voters turn toward Democrats in redistricted Texas, Florida",
+   "summary": "Hispanic voters swung to the right in the last election, but Republicans appear to be losing ground with the key voting bloc, potentially complicating the party’s path to victory in the redistricted red strongholds of Texas, Florida and beyond. Recent polling has signaled that Hispanic voters who helped propel President Trump to a second term...",
+   "link": "https://thehill.com/homenews/campaign/6112470-hispanic-voters-shift-democrats/",
+   "image": "https://thehill.com/wp-content/uploads/sites/2/2026/09/Hispanic-voters_092826_Mueller_AP_David-J-Phillip.jpg?w=900",
+   "source": "The Hill",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T10:00:00.000Z"
+  },
+  {
+   "id": "7bd016dbaf31",
+   "title": "GOP Reps urge Trump to reimpose sanctions on Russian-owned Serbian refinery",
+   "summary": "A pair of House Republicans are urging the Trump administration to resume sanctions on a Russian-owned refinery in Serbia, according to a letter obtained exclusively by The Hill. The GOP criticism marks another instance of growing Republican pushback against the president’s foreign policy actions. Reps. Joe Wilson (R-S.C.) and Keith Self (R-Texas), staunch allies of...",
+   "link": "https://thehill.com/homenews/house/6113819-gop-urges-serbia-refinery-sanctions/",
+   "image": "https://thehill.com/wp-content/uploads/sites/2/2025/12/wilsonjoe_010325gn02_w.jpg?w=900",
    "source": "The Hill",
    "category": "world",
    "lang": "en",
@@ -4303,32 +4129,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T10:00:00.000Z"
-  },
-  {
-   "id": "6278cdc46995",
-   "title": "Vietnam begins mass trial of psychiatric staff for alleged fraud",
-   "summary": "",
-   "link": "https://asia.nikkei.com/spotlight/society/crime/vietnam-begins-mass-trial-of-psychiatric-staff-for-alleged-fraud",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T09:59:11.033Z"
-  },
-  {
-   "id": "87d36b57b245",
-   "title": "As an AI-generated sameness permeates “creative” work and the knowledge economy, we’re entering an era of bleh",
-   "summary": "",
-   "link": "https://www.noemamag.com/now-entering-the-era-of-bleh",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T09:59:11.033Z"
   },
   {
    "id": "1b5be8aea111",
@@ -4499,6 +4299,32 @@
    "published": "2026-09-28T09:44:14.000Z"
   },
   {
+   "id": "9cc0a2f8d5ca",
+   "title": "Japan motor maker Nidec to recognize over $3.8bn impairment loss",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/companies/japan-motor-maker-nidec-to-recognize-over-3.8bn-impairment-loss",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T09:42:10.190Z"
+  },
+  {
+   "id": "1dcacb3cd2f3",
+   "title": "There are to be “no jesters, no dogs, no weapons, or any such silliness.” Or so the Renaissance painter Paolo Veronese was told by an Inquisitor",
+   "summary": "",
+   "link": "https://publicdomainreview.org/essay/veroneses-dogs/",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T09:42:10.190Z"
+  },
+  {
    "id": "01cc69cff2fe",
    "title": "“把城市C位献给国之栋梁”，十位科学家群像亮相上海地铁站",
    "summary": "近日，上海地铁世纪大道站内，一组“国之栋梁”的主题宣传，吸引不少路过乘客拍照留念。 近日，十位科学家群像亮相世纪大道站，吸引不少路过乘客拍照留念。 受访者供图 2026年9月28日，澎湃新闻记者在现场看到，该主题宣传发布于世纪大道站B厅内的电子大屏上，展示了邓稼先、袁隆平、杨振宁等科学家的形象，在往来匆匆的地铁站厅中格外醒目。 作为上海地铁网络中客流最为密集的换乘枢纽之一，世纪大道站每日承载着大量通勤市民与往来游客。该组宣传将站内核心位置的电子屏用于展示科学家群像，并配有“他们才是我们该追的顶流”“把城市C位献给国之栋梁”等文案。记者观察到，不少乘客在经过电子屏时放慢脚步观看，有人举起手机拍照。社交媒体上，相关视频与图文也已引发讨论。不少网友表示“国之栋梁 永远铭记”“为中国的脊梁们致敬”。 地铁站内的电子屏上展示着科学家群像，并配有“他们才是我们该追的顶流”“把城市C位献给国之栋梁”等文",
@@ -4521,32 +4347,6 @@
    "lang": "zh",
    "region": "cn",
    "published": "2026-09-28T09:39:21.000Z"
-  },
-  {
-   "id": "9cc0a2f8d5ca",
-   "title": "Japan motor maker Nidec to recognize over $3.8bn impairment loss",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/companies/japan-motor-maker-nidec-to-recognize-over-3.8bn-impairment-loss",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T09:39:11.033Z"
-  },
-  {
-   "id": "1dcacb3cd2f3",
-   "title": "There are to be “no jesters, no dogs, no weapons, or any such silliness.” Or so the Renaissance painter Paolo Veronese was told by an Inquisitor",
-   "summary": "",
-   "link": "https://publicdomainreview.org/essay/veroneses-dogs/",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T09:39:11.033Z"
   },
   {
    "id": "8a02e3902ae2",
@@ -4789,6 +4589,32 @@
    "published": "2026-09-28T09:24:56.000Z"
   },
   {
+   "id": "06dbd5167739",
+   "title": "Nissan targets 80% local production in US, stepping up response to tariffs",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/automobiles/nissan-targets-80-local-production-in-us-stepping-up-response-to-tariffs",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T09:22:10.190Z"
+  },
+  {
+   "id": "337f38666ded",
+   "title": "Harold Cruse was as pure an autodidact as any 20th-century university scholar. Tuskegee wouldn't hire him. Michigan gave him tenure",
+   "summary": "",
+   "link": "https://www.chronicle.com/article/black-studies-between-the-seminar-and-the-sermon",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T09:22:10.190Z"
+  },
+  {
    "id": "2a18160b7fa1",
    "title": "French church abuse victims praise Pope Leo for 'extraordinary' empathy",
    "summary": "French victims of clerical abuse called their meeting with Pope Leo XIV on Sunday \"extraordinary\", praising him for listening deeply to their experiences. The Pope said he was committed to preventing further harm.",
@@ -4811,32 +4637,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T09:19:50.000Z"
-  },
-  {
-   "id": "06dbd5167739",
-   "title": "Nissan targets 80% local production in US, stepping up response to tariffs",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/automobiles/nissan-targets-80-local-production-in-us-stepping-up-response-to-tariffs",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T09:19:11.033Z"
-  },
-  {
-   "id": "337f38666ded",
-   "title": "Harold Cruse was as pure an autodidact as any 20th-century university scholar. Tuskegee wouldn't hire him. Michigan gave him tenure",
-   "summary": "",
-   "link": "https://www.chronicle.com/article/black-studies-between-the-seminar-and-the-sermon",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T09:19:11.033Z"
   },
   {
    "id": "e00cfa9fd6e4",
@@ -5175,6 +4975,32 @@
    "published": "2026-09-28T09:02:25.000Z"
   },
   {
+   "id": "500c829435ae",
+   "title": "Cambodia's scam probes are only a first step",
+   "summary": "",
+   "link": "https://asia.nikkei.com/opinion/cambodia-s-scam-probes-are-only-a-first-step",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T09:02:10.190Z"
+  },
+  {
+   "id": "e2888b0ee465",
+   "title": "The phrase \"fiercely private\" is often applied to artists who secretly love the attention. Anita Brookner wasn’t one of them",
+   "summary": "",
+   "link": "https://literaryreview.co.uk/spiky-sharp-cool",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T09:02:10.190Z"
+  },
+  {
    "id": "ca083d2317ea",
    "title": "【社论】密集上新，中国高铁加速“织线成网”",
    "summary": "我国高铁网络再次密集“上新”。9月28日，京港高铁雄商段、西渝高铁西安至安康段、宜兴高铁、哈伊高铁等四条高铁线路集中开通运营，新开线路覆盖华北、东北、西北、华中四大区域，多地正式迈入高铁时代。 长假前夕历来是高铁新线路开通的重要窗口期。四条高铁线路集中开通运营，意味着接下来的国庆长假，“坐着高铁看中国”又多了新选择。 截至2025年底，全国高铁营业里程已超过5万公里，覆盖了97%的城区人口50万以上城市，营业里程稳居世界第一。而根据国家铁路建设规划，“八纵八横”高速铁路主通道在“十五五”期间基本全面建成。这意味着我国高铁主干网络骨架已全面成型，现阶段在建和新开通的高铁线路，主要就是对既有高铁网的完善和织密。 此次开通的四条新线，也很明显体现了这一特点。雄商高铁是京港高铁的重要组成部分，西康高铁则是西渝高铁的重要组成部分；宜兴高铁作为沪渝蓉沿江高铁与郑渝高铁的联络线，开通后将实现两条干线高铁",
@@ -5259,18 +5085,6 @@
    "published": "2026-09-28T09:00:18.000Z"
   },
   {
-   "id": "9d58e0b8c2a1",
-   "title": "Nevada abortion rights group launches $1M campaign on ballot measure",
-   "summary": "A leading abortion rights group in Nevada is launching a $1 million ad campaign to mobilize voters around a ballot initiative to enshrine abortion protections into the state constitution. Abortion is legal up to 24 weeks after conception in the state, thanks to a 2024 ballot initiative that passed with 64 percent of the vote....",
-   "link": "https://thehill.com/homenews/6112367-nevada-abortion-rights-ad-campaign/",
-   "image": "https://thehill.com/wp-content/uploads/sites/2/2024/11/Abortion-Ballot-Measure-NEVADA.png?w=900",
-   "source": "The Hill",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T09:00:00.000Z"
-  },
-  {
    "id": "6e1d53c731e8",
    "title": "The Next Evolution of AI Is Learning From Your Dodgy Gaming Skills",
    "summary": "A British startup is shaping video game inputs into training data for AI models that can navigate the physical world.",
@@ -5317,32 +5131,6 @@
    "lang": "zh",
    "region": "cn",
    "published": "2026-09-28T08:59:14.000Z"
-  },
-  {
-   "id": "500c829435ae",
-   "title": "Cambodia's scam probes are only a first step",
-   "summary": "",
-   "link": "https://asia.nikkei.com/opinion/cambodia-s-scam-probes-are-only-a-first-step",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T08:59:11.033Z"
-  },
-  {
-   "id": "e2888b0ee465",
-   "title": "The phrase \"fiercely private\" is often applied to artists who secretly love the attention. Anita Brookner wasn’t one of them",
-   "summary": "",
-   "link": "https://literaryreview.co.uk/spiky-sharp-cool",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T08:59:11.033Z"
   },
   {
    "id": "a03579b186b2",
@@ -5585,18 +5373,6 @@
    "published": "2026-09-28T08:42:26.000Z"
   },
   {
-   "id": "e65a86371dfe",
-   "title": "第一观察·瞬间｜习近平主席访美难忘瞬间意义深远",
-   "summary": "9月23日至25日，应美国总统特朗普邀请，国家主席习近平对美国进行国事访问。",
-   "link": "https://www.chinanews.com.cn/gn/2026/09-28/10704900.shtml",
-   "image": "",
-   "source": "中新网·国内",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T08:39:57.000Z"
-  },
-  {
    "id": "18891308eebb",
    "title": "IHG to open premium hotels under new brand in Tokyo, marking first in Asia",
    "summary": "",
@@ -5607,7 +5383,7 @@
    "lang": "en",
    "region": "global",
    "undated": true,
-   "published": "2026-09-28T08:39:11.033Z"
+   "published": "2026-09-28T08:42:10.190Z"
   },
   {
    "id": "3f22c9b19cb7",
@@ -5620,7 +5396,19 @@
    "lang": "en",
    "region": "global",
    "undated": true,
-   "published": "2026-09-28T08:39:11.033Z"
+   "published": "2026-09-28T08:42:10.190Z"
+  },
+  {
+   "id": "e65a86371dfe",
+   "title": "第一观察·瞬间｜习近平主席访美难忘瞬间意义深远",
+   "summary": "9月23日至25日，应美国总统特朗普邀请，国家主席习近平对美国进行国事访问。",
+   "link": "https://www.chinanews.com.cn/gn/2026/09-28/10704900.shtml",
+   "image": "",
+   "source": "中新网·国内",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T08:39:57.000Z"
   },
   {
    "id": "92e5e210ad2a",
@@ -5683,8 +5471,8 @@
    "published": "2026-09-28T08:35:40.000Z"
   },
   {
-   "id": "424e0b702ac6",
-   "title": "At least 62 killed after heavy rain and flooding in northern India, officials say",
+   "id": "f673f95d72fd",
+   "title": "At least 81 killed after heavy rain and flooding in northern India, officials say",
    "summary": "Schools were closed in parts of the state on Monday, including the capital Lucknow, while rescue teams moved people from flooded areas to safer locations.",
    "link": "https://www.euronews.com/2026/09/28/at-least-62-killed-after-heavy-rain-and-flooding-in-northern-india-officials-say",
    "image": "",
@@ -5827,18 +5615,6 @@
    "published": "2026-09-28T08:27:09.000Z"
   },
   {
-   "id": "b0ee8443f8bc",
-   "title": "台湾多地孔庙纪念孔子诞辰",
-   "summary": "中新社台北9月28日电 (记者 朱贺)9月28日是孔子诞辰纪念日，台北、台南、桃园等地孔庙举行隆重典礼，以礼乐表达对孔子及先哲圣贤的敬意。",
-   "link": "https://www.chinanews.com.cn/gn/2026/09-28/10704912.shtml",
-   "image": "",
-   "source": "中新网·国内",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T08:26:50.000Z"
-  },
-  {
    "id": "4137f9420264",
    "title": "孔子故里举办祭孔大典纪念孔子诞辰2577周年",
    "summary": "中新社山东曲阜9月28日电 (记者 李欣 赵晓)“千年礼乐归东鲁，万古衣冠拜素王。”丙午年公祭孔子大典28日在孔子故里山东曲阜举行，海内外各界人士共同纪念孔子诞辰2577周年。",
@@ -5911,6 +5687,19 @@
    "published": "2026-09-28T08:24:00.000Z"
   },
   {
+   "id": "863c8e7f2d8c",
+   "title": "TSMC affiliate already eyes expansion as first Singapore plant 'sells out'",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/tech/semiconductors/tsmc-affiliate-already-eyes-expansion-as-first-singapore-plant-sells-out",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T08:22:10.190Z"
+  },
+  {
    "id": "827a2d009041",
    "title": "按图索骥沉浸式解锁“秋日限定”美景 “南北互换”“大迁徙”成为假日“新”风景",
    "summary": "央视网消息：随着秋意渐浓，赏秋经济也逐渐升温。各地依托自身优势，持续丰富文旅产品供给。",
@@ -5933,31 +5722,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T08:21:06.000Z"
-  },
-  {
-   "id": "c315ee109d73",
-   "title": "外交部：中方在朝鲜半岛问题上的立场和政策保持着连续性、稳定性",
-   "summary": "中新网北京9月28日电(记者 谢雁冰)中国外交部发言人郭嘉昆28日主持例行记者会。有记者就中美元首是否就朝鲜半岛问题交换意见提问。",
-   "link": "https://www.chinanews.com.cn/gn/2026/09-28/10704903.shtml",
-   "image": "",
-   "source": "中新网·国内",
-   "category": "top",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T08:19:28.000Z"
-  },
-  {
-   "id": "863c8e7f2d8c",
-   "title": "TSMC affiliate already eyes expansion as first Singapore plant 'sells out'",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/tech/semiconductors/tsmc-affiliate-already-eyes-expansion-as-first-singapore-plant-sells-out",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T08:19:11.033Z"
   },
   {
    "id": "4dab8817b1ee",
@@ -6152,6 +5916,19 @@
    "published": "2026-09-28T08:03:57.000Z"
   },
   {
+   "id": "0dd8733b902f",
+   "title": "US and China list Christmas ornaments, lumber, camels for tariff cuts",
+   "summary": "",
+   "link": "https://asia.nikkei.com/spotlight/trump-xi-summit/us-and-china-list-christmas-ornaments-lumber-camels-for-tariff-cuts",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T08:02:10.190Z"
+  },
+  {
    "id": "8c5967ab82c9",
    "title": "Heavy water isotopes make weather predictions more accurate",
    "summary": "Incorporating satellite measurements of water vapour isotopes into weather models can improve weather forecasts, particularly when predicting heavy rainfall The post Heavy water isotopes make weather predictions more accurate appeared first on Physics World .",
@@ -6198,19 +5975,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T08:00:19.000Z"
-  },
-  {
-   "id": "0dd8733b902f",
-   "title": "US and China list Christmas ornaments, lumber, camels for tariff cuts",
-   "summary": "",
-   "link": "https://asia.nikkei.com/spotlight/trump-xi-summit/us-and-china-list-christmas-ornaments-lumber-camels-for-tariff-cuts",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T07:59:11.033Z"
   },
   {
    "id": "cec3ecbb12dc",
@@ -6345,6 +6109,19 @@
    "published": "2026-09-28T07:45:00.000Z"
   },
   {
+   "id": "930ee2483e59",
+   "title": "Kazakh oil producers weigh new trans-Caspian route to avoid Russia",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/energy/kazakh-oil-producers-weigh-new-trans-caspian-route-to-avoid-russia",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T07:42:10.190Z"
+  },
+  {
    "id": "31b13d08be6f",
    "title": "考古学家在土耳其发现已知最古老的和平条约",
    "summary": "考古学家在土耳其中北部古代 Hittite 帝国首都 Hattusha 的一处建筑物内发掘出了一块楔形文字泥板残片，其中记录了已知最古老的和平条约 Treaty of Kadesh。条约由埃及统治者法老 Ramesses II 与 Hittite 国王 Hattusili III 在公元前 1269 年左右签署，标志着两大帝国之间长期战争的结束，被认为是已知最古老的和平条约。虽然被称为 Kadesh 条约，但并没有提及之前几年发生的 Kadesh 战役，因此也被称为 Egyptian-Hittite 和平条约、 永恒条约或白银条约。该条约还包含了有关难民待遇的内容。",
@@ -6357,24 +6134,11 @@
    "published": "2026-09-28T07:40:36.000Z"
   },
   {
-   "id": "930ee2483e59",
-   "title": "Kazakh oil producers weigh new trans-Caspian route to avoid Russia",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/energy/kazakh-oil-producers-weigh-new-trans-caspian-route-to-avoid-russia",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T07:39:11.033Z"
-  },
-  {
    "id": "818f82e05b38",
    "title": "RSI概念过热，一线学者：有炒作成分",
    "summary": "人人都在担心AI失控，我们找了个不慌的人聊了聊。",
    "link": "https://www.tmtpost.com/8153593.html",
-   "image": "https://images.tmtpost.com/uploads/images/wx/2026/09/20260927225935641571.jpg",
+   "image": "https://images.tmtpost.com/uploads/images/2023/tkrss/2t43q5hwry3.png",
    "source": "钛媒体",
    "category": "business",
    "lang": "zh",
@@ -6574,6 +6338,19 @@
    "published": "2026-09-28T07:24:38.000Z"
   },
   {
+   "id": "80ebb3b092b2",
+   "title": "Geely to acquire 30% of competitor Nio's battery swapping unit",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/automobiles/electric-vehicles/geely-to-acquire-30-of-competitor-nio-s-battery-swapping-unit",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T07:22:10.190Z"
+  },
+  {
    "id": "d54ba18d9a74",
    "title": "Trump-Xi summit analysis: 'Tangible outcomes' needed for U.S.-China truce to hold",
    "summary": "U.S. President Donald Trump and Chinese President Xi Jinping met in Washington, D.C., last week and signaled plans to meet two more times this year.",
@@ -6632,19 +6409,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T07:20:18.000Z"
-  },
-  {
-   "id": "80ebb3b092b2",
-   "title": "Geely to acquire 30% of competitor Nio's battery swapping unit",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/automobiles/electric-vehicles/geely-to-acquire-30-of-competitor-nio-s-battery-swapping-unit",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T07:19:11.033Z"
   },
   {
    "id": "87a487a48253",
@@ -8197,7 +7961,7 @@
   {
    "id": "e53af15abbe6",
    "title": "8点1氪丨苹果确认iPhone 18 Pro存在严重系统漏洞；甲骨文爆雷，市值蒸发近1500亿；特斯拉中国又宣布降价",
-   "summary": "今日热点导览 接连发生失控事件，OpenAI再次暂停其最先进模型训练 中国移动、中国电信、中国联通，集中叫停“0元购机” 罗永浩回应“劣质溜溜凳”事件：东方甄选平台也卖了将近1000万 扎克伯格成全球第四富豪 特斯拉Semi电动卡车开启量产交付 TOP3大新闻 苹果确认iPhone 18 Pro存在严重系统漏洞，会导致手机突发卡死 苹果已经对外正式证实，旗下最新发布的iPhone 18 Pro以及iPhone 18 Pro Max两款机型当中，存在一项和Face ID面容识别功能相关的严重系统漏洞。 这一漏洞会导致设备在特定的面部识别解锁或者身份验证场景下突发卡死，紧接着就触发系统自动重启，直接打断用户正在进行的操作。 不少首批拿到新机的用户已经在社交平台、苹果官方���持社区集中反馈相关问题，当用户尝试在暗光环境、握持角度偏斜的特殊场景下，或是通过第三方应用调用Face ID完成生物识别",
+   "summary": "今日热点导览 接连发生失控事件，OpenAI再次暂停其最先进模型训练 中国移动、中国电信、中国联通，集中叫停“0元购机” 罗永浩回应“劣质溜溜凳”事件：东方甄选平台也卖了将近1000万 扎克伯格成全球第四富豪 特斯拉Semi电动卡车开启量产交付 TOP3大新闻 苹果确认iPhone 18 Pro存在严重系统漏洞，会导致手机突发卡死 苹果已经对外正式证实，旗下最新发布的iPhone 18 Pro以及iPhone 18 Pro Max两款机型当中，存在一项和Face ID面容识别功能相关的严重系统漏洞。 这一漏洞会导致设备在特定的面部识别解锁或者身份验证场景下突发卡死，紧接着就触发系统自动重启，直接打断用户正在进行的操作。 不少首批拿到新机的用户已经在社交平台、苹果官方支持社区集中反馈相关问题，当用户尝试在暗光环境、握持角度偏斜的特殊场景下，或是通过第三方应用调用Face ID完成生物识别支付",
    "link": "https://36kr.com/p/4002308115517316?f=rss",
    "image": "",
    "source": "36氪",
@@ -8979,18 +8743,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-27T18:11:58.000Z"
-  },
-  {
-   "id": "4db22578832c",
-   "title": "Transcript: Sen. John Kennedy on \"Face the Nation with Margaret Brennan,\" Sept. 27, 2026",
-   "summary": "The following is the transcript of the interview with Sen. John Kennedy, Republican of Louisiana, that aired on \"Face the Nation with Margaret Brennan\" on Sept. 27, 2026.",
-   "link": "https://www.cbsnews.com/news/john-kennedy-louisiana-republican-face-the-nation-transcript-09-27-2026/",
-   "image": "",
-   "source": "CBS News",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-27T18:10:16.000Z"
   },
   {
    "id": "9acccde56661",
@@ -11126,6 +10878,30 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-17T07:19:22.000Z"
+  },
+  {
+   "id": "f7c3040d92d2",
+   "title": "Veronese's Dogs",
+   "summary": "“Oh, if I could only pray”, Luther once said of his dog Tölpel, “the way this dog watches the meat”. Attending to attentive canine figures in half a dozen paintings by Paolo Veronese, Thomas W. Laqueur explores the work of an artist whose love of dogs landed him in hot water with the Inquisition.",
+   "link": "https://publicdomainreview.org/essay/veroneses-dogs",
+   "image": "",
+   "source": "Public Domain Review",
+   "category": "culture",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-16T14:16:00.000Z"
+  },
+  {
+   "id": "106605ca473c",
+   "title": "It’s “A Cat-astrophe”! (1919)",
+   "summary": "“A Cat-astrophe” came on the tail end of an odd 1918 boom in cat-themed music.",
+   "link": "https://publicdomainreview.org/collection/cat-astrophe",
+   "image": "",
+   "source": "Public Domain Review",
+   "category": "culture",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-15T17:46:00.000Z"
   }
  ]
 }
