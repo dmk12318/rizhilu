@@ -1,8 +1,20 @@
 {
-  "date": "2026-09-29",
+  "date": "2026-09-28",
   "model": "deepseek-flash",
-  "at": "2026-09-28T16:14:24.769Z",
+  "at": "2026-09-28T16:31:37.877Z",
   "ok": true,
-  "status": "kept-existing",
-  "note": "专栏已存在，保留原稿未覆盖"
+  "scope": "all",
+  "chars": 3672,
+  "usage": {
+    "prompt_tokens": 6754,
+    "completion_tokens": 2185,
+    "total_tokens": 8939,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 6754
+  },
+  "file": "editorial/2026-09-28.md",
+  "note": "已完成"
 }
