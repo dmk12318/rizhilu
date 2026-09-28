@@ -66,6 +66,17 @@ jobs:
           EDITORIAL_MODEL: ${{ vars.EDITORIAL_MODEL || vars.DAILYNEWS }}
         run: node scripts/editorial.mjs --scope=world
 
+      # ===== 临时步骤：仅为重生成 2026-09-28 那一期的专栏，用完即删 =====
+      - name: 临时-重生成9月28日专栏
+        if: ${{ github.event_name == 'push' }}
+        continue-on-error: true
+        env:
+          EDITORIAL_API_KEY: ${{ secrets.EDITORIAL_API_KEY || secrets.DAILYNEWS }}
+          EDITORIAL_BASE_URL: ${{ vars.EDITORIAL_BASE_URL }}
+          EDITORIAL_MODEL: ${{ vars.EDITORIAL_MODEL || vars.DAILYNEWS }}
+        run: node scripts/editorial.mjs --date=2026-09-28 --force
+      # ===== 临时步骤结束 =====
+
       - name: 组装站点
         run: |
           mkdir -p _site
