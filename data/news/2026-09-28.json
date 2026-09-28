@@ -1,6 +1,6 @@
 {
  "date": "2026-09-28",
- "generatedAt": "2026-09-28T13:01:52.480Z",
+ "generatedAt": "2026-09-28T13:04:28.454Z",
  "windowHours": 24,
  "timezone": "Asia/Shanghai",
  "categories": [
@@ -48,26 +48,30 @@
   }
  ],
  "stats": {
-  "total": 872,
-  "rawTotal": 920,
+  "total": 900,
+  "rawTotal": 955,
   "sourcesConfigured": 107,
   "sourcesActive": 107,
   "sourcesSkipped": 0,
   "overseas": "on",
-  "sourcesOk": 102,
-  "sourcesFailed": 5,
+  "sourcesOk": 104,
+  "sourcesFailed": 3,
   "counts": {
    "tech": 140,
-   "business": 133,
-   "world": 286,
-   "culture": 104,
-   "top": 104,
+   "business": 128,
+   "world": 301,
+   "top": 123,
+   "culture": 103,
    "military": 70,
    "society": 35
   },
   "bySource": {
    "InfoQ中文": 5,
+   "IT之家": 25,
    "CNBC": 18,
+   "NYT World": 11,
+   "The Hindu": 8,
+   "界面新闻": 20,
    "南华早报": 12,
    "IEEE Spectrum": 1,
    "TechCrunch": 7,
@@ -75,22 +79,20 @@
    "Wired": 9,
    "Longreads": 6,
    "36氪": 18,
-   "澎湃新闻": 19,
-   "IT之家": 25,
+   "澎湃新闻": 18,
    "钛媒体": 15,
-   "NYT World": 11,
+   "CNA": 8,
    "中国新闻网": 28,
    "CBS News": 12,
    "Anadolu Agency": 15,
    "RFI English": 7,
    "BBC World": 12,
+   "TASS": 15,
    "MarketWatch": 10,
    "Breaking Defense": 9,
    "量子位": 5,
-   "CNA": 8,
    "The Hill": 15,
    "华尔街见闻": 20,
-   "Al Jazeera": 12,
    "东方财富": 17,
    "Euronews": 8,
    "Kyiv Post": 10,
@@ -99,14 +101,14 @@
    "France 24": 20,
    "The Straits Times": 8,
    "Yonhap": 8,
-   "The Hindu": 8,
-   "经济观察网": 11,
+   "经济观察网": 6,
    "联合早报": 20,
    "德国之声中文": 7,
    "NPR": 5,
    "集思录": 4,
    "Hacker News": 15,
    "MIT Tech Review": 2,
+   "Al Jazeera": 12,
    "中新网·国内": 18,
    "中新网·财经": 15,
    "The Korea Herald": 12,
@@ -163,7 +165,7 @@
    "JSTOR Daily": 2,
    "Science": 8,
    "Noema": 2,
-   "Public Domain Review": 3
+   "Public Domain Review": 2
   }
  },
  "items": [
@@ -216,6 +218,30 @@
    "published": "2026-09-28T18:23:47.000Z"
   },
   {
+   "id": "238f05d26f00",
+   "title": "英伟达董事会追加 1500 亿美元创纪录股票回购授权，计划 2028 财年内完成 2350 亿美元回购",
+   "summary": "IT之家 9 月 28 日消息，NVIDIA（英伟达）当地时间今日宣布， 其董事会已批准向现有的股票回购计划追加 1,500 亿美元 （IT之家注：现汇率约合 1.01 万亿元人民币） 授权额度 ，使其总额达到 2,350 亿美元 （现汇率约合 1.58 万亿元人民币） 。 这是历史上规模最大的股票回购授权增幅。NVIDIA 计划在 2028 财年内完成剩余的所有回购计划。 NVIDIA 联合创始人兼首席执行官黄仁勋表示： NVIDIA 的增长得益于一次前所未有的平台转型，即向人工智能和加速计算的转型。我们充裕的现金流使我们能够投资于推动这一转型的技术，并为股东带来回报。此次授权 体现了我们对未来长期机遇的信心 。",
+   "link": "https://www.ithome.com/1/008/022.htm",
+   "image": "",
+   "source": "IT之家",
+   "category": "tech",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T13:04:25.000Z"
+  },
+  {
+   "id": "495e1f7ab05e",
+   "title": "广汽集团：拟通过发行股份购买一汽丰田 50% 股权，股票明起复牌",
+   "summary": "IT之家 9 月 28 日消息，广汽集团今日发布公告，拟通过发行股份的方式购买一汽丰田汽车有限公司 50% 的股权，并拟向不超过 35 名符合条件的特定对象发行股份募集配套资金。公司股票将于 2026 年 9 月 29 日开市起复牌。 IT之家注意到，公告称，中国一汽是我国汽车产业重要中央企业，在整车研发制造、产业链布局、品牌运营等方面积累深厚。广汽集团是国内大型汽车产业集团，在新能源与智能化转型、自主品牌发展及产业生态建设等方面持续布局。双方基于各自资源禀赋和优势基础开展战略协作，进一步推动资源共享、优势互补，深化技术、供应链及市场等领域协同。本次交易有利于充分发挥中国一汽在整车、产业链等多领域的积累与布局优势，以及广汽集团在新能源与智能化转型、自主品牌发展及产业生态协同等方面的优势，进一步释放协同价值。 本次交易是双方战略协作的重要落地项目之一。本次交易前，上市公司以整车制造为核心，业",
+   "link": "https://www.ithome.com/1/008/021.htm",
+   "image": "",
+   "source": "IT之家",
+   "category": "tech",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T13:03:48.000Z"
+  },
+  {
    "id": "526498b1e24c",
    "title": "Meta hires MongoDB CEO CJ Desai, sending shares of data services company down",
    "summary": "Desai will lead the new Meta Enterprise Platform unit and report to CEO Mark Zuckerberg.",
@@ -225,7 +251,43 @@
    "category": "business",
    "lang": "en",
    "region": "global",
-   "published": "2026-09-28T13:01:43.000Z"
+   "published": "2026-09-28T13:01:56.000Z"
+  },
+  {
+   "id": "001c4bbeffd3",
+   "title": "Trump Brought Venezuelan Gold to the U.S., but Refiners Won’t Touch It",
+   "summary": "The administration is brokering deals in a notoriously corrupt industry, including one with a company that the United States deems a security threat.",
+   "link": "https://www.nytimes.com/2026/09/28/world/americas/venezuela-gold-trump.html",
+   "image": "https://static01.nyt.com/images/2026/09/24/multimedia/00int-venezuela-gold-lgjq/00int-venezuela-gold-lgjq-mediumSquareAt3X.jpg",
+   "source": "NYT World",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T13:01:55.000Z"
+  },
+  {
+   "id": "5844e3ff7b01",
+   "title": "Pope Leo XIV urges Europeans to welcome migrants",
+   "summary": "The Pope also made veiled references to his opposition to abortion and the assisted dying, asking people to “love life at every moment of life” and to “fight for life”",
+   "link": "https://www.thehindu.com/news/international/pope-leo-xiv-urges-europeans-to-welcome-migrants/article71519604.ece",
+   "image": "https://th-i.thgim.com/public/incoming/onyhx8/article71519745.ece/alternates/LANDSCAPE_1200/France_Pope_95464.jpg",
+   "source": "The Hindu",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T13:01:51.000Z"
+  },
+  {
+   "id": "6afe072011b8",
+   "title": "“请勿眨眼”背后，爱奇艺还剩多少用户耐心",
+   "summary": "",
+   "link": "https://www.jiemian.com/article/15146838.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/vcg/20230224/1677200218045_a580x330.jpg",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T13:01:45.000Z"
   },
   {
    "id": "58aae6666cc4",
@@ -250,6 +312,18 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T13:00:04.000Z"
+  },
+  {
+   "id": "559af9a39a14",
+   "title": "扎克伯格：Meta成立企业平台部门，任命MongoDB前CEO为负责人",
+   "summary": "9月28日，Meta首席执行官马克·扎克伯格宣布，公司成立Meta Enterprise Platform（Meta企业平台），向企业和开发者提供包括Muse智能体、Meta Business Agent、Muse API和Muse Code在内的AI产品和技术。扎克伯格同时宣布，MongoDB前首席执行官兼总裁奇兰坦·“CJ”·德赛（Chirantan “CJ” Desai）将加入Meta，出任首席企业平台官，直接向扎克伯格汇报。",
+   "link": "https://www.jiemian.com/article/15147166.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T13:00:00.000Z"
   },
   {
    "id": "4e61c200a761",
@@ -321,7 +395,10 @@
    "category": "business",
    "lang": "zh",
    "region": "cn",
-   "published": "2026-09-28T12:58:25.000Z"
+   "published": "2026-09-28T12:58:25.000Z",
+   "alsoIn": [
+    "界面新闻"
+   ]
   },
   {
    "id": "855c7b43a33e",
@@ -336,7 +413,8 @@
    "published": "2026-09-28T12:58:23.000Z",
    "alsoIn": [
     "中国新闻网",
-    "中新网·国内"
+    "中新网·国内",
+    "界面新闻"
    ]
   },
   {
@@ -388,6 +466,30 @@
    "published": "2026-09-28T12:56:25.000Z"
   },
   {
+   "id": "4abf3d957b59",
+   "title": "紫金矿业：签署补充协议延长赤峰黄金收购交割期限",
+   "summary": "紫金矿业9月28日晚间公告，公司全资子公司紫金黄金与赤峰黄金控股股东李金阳及浙江瀚丰签署《股份转让协议》补充协议，将股份转让交割先决条件满足期限延长至2026年11月30日；同时与赤峰黄金签署《战略投资协议》补充协议，将H股定向增发截止日期延长至同日。除期限调整外，原协议其余内容不变。本次交易能否最终完成交割仍存在不确定性。",
+   "link": "https://www.jiemian.com/article/15147151.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220712/165760844893303600_a580x330.png",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:54:54.000Z"
+  },
+  {
+   "id": "906330fc30a3",
+   "title": "SpaceX's Starship launches on 14th flight, first headed to orbit",
+   "summary": "",
+   "link": "https://www.channelnewsasia.com/business/spacexs-starship-launches-14th-flight-first-headed-orbit-6415906",
+   "image": "",
+   "source": "CNA",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:54:02.000Z"
+  },
+  {
    "id": "6a1cff3fb71a",
    "title": "Treasury Secretary Scott Bessent hires Wall Street economist David Zervos",
    "summary": "Zervos is joining the Treasury Department as counselor to Bessent, adding a prominent markets voice to the administration's economic policy team.",
@@ -421,12 +523,15 @@
    "category": "top",
    "lang": "zh",
    "region": "cn",
-   "published": "2026-09-28T12:52:41.000Z"
+   "published": "2026-09-28T12:52:41.000Z",
+   "alsoIn": [
+    "界面新闻"
+   ]
   },
   {
    "id": "3ccd19a84289",
    "title": "运输成本飙升正向美国经济全链条传导",
-   "summary": "卡车运输成本已经达到新冠疫情以来的最高水平；过去一年柴油价格暴涨77%。集装箱海运运价同步走高，铁路、联邦快递等包裹快递公司，甚至美国邮政署也纷纷上调收费。卡车司机人力短缺进一步推高货运成本。美国交通部表示，自2025年初以来，联邦开展专���整治，已有超过28000名司机被勒令停止上路；同时督促各州注销超过3万份违规向外籍司机发放的商业驾驶执照（CDL）。（新浪财经）",
+   "summary": "卡车运输成本已经达到新冠疫情以来的最高水平；过去一年柴油价格暴涨77%。集装箱海运运价同步走高，铁路、联邦快递等包裹快递公司，甚至美国邮政署也纷纷上调收费。卡车司机人力短缺进一步推高货运成本。美国交通部表示，自2025年初以来，联邦开展专项整治，已有超过28000名司机被勒令停止上路；同时督促各州注销超过3万份违规向外籍司机发放的商业驾驶执照（CDL）。（新浪财经）",
    "link": "https://36kr.com/newsflashes/4003025963159430?f=rss",
    "image": "",
    "source": "36氪",
@@ -472,7 +577,8 @@
    "published": "2026-09-28T12:51:36.000Z",
    "alsoIn": [
     "中国新闻网",
-    "中新网·体育"
+    "中新网·体育",
+    "界面新闻"
    ]
   },
   {
@@ -485,7 +591,10 @@
    "category": "business",
    "lang": "zh",
    "region": "cn",
-   "published": "2026-09-28T12:50:51.000Z"
+   "published": "2026-09-28T12:50:51.000Z",
+   "alsoIn": [
+    "界面新闻"
+   ]
   },
   {
    "id": "86f49e8e16d8",
@@ -617,6 +726,18 @@
    "published": "2026-09-28T12:49:07.000Z"
   },
   {
+   "id": "65f266add166",
+   "title": "高通将骁龙平台拓展至个人AI设备，布局智能眼镜等新形态",
+   "summary": "9月28日消息，高通技术公司高级副总裁兼XR、可穿戴与个人AI业务总经理Ziad Asghar表示，公司正将骁龙平台从智能手机拓展至智能手表、智能眼镜、无线耳机及其他个人AI设备，以应对AI智能体推动的新一代设备市场。高通在2026年骁龙峰会上发布第二代骁龙Sound Elite平台，面向AI耳机、AI别针及音频眼镜等设备。高通称，该平台微型NPU的AI计算性能较上一代提升一倍，芯片尺寸缩小30%，能效提升40%。",
+   "link": "https://www.jiemian.com/article/15147144.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:49:00.000Z"
+  },
+  {
    "id": "534428d4a59d",
    "title": "Ethiopia accuses Sudan, Eritrea of backing Tigray forces as fighting escalates",
    "summary": "Addis Ababa has accused Sudan and Eritrea of backing armed groups fighting its federal forces in the north, claims Khartoum has rejected as renewed clashes raise fears of a return to full-scale conflict.",
@@ -654,6 +775,18 @@
    "lang": "zh",
    "region": "cn",
    "published": "2026-09-28T12:48:11.000Z"
+  },
+  {
+   "id": "416746ca89bb",
+   "title": "从造富到谨慎，霸王茶姬加盟商的现实困境",
+   "summary": "",
+   "link": "https://www.jiemian.com/article/15146680.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/jiemian/original/coze/20260928/64dd3997924048cdb0b452a2a50ad079_a580x330.jpg",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:48:05.000Z"
   },
   {
    "id": "ddd23e0bfdcd",
@@ -702,6 +835,18 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T12:47:09.000Z"
+  },
+  {
+   "id": "ada7da74af97",
+   "title": "BRICS mechanisms promote better mutual understanding than EU — expert",
+   "summary": "The European integration process is based primarily on a highly maximalist approach, aiming to bring everyone around one common idea, regardless of whether you agree with it or not, Gustavo de Carvalho said",
+   "link": "https://tass.com/world/2193953",
+   "image": "",
+   "source": "TASS",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:47:08.000Z"
   },
   {
    "id": "5004b04d8d09",
@@ -785,6 +930,18 @@
    "published": "2026-09-28T12:45:45.000Z"
   },
   {
+   "id": "6cb10b8565c3",
+   "title": "大中矿业：子公司金日晟矿业重新集铁矿发生安全事故致2人死亡",
+   "summary": "大中矿业9月28日晚间公告，2026年9月25日，公司子公司安徽金日晟矿业有限责任公司（下称“金日晟矿业”）重新集铁矿井下-320米采场发生一起顶板冒落事故。事故发生后，公司立即启动应急预案，成立现场指挥部，采取紧急应对措施，组织人员下井抢救。该事故造成2人死亡。针对本次事故，公司收到了霍邱县应急管理局对金日晟矿业重新集铁矿下发的《现场处理措施决定书》[（邱）应急现决〔2026〕8号]，责令重新集铁矿暂时停产停业，排查整治事故隐患。重新集铁矿的主要产品为铁精粉。鉴于事故相关的调查和善后工作正在进行之中，停产时间暂无法预估，且对公司全年业绩的影响程度也暂无法准确预估。针对本次事故，公司向罹难员工表示沉痛哀悼，对罹难员工家属表示深切慰问，对广大投资者深表歉意。",
+   "link": "https://www.jiemian.com/article/15147130.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220712/165760844893303600_a580x330.png",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:45:33.000Z"
+  },
+  {
    "id": "eea885da86bb",
    "title": "‘I’d rather be on a beach in Bali’: My husband resents my $8 million net worth. Should I pay for his retirement?",
    "summary": "“We have an ironclad prenup.”",
@@ -848,6 +1005,18 @@
    ]
   },
   {
+   "id": "3cd0a552ced8",
+   "title": "Diesel prices record high in the United Kingdom",
+   "summary": "Simon Williams, the RAC’s head of policy, said the record-high diesel price \"will mean extra costs not just for motorists at the pumps, but for anyone buying goods or services whose delivery or provision depends on diesel trucks and vans\"",
+   "link": "https://tass.com/economy/2193951",
+   "image": "",
+   "source": "TASS",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:43:53.000Z"
+  },
+  {
    "id": "7da1c5485684",
    "title": "工业创新进入“组队局”，拆解西门子Xcelerator开放生态的赋能链路",
    "summary": "工业平台已经卷到帮伙伴拿线索、做Agent、出海了",
@@ -885,6 +1054,18 @@
    "alsoIn": [
     "中新网·财经"
    ]
+  },
+  {
+   "id": "a2334d534b51",
+   "title": "嘉善开启新一轮县域示范点建设",
+   "summary": "嘉善正持续探索全国县域现代化的可复制样板。",
+   "link": "https://www.jiemian.com/article/15146764.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20260928/179059216991523100_a580x330.jpg",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:43:07.000Z"
   },
   {
    "id": "9b2c27dc1fe9",
@@ -959,6 +1140,18 @@
    "published": "2026-09-28T12:41:37.000Z"
   },
   {
+   "id": "5fb5d545a102",
+   "title": "扎克伯格：Meta推出企业平台，向企业和开发者开放AI技术",
+   "summary": "9月28日，Meta首席执行官马克·扎克伯格宣布，公司启动Meta Enterprise Platform（Meta企业平台），帮助企业利用人工智能实现业务增长和转型。扎克伯格表示，该平台将整合Meta的模型、AI智能体和基础设施等技术，初期将向企业和开发者提供包括Muse智能体、Meta Business Agent、Muse API和Muse Code在内的产品和服务。",
+   "link": "https://www.jiemian.com/article/15147125.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:41:23.000Z"
+  },
+  {
    "id": "8f5e014ac3c5",
    "title": "Trump ‘very seriously’ considering diesel export ban as global supply crunch worsens",
    "summary": "Analysts warn an export ban could backfire, pushing up global diesel prices and potentially triggering higher U.S. gasoline prices as refiners adjust.",
@@ -969,18 +1162,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T12:41:13.000Z"
-  },
-  {
-   "id": "505f4cf48ee5",
-   "title": "Police clash with protesters over mosque demolitions in India",
-   "summary": "",
-   "link": "https://www.aljazeera.com/video/newsfeed/2026/9/28/police-clash-with-protesters-over-mosque-demolitions-in-india?traffic_source=rss",
-   "image": "",
-   "source": "Al Jazeera",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T12:40:36.000Z"
   },
   {
    "id": "6d5ac92be85c",
@@ -1032,6 +1213,30 @@
    "alsoIn": [
     "中新网·国内"
    ]
+  },
+  {
+   "id": "ded0746ccf7d",
+   "title": "OpenAI据报将于9月29日发布AI助手“o”",
+   "summary": "9月28日，据报道，OpenAI计划于9月29日举行的开发者日活动上发布名为“o”的AI助手。报道称，该助手定位为可持续运行、处理长期任务的个人AI助手，或采用GPT-6 Astra的一个名为“Aeon”的版本。目前OpenAI尚未公布“o”的详细信息。",
+   "link": "https://www.jiemian.com/article/15147113.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:38:58.000Z"
+  },
+  {
+   "id": "0f060ed1d032",
+   "title": "West intimidated observers, obstructed Russians’ voting abroad — ambassador-at-large",
+   "summary": "Rodion Miroshnik also mentioned threatening election commission members, blocking voting abroad and calls not to recognize the election results",
+   "link": "https://tass.com/politics/2193947",
+   "image": "",
+   "source": "TASS",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:38:43.000Z"
   },
   {
    "id": "e479600e9605",
@@ -1151,6 +1356,30 @@
    "published": "2026-09-28T12:36:45.000Z"
   },
   {
+   "id": "431204f2aa4d",
+   "title": "粤芯半导体：中签号码共有358848个",
+   "summary": "粤芯半导体9月28日晚间公告，公司首次公开发行股票并在创业板上市网上摇号中签结果已公布，中签号码共有358,848个，每个中签号码可认购500股粤芯半导体A股股票。网上投资者中签后需在2026年9月29日（T+2日）日终确保资金账户有足额认购资金，不足部分视为放弃认购。",
+   "link": "https://www.jiemian.com/article/15147105.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220712/165760844893303600_a580x330.png",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:36:34.000Z"
+  },
+  {
+   "id": "11a057ac9421",
+   "title": "Russia, Europe on collision course — Ukrainian politician",
+   "summary": "Viktor Medvedchuk noted that the entire globalist clique in Europe is feeding on the war in Ukraine",
+   "link": "https://tass.com/world/2193945",
+   "image": "",
+   "source": "TASS",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:35:55.000Z"
+  },
+  {
    "id": "24c662e7011c",
    "title": "Sweden Calls for More Ukraine Aid Ahead of ‘Extremely Difficult Winter’",
    "summary": "Swedish Defense Minister called for more bilateral support for Ukraine ahead of winter and floated early access to EU loan funds scheduled for 2027. He also urged tougher measures against Russia’s shadow fleet and hybrid attacks.",
@@ -1217,6 +1446,18 @@
    ]
   },
   {
+   "id": "324740245c72",
+   "title": "安徽：支持机器人企业面向全球并购整合产业链上下游资源",
+   "summary": "",
+   "link": "https://www.jiemian.com/article/15147103.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:34:06.000Z"
+  },
+  {
    "id": "0378cdf990c3",
    "title": "王楚钦：说出来像在找客观原因，但现在打球没有享受的感觉",
    "summary": "9月28日，王楚钦0比4不敌队友林诗栋，后者获得爱知·名古屋亚运会乒乓球男单冠军。 身为国乒男队队长，王楚钦为林诗栋感到高兴，“从之前的混双决赛到今天的男单决赛，林诗栋一路战胜了许多优秀的选手，尤其是在男单半决赛，他也打得特别艰难，我觉得他这一次（亚运会）突破了自己之前低迷的状态，这是中国乒乓球队值得高兴的一件事情。” 王楚钦说，林诗栋“突破自我”，“会对中国乒乓球队的未来有很大的帮助，对他自己也是一个新的起点。” 而谈及自己，王楚钦笑说，“我要说总结吧，感觉有人又要说我在找客观原因，但其实不是这样，不是说我输了球又怎么样了。” “消耗”是王楚钦对近期比赛的感受：“就觉得很累，也不知道为什么这么累，感觉从世界杯、世锦赛开始，自己不太能找到享受打球的感觉，或者说喜欢在场上的那种感觉，我觉得这是我自己后面要好好解决的一个课题吧。”",
@@ -1253,6 +1494,30 @@
    "published": "2026-09-28T12:33:27.000Z"
   },
   {
+   "id": "03db5bd05fc1",
+   "title": "安徽：2027年至2030年每年统筹安排5亿元省级财政资金，用于支持机器人关键技术攻关等",
+   "summary": "",
+   "link": "https://www.jiemian.com/article/15147096.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:33:13.000Z"
+  },
+  {
+   "id": "a1499192b01d",
+   "title": "巨力索具：近期经营情况正常，内外部经营环境未发生重大变化",
+   "summary": "巨力索具9月28日发布公告，连续两个交易日内（2026年9月24日、2026年9月28日）收盘价格涨幅偏离值累计达到20.1%，属于股票交易异常波动情形。 经核实，公司近期经营情况正常，内外部经营环境未发生重大变化。公司、控股股东及实际控制人不存在关于本公司的应披露而未披露的重大事项，或处于筹划阶段的重大事项。",
+   "link": "https://www.jiemian.com/article/15147090.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220712/165760844893303600_a580x330.png",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:32:48.000Z"
+  },
+  {
    "id": "f088c73e5e49",
    "title": "Possible Foiled Terror Attack at U.K Air Base Used by U.S. Raises Questions Over Security",
    "summary": "Conflicting accounts from a bystander who called the police and from President Trump have led to questions about whether security services knew about the possible plot in advance.",
@@ -1265,6 +1530,30 @@
    "published": "2026-09-28T12:32:46.000Z"
   },
   {
+   "id": "c143bf54d383",
+   "title": "安徽：支持产业链转型，引导汽车企业向机器人重点领域跨界布局",
+   "summary": "",
+   "link": "https://www.jiemian.com/article/15147081.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664251748738900_a580x330.png",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:32:41.000Z"
+  },
+  {
+   "id": "c574fef6037a",
+   "title": "昌红科技：拟1亿元-2亿元回购公司股份",
+   "summary": "昌红科技9月28日公告，拟以集中竞价交易方式回购公司股份，回购总金额不低于1亿元且不超过2亿元。回购价格不超过26.97元/股。回购股份将用于可转债转股。回购期限为自董事会审议通过回购股份方案之日起不超过六个月。",
+   "link": "https://www.jiemian.com/article/15147075.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220712/165760844893303600_a580x330.png",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:32:19.000Z"
+  },
+  {
    "id": "be8857430614",
    "title": "Nvidia releases software platform to stop AI agents from misbehaving",
    "summary": "Nvidia says its new software could have prevented OpenAI's Hugging Face incident.",
@@ -1275,6 +1564,18 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T12:32:15.000Z"
+  },
+  {
+   "id": "c59bf9e0ef55",
+   "title": "Lukashenko says Belarusian army must be ready for serious clashes to avoid them",
+   "summary": "The Belarusian leader said that the newly appointed deputy head of the Presidential Administration can offer a fresh perspective on the situation within the armed forces",
+   "link": "https://tass.com/world/2193941",
+   "image": "",
+   "source": "TASS",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:32:00.000Z"
   },
   {
    "id": "7e9076ce2839",
@@ -1301,16 +1602,19 @@
    "published": "2026-09-28T12:31:32.000Z"
   },
   {
-   "id": "596c45bc752d",
+   "id": "8fc2bddaa985",
    "title": "我国将绘制完成新一代全火星地质图",
-   "summary": "作为中国科学院院士、天问三号任务首席科学家侯增谦9月28日透露，新一代全火星地质图将提出火星地质年代划分的中国方案，推动我国自主制定的火星年代划分标准成为全球共识。 侯增谦在中国地质科学院地质研究所高质量发展座谈会上说，该图计划2028年底完成，祝融号探测器发现火星35亿年前存在洲际级古海洋、16亿年前可能存在短时洪水——这些最新科学发现将绘入新一代全火星地质图。 据介绍，新一代全火星地质图的核心成果还包括同期编制完成的1∶5万着陆区地质图以及专业系列图集。该系列成果将作为天问三号任务科学准备的重要成果，以全球首版智能化火星地质图的形式发布，并为后续月球、金星、小行星等编图任务提供研究范式与实施模板。",
-   "link": "https://m.thepaper.cn/detail/34166418",
-   "image": "https://imgpai.thepaper.cn/client/fastNewsWwwBig.jpg",
-   "source": "澎湃新闻",
+   "summary": "",
+   "link": "https://www.jiemian.com/article/15147068.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220307/164664253426029700_a580x330.png",
+   "source": "界面新闻",
    "category": "top",
    "lang": "zh",
    "region": "cn",
-   "published": "2026-09-28T12:31:26.000Z"
+   "published": "2026-09-28T12:31:28.000Z",
+   "alsoIn": [
+    "澎湃新闻"
+   ]
   },
   {
    "id": "46f273e5c643",
@@ -1409,6 +1713,18 @@
    "published": "2026-09-28T12:27:45.000Z"
   },
   {
+   "id": "e67ec4c7919e",
+   "title": "上交所：将景旺电子与彤程新材调入港股通标的名单",
+   "summary": "9月28日，上交所公告，根据《上海证券交易所沪港通业务实施办法》的有关规定，沪港通下港股通标的名单发生调整，调入景旺电子与彤程新材，并自下一港股通交易日起生效。",
+   "link": "https://www.jiemian.com/article/15147062.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220712/165760844893303600_a580x330.png",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:27:42.000Z"
+  },
+  {
    "id": "b0445cecdcd2",
    "title": "1 S. Korean among those killed in Thailand flood: foreign ministry",
    "summary": "SEOUL, Sept. 28 (Yonhap) -- A South Korean national who went missing amid recent...",
@@ -1421,16 +1737,16 @@
    "published": "2026-09-28T12:27:14.000Z"
   },
   {
-   "id": "5844e3ff7b01",
-   "title": "Pope Leo XIV urges Europeans to welcome migrants",
-   "summary": "The Pope also made veiled references to his opposition to abortion and the assisted dying, asking people to “love life at every moment of life” and to “fight for life”",
-   "link": "https://www.thehindu.com/news/international/pope-leo-xiv-urges-europeans-to-welcome-migrants/article71519604.ece",
-   "image": "https://th-i.thgim.com/public/incoming/onyhx8/article71519745.ece/alternates/LANDSCAPE_1200/France_Pope_95464.jpg",
-   "source": "The Hindu",
+   "id": "aa25f29ef55d",
+   "title": "EU defense ministers fail to agree on Patriot missile transfers to Kiev",
+   "summary": "\"Member states and partners could supply missiles from their own stocks \"in exchange for later replacement\", EU foreign policy chief Kaja Kallas said",
+   "link": "https://tass.com/world/2193935",
+   "image": "",
+   "source": "TASS",
    "category": "world",
    "lang": "en",
    "region": "global",
-   "published": "2026-09-28T12:26:48.000Z"
+   "published": "2026-09-28T12:26:23.000Z"
   },
   {
    "id": "4f2a4d2543b9",
@@ -1479,6 +1795,18 @@
    "lang": "zh",
    "region": "cn",
    "published": "2026-09-28T12:26:07.000Z"
+  },
+  {
+   "id": "f73f3a94e4a3",
+   "title": "Iran, Russia experiencing ‘upswing in relations’ — ambassador",
+   "summary": "Kazem Jalali emphasized that the leaders of the two countries maintain regular contacts",
+   "link": "https://tass.com/world/2193937",
+   "image": "",
+   "source": "TASS",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:25:56.000Z"
   },
   {
    "id": "392a73a66f5e",
@@ -1532,6 +1860,18 @@
    ]
   },
   {
+   "id": "5b01f6c7e17a",
+   "title": "扩容落地！26只 “固收 +” 纳入个人养老金基金池",
+   "summary": "Y份额管理费、托管费通常5折且免收销售服务费，长期复利效应显著。",
+   "link": "https://www.jiemian.com/article/15146961.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/vcg/20230919/1695111586904_a580x330.png",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:23:34.000Z"
+  },
+  {
    "id": "0396d9de5e10",
    "title": "Novo Nordisk's next-gen weight loss drug outperforms Zepbound in new trial",
    "summary": "Novo Nordisk says its potential Wegovy successor helped patients lose more weight than Zepbound in a major clinical trial.",
@@ -1556,6 +1896,18 @@
    "published": "2026-09-28T12:22:20.000Z"
   },
   {
+   "id": "fe75d976623d",
+   "title": "中大力德：拟定增募资不超5.3亿元，用于具身智能关节模组生产项目等",
+   "summary": "",
+   "link": "https://www.jiemian.com/article/15147043.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20220712/165760844893303600_a580x330.png",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:21:26.000Z"
+  },
+  {
    "id": "afdcc5041928",
    "title": "第十四届环鄱赛南昌湾里站：高温天迎爬坡赛道 车手竞逐梅岭山间",
    "summary": "图为选手在爬坡中。中新社记者 刘力鑫 摄 图为选手在爬坡中。中新社记者 刘力鑫 摄 图为选手在比赛中。中新社记者 刘力鑫 摄 图为选手在比赛中。中新社记者 刘力鑫 摄 图为选手在比赛中。中新社记者 刘力鑫 摄 图为选手在比赛中。中新社记者 刘力鑫 摄 图为米哈尔·波默尔斯基冲过终点后高举双手庆祝夺冠。中新社记者 刘力鑫 摄 图为一位完赛选手在消防车喷水形成的水雾中降温。当日南昌最高温度达34摄氏度，炎热的天气给选手带来巨大考验。中新社记者 刘力鑫 摄 图为完赛选手在喷水的消防车旁降温。当日南昌最高温度达34摄氏度，炎热的天气给选手带来巨大考验。中新社记者 刘力鑫 摄 图为获得橙衫冲刺王(左一)、蓝衫总成绩第一(左二)、圆点衫爬坡王(中)、白衫最佳年轻选手(右二)和粉红衫大中华最佳选手(右一)的运动员一同开启香槟庆祝。中新社记者 刘力鑫 摄",
@@ -1568,6 +1920,30 @@
    "published": "2026-09-28T12:21:25.000Z"
   },
   {
+   "id": "9981c26fe80a",
+   "title": "翰森制药明星肺癌药出海遭阿斯利康阻击",
+   "summary": "为了阻拦翰森制药的阿美替尼进入欧洲市场，阿斯利康不惜起诉了欧盟委员会。",
+   "link": "https://www.jiemian.com/article/15146539.html",
+   "image": "https://a.jiemian.com/https://img.jiemian.com/101/original/20260928/17905895187353100_a580x330.jpg",
+   "source": "界面新闻",
+   "category": "top",
+   "lang": "zh",
+   "region": "cn",
+   "published": "2026-09-28T12:21:04.000Z"
+  },
+  {
+   "id": "a90bc4924be7",
+   "title": "Over 140 Russian companies present displays at Microelectronics 2026 forum",
+   "summary": "The forum is being held for the twelfth time",
+   "link": "https://tass.com/economy/2193933",
+   "image": "",
+   "source": "TASS",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:19:55.000Z"
+  },
+  {
    "id": "04976322070a",
    "title": "Founder of Smilegate appeals divorce ruling",
    "summary": "SEOUL, Sept. 28 (Yonhap) -- The founder of video game company Smilegate, Kwon Hy...",
@@ -1578,6 +1954,18 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T12:19:41.000Z"
+  },
+  {
+   "id": "866ff049fc98",
+   "title": "EU extends its military training mission for Ukraine until 2028 — Kallas",
+   "summary": "The EU foreign policy chief said Brussels planned to modernize two training centers in Ukraine to speed up training of new soldiers",
+   "link": "https://tass.com/world/2193929",
+   "image": "",
+   "source": "TASS",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:19:03.000Z"
   },
   {
    "id": "7fdb2a58ab92",
@@ -1715,6 +2103,18 @@
    ]
   },
   {
+   "id": "5334ff46f9be",
+   "title": "Russia to continue ensuring safe, decent conditions for media work — Foreign Ministry",
+   "summary": "According to Russian Foreign Ministry Spokeswoman Maria Zakharova, Western countries have in recent years carried out a \"sterile purge of views they dislike\" in the media space",
+   "link": "https://tass.com/politics/2193927",
+   "image": "",
+   "source": "TASS",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:13:16.000Z"
+  },
+  {
    "id": "bc0a3b264faf",
    "title": "上海清算所MSCI气候变化债券指数系列正式发布",
    "summary": "中新网上海9月28日电 (记者 姜煜)银行间市场清算所股份有限公司(以下简称上海清算所)与明晟公司(MSCI Limited，以下简称MSCI)合作，28日正式发布上海清算所MSCI气候变化债券指数系列。",
@@ -1832,6 +2232,18 @@
    "published": "2026-09-28T12:09:23.000Z"
   },
   {
+   "id": "e167067bfffd",
+   "title": "Russian National Guard troops test new combat laser against UAVs in Leningrad Region",
+   "summary": "Based on the test results, recommendations will be made for further improving the techniques and methods of combat use of the laser system",
+   "link": "https://tass.com/defense/2193925",
+   "image": "",
+   "source": "TASS",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:09:20.000Z"
+  },
+  {
    "id": "e189c113ee19",
    "title": "SpaceX preps next-gen Starlink as Amazon’s competitor stalls",
    "summary": "SpaceX is gearing up for a monumental flight today that's sure to be closely watched by Amazon. If successful, SpaceX will deploy its first Starlink V3 satellites, which tout meaningful upgrades to the ever-expanding Starlink constellation. The 26 satellites will be riding atop Starship, which SpaceX will also attempt to deploy into Earth orbit for […]",
@@ -1881,6 +2293,18 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T12:08:11.000Z"
+  },
+  {
+   "id": "41ff53649d96",
+   "title": "Dialogue between Russia and US essential to save arms control system — expert",
+   "summary": "Karen Hallberg emphasized that renewed Russia-US dialogue, with China’s involvement, on nuclear issues would foster a deeper understanding that there is no way to control nuclear weapons without reaching a mutual understanding among all nuclear powers",
+   "link": "https://tass.com/world/2193921",
+   "image": "",
+   "source": "TASS",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:07:53.000Z"
   },
   {
    "id": "b1d5475d7025",
@@ -1935,6 +2359,18 @@
    "alsoIn": [
     "中新网·体育"
    ]
+  },
+  {
+   "id": "f1e4a486d6b7",
+   "title": "Kremlin briefing focuses on arms control, Russian-German foreign ministers’ meeting",
+   "summary": "Arms control talks with the US should have been revived \"back yesterday\", Dmitry Peskov stated",
+   "link": "https://tass.com/politics/2193919",
+   "image": "",
+   "source": "TASS",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:06:00.000Z"
   },
   {
    "id": "9af0691bcfc4",
@@ -2022,6 +2458,18 @@
    "lang": "zh",
    "region": "global",
    "published": "2026-09-28T12:04:00.000Z"
+  },
+  {
+   "id": "37335c04f50f",
+   "title": "De Gaulle’s grandson wants to be Russian citizen, says decision rests with Putin",
+   "summary": "Pierre de Gaulle said he dreams of settling in Russia with his family and children and is working to strengthen ties between Paris and Moscow",
+   "link": "https://tass.com/society/2193917",
+   "image": "",
+   "source": "TASS",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T12:03:13.000Z"
   },
   {
    "id": "3593012a073b",
@@ -2256,6 +2704,18 @@
    "lang": "zh",
    "region": "cn",
    "published": "2026-09-28T11:57:47.000Z"
+  },
+  {
+   "id": "3b44bb33dc03",
+   "title": "Sri Lankan troops to survive any battle after Russian exercise — Chief of Staff",
+   "summary": "Chief of Staff of the Sri Lankan Army Dinesh Udugama said that 19 training points were set up where any Sri Lankan or Russian officer or soldier could undergo training",
+   "link": "https://tass.com/world/2193915",
+   "image": "",
+   "source": "TASS",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T11:57:27.000Z"
   },
   {
    "id": "adc8f5f8a0d4",
@@ -2978,42 +3438,6 @@
    "published": "2026-09-28T11:27:00.000Z"
   },
   {
-   "id": "3e9f3dc2c089",
-   "title": "重庆未来三天持续阴雨天气 这些地区地质灾害风险高",
-   "summary": "第1眼TV-华龙网讯（记者 李舒）9月28日白天，重庆降雨主要集中在长江沿线偏北地区，开州、城口、巫溪的21个雨量站达大暴雨，开州、云阳、奉节、城口、巫溪的119个雨量站达暴雨，最大雨量140.8毫米出现在城口高燕。受降雨影响，今日大部地区最高气温在30℃以下，最冷城口仅有18.5℃，最暖彭水34.2℃。 <img src=\"https://jg-app.obs.cn-north-4.myhuaweicloud.com/prod/upload/0/png/A7077E585E634674C5D819CA8B404EED.png\" a...",
-   "link": "http://www.eeo.com.cn/2026/0928/1051039.shtml",
-   "image": "https://jg-app.obs.cn-north-4.myhuaweicloud.com/prod/upload/0/png/A7077E585E634674C5D819CA8B404EED.png",
-   "source": "经济观察网",
-   "category": "business",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:26:12.000Z"
-  },
-  {
-   "id": "3078825ca548",
-   "title": "130亿美元收购Hugging Face后，英伟达出手解决OpenAI式AI逃逸危机",
-   "summary": "中新经纬9月28日电 据彭博社28日报道，英伟达公司推出了一种新的双层人工智能安全系统，该系统可以防止最近备受瞩目的“拥抱脸”(Hugging Face)被OpenAI的人工智能模型入侵事件发生。 英伟达正迅速将其产品线扩展到芯片以外的领域，并推出两款可在其硬件上运行的开源软件安全工具。这两款工具旨在实时控制人工智能代理的访问权限，并在其违反规则时将其关闭。 英伟达企业人工智能副总裁贾斯汀·博伊塔诺在周一发布...",
-   "link": "http://www.eeo.com.cn/2026/0928/1051038.shtml",
-   "image": "",
-   "source": "经济观察网",
-   "category": "business",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:26:11.000Z"
-  },
-  {
-   "id": "a78dddde8a38",
-   "title": "答案越现成，问题越珍贵 王国胤谈AI时代创新：教育守护的是人的精神自主",
-   "summary": "第1眼TV-华龙网讯（记者 秦思思）9月28日，重庆师范大学举行2026级新生开学典礼。重庆师范大学党委书记王国胤教授以《以创新之我，赴求学之路》为题讲话，向10051名新生表示欢迎。 面对“AI时代还需勤奋学习吗？”的疑问，王国胤说，这份焦虑并不新鲜。从蒸汽机到互联网，每次技术革命都伴随“人被机器取代”的呼声，但历史证明，技术革命总会创造新职业，技术淘汰的不是人类，而是不适应时代、拒绝改变的人。他指出，人...",
-   "link": "http://www.eeo.com.cn/2026/0928/1051037.shtml",
-   "image": "",
-   "source": "经济观察网",
-   "category": "business",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:26:11.000Z"
-  },
-  {
    "id": "c2307a9a8566",
    "title": "新疆兵团凉皮走上世界技能大赛舞台",
    "summary": "中新网乌鲁木齐9月28日电 (陈鹏 花航)第48届世界技能大赛近日在上海举办，来自新疆生产建设兵团第六师的芳草湖凉皮展位前人头攒动，广受关注。",
@@ -3314,30 +3738,6 @@
    "published": "2026-09-28T11:13:37.000Z"
   },
   {
-   "id": "13d12ddf298c",
-   "title": "国资委答21：央企资产总额达99.3万亿，年底有望再上新台阶",
-   "summary": "21世纪经济报道记者 周潇枭 北京报道 9月28日，国新办举行“开局起步‘十五五’”系列主题新闻发布会，邀请国务院国有资产监督管理委员会新闻发言人、副主任庞骁刚介绍落实“十五五”规划、推动中央企业高质量发展情况，并答记者问。 <img data-copyright=\"原创图片\" src=\"https://jg-app.obs.cn-north-4.myhuaweicloud.com/prod/upload/0/jpg/F419A9440C68400A1B3B3683AD0EFC51.jpg\" data-mce-src=\"ht...",
-   "link": "http://www.eeo.com.cn/2026/0928/1051033.shtml",
-   "image": "https://jg-app.obs.cn-north-4.myhuaweicloud.com/prod/upload/0/jpg/F419A9440C68400A1B3B3683AD0EFC51.jpg",
-   "source": "经济观察网",
-   "category": "business",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:13:11.000Z"
-  },
-  {
-   "id": "f580f58716b4",
-   "title": "国资委：今年央企“六张网”相关投资计划约2万亿元",
-   "summary": "21世纪经济报道记者 周潇枭 北京报道 9月28日，国新办举行“开局起步‘十五五’”系列主题新闻发布会，邀请国务院国有资产监督管理委员会新闻发言人、副主任庞骁刚介绍落实“十五五”规划、推动中央企业高质量发展情况，并答记者问。 <img data-copyright=\"原创图片\" src=\"https://jg-app.obs.cn-north-4.myhuaweicloud.com/prod/upload/0/jpg/F419A9440C68400A1B3B3683AD0EFC51.jpg\" data-mce-src=\"ht...",
-   "link": "http://www.eeo.com.cn/2026/0928/1051032.shtml",
-   "image": "https://jg-app.obs.cn-north-4.myhuaweicloud.com/prod/upload/0/jpg/F419A9440C68400A1B3B3683AD0EFC51.jpg",
-   "source": "经济观察网",
-   "category": "business",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T11:13:11.000Z"
-  },
-  {
    "id": "ab273a9cd0a0",
    "title": "UK’s Healey puts defense in focus for reindustrialization push",
    "summary": "British government leaders are converging around the message that the defense sector will be key in energizing the nation's anemic growth.",
@@ -3410,18 +3810,6 @@
    "published": "2026-09-28T11:10:03.000Z"
   },
   {
-   "id": "001c4bbeffd3",
-   "title": "Trump Brought Venezuelan Gold to the U.S., but Refiners Won’t Touch It",
-   "summary": "The administration is brokering deals in a notoriously corrupt industry, including one with a company that the United States deems a security threat.",
-   "link": "https://www.nytimes.com/2026/09/28/world/americas/venezuela-gold-trump.html",
-   "image": "https://static01.nyt.com/images/2026/09/24/multimedia/00int-venezuela-gold-lgjq/00int-venezuela-gold-lgjq-mediumSquareAt3X.jpg",
-   "source": "NYT World",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T11:09:31.000Z"
-  },
-  {
    "id": "b3f273339dad",
    "title": "国常会：要加大宏观政策逆周期调节力度 推出一批务实管用的增量政策",
    "summary": "国务院总理李强9月28日主持召开国务院常务会议，研究宏观政策发力提效、促进有效投资有关工作，听取新污染物治理进展情况汇报，审议通过《事业单位登记管理条例（草案）》。 会议指出，针对当前经济运行中出现的问题，要加大宏观政策逆周期调节力度，推动经济持续向新向优向好发展，努力完成全年经济社会发展目标任务。要加紧加力推动各项政策落地落实，存量政策要进一步增强实施效能，加快各类债券发行使用进度，推动“十五五”规划、“六张网”实施方案等明确的重大工程项目尽早开工建设，推进老旧水库、老旧粮库改造提升，加力实施扩投资、促消费贴息政策。推出一批务实管用的增量政策，优化财政支出安排，用好地方政府债务结存限额， 综合 运用并适时调整货币政策工具，增加科技创新和技术改造、支农支小等再贷款额度，研究出台稳定 房地产 市场、促进就业增收等政策措施。要上下协同合力稳投资，高质量做好项目准备，激发民间投资活力，加强投资项",
@@ -3458,18 +3846,6 @@
    "published": "2026-09-28T11:07:33.000Z"
   },
   {
-   "id": "04dbd527ae63",
-   "title": "Man to be charged over AI-generated photo of crocodile at Pandan Reservoir",
-   "summary": "The 30-year-old will be charged with communicating a false message and obstructing the course of justice.",
-   "link": "https://www.channelnewsasia.com/singapore/man-charged-crocodile-ai-generated-image-pandan-reservoir-police-6415546",
-   "image": "https://dam.mediacorp.sg/image/upload/s--F-FSq3ZH--/c_crop,h_1125,w_2000,x_0,y_431/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/09/28/_wal9846.jpg?itok=WiEuR13G",
-   "source": "CNA",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T11:07:00.000Z"
-  },
-  {
    "id": "f08623bd9f49",
    "title": "Trump lashes out as Florida GOP candidates seek distance",
    "summary": "In today's issue: ▪ Trump’s frustration grows in Florida ▪ Senate’s last week in town ▪ Possible terrorist attack prevented ▪ The administration’s ‘magic’ words President Trump fumed online over the weekend as Republicans face warning signs in Florida, going after a key ally who broke with him on immigration and brushing off the idea...",
@@ -3492,6 +3868,32 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T11:05:49.000Z"
+  },
+  {
+   "id": "e94f79f18c2e",
+   "title": "GoTo slides as Indonesia exchange removes 50 rupiah price floor",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/markets/goto-slides-as-indonesia-exchange-removes-50-rupiah-price-floor",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T11:04:28.454Z"
+  },
+  {
+   "id": "bcc6054aa4c2",
+   "title": "Egomaniacs, psychos, and informants. Why is it we look past all sorts of ugliness and insist on mythologizing revolutionaries?",
+   "summary": "",
+   "link": "https://theamericanscholar.org/the-allure-of-eden-on-earth/",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T11:04:28.454Z"
   },
   {
    "id": "150b9b749578",
@@ -3564,32 +3966,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T11:02:00.000Z"
-  },
-  {
-   "id": "e94f79f18c2e",
-   "title": "GoTo slides as Indonesia exchange removes 50 rupiah price floor",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/markets/goto-slides-as-indonesia-exchange-removes-50-rupiah-price-floor",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T11:01:52.480Z"
-  },
-  {
-   "id": "bcc6054aa4c2",
-   "title": "Egomaniacs, psychos, and informants. Why is it we look past all sorts of ugliness and insist on mythologizing revolutionaries?",
-   "summary": "",
-   "link": "https://theamericanscholar.org/the-allure-of-eden-on-earth/",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T11:01:52.480Z"
   },
   {
    "id": "fb16505d7bf9",
@@ -3814,18 +4190,6 @@
    "published": "2026-09-28T10:53:14.000Z"
   },
   {
-   "id": "dff0f99193ec",
-   "title": "金士顿 DataTraveler Kyson USB 闪存盘上市：金属外壳，读取可达 220MB/s",
-   "summary": "IT之家 9 月 28 日消息，Kingston（金士顿）今日宣布，其 DataTraveler Kyson USB 闪存盘（部件号 DTKNG2）现已上市。 DataTraveler Kyson USB 闪存盘采用无盖设计，配备 USB 3.2 Gen1 Type-A (5Gbps) 接口，拥有耐用金属外壳，尾端配有钥匙环。其顺序读取速率至高可达 220MB/s， 享受 5 年保固 。 金士顿 DataTraveler Kyson USB 闪存盘售价为 64GB 款 129.9 元、128GB 款 219 元、256GB 款 379 元、512GB 款 739 元。 天猫 金士顿 DataTraveler Kyson USB 闪存盘 129.9 元起 直达链接",
-   "link": "https://www.ithome.com/1/007/978.htm",
-   "image": "",
-   "source": "IT之家",
-   "category": "tech",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T10:53:13.000Z"
-  },
-  {
    "id": "d9f7facee21a",
    "title": "5 men arrested over suspected attack at a U.S.-run air force base are British nationals",
    "summary": "Authorities have arrested five British nationals over a suspected attack at a U.S.-operated air force base in England. The men, all in their 20s from London, were detained Sunday.",
@@ -3886,18 +4250,6 @@
    "published": "2026-09-28T10:47:00.000Z"
   },
   {
-   "id": "5cfd2472858d",
-   "title": "亚奥理事会：未宣布电竞将退出亚运会",
-   "summary": "IT之家 9 月 28 日消息，据新华社报道，针对近日网络上有关“电子竞技将在 2026 年之后退出亚运会”的消息，亚奥理事会 28 日表示， 该传闻与亚奥理事会的工作安排不符 。 近日，网络上出现多篇有关电竞将在爱知 · 名古屋亚运会后退出亚运会竞赛项目、未来转入亚洲电子竞技与智力运动会的报道。 亚奥理事会发布声明表示，该组织已于 9 月 19 日与科威特签署举办城市合同，确认由科威特承办 2027 年首届亚洲电子竞技与智力运动会。 亚奥理事会总干事侯赛因 · 阿尔-穆萨拉姆表示，电竞在亚洲拥有广泛受众，是亚奥理事会作出上述安排的重要原因。创设亚洲电子竞技与智力运动会，是为了给亚洲运动员提供更多展示才华的舞台，“ 不会削弱电子竞技在亚运会体系中的地位 ”。 “亚奥理事会将一如既往支持电子竞技在亚洲的发展，会在旗下其他运动会中进一步宣传推广电竞运动。”他说。 IT之家注意到，2018 年雅",
-   "link": "https://www.ithome.com/1/007/977.htm",
-   "image": "",
-   "source": "IT之家",
-   "category": "tech",
-   "lang": "zh",
-   "region": "cn",
-   "published": "2026-09-28T10:45:56.000Z"
-  },
-  {
    "id": "5c800ac5a080",
    "title": "(LEAD) Foreign ministry calls in Ukrainian envoy as Kyiv reveals transfer of N. Korean POWs",
    "summary": "SEOUL, Sept. 28 (Yonhap) -- The foreign ministry on Monday called in Andrii Vies...",
@@ -3923,6 +4275,32 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T10:45:07.000Z"
+  },
+  {
+   "id": "6278cdc46995",
+   "title": "Vietnam begins mass trial of psychiatric staff for alleged fraud",
+   "summary": "",
+   "link": "https://asia.nikkei.com/spotlight/society/crime/vietnam-begins-mass-trial-of-psychiatric-staff-for-alleged-fraud",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T10:44:28.454Z"
+  },
+  {
+   "id": "87d36b57b245",
+   "title": "As an AI-generated sameness permeates “creative” work and the knowledge economy, we’re entering an era of bleh",
+   "summary": "",
+   "link": "https://www.noemamag.com/now-entering-the-era-of-bleh",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T10:44:28.454Z"
   },
   {
    "id": "e4a89d7e118f",
@@ -3959,32 +4337,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T10:42:06.000Z"
-  },
-  {
-   "id": "6278cdc46995",
-   "title": "Vietnam begins mass trial of psychiatric staff for alleged fraud",
-   "summary": "",
-   "link": "https://asia.nikkei.com/spotlight/society/crime/vietnam-begins-mass-trial-of-psychiatric-staff-for-alleged-fraud",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T10:41:52.480Z"
-  },
-  {
-   "id": "87d36b57b245",
-   "title": "As an AI-generated sameness permeates “creative” work and the knowledge economy, we’re entering an era of bleh",
-   "summary": "",
-   "link": "https://www.noemamag.com/now-entering-the-era-of-bleh",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T10:41:52.480Z"
   },
   {
    "id": "a9a14fd15550",
@@ -4291,6 +4643,32 @@
    "published": "2026-09-28T10:27:10.000Z"
   },
   {
+   "id": "9cc0a2f8d5ca",
+   "title": "Japan motor maker Nidec to recognize over $3.8bn impairment loss",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/companies/japan-motor-maker-nidec-to-recognize-over-3.8bn-impairment-loss",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T10:24:28.454Z"
+  },
+  {
+   "id": "1dcacb3cd2f3",
+   "title": "There are to be “no jesters, no dogs, no weapons, or any such silliness.” Or so the Renaissance painter Paolo Veronese was told by an Inquisitor",
+   "summary": "",
+   "link": "https://publicdomainreview.org/essay/veroneses-dogs/",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T10:24:28.454Z"
+  },
+  {
    "id": "c4bfd63a0b34",
    "title": "OpenAI智能体暴力扫描联合国网站1.6万次，还学会伪装绕过限制",
    "summary": "AI智能体正从单纯执行指令走向更强的自主行动能力，其在复杂环境下自行判断、调整策略的能力，也让行为边界与安全约束面临新的挑战。 9月28日，据The Verge报道，安全研究员Rowan Howard-Jones披露， 今年4月至6月间，OpenAI智能体向联合国贸易和发展会议（UNCTAD）统计网站发送逾1.6万次扫描请求。 涉事智能体原本被要求通过UNCTADstat API获取生产能力指数（PCI）相关公开数据，但由于缺乏直接API访问权限，加之HTTP工具受到限制，数据抓取一度受阻。 任务受阻后，智能体没有停止，而是开始自行寻找绕过限制的办法。 在多次请求失败后，它误以为网站存在一个并不存在的“过滤器”，并尝试隐藏自身行为，随后又发现可以利用谷歌XSS游戏作为跳板继续完成任务。该游戏原本用于帮助用户学习跨站脚本技术，但被智能体当作实现数据获取目标的工具。 此次事件的规模和影响尚未达",
@@ -4313,32 +4691,6 @@
    "lang": "zh",
    "region": "cn",
    "published": "2026-09-28T10:22:28.000Z"
-  },
-  {
-   "id": "9cc0a2f8d5ca",
-   "title": "Japan motor maker Nidec to recognize over $3.8bn impairment loss",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/companies/japan-motor-maker-nidec-to-recognize-over-3.8bn-impairment-loss",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T10:21:52.480Z"
-  },
-  {
-   "id": "1dcacb3cd2f3",
-   "title": "There are to be “no jesters, no dogs, no weapons, or any such silliness.” Or so the Renaissance painter Paolo Veronese was told by an Inquisitor",
-   "summary": "",
-   "link": "https://publicdomainreview.org/essay/veroneses-dogs/",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T10:21:52.480Z"
   },
   {
    "id": "aa4946179cef",
@@ -4545,6 +4897,32 @@
    "published": "2026-09-28T10:05:00.000Z"
   },
   {
+   "id": "06dbd5167739",
+   "title": "Nissan targets 80% local production in US, stepping up response to tariffs",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/automobiles/nissan-targets-80-local-production-in-us-stepping-up-response-to-tariffs",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T10:04:28.454Z"
+  },
+  {
+   "id": "337f38666ded",
+   "title": "Harold Cruse was as pure an autodidact as any 20th-century university scholar. Tuskegee wouldn't hire him. Michigan gave him tenure",
+   "summary": "",
+   "link": "https://www.chronicle.com/article/black-studies-between-the-seminar-and-the-sermon",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T10:04:28.454Z"
+  },
+  {
    "id": "c18b15228dc5",
    "title": "中国驻菲使馆批“极端反华、企图捞取政治资本” 菲军方：坚定支持防长",
    "summary": "菲律宾武装部队周一强烈驳斥了中国驻菲大使馆的说法，该说法指责菲律宾国防部长特奥多罗（Gilberto Teodoro）企图利用中菲南海争议来积累政治资本。 菲律宾国防部长吉尔贝托·特奥多罗资料图片 © 美联社图片 菲律宾武装部队西菲律宾海事务发言人特立尼达（Roy Vincent Trinidad）在致媒体的消息中表示，菲军方坚定支持特奥多罗，并“断然驳斥”中国外交官近期针对这位国防部长发表的“煽动性言论”。 特立尼达称，菲律宾武装部队在西菲律宾海（菲方对其专属经济区内南中国海海域的称呼）的立场建立在国际法基础之上，主要依据是1982年《联合国海洋法公约》（UNCLOS）以及具有约束力的2016年南海仲裁案裁决。中方不接受、不承认该裁决。 菲通社报导指，特立尼达称：“本地区紧张局势的根源，并非菲律宾守法且防御性的态势，而是中国共产党持续的非法存在、胁迫性与侵略性行径，以及其欺骗性信息”。",
@@ -4567,32 +4945,6 @@
    "lang": "zh",
    "region": "global",
    "published": "2026-09-28T10:02:00.000Z"
-  },
-  {
-   "id": "06dbd5167739",
-   "title": "Nissan targets 80% local production in US, stepping up response to tariffs",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/automobiles/nissan-targets-80-local-production-in-us-stepping-up-response-to-tariffs",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T10:01:52.480Z"
-  },
-  {
-   "id": "337f38666ded",
-   "title": "Harold Cruse was as pure an autodidact as any 20th-century university scholar. Tuskegee wouldn't hire him. Michigan gave him tenure",
-   "summary": "",
-   "link": "https://www.chronicle.com/article/black-studies-between-the-seminar-and-the-sermon",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T10:01:52.480Z"
   },
   {
    "id": "a768069c0d86",
@@ -4679,11 +5031,11 @@
    "published": "2026-09-28T10:00:06.000Z"
   },
   {
-   "id": "fa60c7315290",
-   "title": "Sports betting companies face image crisis this NFL season",
-   "summary": "The return of football season is bringing a major boom in sports gambling activity across the country, and with it, new scrutiny over how online sportsbooks are doing business. Major online betting providers like FanDuel and DraftKings are spending more than ever this fall on extensive advertising campaigns and corporate partnerships marketing themselves to potential...",
-   "link": "https://thehill.com/newsletters/keeping-score/6112110-online-betting-advertising-controversy/",
-   "image": "https://thehill.com/wp-content/uploads/sites/2/2025/09/sports_betting_fanduel_09172025_GettyImages-2235427573-1.jpg?w=900",
+   "id": "9bae489dd58e",
+   "title": "Senators spurn Hegseth's pick amid jockeying for Army secretary nomination",
+   "summary": "Defense Secretary Pete Hegseth’s pick to lead the Army is facing Democratic opposition and a hesitant reception from key Republicans, amid jockeying for the service branch’s top civilian post after Dan Driscoll resigned a month ago. Hegseth’s choice to lead the Army is Sean Parnell, a decorated Afghanistan war veteran and his senior advisor and...",
+   "link": "https://thehill.com/policy/defense/6113837-hegseth-army-pick-parnell-opposition-senate/",
+   "image": "https://thehill.com/wp-content/uploads/sites/2/2026/09/ArmySec_Timotija_AP_MarkSchiefelbein.jpg?w=900",
    "source": "The Hill",
    "category": "world",
    "lang": "en",
@@ -4691,11 +5043,11 @@
    "published": "2026-09-28T10:00:00.000Z"
   },
   {
-   "id": "9bae489dd58e",
-   "title": "Senators spurn Hegseth's pick amid jockeying for Army secretary nomination",
-   "summary": "Defense Secretary Pete Hegseth’s pick to lead the Army is facing Democratic opposition and a hesitant reception from key Republicans, amid jockeying for the service branch’s top civilian post after Dan Driscoll resigned a month ago. Hegseth’s choice to lead the Army is Sean Parnell, a decorated Afghanistan war veteran and his senior advisor and...",
-   "link": "https://thehill.com/policy/defense/6113837-hegseth-army-pick-parnell-opposition-senate/",
-   "image": "https://thehill.com/wp-content/uploads/sites/2/2026/09/ArmySec_Timotija_AP_MarkSchiefelbein.jpg?w=900",
+   "id": "fa60c7315290",
+   "title": "Sports betting companies face image crisis this NFL season",
+   "summary": "The return of football season is bringing a major boom in sports gambling activity across the country, and with it, new scrutiny over how online sportsbooks are doing business. Major online betting providers like FanDuel and DraftKings are spending more than ever this fall on extensive advertising campaigns and corporate partnerships marketing themselves to potential...",
+   "link": "https://thehill.com/newsletters/keeping-score/6112110-online-betting-advertising-controversy/",
+   "image": "https://thehill.com/wp-content/uploads/sites/2/2025/09/sports_betting_fanduel_09172025_GettyImages-2235427573-1.jpg?w=900",
    "source": "The Hill",
    "category": "world",
    "lang": "en",
@@ -4943,18 +5295,6 @@
    "published": "2026-09-28T09:45:02.000Z"
   },
   {
-   "id": "e90f9c93ba24",
-   "title": "Al Jazeera reports from near front line in Ethiopia’s Afar region",
-   "summary": "Al Jazeera reports from Ethiopia’s Afar region, where fighting has spread amid efforts to oust PM Abiy Ahmed.",
-   "link": "https://www.aljazeera.com/video/newsfeed/2026/9/28/al-jazeera-reports-from-near-front-line-in-ethiopias-afar-region?traffic_source=rss",
-   "image": "",
-   "source": "Al Jazeera",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T09:44:14.000Z"
-  },
-  {
    "id": "500c829435ae",
    "title": "Cambodia's scam probes are only a first step",
    "summary": "",
@@ -4965,7 +5305,7 @@
    "lang": "en",
    "region": "global",
    "undated": true,
-   "published": "2026-09-28T09:41:52.480Z"
+   "published": "2026-09-28T09:44:28.454Z"
   },
   {
    "id": "e2888b0ee465",
@@ -4978,7 +5318,19 @@
    "lang": "en",
    "region": "global",
    "undated": true,
-   "published": "2026-09-28T09:41:52.480Z"
+   "published": "2026-09-28T09:44:28.454Z"
+  },
+  {
+   "id": "e90f9c93ba24",
+   "title": "Al Jazeera reports from near front line in Ethiopia’s Afar region",
+   "summary": "Al Jazeera reports from Ethiopia’s Afar region, where fighting has spread amid efforts to oust PM Abiy Ahmed.",
+   "link": "https://www.aljazeera.com/video/newsfeed/2026/9/28/al-jazeera-reports-from-near-front-line-in-ethiopias-afar-region?traffic_source=rss",
+   "image": "",
+   "source": "Al Jazeera",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T09:44:14.000Z"
   },
   {
    "id": "01cc69cff2fe",
@@ -5009,7 +5361,7 @@
    "title": "刘欢走了，他唱过我们怎样的生活",
    "summary": "",
    "link": "https://www.tmtpost.com/8153718.html",
-   "image": "https://images.tmtpost.com/uploads/images/wx/2026/09/20260928092445535261.jpg",
+   "image": "https://images.tmtpost.com/uploads/images/2023/tkrss/53465uytj3.png",
    "source": "钛媒体",
    "category": "business",
    "lang": "zh",
@@ -5195,7 +5547,7 @@
    "lang": "en",
    "region": "global",
    "undated": true,
-   "published": "2026-09-28T09:21:52.480Z"
+   "published": "2026-09-28T09:24:28.454Z"
   },
   {
    "id": "3f22c9b19cb7",
@@ -5208,7 +5560,7 @@
    "lang": "en",
    "region": "global",
    "undated": true,
-   "published": "2026-09-28T09:21:52.480Z"
+   "published": "2026-09-28T09:24:28.454Z"
   },
   {
    "id": "2a18160b7fa1",
@@ -5329,6 +5681,18 @@
    "lang": "zh",
    "region": "cn",
    "published": "2026-09-28T09:12:54.000Z"
+  },
+  {
+   "id": "bf412eb469bf",
+   "title": "Azeez Al-Shaair honours slain Palestinian sisters despite NFL sanctions",
+   "summary": "The Houston Texans linebacker wore eye black with the names of slain sisters Lana, 12, and Bana, eight.",
+   "link": "https://www.aljazeera.com/sports/2026/9/28/azeez-al-shaair-honours-slain-palestinian-sisters-despite-nfl-sanctions?traffic_source=rss",
+   "image": "",
+   "source": "Al Jazeera",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T09:12:45.000Z"
   },
   {
    "id": "5f9062e25ad5",
@@ -5463,6 +5827,19 @@
    "published": "2026-09-28T09:05:00.000Z"
   },
   {
+   "id": "863c8e7f2d8c",
+   "title": "TSMC affiliate already eyes expansion as first Singapore plant 'sells out'",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/tech/semiconductors/tsmc-affiliate-already-eyes-expansion-as-first-singapore-plant-sells-out",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T09:04:28.454Z"
+  },
+  {
    "id": "dae6aaa84036",
    "title": "KDE 和 GNOME 考虑如何处理 AI 生成的贡献",
    "summary": "众多大型自由软件开源项目近期都在讨论如何处理 AI 生成代码，其中包括了两大桌面环境 KDE 和 GNOME。两位近期没有贡献的 KDE 知名开发者在 KDE 年度 Akademy 大会上发表了 lovable, sovereign, AI-native KDE 的主题演讲，随后开发者 Nate Graham 发起了如何限制 AI 辅助贡献的讨论，但讨论很快超出了预定的范围。参与者有很多都是 KDE 开发者圈子之外的人，他们围绕 AI 的道德而不是原定的限制如何使用展开激烈争论，他们想要 KDE 项目完全禁止使用 AI。讨论失控最终导致提议被撤回，主题被隐藏，这是当前互联网围绕 AI 展开讨论的现状。",
@@ -5521,19 +5898,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T09:02:27.000Z"
-  },
-  {
-   "id": "863c8e7f2d8c",
-   "title": "TSMC affiliate already eyes expansion as first Singapore plant 'sells out'",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/tech/semiconductors/tsmc-affiliate-already-eyes-expansion-as-first-singapore-plant-sells-out",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T09:01:52.480Z"
   },
   {
    "id": "0484ac1f08e5",
@@ -5716,6 +6080,19 @@
    "published": "2026-09-28T08:45:25.000Z"
   },
   {
+   "id": "0dd8733b902f",
+   "title": "US and China list Christmas ornaments, lumber, camels for tariff cuts",
+   "summary": "",
+   "link": "https://asia.nikkei.com/spotlight/trump-xi-summit/us-and-china-list-christmas-ornaments-lumber-camels-for-tariff-cuts",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T08:44:28.454Z"
+  },
+  {
    "id": "72b856b3ac94",
    "title": "“Crabs”",
    "summary": "My all-girls’ high school was sometimes visited by crabs. The first time I saw one show up was during my first year, on a rainy day in early summer. The crab was sidling along one of the outside walkways, where",
@@ -5750,19 +6127,6 @@
    "lang": "zh",
    "region": "global",
    "published": "2026-09-28T08:42:26.000Z"
-  },
-  {
-   "id": "0dd8733b902f",
-   "title": "US and China list Christmas ornaments, lumber, camels for tariff cuts",
-   "summary": "",
-   "link": "https://asia.nikkei.com/spotlight/trump-xi-summit/us-and-china-list-christmas-ornaments-lumber-camels-for-tariff-cuts",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T08:41:52.480Z"
   },
   {
    "id": "92e5e210ad2a",
@@ -5913,7 +6277,7 @@
    "title": "一代人的两种歌声：公共华章与私人青春",
    "summary": "致敬刘欢，也致敬那个时代的青春。",
    "link": "https://www.tmtpost.com/8153626.html",
-   "image": "https://images.tmtpost.com/uploads/images/wx/2026/09/20260928074302364952.jpg",
+   "image": "https://images.tmtpost.com/uploads/images/2023/tkrss/23r4t35wethsff3.png",
    "source": "钛媒体",
    "category": "business",
    "lang": "zh",
@@ -5969,6 +6333,19 @@
    "published": "2026-09-28T08:25:14.000Z"
   },
   {
+   "id": "930ee2483e59",
+   "title": "Kazakh oil producers weigh new trans-Caspian route to avoid Russia",
+   "summary": "",
+   "link": "https://asia.nikkei.com/business/energy/kazakh-oil-producers-weigh-new-trans-caspian-route-to-avoid-russia",
+   "image": "",
+   "source": "Nikkei Asia",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "undated": true,
+   "published": "2026-09-28T08:24:28.454Z"
+  },
+  {
    "id": "8183cdef0f19",
    "title": "中国强调将以负责任态度参与联合国秘书长选举过程",
    "summary": "中国外交部星期一（9月28日）强调，中国将以负责任态度，参与联合国秘书长的选举过程。 中国外交部发言人郭嘉昆在例行记者会上，回应关于中国考虑投票支持哪位秘书长选举候选人的提问时说，联合国秘书长选举关系到联合国改革发展和会员国切身利益。 郭嘉昆也说，中国支持根据联合国宪章规定，选出一位恪守宪章、能力出众、公道正派、履职担当的新任秘书长。中国将同有关各方一道，以负责任态度参与秘书长的选举过程。 《南华早报》早前引述多位受访联合国代表团成员的说法报道，北京方面正在权衡两位候选人，其中一位是哥斯达黎加经济学家格林斯潘（Rebeca Grynspan），另一位则是圭亚那常驻联合国代表罗德里格斯-伯克特（Carolyn Rodrigues-Birkett）。 联合国现任秘书长古特雷斯将在今年底卸任。",
@@ -5991,19 +6368,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-28T08:24:00.000Z"
-  },
-  {
-   "id": "930ee2483e59",
-   "title": "Kazakh oil producers weigh new trans-Caspian route to avoid Russia",
-   "summary": "",
-   "link": "https://asia.nikkei.com/business/energy/kazakh-oil-producers-weigh-new-trans-caspian-route-to-avoid-russia",
-   "image": "",
-   "source": "Nikkei Asia",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "undated": true,
-   "published": "2026-09-28T08:21:52.480Z"
   },
   {
    "id": "827a2d009041",
@@ -6210,18 +6574,6 @@
    "published": "2026-09-28T08:04:50.000Z"
   },
   {
-   "id": "ee1978f2b66f",
-   "title": "Live: 'One cannot speak of Europe without mentioning Christianity,' Pope Leo says in Metz",
-   "summary": "Pope Leo XIV urged Europe to remember its Christian history and appealed for peace and unity in a speech delivered in France's northeastern city of Metz on Monday, the fourth and final day of his visit. Later in the afternoon he is set for a final tour in the popemobile and lead a Mass at Saint-Etienne Cathedral set to be attended by French President Emmanuel Macron. Follow our liveblog for all th",
-   "link": "https://www.france24.com/en/france/20260928-live-pope-leo-xiv-arrives-in-metz-for-final-stop-of-france-visit",
-   "image": "https://s.france24.com/media/display/d5dd4eee-bb24-11f1-83ba-8f3418d01115/w:1024/p:16x9/000-C9JC2P4.jpg",
-   "source": "France 24",
-   "category": "world",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-28T08:03:57.000Z"
-  },
-  {
    "id": "80ebb3b092b2",
    "title": "Geely to acquire 30% of competitor Nio's battery swapping unit",
    "summary": "",
@@ -6232,7 +6584,19 @@
    "lang": "en",
    "region": "global",
    "undated": true,
-   "published": "2026-09-28T08:01:52.480Z"
+   "published": "2026-09-28T08:04:28.454Z"
+  },
+  {
+   "id": "ee1978f2b66f",
+   "title": "Live: 'One cannot speak of Europe without mentioning Christianity,' Pope Leo says in Metz",
+   "summary": "Pope Leo XIV urged Europe to remember its Christian history and appealed for peace and unity in a speech delivered in France's northeastern city of Metz on Monday, the fourth and final day of his visit. Later in the afternoon he is set for a final tour in the popemobile and lead a Mass at Saint-Etienne Cathedral set to be attended by French President Emmanuel Macron. Follow our liveblog for all th",
+   "link": "https://www.france24.com/en/france/20260928-live-pope-leo-xiv-arrives-in-metz-for-final-stop-of-france-visit",
+   "image": "https://s.france24.com/media/display/d5dd4eee-bb24-11f1-83ba-8f3418d01115/w:1024/p:16x9/000-C9JC2P4.jpg",
+   "source": "France 24",
+   "category": "world",
+   "lang": "en",
+   "region": "global",
+   "published": "2026-09-28T08:03:57.000Z"
   },
   {
    "id": "8c5967ab82c9",
@@ -6981,7 +7345,7 @@
   {
    "id": "7ee00c3a92b4",
    "title": "对话祝骏：重回增长的沃尔玛中国，自有品牌、爆款和少SKU都不是答案",
-   "summary": "作者｜任彩茹 编辑｜乔芊 2026年9月16日，沃尔玛在���都温江新光天地开出了“新一代门店”的第一家新店。这标志着沃尔玛门店转型从“老店改造”正式迈入“新店建设”阶段。 “新一代的门店，不是简单把大店做小，更重要的是在重新回答，今天的顾客真正需要什么样的超市。”在开业前一天的媒体巡店中，沃尔玛商店业态总裁祝骏说道。 这句话也概括了沃尔玛过去几年的转型。2024年末，沃尔玛尝试打磨的“新一代门店”在昆明首次落地，祝骏从那时开始不断讲起沃尔玛的转型思路——回到“顾客第一”的原点，重新锚定城市大众中产小家庭、单身人群，并据此重做商品、价格和全渠道。 将时钟拨回2020年前后，传统大卖场正处于最明显的失速期，家乐福、永辉、物美等内外资商超，要么一步步退出中国市场，要么深陷亏损。沃尔玛也不轻松，其在中国的门店数从2019年高峰时的420家一路收缩，到2025年末仅剩278家；山姆的快速增长，也一",
+   "summary": "作者｜任彩茹 编辑｜乔芊 2026年9月16日，沃尔玛在成都温江新光天地开出了“新一代门店”的第一家新店。这标志着沃尔玛门店转型从“老店改造”正式迈入“新店建设”阶段。 “新一代的门店，不是简单把大店做小，更重要的是在重新回答，今天的顾客真正需要什么样的超市。”在开业前一天的媒体巡店中，沃尔玛商店业态总裁祝骏说道。 这句话也概括了沃尔玛过去几年的转型。2024年末，沃尔玛尝试打磨的“新一代门店”在昆明首次落地，祝骏从那时开始不断讲起沃尔玛的转型思路——回到“顾客第一”的原点，重新锚定城市大众中产小家庭、单身人群，并据此重做商品、价格和全渠道。 将时钟拨回2020年前后，传统大卖场正处于最明显的失速期，家乐福、永辉、物美等内外资商超，要么一步步退出中国市场，要么深陷亏损。沃尔玛也不轻松，其在中国的门店数从2019年高峰时的420家一路收缩，到2025年末仅剩278家；山姆的快速增长，也一度被",
    "link": "https://36kr.com/p/3995817437679748?f=rss",
    "image": "https://img.36krcdn.com/hsossms/20260924/v2_ca2594ce7c9548dd92b57e63ecde1719@5748245_oswg3805358oswg5000oswg3333_img_jpg?x-oss-process=image/quality,q_80/format,jpg/interlace,1",
    "source": "36氪",
@@ -10762,18 +11126,6 @@
    "lang": "en",
    "region": "global",
    "published": "2026-09-16T14:16:00.000Z"
-  },
-  {
-   "id": "106605ca473c",
-   "title": "It’s “A Cat-astrophe”! (1919)",
-   "summary": "“A Cat-astrophe” came on the tail end of an odd 1918 boom in cat-themed music.",
-   "link": "https://publicdomainreview.org/collection/cat-astrophe",
-   "image": "",
-   "source": "Public Domain Review",
-   "category": "culture",
-   "lang": "en",
-   "region": "global",
-   "published": "2026-09-15T17:46:00.000Z"
   }
  ]
 }
