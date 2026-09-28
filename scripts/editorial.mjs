@@ -214,7 +214,7 @@ async function main() {
     const exists = await fs.access(outFile).then(() => true).catch(() => false);
     if (exists) {
       console.log(`  专栏已存在：editorial/${date}.md（要覆盖请加 --force）`);
-      await writeStatus({ ok: false, reason: 'already-exists', note: '专栏已存在，未覆盖' });
+      await writeStatus({ ok: true, status: 'kept-existing', note: '专栏已存在，保留原稿未覆盖' });
       return;
     }
   }
@@ -235,7 +235,7 @@ async function main() {
   if (!API_KEY) {
     console.log('  没有配置 EDITORIAL_API_KEY，跳过专栏生成（站点照常发布，专栏位置会显示"待撰写"）。');
     console.log('  配置方法见 README 的「部署到云端」一节。');
-    await writeStatus({ ok: false, reason: 'no-api-key', note: '没有读到 API Key' });
+    await writeStatus({ ok: false, status: 'no-api-key', note: '没有读到 API Key，本期没有生成专栏' });
     return;
   }
 

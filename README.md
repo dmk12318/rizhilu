@@ -272,6 +272,13 @@ npm run editorial:preview      # 只导出 editorial/<日期>.prompt.md，不调
 
 每期约 1 万 token 输入 + 3 千 token 输出。空闲时段是高峰时段的一半价格；北京时间工作日的 9:00–12:00、14:00–18:00 为高峰，**我们排在早上 8:00，正好是空闲时段**。
 
+> 实测（2026-09-28 那一期）：输入 9045 tokens、输出 2711 tokens，生成 4514 字的专栏，花费约 2 分钱。
+
+**两个容易踩的坑：**
+
+1. **思考模式默认是开的。** DeepSeek 这两个模型默认走"思考模式"，思考过程会先消耗 `max_tokens`；如果额度给得不够，正文会返回空字符串（表现为"模型输出过短（0 字）"）。脚本默认已显式关闭思考模式（`EDITORIAL_THINKING=disabled`），想要更强推理就把它设成 `enabled`，同时把 `EDITORIAL_MAX_TOKENS` 调大（例如 16000）。
+2. **专栏生成失败不会拖垮发版。** 该步骤设了 `continue-on-error`，接口欠费或限流时，新闻照常发布。失败原因会写进 `data/editorial-status.json` 并随数据提交回仓库，不用去 Actions 页翻日志。
+
 **第四步：手动跑一次验证**
 
 `Actions → 每日新闻与主编专栏 → Run workflow`。跑完后你的站点就是：

@@ -4,6 +4,9 @@ logs/
 # 本机网络选择（是否用代理），不跟着仓库走
 config.local.json
 
+# 本地试跑专栏时导出的提示词
+editorial/*.prompt.md
+
 # 专栏提示词的临时导出（node scripts/editorial.mjs --dry-run 会生成）
 editorial/*.prompt.md
 
