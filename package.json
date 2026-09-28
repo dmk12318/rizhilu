@@ -1,0 +1,17 @@
+{
+  "name": "rizhilu-daily-news",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "日知录 · 每日国内外要闻聚合与主编专栏",
+  "scripts": {
+    "fetch": "node scripts/fetch_news.mjs",
+    "editorial": "node scripts/editorial.mjs",
+    "editorial:preview": "node scripts/editorial.mjs --dry-run",
+    "netcheck": "node scripts/netcheck.mjs",
+    "check": "node scripts/fetch_news.mjs --check",
+    "serve": "node scripts/serve.mjs",
+    "start": "node scripts/launcher.mjs",
+    "digest": "node scripts/digest.mjs"
+  }
+}

@@ -1,0 +1,77 @@
+name: 每日新闻与主编专栏
+
+# 每天 UTC 00:00 运行 = 北京时间早上 8:00。
+# GitHub 的定时任务在高峰期可能延迟几分钟到半小时，属正常现象。
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+    inputs:
+      skip_editorial:
+        description: 本次只抓新闻、不生成专栏
+        type: boolean
+        default: false
+
+permissions:
+  contents: write      # 把当天数据提交回仓库
+  pages: write         # 发布 GitHub Pages
+  id-token: write
+
+concurrency:
+  group: rizhilu-daily
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      NEWS_RETENTION_DAYS: "30"   # 云端只留 30 天，控制仓库体积
+      # GitHub 的服务器在境外，不需要任何代理，直接放开全部 107 个源
+      NEWS_OVERSEAS: "on"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 抓取新闻
+        run: npm run fetch
+
+      - name: 生成主编专栏
+        if: ${{ github.event.inputs.skip_editorial != 'true' }}
+        env:
+          EDITORIAL_API_KEY: ${{ secrets.EDITORIAL_API_KEY }}
+          EDITORIAL_BASE_URL: ${{ vars.EDITORIAL_BASE_URL }}
+          EDITORIAL_MODEL: ${{ vars.EDITORIAL_MODEL }}
+        run: node scripts/editorial.mjs
+
+      - name: 组装站点
+        run: |
+          mkdir -p _site
+          cp -r index.html assets data editorial _site/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      # 提交放在最后并且允许失败：即使仓库没开写入权限，
+      # 站点也已经构建完毕，不会因为归档失败而停更。
+      - name: 把当天数据提交回仓库
+        continue-on-error: true
+        run: |
+          git config user.name  "rizhilu-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data editorial
+          git diff --staged --quiet || git commit -m "每日更新 $(date -u +%F)"
+          git push
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
