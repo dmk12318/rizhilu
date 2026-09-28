@@ -5,6 +5,11 @@ name: 每日新闻与主编专栏
 on:
   schedule:
     - cron: "0 0 * * *"
+  # 推送到 main 也重新发布一次，方便手动改完内容立即生效。
+  # 不会造成循环：GitHub 规定用默认 GITHUB_TOKEN 推送所触发的事件
+  # 不会再启动新的工作流，所以机器人每天提交的数据不会反过来触发自己。
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       skip_editorial:
