@@ -11,6 +11,7 @@
  *   node scripts/editorial.mjs --date=2026-09-28 --items=15
  *   node scripts/editorial.mjs --force          已存在也重新写
  *   node scripts/editorial.mjs --variant=codex  写成 <日期>.codex.md，与云端版并存
+ *   node scripts/editorial.mjs --scope=world    只写"境外要闻"（含涉华、涉鲁两节）
  *
  * 环境变量：
  *   EDITORIAL_API_KEY   接口密钥（也接受 OPENAI_API_KEY）
@@ -47,16 +48,14 @@ const VARIANT = String(readArg('variant', process.env.EDITORIAL_VARIANT || 'clou
 const IS_CLOUD = VARIANT === 'cloud';
 const EDITOR_NAME = IS_CLOUD ? '云端主编' : (process.env.EDITORIAL_EDITOR_NAME || 'Codex');
 // 范围：
-//   all      全部新闻        → 主编专栏
-//   world    只取境外源      → 境外要闻
-//   china    境外源 + 涉华   → 境外涉华（情报型）
-//   shandong 境外源 + 涉鲁   → 境外涉鲁（情报型）
-const SCOPE = String(readArg('scope', process.env.EDITORIAL_SCOPE || 'all')).toLowerCase();
+//   all    全部新闻    → 主编专栏
+//   world  只取境外源  → 境外要闻（文末附「境外涉华」「涉鲁简报」两节情报整理）
+const RAW_SCOPE = String(readArg('scope', process.env.EDITORIAL_SCOPE || 'all')).toLowerCase();
+const KNOWN_SCOPES = ['all', 'world'];
+const SCOPE = KNOWN_SCOPES.includes(RAW_SCOPE) ? RAW_SCOPE : 'all';
+const BAD_SCOPE = RAW_SCOPE !== SCOPE;
 const IS_WORLD = SCOPE === 'world';
-const IS_CHINA = SCOPE === 'china';
-const IS_SHANDONG = SCOPE === 'shandong';
-const IS_INTEL = IS_CHINA || IS_SHANDONG;
-const SCOPE_LABEL = { all: '主编专栏', world: '境外要闻', china: '境外涉华', shandong: '境外涉鲁' }[SCOPE] || SCOPE;
+const SCOPE_LABEL = { all: '主编专栏', world: '境外要闻' }[SCOPE] || SCOPE;
 const API_KEY = process.env.EDITORIAL_API_KEY || process.env.OPENAI_API_KEY || '';
 const BASE_URL = (process.env.EDITORIAL_BASE_URL || process.env.OPENAI_BASE_URL || 'https://api.deepseek.com').replace(/\/+$/, '');
 const MODEL = process.env.EDITORIAL_MODEL || 'deepseek-flash';
@@ -95,8 +94,8 @@ const fmt = (iso) => new Date(iso).toLocaleString('zh-CN', { timeZone: TZ, hour1
 
 /* ---------------------------------------------------------- 选稿 */
 
-function pickItems() {
-  const scored = itemPool.map((it) => {
+function pickItems(pool = itemPool) {
+  const scored = pool.map((it) => {
     const ageHours = (Date.now() - Date.parse(it.published)) / 3600000;
     const recency = Math.sqrt(Math.max(0, 30 - ageHours) / 30);
     const crossSource = (it.alsoIn?.length || 0) * 1.1;   // 多家跟进 = 当日真正的公共议题
@@ -111,14 +110,15 @@ function pickItems() {
   return byCategory;
 }
 
-function buildDigest(data) {
-  const byCategory = pickItems();
+function buildDigest(data, pool = itemPool, subPool = false) {
+  const byCategory = pickItems(pool);
   const out = [];
   for (const cat of data.categories) {
     const items = byCategory[cat.id] || [];
     if (!items.length) continue;
     out.push('');
-    out.push(`▼ ${cat.name}（当日 ${data.stats.counts[cat.id] || 0} 条，下列为要目）`);
+    const count = subPool ? `本节 ${items.length} 条` : `当日 ${data.stats.counts[cat.id] || 0} 条`;
+    out.push(`▼ ${cat.name}（${count}，下列为要目）`);
     for (const it of items) {
       const also = it.alsoIn?.length ? `（另有 ${it.alsoIn.length} 家跟进：${it.alsoIn.join('、')}）` : '';
       const summary = (it.summary || '').replace(/\s+/g, ' ').slice(0, 180);
@@ -127,6 +127,16 @@ function buildDigest(data) {
     }
   }
   return out.join('\n');
+}
+
+/**
+ * 按主题标签取素材：境外源优先；涉鲁这类低频主题境外常常一条都没有，
+ * 这时用国内源补上，否则小节会空着。
+ */
+function topicPool(data, topic) {
+  const overseas = data.items.filter((it) => it.origin === 'overseas' && (it.topics || []).includes(topic));
+  const domestic = data.items.filter((it) => it.origin !== 'overseas' && (it.topics || []).includes(topic));
+  return topic === 'shandong' && overseas.length < 3 ? [...overseas, ...domestic] : overseas;
 }
 
 /** 读前几期写过的判断，避免云端模型每天重复同一套观点 */
@@ -167,66 +177,6 @@ const SYSTEM_PROMPT = [
   '6. 全文使用简体中文与全角标点（引号用“”）。**篇幅不限**，以把事情讲清楚为准：该长则长，能短则短，不注水也不为凑字数删掉必要的解释。',
 ].join('\n');
 
-/**
- * 情报型简报（境外涉华 / 境外涉鲁）用的提示词。
- * 读者要的是"几秒钟看懂"，不是长篇评论——所以要求言简意赅、直击要害。
- */
-const SYSTEM_PROMPT_INTEL = [
-  '你是一名开源情报（OSINT）分析员，负责把境外媒体当天涉及特定对象的报道，压缩成一份给决策者看的简报。',
-  '你的读者没有时间读长文，他们只想知道三件事：发生了什么、各方在试探什么、下一步该盯哪里。',
-  '',
-  '写作纪律（必须遵守）：',
-  '1. 只能使用我提供的稿件标题与摘要。不得补充你记忆里的背景数据、人名、机构或因果；确实需要背景时用「据此前公开报道」限定，不得给出具体数字。',
-  '2. 每条都要点明信源媒体与其国别/立场背景，用“据路透社”“据日本经济新闻”这样的方式标注。同一件事有多家报道时，写清楚它们的口径是否一致。',
-  '3. 严格区分三类内容：【事实】（有明确信源的事件）、【表态】（某方说了什么）、【推测】（你的推断，必须标为推测并说明依据）。三者不能混写。',
-  '4. 不做道德评判，不做价值宣判。只做归纳、对照、与影响判断。',
-  '5. 言简意赅、直击要害：全文 700–1100 字，宁短勿长。每一句都要有信息量，不写过渡句，不写背景铺垫，不写结论性排比。',
-  '6. 全文使用简体中文与全角标点（引号用“”）。',
-].join('\n');
-
-/** 情报型简报的用户提示词 */
-function buildUserPromptIntel(data, date, theses) {
-  const target = IS_CHINA ? '中国（含涉台、涉港、涉疆、涉华企业）' : '山东省（含省内城市、齐鲁文化、相关企业与机构）';
-  const lines = [];
-  lines.push(`今天是 ${date}。本期《${SCOPE_LABEL}》的素材，是从当日 ${data.stats.total} 条境外媒体报道中筛出的与${target}相关的 ${itemPool.length} 条，覆盖最近 ${data.windowHours} 小时。`);
-  lines.push('');
-  lines.push('以下是素材：');
-  lines.push(buildDigest(data));
-  lines.push('');
-  if (theses) {
-    lines.push('以下是前两期《主编专栏》写过的判断，避免重复：');
-    lines.push(theses);
-    lines.push('');
-  }
-  lines.push('请按下面的体例撰写，直接输出 Markdown，不要用代码块包裹：');
-  lines.push('');
-  lines.push('---');
-  lines.push(`editor: ${EDITOR_NAME}`);
-  lines.push(`updated: ${date} 08:00`);
-  lines.push('---');
-  lines.push('');
-  lines.push('# <一句话点出今天最值得注意的一件事，不要用“涉华简报”这类标题>');
-  lines.push('');
-  lines.push('> 要点：<60–100 字，直接给结论，不要铺垫>');
-  lines.push('');
-  lines.push('## 一、事实');
-  lines.push('');
-  lines.push('<3–6 条，一条一句，每条都带信源媒体。只写发生了什么、谁说了什么。>');
-  lines.push('');
-  lines.push('## 二、信号与判断');
-  lines.push('');
-  lines.push('<2–4 段。指出哪些报道口径一致、哪些互相矛盾、这可能指向什么。每段给一个可被证伪的判断，并标明属于【推测】。>');
-  lines.push('');
-  lines.push('## 三、待观察');
-  lines.push('');
-  lines.push('<3–5 条，每条一句话：盯什么、看到什么算变化。>');
-  lines.push('');
-  lines.push('---');
-  lines.push('');
-  lines.push(`*本简报由${EDITOR_NAME}归纳当日境外媒体报道，站在开源情报角度做整理与判断，仅呈现外部视角，不代表本刊立场。*`);
-  return lines.join('\n');
-}
-
 /* 境外要闻综述用的提示词：任务不是评论，而是归纳与对照 */
 const SYSTEM_PROMPT_WORLD = [
   '你是一位国际新闻编辑，负责把当天境外媒体的报道归纳成一份给中文读者的《境外要闻》简报。',
@@ -241,15 +191,29 @@ const SYSTEM_PROMPT_WORLD = [
   '3. 归纳时必须指出媒体来源的国别或立场背景（例如“美媒”“中东媒体”“欧洲媒体”），让读者知道这是谁在说话。',
   '4. 同一事件有多家媒体报道时，要写清楚它们措辞与侧重的差异，不要合并成一句笼统的话。',
   '5. 只有单一来源、或来自匿名信源的内容，单独放在最后一节并明确标注是单线信源。',
-  '6. 全文使用简体中文与全角标点（引号用“”），正文 1200–2000 字。',
+  '6. 全文使用简体中文与全角标点（引号用“”），第一至第三节合计 1200–2000 字。',
+  '',
+  '第四、五节是「开源情报小节」，体例与前三节不同，按下面的纪律写：',
+  '7. 第四节只归纳境外媒体的涉华报道（含涉台、涉港、涉疆与涉华企业）；第五节只整理与山东省相关的报道（境外媒体优先，不足时才用国内源补充，并标明信源）。只使用我给出的对应素材。',
+  '8. 这两节要言简意赅、直击要害，各 500–900 字，宁短勿长。每一句都要有信息量，不写过渡句，不写背景铺垫，不写结论性排比。',
+  '9. 严格区分三类内容：【事实】（有明确信源的事件）、【表态】（某方说了什么）、【推测】（你的推断，必须标注【推测】并说明依据）。三者不能混写。',
+  '10. 这两节站在开源情报分析员的角度做归纳与影响判断，不做道德评判，不做价值宣判。若某节素材确实极少（例如境外媒体当天对山东几乎没有报道），如实写明这一点，不要硬凑。',
 ].join('\n');
 
 function buildUserPromptWorld(data, date, theses) {
+  const chinaPool = topicPool(data, 'china');
+  const shandongPool = topicPool(data, 'shandong');
   const lines = [];
   lines.push(`今天是 ${date}。本期《境外要闻》的材料来自 ${Object.keys(data.stats.bySource || {}).length} 家媒体的报道，其中境外媒体部分共 ${itemPool.length} 条，覆盖最近 ${data.windowHours} 小时。`);
   lines.push('');
-  lines.push('以下是当日境外媒体稿件：');
+  lines.push('以下是当日境外媒体稿件（用于第一至第三节）：');
   lines.push(buildDigest(data));
+  lines.push('');
+  lines.push(`以下是从中筛出的与**中国相关**的报道共 ${chinaPool.length} 条（用于第四节「境外涉华」）：`);
+  lines.push(chinaPool.length ? buildDigest(data, chinaPool, true) : '（当日境外媒体没有涉华条目，第四节写明这一点即可）');
+  lines.push('');
+  lines.push(`以下是与**山东省相关**的报道共 ${shandongPool.length} 条（用于第五节「涉鲁简报」，境外媒体优先，不足时已用国内源补充）：`);
+  lines.push(shandongPool.length ? buildDigest(data, shandongPool, true) : '（当日窗口内没有任何涉鲁素材，第五节写明这一点即可）');
   lines.push('');
   if (theses) {
     lines.push('以下是前两期《主编专栏》写过的判断，避免重复：');
@@ -285,9 +249,31 @@ function buildUserPromptWorld(data, date, theses) {
   lines.push('');
   lines.push('<3–4 条。前几条是被主流忽略但有价值的报道；最后至少一条是单线信源或需要打问号的内容，明确写出它是单一来源。>');
   lines.push('');
+  lines.push('## 四、境外涉华');
+  lines.push('');
+  lines.push('<本节只整理境外媒体的涉华报道，是开源情报小节，不是评论。先用一行 **加粗小标题** 点出今天涉华报道最值得注意的一件事，再按下面三个三级标题写。>');
+  lines.push('');
+  lines.push('> 要点：<60–100 字，直接给结论，不要铺垫>');
+  lines.push('');
+  lines.push('### 【事实】');
+  lines.push('');
+  lines.push('<3–6 条，一条一句，每条都带信源媒体。只写发生了什么、谁说了什么。>');
+  lines.push('');
+  lines.push('### 【信号与判断】');
+  lines.push('');
+  lines.push('<2–4 段。指出哪些报道口径一致、哪些互相矛盾、这可能指向什么。每段给一个可被证伪的判断，并标明属于【推测】。>');
+  lines.push('');
+  lines.push('### 【待观察】');
+  lines.push('');
+  lines.push('<3–5 条，每条一句话：盯什么、看到什么算变化。>');
+  lines.push('');
+  lines.push('## 五、涉鲁简报');
+  lines.push('');
+  lines.push('<与第四节同体例，只整理山东相关的素材。先用一行 **加粗小标题** 点出结论，再写要点、事实、信号与判断、待观察。若境外媒体当天几乎没有涉鲁报道，就如实说明——"境外媒体没有报道"本身也是一条信息。>');
+  lines.push('');
   lines.push('---');
   lines.push('');
-  lines.push(`*本简报由${EDITOR_NAME}归纳当日境外媒体报道，仅呈现外部视角，不代表本刊立场，仅供参考。*`);
+  lines.push(`*本简报由${EDITOR_NAME}归纳当日境外媒体报道，含涉华、涉鲁两节开源情报整理，仅呈现外部视角，不代表本刊立场，仅供参考。*`);
   return lines.join('\n');
 }
 
@@ -349,6 +335,11 @@ async function latestDate() {
 }
 
 async function main() {
+  if (BAD_SCOPE) {
+    console.error(`  未知的 --scope=${RAW_SCOPE}：只支持 all（主编专栏）与 world（境外要闻）。`);
+    process.exitCode = 1;
+    return;
+  }
   const date = await latestDate();
   currentDate = date;
   const data = JSON.parse(await fs.readFile(path.join(NEWS_DIR, `${date}.json`), 'utf8'));
@@ -358,15 +349,9 @@ async function main() {
   const outName = suffix ? `${date}.${suffix}.md` : `${date}.md`;
   const outFile = path.join(EDITORIAL_DIR, outName);
 
-  // 各专栏的素材池：全部 / 境外源 / 境外源且涉华 / 境外源且涉鲁
+  // 素材池：主编专栏用全部稿件，境外要闻只用境外源（涉华、涉鲁两节在提示词里另给）
   if (SCOPE === 'all') itemPool = data.items;
-  else if (IS_WORLD) itemPool = data.items.filter((it) => it.origin === 'overseas');
-  else {
-    const overseas = data.items.filter((it) => it.origin === 'overseas' && (it.topics || []).includes(SCOPE));
-    // 涉鲁这类低频主题：境外媒体常常一条都没有，此时用国内源补上，保证栏目有内容
-    const domestic = data.items.filter((it) => it.origin !== 'overseas' && (it.topics || []).includes(SCOPE));
-    itemPool = IS_SHANDONG && overseas.length < 3 ? [...overseas, ...domestic] : overseas;
-  }
+  else itemPool = data.items.filter((it) => it.origin === 'overseas');
   if (SCOPE !== 'all' && !itemPool.length) {
     console.log(`  这一期没有符合《${SCOPE_LABEL}》条件的稿件，跳过。`);
     await writeStatus({ ok: true, status: 'skipped-empty', scope: SCOPE, note: `本期没有${SCOPE_LABEL}素材` });
@@ -383,12 +368,10 @@ async function main() {
   }
 
   const theses = await recentTheses(date);
-  const userPrompt = IS_INTEL
-    ? buildUserPromptIntel(data, date, theses)
-    : IS_WORLD
-      ? buildUserPromptWorld(data, date, theses)
-      : buildUserPrompt(data, date, theses);
-  const systemPrompt = IS_INTEL ? SYSTEM_PROMPT_INTEL : IS_WORLD ? SYSTEM_PROMPT_WORLD : SYSTEM_PROMPT;
+  const userPrompt = IS_WORLD
+    ? buildUserPromptWorld(data, date, theses)
+    : buildUserPrompt(data, date, theses);
+  const systemPrompt = IS_WORLD ? SYSTEM_PROMPT_WORLD : SYSTEM_PROMPT;
   await fs.mkdir(EDITORIAL_DIR, { recursive: true });
 
   if (DRY_RUN) {
@@ -461,12 +444,10 @@ async function main() {
 
   await fs.writeFile(outFile, `${text}\n`, 'utf8');
 
-  // 三种专栏的体例不同，检查项也不同
-  const REQUIRED = IS_INTEL
-    ? ['## 一、事实', '## 二、信号与判断', '## 三、待观察', '要点']
-    : IS_WORLD
-      ? ['## 一、境外媒体今天在讲什么', '## 二、同一件事的不同讲法', '## 三、值得单独留意的报道', '简报概要']
-      : ['## 一、今日综述', '## 二、多角度观察', '## 三、明日观察清单', '主编按'];
+  // 两种专栏的体例不同，检查项也不同
+  const REQUIRED = IS_WORLD
+    ? ['## 一、境外媒体今天在讲什么', '## 二、同一件事的不同讲法', '## 三、值得单独留意的报道', '## 四、境外涉华', '## 五、涉鲁简报', '简报概要']
+    : ['## 一、今日综述', '## 二、多角度观察', '## 三、明日观察清单', '主编按'];
   const missing = REQUIRED.filter((s) => !text.includes(s));
   console.log(`  已写入 editorial/${outName}（${text.length} 字）`);
   await writeStatus({
