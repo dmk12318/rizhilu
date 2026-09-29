@@ -101,27 +101,46 @@ button { font: inherit; color: inherit; cursor: pointer; }
   height: var(--ctl);
   border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; background: var(--paper-2);
 }
-/* 日期文字与下拉框共用一格：宽屏由 select 自己显示全文；
-   窄屏把 select 调成透明盖在上面，框里只显示短日期（周几与条数在下拉列表里看） */
-.datebox { position: relative; display: flex; align-items: center; justify-content: center; }
-.datebox__label { display: none; }
-.datenav__select {
+/* 日期按钮：文字由我们自己的元素渲染，不依赖原生 select 的排版 */
+.datenav__value {
   border: 0;
   background: transparent;
   height: 100%;
-  padding: 0 8px;
-  font: inherit;
-  font-size: 14px;
-  font-weight: 600;
-  color: inherit;
-  text-align: center;
-  max-width: 208px;
+  flex: 1 1 auto;
   min-width: 0;
-  cursor: pointer;
-  outline: none;
+  max-width: 240px;
+  padding: 0 6px;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  font: inherit; font-size: 14px; font-weight: 600;
 }
-.datenav__select:hover { background: var(--paper-3); }
-.datenav__select:focus-visible { box-shadow: inset 0 0 0 2px var(--accent); }
+.datenav__label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.datenav__caret { color: var(--ink-3); font-size: 11px; flex: none; }
+.datenav__value:hover { background: var(--paper-3); }
+.datenav__value:focus-visible { box-shadow: inset 0 0 0 2px var(--accent); }
+
+/* 期数菜单：fixed 定位，挂在 body 上，不受报头 overflow/backdrop-filter 影响 */
+.datemenu {
+  position: fixed;
+  z-index: 60;
+  padding: 6px;
+  background: var(--paper-2);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.datemenu[hidden] { display: none; }
+.datemenu__item {
+  width: 100%;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  border: 0; background: transparent;
+  padding: 11px 12px; border-radius: 8px;
+  font-size: 15px; text-align: left;
+}
+.datemenu__item:hover { background: var(--paper-3); }
+.datemenu__item[aria-selected="true"] { color: var(--accent); font-weight: 600; background: var(--accent-soft); }
+.datemenu__count { color: var(--ink-3); font-size: 13px; font-weight: 400; }
 
 .iconbtn {
   border: 1px solid var(--rule);
@@ -507,34 +526,7 @@ html[data-theme="dark"] .stale { background: #2c2617; border-color: #5a4a22; col
     row-gap: 0;      /* 搜索行收起时高度为 0，不留缝 */
   }
   .datenav { grid-column: 1; }
-  .datebox { flex: 1; min-width: 0; }
-  .datebox__label {
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: .02em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  /* 点它照样打开原生选择器，但整块透明——有些手机浏览器（夸克等）会
-     用自己的白色控件底重绘 select，光把文字设成透明会被白底盖住，所以直接整体 opacity: 0 */
-  .datenav__select {
-    position: absolute;
-    inset: 0;
-    width: 100%; height: 100%;
-    max-width: none;
-    padding: 0;
-    appearance: none;
-    -webkit-appearance: none;
-    color: transparent;
-    background: transparent;
-    opacity: 0;
-  }
-  .datenav__select:hover { background: transparent; }
-  .datenav__select:focus-visible { box-shadow: none; }
+  .datenav__value { max-width: none; padding: 0 4px; }
   .datenav .iconbtn { width: 32px; }
   .datenav .datenav__latest { width: 28px; }
   .searchbtn { grid-column: 2; display: grid; }
@@ -578,12 +570,13 @@ html[data-theme="dark"] .stale { background: #2c2617; border-color: #5a4a22; col
   .totop { right: 14px; bottom: 16px; }
 }
 
-/* 超窄屏（iPhone SE 一类）：日期框再让出一点宽度，
-   配合略小的字号，保证「9月28日」在任何状态下都不被截断 */
+/* 超窄屏（iPhone SE 一类）：箭头按钮再瘦一点，并收起小三角，
+   把宽度全留给日期文字 */
 @media (max-width: 380px) {
-  .datenav .iconbtn { width: 30px; }
-  .datenav .datenav__latest { width: 26px; }
-  .datebox__label { font-size: 13px; letter-spacing: 0; }
+  .datenav .iconbtn { width: 28px; }
+  .datenav .datenav__latest { width: 24px; }
+  .datenav__value { font-size: 13px; padding: 0 2px; gap: 4px; }
+  .datenav__caret { display: none; }
 }
 
 @media (min-width: 1180px) {

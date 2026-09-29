@@ -22,10 +22,11 @@
     <div class="masthead__tools">
       <div class="datenav" role="group" aria-label="切换日期">
         <button class="iconbtn" id="prevDay" title="前一天（←）" aria-label="前一天">‹</button>
-        <span class="datebox">
-          <span class="datebox__label" id="dateLabel" aria-hidden="true">—</span>
-          <select class="datenav__select" id="datePick" aria-label="选择某一期" title="跳到某一期"></select>
-        </span>
+        <button class="datenav__value" id="datePick" type="button"
+                aria-haspopup="listbox" aria-expanded="false" title="跳到某一期">
+          <span class="datenav__label" id="dateLabel">—</span>
+          <span class="datenav__caret" aria-hidden="true">▾</span>
+        </button>
         <button class="iconbtn" id="nextDay" title="后一天（→）" aria-label="后一天">›</button>
         <button class="iconbtn datenav__latest" id="backLatest" title="回到最新一期" aria-label="回到最新一期" hidden>⤒</button>
       </div>
@@ -96,6 +97,9 @@
 </main>
 
 <button class="totop" id="toTop" hidden aria-label="回到顶部">↑</button>
+
+<!-- 期数菜单：自己画的下拉列表（不用原生 select，免得各浏览器把日期盖掉） -->
+<div class="datemenu" id="dateMenu" role="listbox" aria-label="选择某一期" hidden></div>
 
 <script src="assets/app.js"></script>
 </body>

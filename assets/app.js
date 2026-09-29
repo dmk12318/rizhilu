@@ -389,18 +389,23 @@ function render() {
 function renderMasthead() {
   const idx = state.days.findIndex((x) => x.date === state.date);
 
-  // 期数下拉框：历史每一期都能直接跳过去
-  const pick = el('datePick');
-  pick.innerHTML = state.days.map((d) => {
+  // 期数菜单：历史每一期都能直接跳过去。日期文字由我们自己渲染，
+  // 不用原生 select——它在某些手机浏览器上会用自己的白底把文字盖掉。
+  const compact = isNarrow();
+  const label = (d) => {
     const [, m, dd] = d.date.split('-');
     const weekday = new Date(`${d.date}T12:00:00+08:00`)
       .toLocaleDateString('zh-CN', { timeZone: TZ, weekday: 'short' });
-    // 完整信息放在下拉列表里；窄屏框内只显示「9月28日」（见 .datebox__label）
-    return `<option value="${d.date}">${Number(m)}月${Number(dd)}日 ${weekday} · ${d.total}条</option>`;
-  }).join('');
-  pick.value = state.date;
-  const [, cm, cd] = state.date.split('-');
-  el('dateLabel').textContent = `${Number(cm)}月${Number(cd)}日`;
+    return `${Number(m)}月${Number(dd)}日 ${weekday}`;
+  };
+  const current = state.days[idx];
+  el('dateLabel').textContent = current
+    ? (compact ? label(current).replace(/\s.*$/, '') : `${label(current)} · ${current.total}条`)
+    : '—';
+  el('dateMenu').innerHTML = state.days.map((d) => `<button class="datemenu__item" type="button"
+      role="option" data-date="${d.date}" aria-selected="${d.date === state.date}">
+      <span>${label(d)}</span><span class="datemenu__count">${d.total} 条</span>
+    </button>`).join('');
 
   el('prevDay').disabled = idx >= state.days.length - 1;
   el('nextDay').disabled = idx <= 0;
@@ -632,11 +637,52 @@ function setSearchOpen(open, { focus = false } = {}) {
   }
 }
 
+/* 期数菜单的展开与收起：位置按按钮算，宽度夹在屏幕内，高度贴着屏幕底部 */
+function openDateMenu() {
+  const btn = el('datePick');
+  const menu = el('dateMenu');
+  menu.hidden = false;
+  menu.style.maxHeight = '';
+  const r = btn.getBoundingClientRect();
+  const width = Math.min(Math.max(260, r.width), window.innerWidth - 16);
+  const left = Math.max(8, Math.min(r.left + r.width / 2 - width / 2, window.innerWidth - width - 8));
+  menu.style.width = `${width}px`;
+  menu.style.left = `${left}px`;
+  menu.style.top = `${r.bottom + 6}px`;
+  menu.style.maxHeight = `${Math.max(180, window.innerHeight - r.bottom - 20)}px`;
+  const selected = menu.querySelector('[aria-selected="true"]');
+  // 只滚菜单内部，别让 scrollIntoView 把整页也带跑
+  menu.scrollTop = selected ? Math.max(0, selected.offsetTop - 8) : 0;
+  btn.setAttribute('aria-expanded', 'true');
+}
+
+function closeDateMenu() {
+  if (el('dateMenu').hidden) return;
+  el('dateMenu').hidden = true;
+  el('datePick').setAttribute('aria-expanded', 'false');
+}
+
 function bind() {
   el('prevDay').addEventListener('click', () => goto(1));   // days 按时间倒序
   el('nextDay').addEventListener('click', () => goto(-1));
-  el('datePick').addEventListener('change', (e) => {
-    if (e.target.value && e.target.value !== state.date) loadDate(e.target.value);
+
+  el('datePick').addEventListener('click', (e) => {
+    e.stopPropagation();                 // 别让这次点击立刻触发"点外面收起"
+    if (el('dateMenu').hidden) openDateMenu();
+    else closeDateMenu();
+  });
+
+  el('dateMenu').addEventListener('click', (e) => {
+    const item = e.target.closest('[data-date]');
+    if (!item) return;
+    closeDateMenu();
+    if (item.dataset.date !== state.date) loadDate(item.dataset.date);
+  });
+
+  document.addEventListener('click', (e) => {
+    if (el('dateMenu').hidden) return;
+    if (e.target.closest('#dateMenu') || e.target.closest('#datePick')) return;
+    closeDateMenu();
   });
   el('backLatest').addEventListener('click', () => loadDate(state.days[0].date));
   el('brandHome').addEventListener('click', (e) => { e.preventDefault(); loadDate(state.days[0].date); });
@@ -760,7 +806,19 @@ function bind() {
 
   window.addEventListener('scroll', () => {
     el('toTop').hidden = window.scrollY < 600;
+    closeDateMenu();                     // 一滚动就收起期数菜单，省得跟着飘
   }, { passive: true });
+
+  // 跨过窄屏分界线时改一下日期按钮的字（宽屏带条数，窄屏只留月日与周几）
+  let lastNarrow = isNarrow();
+  window.addEventListener('resize', () => {
+    const narrow = isNarrow();
+    if (narrow !== lastNarrow) {
+      lastNarrow = narrow;
+      closeDateMenu();
+      renderMasthead();
+    }
+  });
 
   document.addEventListener('keydown', (e) => {
     const typing = /^(INPUT|TEXTAREA)$/.test(document.activeElement?.tagName || '');
@@ -774,6 +832,7 @@ function bind() {
       el('search').blur();
       if (searchCollapsible()) setSearchOpen(false);
     }
+    if (e.key === 'Escape') closeDateMenu();
     if (!typing && e.key === 'ArrowLeft') goto(1);
     if (!typing && e.key === 'ArrowRight') goto(-1);
   });
