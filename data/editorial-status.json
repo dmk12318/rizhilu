@@ -1,9 +1,20 @@
 {
   "date": "2026-09-28",
   "model": "deepseek-flash",
-  "at": "2026-09-29T09:31:33.882Z",
+  "at": "2026-09-29T09:39:17.138Z",
   "ok": true,
-  "status": "skipped-empty",
-  "scope": "china",
-  "note": "本期没有境外涉华素材"
+  "scope": "shandong",
+  "chars": 1041,
+  "usage": {
+    "prompt_tokens": 727,
+    "completion_tokens": 631,
+    "total_tokens": 1358,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 599
+  },
+  "file": "editorial/2026-09-28.shandong.md",
+  "note": "已完成"
 }
