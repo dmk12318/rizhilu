@@ -1,638 +1,638 @@
 {
- "updatedAt": "2026-09-28T00:00:00.000Z",
+ "updatedAt": "2026-09-29T00:11:18.196Z",
  "overseas": "on",
  "skipped": [],
  "ok": [
   {
    "name": "中国新闻网",
    "category": "top",
-   "count": 0,
-   "ms": 183
+   "count": 30,
+   "ms": 785
   },
   {
    "name": "中新网·国内",
    "category": "top",
-   "count": 0,
-   "ms": 157
+   "count": 25,
+   "ms": 745
   },
   {
    "name": "界面新闻",
    "category": "top",
-   "count": 0,
-   "ms": 190
+   "count": 25,
+   "ms": 1571
   },
   {
    "name": "澎湃新闻",
    "category": "top",
-   "count": 0,
-   "ms": 4591
+   "count": 19,
+   "ms": 1842
   },
   {
    "name": "联合早报",
    "category": "top",
-   "count": 0,
-   "ms": 2567
+   "count": 20,
+   "ms": 1673
   },
   {
    "name": "BBC中文",
    "category": "top",
-   "count": 3,
-   "ms": 4314
+   "count": 5,
+   "ms": 1401
   },
   {
    "name": "德国之声中文",
    "category": "top",
-   "count": 9,
-   "ms": 1478
+   "count": 6,
+   "ms": 1342
   },
   {
    "name": "纽约时报中文网",
    "category": "top",
-   "count": 2,
-   "ms": 2302
+   "count": 4,
+   "ms": 1048
   },
   {
    "name": "中新网·国际",
    "category": "world",
-   "count": 2,
-   "ms": 147
+   "count": 25,
+   "ms": 1110
   },
   {
    "name": "法国国际广播电台",
    "category": "world",
-   "count": 0,
-   "ms": 3765
+   "count": 15,
+   "ms": 2528
   },
   {
    "name": "France 24",
    "category": "world",
-   "count": 0,
-   "ms": 3468
+   "count": 20,
+   "ms": 1304
   },
   {
    "name": "NPR",
    "category": "world",
-   "count": 7,
-   "ms": 2139
+   "count": 4,
+   "ms": 1389
   },
   {
    "name": "The Hill",
    "category": "world",
-   "count": 0,
-   "ms": 1284
+   "count": 15,
+   "ms": 684
   },
   {
    "name": "Sky News",
    "category": "world",
-   "count": 4,
-   "ms": 3869
-  },
-  {
-   "name": "Indian Express",
-   "category": "world",
-   "count": 8,
-   "ms": 1559
+   "count": 3,
+   "ms": 1149
   },
   {
    "name": "TASS",
    "category": "world",
-   "count": 0,
-   "ms": 4028
+   "count": 15,
+   "ms": 1321
   },
   {
    "name": "Meduza",
    "category": "world",
-   "count": 4,
-   "ms": 2577
+   "count": 12,
+   "ms": 152
   },
   {
    "name": "The Moscow Times",
    "category": "world",
-   "count": 1,
-   "ms": 875
+   "count": 8,
+   "ms": 125
   },
   {
    "name": "Kyiv Post",
    "category": "world",
-   "count": 0,
-   "ms": 1813
+   "count": 10,
+   "ms": 466
   },
   {
    "name": "Anadolu Agency",
    "category": "world",
-   "count": 0,
-   "ms": 2382
+   "count": 15,
+   "ms": 2549
   },
   {
    "name": "Al-Monitor",
    "category": "world",
-   "count": 0,
-   "ms": 1481
+   "count": 12,
+   "ms": 350
   },
   {
    "name": "Responsible Statecraft",
    "category": "world",
-   "count": 0,
-   "ms": 5987
+   "count": 2,
+   "ms": 1199
+  },
+  {
+   "name": "CBS News",
+   "category": "world",
+   "count": 12,
+   "ms": 327
   },
   {
    "name": "Yonhap",
    "category": "world",
-   "count": 0,
-   "ms": 2041
+   "count": 12,
+   "ms": 1539
   },
   {
    "name": "The Korea Herald",
    "category": "world",
-   "count": 0,
-   "ms": 1497
+   "count": 12,
+   "ms": 1811
   },
   {
    "name": "BBC World",
    "category": "world",
-   "count": 8,
-   "ms": 1020
+   "count": 12,
+   "ms": 39
   },
   {
    "name": "The Guardian",
    "category": "world",
-   "count": 5,
-   "ms": 1975
+   "count": 4,
+   "ms": 842
   },
   {
    "name": "Al Jazeera",
    "category": "world",
-   "count": 0,
-   "ms": 1429
+   "count": 12,
+   "ms": 834
   },
   {
    "name": "NYT World",
    "category": "world",
-   "count": 4,
-   "ms": 977
+   "count": 10,
+   "ms": 836
   },
   {
    "name": "The Diplomat",
    "category": "world",
-   "count": 0,
-   "ms": 1107
+   "count": 10,
+   "ms": 862
   },
   {
    "name": "Foreign Affairs",
    "category": "world",
-   "count": 0,
-   "ms": 3080
+   "count": 2,
+   "ms": 889
   },
   {
    "name": "Le Monde",
    "category": "world",
-   "count": 0,
-   "ms": 1249
+   "count": 10,
+   "ms": 357
   },
   {
    "name": "Euronews",
    "category": "world",
-   "count": 0,
-   "ms": 1385
+   "count": 8,
+   "ms": 275
   },
   {
    "name": "RFI English",
    "category": "world",
-   "count": 0,
-   "ms": 1959
+   "count": 7,
+   "ms": 300
   },
   {
    "name": "南华早报",
    "category": "world",
-   "count": 0,
-   "ms": 2848
+   "count": 12,
+   "ms": 1057
   },
   {
    "name": "Nikkei Asia",
    "category": "world",
    "count": 10,
-   "ms": 787
+   "ms": 229
   },
   {
    "name": "The Japan Times",
    "category": "world",
-   "count": 0,
-   "ms": 1011
+   "count": 10,
+   "ms": 351
   },
   {
    "name": "The Straits Times",
    "category": "world",
-   "count": 0,
-   "ms": 2011
+   "count": 8,
+   "ms": 222
   },
   {
    "name": "CNA",
    "category": "world",
-   "count": 0,
-   "ms": 1836
+   "count": 8,
+   "ms": 315
   },
   {
    "name": "The Hindu",
    "category": "world",
-   "count": 0,
-   "ms": 2751
+   "count": 8,
+   "ms": 124
   },
   {
    "name": "华尔街见闻",
    "category": "business",
-   "count": 0,
-   "ms": 530
+   "count": 20,
+   "ms": 3097
   },
   {
    "name": "东方财富",
    "category": "business",
-   "count": 13,
-   "ms": 264
+   "count": 20,
+   "ms": 1782
   },
   {
    "name": "经济观察网",
    "category": "business",
-   "count": 0,
-   "ms": 221
+   "count": 15,
+   "ms": 1067
   },
   {
    "name": "36氪",
    "category": "business",
-   "count": 0,
-   "ms": 478
+   "count": 19,
+   "ms": 1426
   },
   {
    "name": "钛媒体",
    "category": "business",
-   "count": 0,
-   "ms": 899
+   "count": 15,
+   "ms": 2947
   },
   {
    "name": "集思录",
    "category": "business",
-   "count": 0,
-   "ms": 256
+   "count": 4,
+   "ms": 1668
   },
   {
    "name": "雪球",
    "category": "business",
-   "count": 4,
-   "ms": 313
+   "count": 1,
+   "ms": 2478
   },
   {
    "name": "中新网·财经",
    "category": "business",
-   "count": 0,
-   "ms": 94
+   "count": 20,
+   "ms": 14
   },
   {
    "name": "CNBC",
    "category": "business",
-   "count": 2,
-   "ms": 4108
+   "count": 20,
+   "ms": 585
   },
   {
    "name": "MarketWatch",
    "category": "business",
-   "count": 0,
-   "ms": 1030
+   "count": 10,
+   "ms": 433
   },
   {
    "name": "FT中文网",
    "category": "business",
-   "count": 4,
-   "ms": 3486
+   "count": 0,
+   "ms": 286
   },
   {
    "name": "The Economist",
    "category": "business",
    "count": 0,
-   "ms": 1052
+   "ms": 73
   },
   {
    "name": "Defense News",
    "category": "military",
-   "count": 1,
-   "ms": 1095
+   "count": 3,
+   "ms": 59
   },
   {
    "name": "The War Zone",
    "category": "military",
-   "count": 1,
-   "ms": 3193
+   "count": 4,
+   "ms": 138
   },
   {
    "name": "Task & Purpose",
    "category": "military",
-   "count": 2,
-   "ms": 1919
+   "count": 3,
+   "ms": 94
   },
   {
    "name": "Air & Space Forces",
    "category": "military",
-   "count": 1,
-   "ms": 4192
+   "count": 5,
+   "ms": 270
+  },
+  {
+   "name": "Naval News",
+   "category": "military",
+   "count": 3,
+   "ms": 1613
   },
   {
    "name": "The Aviationist",
    "category": "military",
-   "count": 1,
-   "ms": 3712
+   "count": 2,
+   "ms": 817
   },
   {
    "name": "C4ISRNET",
    "category": "military",
    "count": 0,
-   "ms": 1671
+   "ms": 372
   },
   {
    "name": "DefenseScoop",
    "category": "military",
-   "count": 0,
-   "ms": 837
+   "count": 2,
+   "ms": 263
   },
   {
    "name": "Defense One",
    "category": "military",
-   "count": 0,
-   "ms": 3022
+   "count": 1,
+   "ms": 666
   },
   {
    "name": "Navy Times",
    "category": "military",
-   "count": 1,
-   "ms": 2415
+   "count": 5,
+   "ms": 760
   },
   {
    "name": "Army Times",
    "category": "military",
-   "count": 1,
-   "ms": 10479
+   "count": 9,
+   "ms": 490
   },
   {
    "name": "Breaking Defense",
    "category": "military",
-   "count": 0,
-   "ms": 1018
+   "count": 5,
+   "ms": 124
   },
   {
    "name": "War on the Rocks",
    "category": "military",
-   "count": 0,
-   "ms": 1475
+   "count": 3,
+   "ms": 284
   },
   {
    "name": "The Strategist",
    "category": "military",
-   "count": 1,
-   "ms": 3446
+   "count": 3,
+   "ms": 562
   },
   {
    "name": "IT之家",
    "category": "tech",
-   "count": 0,
-   "ms": 84
+   "count": 25,
+   "ms": 1086
   },
   {
    "name": "开源中国",
    "category": "tech",
-   "count": 0,
-   "ms": 221
+   "count": 13,
+   "ms": 2469
   },
   {
    "name": "量子位",
    "category": "tech",
-   "count": 4,
-   "ms": 92
+   "count": 2,
+   "ms": 1617
   },
   {
    "name": "雷锋网",
    "category": "tech",
-   "count": 0,
-   "ms": 897
+   "count": 12,
+   "ms": 3023
   },
   {
    "name": "InfoQ中文",
    "category": "tech",
-   "count": 2,
-   "ms": 118
+   "count": 7,
+   "ms": 2031
   },
   {
    "name": "Solidot",
    "category": "tech",
-   "count": 5,
-   "ms": 150
+   "count": 10,
+   "ms": 2331
   },
   {
    "name": "爱范儿",
    "category": "tech",
-   "count": 0,
-   "ms": 281
+   "count": 5,
+   "ms": 1634
   },
   {
    "name": "少数派",
    "category": "tech",
-   "count": 2,
-   "ms": 222
+   "count": 4,
+   "ms": 1891
   },
   {
    "name": "Ars Technica",
    "category": "tech",
-   "count": 1,
-   "ms": 1533
+   "count": 14,
+   "ms": 625
   },
   {
    "name": "TechCrunch",
    "category": "tech",
-   "count": 0,
-   "ms": 854
+   "count": 15,
+   "ms": 504
   },
   {
    "name": "The Verge",
    "category": "tech",
-   "count": 2,
-   "ms": 2235
+   "count": 10,
+   "ms": 379
   },
   {
    "name": "Wired",
    "category": "tech",
-   "count": 1,
-   "ms": 3354
+   "count": 12,
+   "ms": 195
   },
   {
    "name": "Hacker News",
    "category": "tech",
-   "count": 0,
-   "ms": 2919
+   "count": 15,
+   "ms": 619
   },
   {
    "name": "MIT Tech Review",
    "category": "tech",
-   "count": 0,
-   "ms": 1466
+   "count": 4,
+   "ms": 160
   },
   {
    "name": "IEEE Spectrum",
    "category": "tech",
-   "count": 1,
-   "ms": 14018
+   "count": 2,
+   "ms": 138
   },
   {
    "name": "Quanta Magazine",
    "category": "tech",
-   "count": 0,
-   "ms": 2506
+   "count": 1,
+   "ms": 291
   },
   {
    "name": "Nature",
    "category": "tech",
-   "count": 5,
-   "ms": 2410
+   "count": 0,
+   "ms": 127
   },
   {
    "name": "Physics World",
    "category": "tech",
-   "count": 0,
-   "ms": 6217
-  },
-  {
-   "name": "Science",
-   "category": "tech",
-   "count": 0,
-   "ms": 1123
+   "count": 3,
+   "ms": 1182
   },
   {
    "name": "中新网·文化",
    "category": "culture",
-   "count": 0,
-   "ms": 110
+   "count": 20,
+   "ms": 12
   },
   {
    "name": "中新网·教育",
    "category": "culture",
-   "count": 3,
-   "ms": 71
+   "count": 2,
+   "ms": 52
   },
   {
    "name": "豆瓣书评",
    "category": "culture",
    "count": 0,
-   "ms": 738
+   "ms": 1447
   },
   {
    "name": "Aeon",
    "category": "culture",
-   "count": 0,
-   "ms": 2404
+   "count": 2,
+   "ms": 88
   },
   {
    "name": "Psyche",
    "category": "culture",
-   "count": 0,
-   "ms": 2088
+   "count": 1,
+   "ms": 82
   },
   {
    "name": "The Marginalian",
    "category": "culture",
    "count": 3,
-   "ms": 3418
+   "ms": 174
   },
   {
    "name": "Literary Hub",
    "category": "culture",
-   "count": 0,
-   "ms": 3140
+   "count": 7,
+   "ms": 336
   },
   {
    "name": "JSTOR Daily",
    "category": "culture",
-   "count": 0,
-   "ms": 2704
+   "count": 1,
+   "ms": 498
   },
   {
    "name": "Public Domain Review",
    "category": "culture",
    "count": 0,
-   "ms": 1378
+   "ms": 1017
   },
   {
    "name": "3 Quarks Daily",
    "category": "culture",
-   "count": 2,
-   "ms": 6333
+   "count": 10,
+   "ms": 940
   },
   {
    "name": "Nautilus",
    "category": "culture",
-   "count": 0,
-   "ms": 2442
+   "count": 7,
+   "ms": 471
   },
   {
    "name": "Smithsonian",
    "category": "culture",
-   "count": 0,
-   "ms": 1650
+   "count": 6,
+   "ms": 223
   },
   {
    "name": "The Paris Review",
    "category": "culture",
-   "count": 0,
-   "ms": 2493
+   "count": 1,
+   "ms": 365
   },
   {
    "name": "History Today",
    "category": "culture",
-   "count": 0,
-   "ms": 3829
+   "count": 1,
+   "ms": 563
   },
   {
    "name": "Arts & Letters Daily",
    "category": "culture",
    "count": 6,
-   "ms": 3154
+   "ms": 637
   },
   {
    "name": "The New Yorker",
    "category": "culture",
-   "count": 1,
-   "ms": 3597
+   "count": 4,
+   "ms": 117
   },
   {
    "name": "Noema",
    "category": "culture",
    "count": 0,
-   "ms": 5917
+   "ms": 334
   },
   {
    "name": "Longreads",
    "category": "culture",
-   "count": 0,
-   "ms": 2209
+   "count": 2,
+   "ms": 95
   },
   {
    "name": "中新网·社会",
    "category": "society",
-   "count": 0,
-   "ms": 96
+   "count": 25,
+   "ms": 11
   },
   {
    "name": "中新网·健康",
    "category": "society",
-   "count": 6,
-   "ms": 174
+   "count": 2,
+   "ms": 15
   },
   {
    "name": "中新网·体育",
    "category": "society",
-   "count": 0,
-   "ms": 99
+   "count": 18,
+   "ms": 175
   }
  ],
  "failed": [
   {
-   "name": "CBS News",
+   "name": "Indian Express",
    "category": "world",
-   "error": "HTTP 406"
+   "error": "HTTP 403"
   },
   {
    "name": "Japan Today",
@@ -640,9 +640,9 @@
    "error": "HTTP 403"
   },
   {
-   "name": "Naval News",
-   "category": "military",
-   "error": "HTTP 503"
+   "name": "Science",
+   "category": "tech",
+   "error": "HTTP 403"
   }
  ]
 }
