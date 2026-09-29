@@ -65,6 +65,19 @@ payload.categories = feeds.categories;
 
 await fs.writeFile(file, `${JSON.stringify(payload, null, 1)}\n`, 'utf8');
 
+// 同步重建 days.json —— 否则新出现的那一期不会出现在日期下拉里
+const files = (await fs.readdir(NEWS_DIR)).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort().reverse();
+const days = [];
+for (const f of files) {
+  try {
+    const d = JSON.parse(await fs.readFile(path.join(NEWS_DIR, f), 'utf8'));
+    days.push({ date: d.date, total: d.stats?.total ?? d.items?.length ?? 0, counts: d.stats?.counts || {}, generatedAt: d.generatedAt });
+  } catch {
+    /* 忽略损坏文件 */
+  }
+}
+await fs.writeFile(path.join(ROOT, 'data', 'days.json'), `${JSON.stringify({ updatedAt: new Date().toISOString(), days }, null, 1)}\n`, 'utf8');
+
 console.log(`\n  ${date} 重新标注完成：调整分类 ${sportsMoved} 条，打主题标签 ${tagged} 条\n`);
 for (const c of feeds.categories) {
   console.log(`    ${c.name.padEnd(4, '　')} ${String(counts[c.id] || 0).padStart(4)} 条`);
