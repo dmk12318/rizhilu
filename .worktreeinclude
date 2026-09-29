@@ -1,0 +1,8 @@
+# 这些文件被 .gitignore 挡在仓库外，但新开的 worktree 里需要它们。
+# 语义同 .gitignore：一行一个模式，相对仓库根。
+
+# 本机网络选择（是否用代理、用哪个端口），抓取脚本要读
+config.local.json
+
+# 专栏提示词的本地导出，主编工作台要用
+editorial/*.prompt.md
