@@ -1,0 +1,9 @@
+[
+  { "group": "关键词", "title": "GoogleNews-中国(英文)", "url": "https://news.google.com/rss/search?q=china&hl=en-US&gl=US&ceid=US:en" },
+  { "group": "关键词", "title": "GoogleNews-山东(中文)", "url": "https://news.google.com/rss/search?q=%E5%B1%B1%E4%B8%9C&hl=zh-CN&gl=CN&ceid=CN:zh-Hans" },
+  { "group": "关键词", "title": "Bing News-中国", "url": "https://www.bing.com/news/search?q=china&format=rss" },
+  { "group": "关键词", "title": "Bing News-山东", "url": "https://www.bing.com/news/search?q=%E5%B1%B1%E4%B8%9C&format=rss" },
+  { "group": "社交", "title": "YouTube-BBC中文(直连)", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCb2s4oRUCkbeL0lk0QrqXjg" },
+  { "group": "社交", "title": "微博-热搜(镜像2)", "url": "https://rsshub.rssforever.com/weibo/search/hot" },
+  { "group": "关键词", "title": "GNews-山东英文", "url": "https://news.google.com/rss/search?q=Shandong&hl=en-US&gl=US&ceid=US:en" }
+]

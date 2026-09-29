@@ -1,20 +1,9 @@
 {
-  "date": "2026-09-29",
+  "date": "2026-09-28",
   "model": "deepseek-flash",
-  "at": "2026-09-29T00:11:44.394Z",
+  "at": "2026-09-29T09:31:33.882Z",
   "ok": true,
-  "scope": "all",
-  "chars": 4625,
-  "usage": {
-    "prompt_tokens": 8954,
-    "completion_tokens": 2781,
-    "total_tokens": 11735,
-    "prompt_tokens_details": {
-      "cached_tokens": 0
-    },
-    "prompt_cache_hit_tokens": 0,
-    "prompt_cache_miss_tokens": 8954
-  },
-  "file": "editorial/2026-09-29.md",
-  "note": "已完成"
+  "status": "skipped-empty",
+  "scope": "china",
+  "note": "本期没有境外涉华素材"
 }

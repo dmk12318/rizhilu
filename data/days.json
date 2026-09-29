@@ -1,28 +1,15 @@
 {
- "updatedAt": "2026-09-29T00:11:18.196Z",
+ "updatedAt": "2026-09-29T09:33:41.068Z",
  "days": [
   {
-   "date": "2026-09-29",
-   "total": 867,
-   "counts": {
-    "business": 143,
-    "tech": 152,
-    "military": 44,
-    "top": 123,
-    "world": 300,
-    "culture": 73,
-    "society": 32
-   },
-   "generatedAt": "2026-09-29T00:11:18.196Z"
-  },
-  {
    "date": "2026-09-28",
-   "total": 224,
+   "total": 228,
    "counts": {
     "tech": 38,
     "world": 97,
-    "business": 37,
-    "culture": 24,
+    "business": 36,
+    "culture": 27,
+    "sports": 2,
     "military": 8,
     "top": 14,
     "society": 6

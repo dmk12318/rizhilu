@@ -80,6 +80,20 @@ function isNoise(title, patterns) {
   return patterns.some((p) => new RegExp(p).test(title));
 }
 
+/** 主题命中：用于把体育稿挑出单独成栏，以及筛出"境外涉华/涉鲁"的情报素材 */
+function matches(text, patterns) {
+  if (!text || !patterns?.length) return false;
+  return patterns.some((p) => {
+    // 短英文缩写要加词边界，否则 "NFL" 会命中 "Funflation"；
+    // 长英文词不加，这样 "China" 才能命中 "Chinese"。
+    const needsBoundary = /^[\x20-\x7E]+$/.test(p) && p.replace(/\s/g, '').length <= 4;
+    const re = needsBoundary
+      ? new RegExp(`\\b${p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i')
+      : new RegExp(p, /^[\x20-\x7E]+$/.test(p) ? 'i' : '');
+    return re.test(text);
+  });
+}
+
 /** 摘要只剩"点击查看原文"之类的残渣时，宁可留空，让卡片只显示标题 */
 function cleanupSummary(summary, title) {
   const text = String(summary || '').trim();
@@ -434,16 +448,25 @@ async function main() {
   for (const report of reports) {
     for (const item of report.items) {
       const published = item.published ? new Date(item.published) : now;
+      const summary = cleanupSummary(item.summary, item.title);
+      // 主题标签：供"境外涉华 / 境外涉鲁"两个情报专栏筛素材
+      const haystack = `${item.title} ${summary}`;
+      const topics = [];
+      if (matches(haystack, config.chinaPatterns)) topics.push('china');
+      if (matches(haystack, config.shandongPatterns)) topics.push('shandong');
+      // 标题里带体育关键词的，无论来自哪个源，一律归到"体育"栏
+      const category = matches(item.title, config.sportsPatterns) ? 'sports' : report.feed.category;
       all.push({
         id: itemId(report.feed.name, item.link, item.title),
         title: item.title,
-        summary: cleanupSummary(item.summary, item.title),
+        summary,
         link: item.link,
         image: item.image,
         source: report.feed.name,
-        category: report.feed.category,
+        category,
         lang: report.feed.lang || 'zh',
         origin: report.feed.origin || 'overseas',
+        ...(topics.length ? { topics } : {}),
         ...(item.undated ? { undated: true } : {}),
         published: published.toISOString(),
         norm: normalizeTitle(item.title),

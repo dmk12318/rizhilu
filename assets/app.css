@@ -480,8 +480,7 @@ html[data-theme="dark"] .stale { background: #2c2617; border-color: #5a4a22; col
   .toggles { grid-column: 2; }
   .search { grid-column: 1 / -1; grid-row: 2; }
   .search input { width: 100%; }
-  /* 向下滚动后收起品牌行与搜索行，只留日期与页签 */
-  .masthead--compact .brand,
+  /* 向下滚动后只收起搜索行；"日知录"这一行始终保留 */
   .masthead--compact .search { display: none; }
   .tabs { padding: 0 10px; }
   .page { padding: 16px 15px 50px; }

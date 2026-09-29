@@ -46,7 +46,7 @@ jobs:
         if: ${{ github.event_name != 'push' }}
         run: npm run fetch
 
-      - name: 生成主编专栏
+      - name: 生成四类专栏
         # 定时任务必定执行；手动触发可勾选跳过；推送代码时不生成
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.event.inputs.skip_editorial != 'true') }}
         # 专栏失败不能拖垮整期：接口欠费、限流、模型抽风时，新闻照常发布
@@ -56,18 +56,30 @@ jobs:
           EDITORIAL_API_KEY: ${{ secrets.EDITORIAL_API_KEY || secrets.DAILYNEWS }}
           EDITORIAL_BASE_URL: ${{ vars.EDITORIAL_BASE_URL }}
           EDITORIAL_MODEL: ${{ vars.EDITORIAL_MODEL || vars.DAILYNEWS }}
-        run: node scripts/editorial.mjs
+        run: |
+          fail=0
+          for scope in all world china shandong; do
+            echo "::group::生成专栏 scope=$scope"
+            node scripts/editorial.mjs --scope=$scope || fail=1
+            echo "::endgroup::"
+          done
+          exit $fail
 
-      - name: 生成境外要闻综述
-        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.event.inputs.skip_editorial != 'true') }}
+      - name: 组装站点
+      # ===== 临时步骤：按新规则重出 2026-09-28 的四篇专栏，用完即删 =====
+      - name: 临时-重出9月28日专栏
+        if: ${{ github.event_name == 'push' }}
         continue-on-error: true
         env:
           EDITORIAL_API_KEY: ${{ secrets.EDITORIAL_API_KEY || secrets.DAILYNEWS }}
           EDITORIAL_BASE_URL: ${{ vars.EDITORIAL_BASE_URL }}
           EDITORIAL_MODEL: ${{ vars.EDITORIAL_MODEL || vars.DAILYNEWS }}
-        run: node scripts/editorial.mjs --scope=world
+        run: |
+          for scope in all world china shandong; do
+            node scripts/editorial.mjs --scope=$scope --date=2026-09-28 --force || true
+          done
+      # ===== 临时步骤结束 =====
 
-      - name: 组装站点
         run: |
           mkdir -p _site
           cp -r index.html assets data editorial _site/

@@ -1,0 +1,22 @@
+[
+  { "group": "社交", "title": "Reddit r/worldnews", "url": "https://www.reddit.com/r/worldnews/.rss" },
+  { "group": "社交", "title": "Reddit r/China", "url": "https://www.reddit.com/r/China/.rss" },
+  { "group": "社交", "title": "Reddit r/geopolitics", "url": "https://www.reddit.com/r/geopolitics/.rss" },
+  { "group": "社交", "title": "Reddit r/technology", "url": "https://www.reddit.com/r/technology/.rss" },
+  { "group": "社交", "title": "Bluesky 官方账号", "url": "https://bsky.app/profile/bsky.app/rss" },
+  { "group": "社交", "title": "Bluesky 某记者", "url": "https://bsky.app/profile/did:plc:z72i7hdynmk6r22z27h6tvur/rss" },
+  { "group": "社交", "title": "Nitter 实例", "url": "https://nitter.net/Reuters/rss" },
+  { "group": "社交", "title": "RSSHub-微博热搜(ktachi)", "url": "https://rsshub.ktachibana.party/weibo/search/hot" },
+  { "group": "社交", "title": "RSSHub-知乎热榜(ktachi)", "url": "https://rsshub.ktachibana.party/zhihu/hotlist" },
+  { "group": "社交", "title": "RSSHub-X路透(ktachi)", "url": "https://rsshub.ktachibana.party/twitter/user/Reuters" },
+  { "group": "社交", "title": "RSSHub-YouTube频道(ktachi)", "url": "https://rsshub.ktachibana.party/youtube/channel/UCVgO39Bk5sMo66-6o6Spn6Q" },
+  { "group": "社交", "title": "YouTube-DW中文", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBwF3mnr5L0pxpbG7Q0oBGg" },
+  { "group": "社交", "title": "Mastodon 实例标签", "url": "https://mastodon.social/tags/geopolitics.rss" },
+  { "group": "社交", "title": "Telegram-DW中文(ktachi)", "url": "https://rsshub.ktachibana.party/telegram/channel/dw_chinese" },
+  { "group": "体育", "title": "ESPN", "url": "https://www.espn.com/espn/rss/news" },
+  { "group": "体育", "title": "BBC Sport", "url": "https://feeds.bbci.co.uk/sport/rss.xml" },
+  { "group": "体育", "title": "Sky Sports", "url": "https://www.skysports.com/rss/12040" },
+  { "group": "体育", "title": "新浪体育", "url": "https://rss.sina.com.cn/sports/global.xml" },
+  { "group": "体育", "title": "中新网-体育", "url": "https://www.chinanews.com.cn/rss/sports.xml" },
+  { "group": "体育", "title": "The Athletic/Guardian Sport", "url": "https://www.theguardian.com/sport/rss" }
+]

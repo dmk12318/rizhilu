@@ -237,6 +237,10 @@ async function loadEditorial(date) {
     { group: 'main', key: 'cloud', path: `editorial/${date}.md` },
     { group: 'world', key: 'codex', path: `editorial/${date}.world.codex.md` },
     { group: 'world', key: 'cloud', path: `editorial/${date}.world.md` },
+    { group: 'china', key: 'codex', path: `editorial/${date}.china.codex.md` },
+    { group: 'china', key: 'cloud', path: `editorial/${date}.china.md` },
+    { group: 'shandong', key: 'codex', path: `editorial/${date}.shandong.codex.md` },
+    { group: 'shandong', key: 'cloud', path: `editorial/${date}.shandong.md` },
   ];
   const found = [];
   for (const src of SOURCES) {
@@ -448,6 +452,8 @@ function renderEditorial() {
   const GROUPS = [
     { id: 'main', title: '主编专栏', desc: '全部新闻的综合判断' },
     { id: 'world', title: '境外要闻', desc: '只归纳境外媒体的报道' },
+    { id: 'china', title: '境外涉华', desc: '境外媒体涉华报道的开源情报整理' },
+    { id: 'shandong', title: '涉鲁简报', desc: '与山东相关的报道，境外媒体优先' },
   ];
 
   const byGroup = {};
@@ -605,6 +611,15 @@ function goto(offset) {
   if (next) loadDate(next.date);
 }
 
+/** 把新闻列表顶到报头下方——切换栏目后不用手动往下滑 */
+function scrollToListTop() {
+  const stream = document.querySelector('.stream');
+  if (!stream) return;
+  const offset = (el('masthead')?.offsetHeight || 0) + 14;
+  const top = stream.getBoundingClientRect().top + window.scrollY - offset;
+  window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+}
+
 function bind() {
   el('prevDay').addEventListener('click', () => goto(1));   // days 按时间倒序
   el('nextDay').addEventListener('click', () => goto(-1));
@@ -638,6 +653,7 @@ function bind() {
     location.hash = `#/${state.date}${state.cat !== 'all' ? '/' + state.cat : ''}`;
     renderTabs();
     renderList();
+    scrollToListTop();   // 每次切换栏目，都从该栏第一条新闻开始
   });
 
   el('search').addEventListener('input', debounce((e) => {

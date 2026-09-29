@@ -7,12 +7,39 @@
     "净申购",
     "ETF午盘|ETF午评"
   ],
+  "sportsPatterns": [
+    "亚运会", "奥运会", "冬奥会", "世界杯", "全运会", "亚锦赛", "世锦赛", "锦标赛", "公开赛", "大奖赛",
+    "联赛", "半决赛", "决赛", "夺冠", "金牌", "银牌", "铜牌", "卫冕", "国乒", "国足", "男篮", "女篮",
+    "女排", "男排", "中超", "CBA", "NBA", "欧冠", "英超", "西甲", "德甲", "田径", "游泳", "乒乓球",
+    "羽毛球", "网球", "马拉松", "跳远", "铁饼", "花游", "花样游泳", "接力", "运动员", "冠军赛",
+    "Premier League", "World Cup", "Olympic", "Champions League", "Grand Prix", "Wimbledon", "NBA", "NFL"
+  ],
+  "chinaPatterns": [
+    "中国", "中共", "北京", "上海", "广东", "深圳", "华为", "字节", "腾讯", "阿里", "习近平", "台海",
+    "台湾", "香港", "新疆", "西藏", "解放军", "人民币", "中欧", "中美", "中俄", "中印", "比亚迪",
+    "宁德时代", "小米", "一带一路", "十四五", "国务院", "外交部",
+    "中國", "華為", "騰訊", "阿里巴巴", "字節跳動", "比亞迪", "習近平", "解放軍", "人民幣", "臺灣",
+    "China", "Chinese", "Beijing", "Shanghai", "Xi Jinping", "Trump-Xi", "Taiwan", "Hong Kong",
+    "Xinjiang", "Huawei", "TikTok", "BYD", "Alibaba", "ByteDance", "Renminbi", "Sino-",
+    "U.S.-China", "US-China", "PLA", "CCP"
+  ],
+  "shandongPatterns": [
+    "山东", "济南", "青岛", "烟台", "潍坊", "淄博", "威海", "日照", "临沂", "德州", "聊城", "滨州",
+    "菏泽", "济宁", "泰安", "枣庄", "东营", "齐鲁", "泰山", "曲阜", "孔子", "尼山", "儒家",
+    "山东舰", "青岛港", "海尔", "海信", "浪潮", "潍柴", "中国重汽", "歌尔", "万华", "山东黄金",
+    "青岛啤酒", "鲁能",
+    "山東", "濟南", "青島", "煙台", "濰坊", "臨沂", "齊魯", "山東艦", "青島港", "海爾", "濰柴", "萬華",
+    "Shandong", "Jinan", "Qingdao", "Yantai", "Weihai", "Linyi", "Zibo", "Confucius", "Qufu",
+    "Nishan", "Tsingtao", "Haier", "Hisense", "Inspur", "Weichai", "Goertek", "Sinotruk",
+    "Shandong carrier", "Port of Qingdao"
+  ],
   "categories": [
     { "id": "top", "name": "要闻", "color": "#b3261e", "desc": "国内时政与全局性大事" },
     { "id": "world", "name": "国际", "color": "#1f5fbf", "desc": "全球政治与地缘动态" },
     { "id": "business", "name": "财经", "color": "#a97716", "desc": "宏观经济、市场与公司" },
     { "id": "military", "name": "军事", "color": "#4a5c4d", "desc": "国防、冲突与军工" },
     { "id": "tech", "name": "科技", "color": "#6a3fb5", "desc": "技术进展、产业与科研" },
+    { "id": "sports", "name": "体育", "color": "#1a7f5a", "desc": "赛事、竞技体育与运动员" },
     { "id": "culture", "name": "人文", "color": "#a8624a", "desc": "思想、历史、书籍与生活" },
     { "id": "society", "name": "社会", "color": "#2f7a72", "desc": "社会民生与公共议题" }
   ],
@@ -129,6 +156,9 @@
 
     { "name": "中新网·社会", "url": "https://www.chinanews.com.cn/rss/society.xml", "category": "society", "lang": "zh", "origin": "cn", "max": 25 },
     { "name": "中新网·健康", "url": "https://www.chinanews.com.cn/rss/health.xml", "category": "society", "lang": "zh", "origin": "cn", "max": 18 },
-    { "name": "中新网·体育", "url": "https://www.chinanews.com.cn/rss/sports.xml", "category": "society", "lang": "zh", "origin": "cn", "max": 18 }
+    { "name": "中新网·体育", "url": "https://www.chinanews.com.cn/rss/sports.xml", "category": "sports", "lang": "zh", "origin": "cn", "max": 25 },
+    { "name": "BBC Sport", "url": "https://feeds.bbci.co.uk/sport/rss.xml", "category": "sports", "lang": "en", "origin": "overseas", "max": 12, "needsProxy": true },
+    { "name": "The Guardian Sport", "url": "https://www.theguardian.com/sport/rss", "category": "sports", "lang": "en", "origin": "overseas", "max": 12, "needsProxy": true },
+    { "name": "Sky Sports", "url": "https://www.skysports.com/rss/12040", "category": "sports", "lang": "en", "origin": "overseas", "max": 10, "needsProxy": true }
   ]
 }

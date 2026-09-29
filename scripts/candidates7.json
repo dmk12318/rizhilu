@@ -1,0 +1,12 @@
+[
+  { "group": "社交", "title": "old.reddit r/worldnews", "url": "https://old.reddit.com/r/worldnews/.rss" },
+  { "group": "社交", "title": "RSSHub-reddit r/worldnews", "url": "https://rsshub.ktachibana.party/reddit/r/worldnews" },
+  { "group": "社交", "title": "RSSHub-微博热搜(重试)", "url": "https://rsshub.ktachibana.party/weibo/search/hot" },
+  { "group": "社交", "title": "RSSHub-telegram 路透(重试)", "url": "https://rsshub.ktachibana.party/telegram/channel/Reuters" },
+  { "group": "社交", "title": "YouTube-美国之音中文", "url": "https://rsshub.ktachibana.party/youtube/channel/UCu2eLnyCSLzO6i0py4xNvTA" },
+  { "group": "社交", "title": "YouTube-BBC中文", "url": "https://rsshub.ktachibana.party/youtube/channel/UCb2s4oRUCkbeL0lk0QrqXjg" },
+  { "group": "社交", "title": "RSSHub-播客-新闻酸菜馆", "url": "https://rsshub.ktachibana.party/xiaoyuzhou/podcast/600b0a12cd5e3405098fae1e" },
+  { "group": "体育", "title": "央视体育-中超", "url": "https://rsshub.ktachibana.party/cctv/sport" },
+  { "group": "体育", "title": "Guardian Sport(重试)", "url": "https://www.theguardian.com/sport/rss" },
+  { "group": "体育", "title": "ESPN(重试)", "url": "https://www.espn.com/espn/rss/news" }
+]

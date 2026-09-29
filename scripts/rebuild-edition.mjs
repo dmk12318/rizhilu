@@ -117,6 +117,30 @@ if (!items.size) {
 
 const sorted = [...items.values()].sort((a, b) => Date.parse(b.published) - Date.parse(a.published));
 const feeds = JSON.parse(await fs.readFile(path.join(ROOT, 'feeds.json'), 'utf8'));
+
+// 历史快照里没有主题标签，这里按当前规则重新标注一遍，
+// 保证重建出来的这一期与正常抓取的结构一致（体育归类、涉华/涉鲁标签）。
+const hit = (text, patterns) => !!text && (patterns || []).some((p) => {
+  const ascii = /^[\x20-\x7E]+$/.test(p);
+  const needsBoundary = ascii && p.replace(/\s/g, '').length <= 4;
+  const re = needsBoundary
+    ? new RegExp(`\\b${p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i')
+    : new RegExp(p, ascii ? 'i' : '');
+  return re.test(text);
+});
+/** 每个源在 feeds.json 里的原始板块，用来纠正历史快照里被误改的分类 */
+const feedCategory = new Map(feeds.feeds.map((f) => [f.name, f.category]));
+for (const it of items.values()) {
+  const haystack = `${it.title} ${it.summary || ''}`;
+  const topics = [];
+  if (hit(haystack, feeds.chinaPatterns)) topics.push('china');
+  if (hit(haystack, feeds.shandongPatterns)) topics.push('shandong');
+  if (topics.length) it.topics = topics;
+  else delete it.topics;
+  // 分类重算：体育关键词优先，否则回到该源在 feeds.json 里配置的板块
+  it.category = hit(it.title, feeds.sportsPatterns) ? 'sports' : (feedCategory.get(it.source) || it.category);
+}
+
 const counts = {};
 const bySource = {};
 for (const it of sorted) {

@@ -37,6 +37,12 @@
    "desc": "技术进展、产业与科研"
   },
   {
+   "id": "sports",
+   "name": "体育",
+   "color": "#1a7f5a",
+   "desc": "赛事、竞技体育与运动员"
+  },
+  {
    "id": "culture",
    "name": "人文",
    "color": "#a8624a",
@@ -50,10 +56,10 @@
   }
  ],
  "stats": {
-  "total": 224,
-  "rawTotal": 224,
-  "sourcesConfigured": 107,
-  "sourcesActive": 107,
+  "total": 228,
+  "rawTotal": 228,
+  "sourcesConfigured": 110,
+  "sourcesActive": 110,
   "sourcesSkipped": 0,
   "overseas": "on",
   "sourcesOk": 52,
@@ -61,8 +67,9 @@
   "counts": {
    "tech": 38,
    "world": 97,
-   "business": 37,
-   "culture": 24,
+   "business": 36,
+   "culture": 27,
+   "sports": 2,
    "military": 8,
    "top": 14,
    "society": 6
@@ -82,14 +89,14 @@
    "少数派": 2,
    "NYT World": 5,
    "东方财富": 17,
+   "Arts & Letters Daily": 9,
    "Nikkei Asia": 10,
-   "Arts & Letters Daily": 6,
    "MarketWatch": 3,
    "The Verge": 6,
    "The Hill": 3,
    "CBS News": 7,
    "NPR": 7,
-   "Sky News": 4,
+   "Sky News": 5,
    "Hacker News": 5,
    "Meduza": 4,
    "Task & Purpose": 2,
@@ -133,6 +140,9 @@
    "category": "tech",
    "lang": "en",
    "origin": "overseas",
+   "topics": [
+    "china"
+   ],
    "published": "2026-09-28T00:00:00.000Z"
   },
   {
@@ -253,7 +263,10 @@
    "category": "world",
    "lang": "zh",
    "region": "global",
-   "published": "2026-09-27T23:30:59.000Z"
+   "published": "2026-09-27T23:30:59.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "90af45ddb252",
@@ -340,7 +353,10 @@
    "category": "world",
    "lang": "zh",
    "region": "global",
-   "published": "2026-09-27T23:11:09.000Z"
+   "published": "2026-09-27T23:11:09.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "ab619dea9359",
@@ -412,7 +428,10 @@
    "category": "world",
    "lang": "zh",
    "region": "global",
-   "published": "2026-09-27T22:54:22.000Z"
+   "published": "2026-09-27T22:54:22.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "13543692a1c8",
@@ -499,7 +518,23 @@
    "category": "business",
    "lang": "zh",
    "origin": "cn",
-   "published": "2026-09-27T22:03:53.000Z"
+   "published": "2026-09-27T22:03:53.000Z",
+   "topics": [
+    "china"
+   ]
+  },
+  {
+   "id": "350b3265f65d",
+   "title": "Perverseness drove Edgar Allan Poe to ruin, or the brink of it, again and again. It was also the source of his inspiration",
+   "summary": "",
+   "link": "https://newrepublic.com/article/214970/edgar-allan-poe-mined-misery-emily-ogden",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-27T22:00:00.000Z"
   },
   {
    "id": "272b6062f45b",
@@ -509,19 +544,6 @@
    "image": "",
    "source": "Nikkei Asia",
    "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-27T22:00:00.000Z"
-  },
-  {
-   "id": "bcc6054aa4c2",
-   "title": "Egomaniacs, psychos, and informants. Why is it we look past all sorts of ugliness and insist on mythologizing revolutionaries?",
-   "summary": "",
-   "link": "https://theamericanscholar.org/the-allure-of-eden-on-earth/",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
    "lang": "en",
    "origin": "overseas",
    "undated": true,
@@ -558,10 +580,13 @@
    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260927-60%E5%B9%B4%E9%A6%96%E6%AC%A1%E6%97%A5%E6%9C%AC%E7%94%B7%E4%B9%92%E6%89%93%E8%B4%A5%E4%B8%AD%E5%9B%BD%E5%A4%BA%E5%86%A0-%E6%B3%95%E5%9B%BD%E8%B6%B3%E7%90%83%E6%96%B0%E4%B8%BB%E5%B8%85%E9%BD%90%E8%BE%BE%E5%86%85%E5%BC%80%E9%97%A8%E7%BA%A2",
    "image": "",
    "source": "法国国际广播电台",
-   "category": "world",
+   "category": "sports",
    "lang": "zh",
    "region": "global",
-   "published": "2026-09-27T21:58:15.000Z"
+   "published": "2026-09-27T21:58:15.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "a16b1a045614",
@@ -588,6 +613,19 @@
    "published": "2026-09-27T21:46:21.000Z"
   },
   {
+   "id": "77c63f1c1b2e",
+   "title": "The Egyptians, the Hittites, the Assyrians — what caused the collapse of a slew of regional powers around 1200 BC?",
+   "summary": "",
+   "link": "https://www.worksinprogress.news/p/why-really-caused-the-bronze-age",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-27T21:40:00.000Z"
+  },
+  {
    "id": "ef9186009fc9",
    "title": "North Korean POWs arrive in South Korea from Ukraine: local media",
    "summary": "",
@@ -595,19 +633,6 @@
    "image": "",
    "source": "Nikkei Asia",
    "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-27T21:40:00.000Z"
-  },
-  {
-   "id": "87d36b57b245",
-   "title": "As an AI-generated sameness permeates “creative” work and the knowledge economy, we’re entering an era of bleh",
-   "summary": "",
-   "link": "https://www.noemamag.com/now-entering-the-era-of-bleh",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
    "lang": "en",
    "origin": "overseas",
    "undated": true,
@@ -674,6 +699,19 @@
    "published": "2026-09-27T21:21:00.000Z"
   },
   {
+   "id": "4393611bd3cd",
+   "title": "AI doomers and apocalyptic futurists are weird. Also, their prophecies risk pernicious downsides. That doesn't mean they're wrong",
+   "summary": "",
+   "link": "https://quillette.substack.com/p/an-open-letter-to-scott-alexander",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-27T21:20:00.000Z"
+  },
+  {
    "id": "27d8ff187b15",
    "title": "Sony Group to skip 2027 CES trade show after 6 decades",
    "summary": "",
@@ -681,19 +719,6 @@
    "image": "",
    "source": "Nikkei Asia",
    "category": "world",
-   "lang": "en",
-   "origin": "overseas",
-   "undated": true,
-   "published": "2026-09-27T21:20:00.000Z"
-  },
-  {
-   "id": "1dcacb3cd2f3",
-   "title": "There are to be “no jesters, no dogs, no weapons, or any such silliness.” Or so the Renaissance painter Paolo Veronese was told by an Inquisitor",
-   "summary": "",
-   "link": "https://publicdomainreview.org/essay/veroneses-dogs/",
-   "image": "",
-   "source": "Arts & Letters Daily",
-   "category": "culture",
    "lang": "en",
    "origin": "overseas",
    "undated": true,
@@ -796,6 +821,19 @@
    "published": "2026-09-27T21:03:24.000Z"
   },
   {
+   "id": "bcc6054aa4c2",
+   "title": "Egomaniacs, psychos, and informants. Why is it we look past all sorts of ugliness and insist on mythologizing revolutionaries?",
+   "summary": "",
+   "link": "https://theamericanscholar.org/the-allure-of-eden-on-earth/",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-27T21:00:00.000Z"
+  },
+  {
    "id": "94c57192b52e",
    "title": "NTT, SoftBank eye AI cybersecurity systems that keep data in Japan",
    "summary": "",
@@ -858,6 +896,19 @@
    "published": "2026-09-27T20:46:28.000Z"
   },
   {
+   "id": "87d36b57b245",
+   "title": "As an AI-generated sameness permeates “creative” work and the knowledge economy, we’re entering an era of bleh",
+   "summary": "",
+   "link": "https://www.noemamag.com/now-entering-the-era-of-bleh",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-27T20:40:00.000Z"
+  },
+  {
    "id": "47398d7d45d3",
    "title": "Shein posts Q2 profit but slow revenue growth likely to fuel doubts",
    "summary": "",
@@ -918,6 +969,19 @@
    "lang": "en",
    "origin": "overseas",
    "published": "2026-09-27T20:20:20.000Z"
+  },
+  {
+   "id": "1dcacb3cd2f3",
+   "title": "There are to be “no jesters, no dogs, no weapons, or any such silliness.” Or so the Renaissance painter Paolo Veronese was told by an Inquisitor",
+   "summary": "",
+   "link": "https://publicdomainreview.org/essay/veroneses-dogs/",
+   "image": "",
+   "source": "Arts & Letters Daily",
+   "category": "culture",
+   "lang": "en",
+   "origin": "overseas",
+   "undated": true,
+   "published": "2026-09-27T20:20:00.000Z"
   },
   {
    "id": "e94f79f18c2e",
@@ -991,7 +1055,10 @@
    "category": "military",
    "lang": "en",
    "origin": "overseas",
-   "published": "2026-09-27T20:00:24.000Z"
+   "published": "2026-09-27T20:00:24.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "6278cdc46995",
@@ -1162,7 +1229,10 @@
    "category": "business",
    "lang": "en",
    "region": "global",
-   "published": "2026-09-27T19:13:27.000Z"
+   "published": "2026-09-27T19:13:27.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "500c829435ae",
@@ -1199,7 +1269,11 @@
    "category": "business",
    "lang": "zh",
    "origin": "cn",
-   "published": "2026-09-27T18:46:31.000Z"
+   "published": "2026-09-27T18:46:31.000Z",
+   "topics": [
+    "china",
+    "shandong"
+   ]
   },
   {
    "id": "448d625533c8",
@@ -1211,7 +1285,10 @@
    "category": "business",
    "lang": "zh",
    "origin": "cn",
-   "published": "2026-09-27T18:46:25.000Z"
+   "published": "2026-09-27T18:46:25.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "eb0ed2c28662",
@@ -1247,7 +1324,10 @@
    "category": "world",
    "lang": "en",
    "region": "global",
-   "published": "2026-09-27T18:12:17.000Z"
+   "published": "2026-09-27T18:12:17.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "613c74f82fe4",
@@ -1295,7 +1375,10 @@
    "category": "top",
    "lang": "zh",
    "origin": "overseas",
-   "published": "2026-09-27T17:51:47.000Z"
+   "published": "2026-09-27T17:51:47.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "d258f210d698",
@@ -1331,7 +1414,10 @@
    "category": "business",
    "lang": "zh",
    "origin": "cn",
-   "published": "2026-09-27T17:30:30.000Z"
+   "published": "2026-09-27T17:30:30.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "6c825cd378cd",
@@ -1415,7 +1501,10 @@
    "category": "business",
    "lang": "zh",
    "origin": "cn",
-   "published": "2026-09-27T16:35:40.000Z"
+   "published": "2026-09-27T16:35:40.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "faade976c960",
@@ -1451,7 +1540,10 @@
    "category": "business",
    "lang": "zh",
    "origin": "cn",
-   "published": "2026-09-27T16:30:00.000Z"
+   "published": "2026-09-27T16:30:00.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "738fcb97f13a",
@@ -1475,7 +1567,10 @@
    "category": "business",
    "lang": "zh",
    "origin": "cn",
-   "published": "2026-09-27T16:25:00.000Z"
+   "published": "2026-09-27T16:25:00.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "5db89918dbd9",
@@ -1487,7 +1582,10 @@
    "category": "business",
    "lang": "zh",
    "region": "cn",
-   "published": "2026-09-27T16:21:00.000Z"
+   "published": "2026-09-27T16:21:00.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "01340fd18472",
@@ -1527,7 +1625,10 @@
    "category": "business",
    "lang": "zh",
    "region": "cn",
-   "published": "2026-09-27T16:10:00.000Z"
+   "published": "2026-09-27T16:10:00.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "320b84a4e815",
@@ -1539,7 +1640,10 @@
    "category": "business",
    "lang": "zh",
    "region": "cn",
-   "published": "2026-09-27T16:07:13.000Z"
+   "published": "2026-09-27T16:07:13.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "f2aaa7010532",
@@ -1587,7 +1691,10 @@
    "category": "business",
    "lang": "zh",
    "origin": "overseas",
-   "published": "2026-09-27T16:00:00.000Z"
+   "published": "2026-09-27T16:00:00.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "867b538190a7",
@@ -1704,7 +1811,7 @@
    "link": "https://www.cnbc.com/2026/09/27/nfl-drone-defense-tech-game-disruptions.html",
    "image": "",
    "source": "CNBC",
-   "category": "business",
+   "category": "sports",
    "lang": "en",
    "region": "global",
    "published": "2026-09-27T15:22:03.000Z"
@@ -1731,7 +1838,10 @@
    "category": "culture",
    "lang": "zh",
    "region": "cn",
-   "published": "2026-09-27T15:07:37.000Z"
+   "published": "2026-09-27T15:07:37.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "ff65b71f21c9",
@@ -1983,7 +2093,10 @@
    "category": "culture",
    "lang": "zh",
    "region": "cn",
-   "published": "2026-09-27T13:24:58.000Z"
+   "published": "2026-09-27T13:24:58.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "f2ff8e8f3232",
@@ -2007,7 +2120,10 @@
    "category": "world",
    "lang": "en",
    "origin": "overseas",
-   "published": "2026-09-27T13:14:42.000Z"
+   "published": "2026-09-27T13:14:42.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "f05a7bcd32c7",
@@ -2235,7 +2351,10 @@
    "category": "culture",
    "lang": "zh",
    "region": "cn",
-   "published": "2026-09-27T11:42:50.000Z"
+   "published": "2026-09-27T11:42:50.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "9f7c94f2e97b",
@@ -2403,7 +2522,10 @@
    "category": "tech",
    "lang": "zh",
    "origin": "cn",
-   "published": "2026-09-27T10:00:00.000Z"
+   "published": "2026-09-27T10:00:00.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "86b03fa98f17",
@@ -2523,7 +2645,10 @@
    "category": "top",
    "lang": "zh",
    "origin": "overseas",
-   "published": "2026-09-27T08:05:39.000Z"
+   "published": "2026-09-27T08:05:39.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "070390a22267",
@@ -2546,7 +2671,7 @@
    "source": "Naval News",
    "category": "military",
    "lang": "en",
-   "region": "global",
+   "origin": "overseas",
    "published": "2026-09-27T07:55:42.000Z"
   },
   {
@@ -2583,6 +2708,9 @@
    "category": "business",
    "lang": "zh",
    "origin": "cn",
+   "topics": [
+    "china"
+   ],
    "published": "2026-09-27T06:53:26.000Z"
   },
   {
@@ -2607,6 +2735,9 @@
    "category": "business",
    "lang": "zh",
    "origin": "cn",
+   "topics": [
+    "china"
+   ],
    "published": "2026-09-27T06:52:25.000Z"
   },
   {
@@ -2667,6 +2798,9 @@
    "category": "culture",
    "lang": "zh",
    "origin": "cn",
+   "topics": [
+    "china"
+   ],
    "published": "2026-09-27T05:53:51.000Z"
   },
   {
@@ -2742,6 +2876,18 @@
    "published": "2026-09-27T02:43:10.000Z"
   },
   {
+   "id": "528f1e2d211a",
+   "title": "87-year-old woman can return home after eviction sparked protests, lawyer says",
+   "summary": "An 87-year-old woman, who was evicted from her home in Madrid last week, sparking protests, can return to the apartment she had lived in for decades, her lawyer has said.",
+   "link": "https://news.sky.com/story/spain-housing-crisis-protest-after-87-year-old-woman-evicted-13592322",
+   "image": "https://e3.365dm.com/26/09/1920x1080/skynews-maricarmen-abascal_7362252.jpg?20260927042822",
+   "source": "Sky News",
+   "category": "world",
+   "lang": "en",
+   "origin": "overseas",
+   "published": "2026-09-27T02:25:00.000Z"
+  },
+  {
    "id": "65bcd9b62c57",
    "title": "Spain housing crisis protest after 87-year-old woman evicted",
    "summary": "Tens of thousands of people marched through the streets of Madrid to protest against Spain's housing crisis after an 87-year-old woman was evicted from an apartment she had lived in for decades.",
@@ -2775,7 +2921,10 @@
    "category": "top",
    "lang": "zh",
    "origin": "overseas",
-   "published": "2026-09-27T01:35:32.000Z"
+   "published": "2026-09-27T01:35:32.000Z",
+   "topics": [
+    "china"
+   ]
   },
   {
    "id": "cc3557381113",
