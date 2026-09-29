@@ -65,7 +65,6 @@ jobs:
           done
           exit $fail
 
-      - name: 组装站点
       # ===== 临时步骤：按新规则重出 2026-09-28 的四篇专栏，用完即删 =====
       - name: 临时-重出9月28日专栏
         if: ${{ github.event_name == 'push' }}
@@ -80,6 +79,7 @@ jobs:
           done
       # ===== 临时步骤结束 =====
 
+      - name: 组装站点
         run: |
           mkdir -p _site
           cp -r index.html assets data editorial _site/
