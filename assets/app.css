@@ -101,6 +101,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
   height: var(--ctl);
   border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; background: var(--paper-2);
 }
+/* 日期文字与下拉框共用一格：宽屏由 select 自己显示全文；
+   窄屏把 select 调成透明盖在上面，框里只显示短日期（周几与条数在下拉列表里看） */
+.datebox { position: relative; display: flex; align-items: center; justify-content: center; }
+.datebox__label { display: none; }
 .datenav__select {
   border: 0;
   background: transparent;
@@ -503,8 +507,30 @@ html[data-theme="dark"] .stale { background: #2c2617; border-color: #5a4a22; col
     row-gap: 0;      /* 搜索行收起时高度为 0，不留缝 */
   }
   .datenav { grid-column: 1; }
-  .datenav__select { flex: 1; max-width: none; }
+  .datebox { flex: 1; min-width: 0; }
+  .datebox__label {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .02em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* 点它照样打开原生选择器；框内不再显示「周几 · 条数」，把宽度让给日期 */
+  .datenav__select {
+    position: absolute;
+    inset: 0;
+    width: 100%; height: 100%;
+    max-width: none;
+    padding: 0;
+    appearance: none;
+    color: transparent;
+  }
   .datenav .iconbtn { width: 32px; }
+  .datenav .datenav__latest { width: 28px; }
   .searchbtn { grid-column: 2; display: grid; }
   .toggles { grid-column: 3; }
   .toggles .iconbtn { width: var(--ctl); height: var(--ctl); }
@@ -544,6 +570,14 @@ html[data-theme="dark"] .stale { background: #2c2617; border-color: #5a4a22; col
   .card__title { font-size: 17px; }
   .card__summary { -webkit-line-clamp: 2; font-size: 14px; }
   .totop { right: 14px; bottom: 16px; }
+}
+
+/* 超窄屏（iPhone SE 一类）：日期框再让出一点宽度，
+   配合略小的字号，保证「9月28日」在任何状态下都不被截断 */
+@media (max-width: 380px) {
+  .datenav .iconbtn { width: 30px; }
+  .datenav .datenav__latest { width: 26px; }
+  .datebox__label { font-size: 13px; letter-spacing: 0; }
 }
 
 @media (min-width: 1180px) {

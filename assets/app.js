@@ -391,18 +391,16 @@ function renderMasthead() {
 
   // 期数下拉框：历史每一期都能直接跳过去
   const pick = el('datePick');
-  const narrow = isNarrow();
   pick.innerHTML = state.days.map((d) => {
     const [, m, dd] = d.date.split('-');
     const weekday = new Date(`${d.date}T12:00:00+08:00`)
       .toLocaleDateString('zh-CN', { timeZone: TZ, weekday: 'short' });
-    // 窄屏的日期框放不下「· 867 条」，只留月日与星期，条数挪进 title
-    const label = narrow
-      ? `${Number(m)}月${Number(dd)}日 ${weekday}`
-      : `${Number(m)} 月 ${Number(dd)} 日 ${weekday} · ${d.total} 条`;
-    return `<option value="${d.date}" title="共 ${d.total} 条">${label}</option>`;
+    // 完整信息放在下拉列表里；窄屏框内只显示「9月28日」（见 .datebox__label）
+    return `<option value="${d.date}">${Number(m)}月${Number(dd)}日 ${weekday} · ${d.total}条</option>`;
   }).join('');
   pick.value = state.date;
+  const [, cm, cd] = state.date.split('-');
+  el('dateLabel').textContent = `${Number(cm)}月${Number(cd)}日`;
 
   el('prevDay').disabled = idx >= state.days.length - 1;
   el('nextDay').disabled = idx <= 0;
@@ -763,16 +761,6 @@ function bind() {
   window.addEventListener('scroll', () => {
     el('toTop').hidden = window.scrollY < 600;
   }, { passive: true });
-
-  // 跨过窄屏分界线时重排日期框文案（宽屏带条数，窄屏只留月日与星期）
-  let lastNarrow = isNarrow();
-  window.addEventListener('resize', () => {
-    const narrow = isNarrow();
-    if (narrow !== lastNarrow) {
-      lastNarrow = narrow;
-      renderMasthead();
-    }
-  });
 
   document.addEventListener('keydown', (e) => {
     const typing = /^(INPUT|TEXTAREA)$/.test(document.activeElement?.tagName || '');

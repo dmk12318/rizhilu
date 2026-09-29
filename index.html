@@ -22,7 +22,10 @@
     <div class="masthead__tools">
       <div class="datenav" role="group" aria-label="切换日期">
         <button class="iconbtn" id="prevDay" title="前一天（←）" aria-label="前一天">‹</button>
-        <select class="datenav__select" id="datePick" aria-label="选择某一期" title="跳到某一期"></select>
+        <span class="datebox">
+          <span class="datebox__label" id="dateLabel" aria-hidden="true">—</span>
+          <select class="datenav__select" id="datePick" aria-label="选择某一期" title="跳到某一期"></select>
+        </span>
         <button class="iconbtn" id="nextDay" title="后一天（→）" aria-label="后一天">›</button>
         <button class="iconbtn datenav__latest" id="backLatest" title="回到最新一期" aria-label="回到最新一期" hidden>⤒</button>
       </div>
