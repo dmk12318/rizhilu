@@ -65,20 +65,6 @@ jobs:
           done
           exit $fail
 
-      # ===== 临时步骤：按新规则重出 2026-09-28 的四篇专栏，用完即删 =====
-      - name: 临时-重出9月28日专栏
-        if: ${{ github.event_name == 'push' }}
-        continue-on-error: true
-        env:
-          EDITORIAL_API_KEY: ${{ secrets.EDITORIAL_API_KEY || secrets.DAILYNEWS }}
-          EDITORIAL_BASE_URL: ${{ vars.EDITORIAL_BASE_URL }}
-          EDITORIAL_MODEL: ${{ vars.EDITORIAL_MODEL || vars.DAILYNEWS }}
-        run: |
-          for scope in all world china shandong; do
-            node scripts/editorial.mjs --scope=$scope --date=2026-09-28 --force || true
-          done
-      # ===== 临时步骤结束 =====
-
       - name: 组装站点
         run: |
           mkdir -p _site
