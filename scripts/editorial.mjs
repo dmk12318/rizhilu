@@ -343,7 +343,8 @@ async function main() {
   const date = await latestDate();
   currentDate = date;
   const data = JSON.parse(await fs.readFile(path.join(NEWS_DIR, `${date}.json`), 'utf8'));
-  // 文件名：<日期>.md / <日期>.codex.md / <日期>.world.md / <日期>.china.md / <日期>.shandong.codex.md …
+  // 文件名：<日期>.md（主编专栏）/ <日期>.world.md（境外要闻，含涉华、涉鲁两节）；
+  // 本地精修版则写成 <日期>.codex.md / <日期>.world.codex.md
   const scopePart = SCOPE === 'all' ? '' : SCOPE;
   const suffix = [scopePart, IS_CLOUD ? '' : VARIANT].filter(Boolean).join('.');
   const outName = suffix ? `${date}.${suffix}.md` : `${date}.md`;
