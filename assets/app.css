@@ -123,11 +123,26 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .datenav .iconbtn { border: 0; border-radius: 0; height: 40px; }
 .iconbtn:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+.iconbtn[hidden] { display: none; }   /* [hidden] 要被尊重，否则 display:grid 会把它顶出来 */
 .iconbtn:disabled { opacity: .35; cursor: default; }
 .iconbtn:disabled:hover { background: var(--paper-2); color: inherit; border-color: var(--rule); }
 .datenav .iconbtn:disabled:hover { background: transparent; }
 
-.search { position: relative; display: flex; align-items: center; }
+/* 搜索框：宽屏常驻，窄屏折成一个放大镜按钮（见文件末尾的移动端段落） */
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-height: none;
+  opacity: 1;
+  pointer-events: auto;
+}
+.searchbtn { display: none; }   /* 宽屏不需要，搜索框本来就在 */
+.searchbtn[data-active="true"] {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
 .search input {
   width: min(266px, 46vw);
   padding: 8px 30px 8px 12px;
@@ -195,7 +210,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 html[data-theme="dark"] .stale { background: #2c2617; border-color: #5a4a22; color: #e5cf94; }
 
-/* ---------------------------------------------------- 专栏（两大栏 × 两小栏） */
+/* ---------------------------------------------------- 专栏（两大栏，栏内分小栏） */
 .colgroup { margin-bottom: 38px; }
 .colgroup__head {
   display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
@@ -209,7 +224,25 @@ html[data-theme="dark"] .stale { background: #2c2617; border-color: #5a4a22; col
   margin: 0;
 }
 .colgroup__desc { font-size: 12.5px; color: var(--ink-3); }
-.colgroup .editorial:last-child { margin-bottom: 0; }
+
+/* 栏内小栏：境外要闻之下再分「境外要闻 / 境外涉华 / 涉鲁简报」 */
+.colsec { margin-bottom: 30px; }
+.colsec:last-child { margin-bottom: 0; }
+.colsec__head {
+  display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  margin: 0 0 16px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--ink);
+}
+.colsec__title {
+  font-family: var(--serif);
+  font-size: 19px;
+  letter-spacing: .1em;
+  margin: 0;
+}
+.colsec__desc { font-size: 12.5px; color: var(--ink-3); }
+.colgroup .editorial:last-child,
+.colsec .editorial:last-child { margin-bottom: 0; }
 
 .editorial {
   position: relative;
@@ -467,27 +500,48 @@ html[data-theme="dark"] .stale { background: #2c2617; border-color: #5a4a22; col
   .masthead__inner { padding: 10px 14px 8px; gap: 10px; }
   .brand__tag { display: none; }
   .brand__mark { font-size: 21px; letter-spacing: .1em; }
-  /* 报头在窄屏改为两行网格：上面日期与按钮，下面整行搜索框 */
+  /* 报头在窄屏改为两行网格：上面日期 + 放大镜 + 主题按钮，搜索框按需展开 */
   .masthead__tools {
     width: 100%;
     order: 3;
     display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 8px;
+    grid-template-columns: 1fr auto auto;
+    column-gap: 8px;
+    row-gap: 0;      /* 搜索行收起时高度为 0，不留缝 */
   }
   .datenav { grid-column: 1; }
   .datenav__select { flex: 1; max-width: none; }
-  .toggles { grid-column: 2; }
-  .search { grid-column: 1 / -1; grid-row: 2; }
+  .searchbtn { grid-column: 2; display: grid; height: 40px; }
+  .toggles { grid-column: 3; }
+  /* 收起时高度为 0，展开时滑出——不做 display 切换，动画才顺 */
+  .search {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-4px);
+    pointer-events: none;
+    overflow: hidden;
+    transition: max-height .24s ease, opacity .18s ease, transform .24s ease, padding-top .24s ease;
+  }
+  .search[data-open="true"] {
+    max-height: 60px;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    overflow: visible;
+    padding-top: 8px;
+  }
   .search input { width: 100%; }
-  /* 向下滚动后只收起搜索行；"日知录"这一行始终保留 */
-  .masthead--compact .search { display: none; }
   .tabs { padding: 0 10px; }
   .page { padding: 16px 15px 50px; }
   .editorial { padding: 20px 18px 22px; border-radius: 13px; }
   .colgroup { margin-bottom: 28px; }
   .colgroup__title { font-size: 18px; }
   .colgroup__head { margin-bottom: 14px; }
+  .colsec { margin-bottom: 24px; }
+  .colsec__title { font-size: 17px; }
+  .colsec__head { margin-bottom: 13px; }
   .editorial__title { font-size: 21px; }
   .editorial__toggle { font-size: 12px; }
   .prose { font-size: 16px; line-height: 1.92; }

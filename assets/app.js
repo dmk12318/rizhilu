@@ -442,18 +442,32 @@ function renderEditorial() {
         <article class="editorial__body prose">
           <h1>专栏还没有写</h1>
           <blockquote><p>抓取只是把当天的原料摆上桌，真正把原料变成判断的那一步，由主编完成。</p></blockquote>
-          <p>云端每天会写入 <code>editorial/${state.date}.md</code>（主编专栏）与 <code>editorial/${state.date}.world.md</code>（境外要闻）；电脑开着时，主编精修会另存为对应的 <code>.codex.md</code>。四份都会保留。</p>
+          <p>云端每天写入主编专栏（<code>${state.date}.md</code>）与境外要闻一篇（<code>${state.date}.world.md</code>）；境外涉华（<code>.china.md</code>）、涉鲁简报（<code>.shandong.md</code>）并入「境外要闻」这一栏。电脑开着时，主编精修另存为对应的 <code>.codex.md</code>，两版并存，都保留。</p>
         </article>
       </div>
     </section>`;
     return;
   }
 
+  // 页面按"两大栏"组织：主编专栏 / 境外要闻。
+  // 境外涉华、涉鲁简报并进「境外要闻」这一栏里，作为栏内的小栏标题出现。
   const GROUPS = [
-    { id: 'main', title: '主编专栏', desc: '全部新闻的综合判断' },
-    { id: 'world', title: '境外要闻', desc: '只归纳境外媒体的报道' },
-    { id: 'china', title: '境外涉华', desc: '境外媒体涉华报道的开源情报整理' },
-    { id: 'shandong', title: '涉鲁简报', desc: '与山东相关的报道，境外媒体优先' },
+    {
+      id: 'main',
+      title: '主编专栏',
+      desc: '全部新闻的综合判断',
+      sections: [{ id: 'main', title: '主编专栏', desc: '' }],
+    },
+    {
+      id: 'world',
+      title: '境外要闻',
+      desc: '只归纳境外媒体的报道，内含境外涉华、涉鲁两篇情报简报',
+      sections: [
+        { id: 'world', title: '境外要闻', desc: '境外媒体当日报道的归纳与对照' },
+        { id: 'china', title: '境外涉华', desc: '境外媒体涉华报道的开源情报整理' },
+        { id: 'shandong', title: '涉鲁简报', desc: '与山东相关的报道，境外媒体优先' },
+      ],
+    },
   ];
 
   const byGroup = {};
@@ -463,23 +477,37 @@ function renderEditorial() {
 
   let rendered = 0;   // 用来决定默认展开哪一栏：只展开最靠前的那一栏
   wrap.innerHTML = GROUPS.map((group) => {
-    const items = byGroup[group.id] || [];
-    if (!items.length) return '';
-    const inner = items.map((item) => {
-      const colKey = `${item.group}:${item.key}`;
-      const collapsed = colKey in saved ? saved[colKey] : rendered > 0;
-      rendered += 1;
-      const color = item.key === 'codex' ? 'var(--accent)' : '#1f5fbf';
-      return `<section class="editorial" data-colkey="${colKey}" data-collapsed="${collapsed}" style="--cat:${color}">
-        <button class="editorial__head" type="button" aria-expanded="${!collapsed}">
-          <span class="editorial__badge">${escapeHtml(item.label)}</span>
-          <span class="editorial__meta">主编：${escapeHtml(item.editor)}${item.updated ? ` · ${escapeHtml(item.updated)}` : ''}</span>
-          <span class="editorial__toggle">${collapsed ? '展开 ▾' : '收起 ▴'}</span>
-        </button>
-        ${item.title ? `<h2 class="editorial__title">${item.title}</h2>` : ''}
-        <article class="editorial__body prose">${item.html}</article>
-      </section>`;
-    }).join('');
+    const withSubHead = group.sections.length > 1;
+    let inner = '';
+    for (const sec of group.sections) {
+      const items = byGroup[sec.id] || [];
+      if (!items.length) continue;
+      const cards = items.map((item) => {
+        const colKey = `${item.group}:${item.key}`;
+        const collapsed = colKey in saved ? saved[colKey] : rendered > 0;
+        rendered += 1;
+        const color = item.key === 'codex' ? 'var(--accent)' : '#1f5fbf';
+        return `<section class="editorial" data-colkey="${colKey}" data-collapsed="${collapsed}" style="--cat:${color}">
+          <button class="editorial__head" type="button" aria-expanded="${!collapsed}">
+            <span class="editorial__badge">${escapeHtml(item.label)}</span>
+            <span class="editorial__meta">主编：${escapeHtml(item.editor)}${item.updated ? ` · ${escapeHtml(item.updated)}` : ''}</span>
+            <span class="editorial__toggle">${collapsed ? '展开 ▾' : '收起 ▴'}</span>
+          </button>
+          ${item.title ? `<h2 class="editorial__title">${item.title}</h2>` : ''}
+          <article class="editorial__body prose">${item.html}</article>
+        </section>`;
+      }).join('');
+      inner += withSubHead
+        ? `<section class="colsec">
+          <div class="colsec__head">
+            <h3 class="colsec__title">${sec.title}</h3>
+            <span class="colsec__desc">${sec.desc}</span>
+          </div>
+          ${cards}
+        </section>`
+        : cards;
+    }
+    if (!inner) return '';
     return `<section class="colgroup">
       <div class="colgroup__head">
         <h2 class="colgroup__title">${group.title}</h2>
@@ -620,6 +648,18 @@ function scrollToListTop() {
   window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
 }
 
+/* 窄屏下搜索框折成一个放大镜按钮：点了才展开，滚动时不再自作主张收放 */
+const searchCollapsible = () => window.matchMedia('(max-width: 860px)').matches;
+
+function setSearchOpen(open, { focus = false } = {}) {
+  el('searchBox').dataset.open = String(open);
+  el('searchToggle').setAttribute('aria-expanded', String(open));
+  if (open && focus) {
+    // 等展开动画起步再聚焦：立刻聚焦会让 iOS 把整页顶起来
+    setTimeout(() => el('search').focus({ preventScroll: true }), 80);
+  }
+}
+
 function bind() {
   el('prevDay').addEventListener('click', () => goto(1));   // days 按时间倒序
   el('nextDay').addEventListener('click', () => goto(-1));
@@ -660,6 +700,7 @@ function bind() {
     state.q = e.target.value;
     state.limit = 40;
     el('searchClear').hidden = !state.q;
+    el('searchToggle').dataset.active = String(Boolean(state.q));
     renderList();
   }, 140));
 
@@ -667,7 +708,18 @@ function bind() {
     el('search').value = '';
     state.q = '';
     el('searchClear').hidden = true;
+    el('searchToggle').dataset.active = 'false';
     renderList();
+  });
+
+  // 放大镜：展开/收起搜索框。收起不清空搜索词，按钮会亮着提示"还在筛"
+  el('searchToggle').addEventListener('click', () => {
+    if (el('searchBox').dataset.open === 'true') {
+      el('search').blur();
+      setSearchOpen(false);
+    } else {
+      setSearchOpen(true, { focus: true });
+    }
   });
 
   $$('.chip').forEach((chip) => {
@@ -736,13 +788,20 @@ function bind() {
 
   window.addEventListener('scroll', () => {
     el('toTop').hidden = window.scrollY < 600;
-    el('masthead').classList.toggle('masthead--compact', window.scrollY > 220);
   }, { passive: true });
 
   document.addEventListener('keydown', (e) => {
     const typing = /^(INPUT|TEXTAREA)$/.test(document.activeElement?.tagName || '');
-    if (e.key === '/' && !typing) { e.preventDefault(); el('search').focus(); }
-    if (typing && e.key === 'Escape') { el('search').blur(); }
+    if (e.key === '/' && !typing) {
+      e.preventDefault();
+      if (searchCollapsible()) setSearchOpen(true);
+      el('search').focus();
+      return;
+    }
+    if (typing && e.key === 'Escape') {
+      el('search').blur();
+      if (searchCollapsible()) setSearchOpen(false);
+    }
     if (!typing && e.key === 'ArrowLeft') goto(1);
     if (!typing && e.key === 'ArrowRight') goto(-1);
   });

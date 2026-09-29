@@ -27,7 +27,15 @@
         <button class="iconbtn datenav__latest" id="backLatest" title="回到最新一期" aria-label="回到最新一期" hidden>⤒</button>
       </div>
 
-      <label class="search">
+      <button class="iconbtn searchbtn" id="searchToggle" type="button"
+              aria-label="搜索" aria-expanded="false" aria-controls="searchBox" title="搜索（按 /）">
+        <svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false">
+          <circle cx="8.6" cy="8.6" r="5.3" fill="none" stroke="currentColor" stroke-width="1.7"></circle>
+          <line x1="12.6" y1="12.6" x2="17.2" y2="17.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></line>
+        </svg>
+      </button>
+
+      <label class="search" id="searchBox" data-open="false">
         <input id="search" type="search" placeholder="搜索标题或摘要…（按 / 聚焦）" autocomplete="off">
         <button class="search__clear" id="searchClear" hidden aria-label="清除搜索">×</button>
       </label>
